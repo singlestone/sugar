@@ -1,0 +1,204 @@
+/* Reset CSS and basic styles for buttons */
+
+/* Begin Reset CSS */
+
+html {
+  color: #000000;
+  background: #ffffff;
+  font-size: 100%;
+}
+
+/* These properties cause text to render as less stair-stepped and more smooth */
+a,
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  color: inherit;
+  font-family: inherit;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+}
+
+/* This removes the tap highlight on iOS and Android. */
+input,
+textarea,
+button,
+select,
+label,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select,
+textarea {
+  appearance: none;
+  font-weight: inherit;
+  font-size: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+div[contentEditable="true"],
+input,
+select,
+textarea {
+  width: 262px;
+  padding: 7px;
+  color: #222222;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+}
+::placeholder {
+  opacity: 1;
+}
+
+body,
+body *,
+body ::after,
+body ::before,
+html,
+html *,
+html ::after,
+html ::before {
+  box-sizing: border-box !important;
+}
+
+/* End Reset CSS */
+
+/* Begin Button CSS */
+
+.btn {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px 16px;
+  color: #4e4e4e;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 10px;
+  letter-spacing: 0.035em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: top;
+  background-color: #ffffff;
+  border: 1px solid #bcbcbc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.05s ease-in-out, border-color 0.05s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+.btn:active,
+.btn:focus,
+.btn:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-plain,
+.btn-plain:active,
+.btn-plain:hover {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+.btn-plain,
+.btn-plain:active,
+.btn-plain:focus,
+.btn-plain:hover {
+  background: transparent;
+  box-shadow: none;
+}
+button.btn-plain::-moz-focus-inner {
+  border: 0;
+}
+button svg {
+  pointer-events: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #0061d5;
+  border-color: #0061d5;
+  -webkit-font-smoothing: antialiased;
+}
+.btn-primary:not(.bdl-is-disabled):focus,
+.btn-primary:not(.is-disabled):focus {
+  border-color: #0061d5;
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.8),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.btn-primary:not(.bdl-is-disabled):hover,
+.btn-primary:not(.is-disabled):hover {
+  background-color: #0074fe;
+  border-color: #0074fe;
+}
+.btn-primary:not(.bdl-is-disabled):active,
+.btn-primary:not(.is-disabled):active {
+  background-color: #004eac;
+  border-color: #004eac;
+  box-shadow: none;
+}
+
+/* End Button CSS */

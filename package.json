@@ -1,0 +1,74 @@
+{
+  "name": "@singlestone/sugar-monorepo",
+  "version": "0.1.0",
+  "description": "SingleStone's sweet design system.",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "spice/*",
+      "sugar/*",
+      "tools/*"
+    ]
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "build-storybook": "turbo run build-storybook",
+    "build:changed": "turbo run build --since=origin/main",
+    "build:presets": "turbo run build --no-deps --include-dependencies --scope=*preset*",
+    "changeset": "changeset",
+    "clean": "turbo run clean && rimraf node_modules",
+    "deploy-storybook": "storybook-to-ghpages --packages packages",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "dev:changed": "turbo run dev --no-cache --parallel --continue --since=origin/main",
+    "dev:presets": "turbo run dev --no-cache --parallel --continue --no-deps --include-dependencies --scope=*preset*",
+    "doctoc": "doctoc .",
+    "generate": "plop",
+    "lint": "turbo run lint",
+    "lint:changed": "turbo run lint --since=origin/main",
+    "postinstall": "is-ci || husky install && nr build",
+    "release": "yarn build && changeset publish",
+    "storybook": "turbo run storybook --no-cache --parallel --continue",
+    "test": "turbo run test",
+    "test-storybook": "turbo run test-storybook",
+    "test-storybook:changed": "turbo run test-storybook --since=origin/main",
+    "test-storybook:ci": "turbo run test-storybook:ci --concurrency=1",
+    "test-storybook:ci:changed": "turbo run test-storybook:ci --concurrency=1 --since=origin/main",
+    "test:changed": "turbo run test --since=origin/main",
+    "test:ci": "turbo run test:ci",
+    "test:ci:changed": "turbo run test:ci --since=origin/main"
+  },
+  "devDependencies": {
+    "@antfu/ni": "0.14.0",
+    "@changesets/changelog-github": "0.4.3",
+    "@changesets/cli": "2.21.1",
+    "@storybook/storybook-deployer": "2.8.10",
+    "@tsconfig/create-react-app": "1.0.2",
+    "@tsconfig/node12": "1.0.9",
+    "doctoc": "2.1.0",
+    "husky": "7.0.4",
+    "is-ci": "3.0.1",
+    "plop": "3.0.5",
+    "postinstall-postinstall": "2.1.0",
+    "prettier": "2.6.0",
+    "prettier-plugin-pkg": "0.11.1",
+    "pretty-quick": "3.1.3",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.1.4",
+    "turbo": "1.1.6",
+    "typescript": "4.6.2"
+  },
+  "resolutions": {
+    "@types/tailwindcss@3.0.9": "patch:@types/tailwindcss@npm:3.0.9#.yarn/patches/@types-tailwindcss-npm-3.0.9-065f13ce91.patch",
+    "postcss-cli@9.1.0": "patch:postcss-cli@npm:9.1.0#.yarn/patches/postcss-cli-npm-9.1.0-ea2e55c876"
+  },
+  "packageManager": "yarn@3.2.0",
+  "storybook-deployer": {
+    "commitMessage": "chore: deploy storybook"
+  },
+  "style": "dist/index.min.css",
+  "volta": {
+    "node": "16.14.0",
+    "npm": "8.5.5",
+    "yarn": "1.22.18"
+  }
+}

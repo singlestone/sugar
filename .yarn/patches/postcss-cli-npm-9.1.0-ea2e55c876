@@ -1,0 +1,13 @@
+diff --git a/index.js b/index.js
+index 615638c51bbd5354f8318249a423594148a00ce2..28244e69329c62bd382f35eddd2a8ce8f5b5ff7d 100644
+--- a/index.js
++++ b/index.js
+@@ -61,7 +61,7 @@ let configFile
+ if (argv.env) process.env.NODE_ENV = argv.env
+ if (argv.config) argv.config = path.resolve(argv.config)
+ 
+-if (argv.watch) {
++if (argv.watch && process.stdin.isTTY) {
+   process.stdin.on('end', () => process.exit(0))
+   process.stdin.resume()
+ }

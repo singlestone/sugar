@@ -1,0 +1,66 @@
+{
+  "name": "@singlestone/tailwind-plugin-core-sugar",
+  "version": "0.1.0",
+  "description": "Core plugin for the sugar design system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "sugar/tailwind-plugin-core-sugar"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/tailwind-plugin-core-sugar#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/tailwind-plugin-core-sugar.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "dts build",
+    "clean": "rimraf .turbo node_modules dist",
+    "lint": "dts lint",
+    "prepack": "dts build",
+    "size": "size-limit",
+    "test": "dts test",
+    "test:ci": "dts test"
+  },
+  "dependencies": {
+    "@singlestone/tailwind-helpers-sugar": "workspace:^",
+    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^",
+    "@singlestone/tailwind-plugin-form-sugar": "workspace:^"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.2",
+    "@singlestone/prettier-config-sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "babel-jest": "27.5.1",
+    "dts-cli": "1.4.0",
+    "size-limit": "7.0.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/tailwind-plugin-core-sugar.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/tailwind-plugin-core-sugar.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

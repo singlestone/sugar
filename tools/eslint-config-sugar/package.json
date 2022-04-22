@@ -1,0 +1,56 @@
+{
+  "name": "@singlestone/eslint-config-sugar",
+  "version": "0.1.0",
+  "description": "eslint config for Sugar, SingleStone&#x27;s sweet design system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "tools/eslint-config-sugar"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/eslint-config-sugar#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rimraf .turbo node_modules",
+    "lint": "eslint index.js"
+  },
+  "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.0",
+    "dts-cli": "^1.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "babel-jest": "27.5.1",
+    "prettier": "2.6.0",
+    "prettier-plugin-pkg": "0.11.1",
+    "size-limit": "7.0.8",
+    "ts-jest": "27.1.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-pkg"
+    ]
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "@singlestone/tailwind-helpers-sugar",
+  "version": "0.1.0",
+  "description": "Helper functions for use in Sugar, SingleStone&#x27;s sweet design system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "sugar/tailwind-helpers-sugar"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/tailwind-helpers-sugar#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/tailwind-helpers-sugar.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "dts build",
+    "clean": "rimraf .turbo node_modules dist",
+    "lint": "dts lint",
+    "prepack": "dts build",
+    "size": "size-limit",
+    "test": "dts test",
+    "test:ci": "dts test"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@singlestone/eslint-config-sugar": "workspace:^",
+    "@singlestone/prettier-config-sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "@types/tailwindcss": "3.0.9",
+    "babel-jest": "27.5.1",
+    "dts-cli": "1.4.0",
+    "size-limit": "7.0.8",
+    "ts-jest": "27.1.4",
+    "typescript": "4.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/tailwind-helpers-sugar.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/tailwind-helpers-sugar.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
