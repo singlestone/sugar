@@ -1,0 +1,83 @@
+{
+  "name": "@singlestone/prettier-plugin-organize-imports-tailwindcss",
+  "version": "0.0.2",
+  "description": "PostCSS config for Sugar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "tools/prettier-plugin-organize-imports-tailwindcss"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/prettier-plugin-organize-imports-tailwindcss#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/prettier-plugin-organize-imports-tailwindcss.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "dts build",
+    "clean": "rimraf .turbo node_modules dist",
+    "dev": "dts watch --noClean --verbose",
+    "lint": "dts lint",
+    "prepack": "dts build",
+    "size": "size-limit",
+    "test": "dts test",
+    "test:ci": "dts test"
+  },
+  "peerDependencies": {
+    "prettier": "^2.5.0",
+    "prettier-plugin-tailwindcss": "^0.1.0",
+    "typescript": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@singlestone/eslint-config-sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "@types/node": "16.11.26",
+    "@types/prettier": "2.4.4",
+    "babel-jest": "27.5.1",
+    "dts-cli": "1.4.0",
+    "postcss": "8.4.12",
+    "postcss-load-config": "3.1.3",
+    "prettier": "2.6.0",
+    "prettier-plugin-organize-imports": "2.3.4",
+    "prettier-plugin-pkg": "0.11.1",
+    "prettier-plugin-tailwindcss": "0.1.8",
+    "size-limit": "7.0.8",
+    "ts-jest": "27.1.4",
+    "typescript": "4.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-pkg",
+      "prettier-plugin-organize-imports"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "./dist/prettier-plugin-organize-imports-tailwindcss.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/prettier-plugin-organize-imports-tailwindcss.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}

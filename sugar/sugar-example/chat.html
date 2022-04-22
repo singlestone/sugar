@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no viewport-fit=cover" /> -->
+    <meta name="viewport" content="width=880" />
+
+    <!-- For Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- For iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> -->
+    <!-- Transparent stripe with white letters -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- White stripe with black letters -->
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+    <!-- Black stripe with white letters -->
+
+    <meta name="apple-mobile-web-app-title" content="Maple" />
+    <!--<link rel="apple-touch-startup-image" href="XXXXXX" />-->
+    <!-- Splash screen -->
+
+    <title>Chat Item Detail - Sugar</title>
+
+    <!-- <meta name="description" content="" />
+<meta rel="canonical" href="" />
+<meta rel="author" href="Kevin Tuskey" />
+<meta name="publisher" href="SingleStone" /> -->
+
+    <!-- Lato webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons version 4.5.10 webfonts -->
+    <!-- <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" /> -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS global reset -->
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+
+    <!-- CSS for this prototype -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="old-variables app-wrapper">
+      <div class="sidebar-container">
+        <nav class="sidebar">
+          <div class="sidebar-logo">
+            <a class="sidebar-logo-link" href="index.html">
+              <svg
+                class="sidebar-logo-icon"
+                viewBox="0 0 64 36"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <g
+                  transform="translate(-1.000000, -2.000000)"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                >
+                  <path
+                    d="M9.624,35 L9.624,31.508 L5.376,31.508 L5.376,9.8 L1.524,9.8 L1.524,35 L9.624,35 Z M22.76,35.216 C25.892,35.216 27.44,33.668 27.44,30.536 L27.44,14.264 C27.44,11.132 25.892,9.584 22.76,9.584 L20.708,9.584 C17.576,9.584 16.028,11.132 16.028,14.264 L16.028,30.536 C16.028,33.668 17.576,35.216 20.708,35.216 L22.76,35.216 Z M22.148,31.832 L21.356,31.832 C20.348,31.832 19.88,31.364 19.88,30.356 L19.88,14.444 C19.88,13.436 20.348,12.968 21.356,12.968 L22.148,12.968 C23.12,12.968 23.588,13.436 23.588,14.444 L23.588,30.356 C23.588,31.364 23.12,31.832 22.148,31.832 Z M41.332,35.216 C44.464,35.216 46.012,33.668 46.012,30.536 L46.012,21.248 L40.252,21.248 L40.252,24.56 L42.268,24.56 L42.268,30.356 C42.268,31.364 41.8,31.832 40.792,31.832 L39.928,31.832 C38.92,31.832 38.452,31.364 38.452,30.356 L38.452,14.444 C38.452,13.436 38.92,12.968 39.928,12.968 L40.72,12.968 C41.692,12.968 42.16,13.436 42.16,14.444 L42.16,18.296 L45.94,18.296 L45.94,14.228 C45.94,11.132 44.428,9.584 41.296,9.584 L39.28,9.584 C36.148,9.584 34.6,11.132 34.6,14.264 L34.6,30.536 C34.6,33.668 36.148,35.216 39.28,35.216 L41.332,35.216 Z M59.868,35.216 C63,35.216 64.548,33.668 64.548,30.536 L64.548,14.264 C64.548,11.132 63,9.584 59.868,9.584 L57.816,9.584 C54.684,9.584 53.136,11.132 53.136,14.264 L53.136,30.536 C53.136,33.668 54.684,35.216 57.816,35.216 L59.868,35.216 Z M59.256,31.832 L58.464,31.832 C57.456,31.832 56.988,31.364 56.988,30.356 L56.988,14.444 C56.988,13.436 57.456,12.968 58.464,12.968 L59.256,12.968 C60.228,12.968 60.696,13.436 60.696,14.444 L60.696,30.356 C60.696,31.364 60.228,31.832 59.256,31.832 Z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="sidebar-nav">
+            <ul>
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  aria-current="page"
+                  href="index.html"
+                  title="Items List (simple)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Items List (simple)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="items-dense.html"
+                  title="Items List (dense)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Items List (dense)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link is-currentPage"
+                  href="chat.html"
+                  title="Chat Framework"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Chat Framework</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="item-detail.html"
+                  title="Item Detail"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Item Detail</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="modal.html"
+                  title="Modal (create/edit)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Modal (create and edit)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="scroll.html"
+                  title="Scroll Framework"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Scroll Framework</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="color.html"
+                  title="Color Palette"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Color Palette</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="skeleton.html"
+                  title="Skeleton Atoms"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Skeleton Atoms</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-switcher">
+            <button class="btn sidebar-switcher-button">
+              Switch to Skinny Nav
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main-content-container">
+        <header
+          class="global-header"
+          data-resin-component="header"
+          role="presentation"
+        >
+          <div class="header-search header-search-multiple">
+            <div
+              class="header-search-attribute header-search-attribute-first header-search-attribute-wide"
+            >
+              <input
+                class="input-search"
+                data-resin-target="searchbar"
+                name="query"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                role="combobox"
+                aria-label="Search for Items by"
+                autocomplete="off"
+                placeholder="Search for Items by"
+                type="text"
+                value=""
+              />
+
+              <select name="attribute1" id="attribute1">
+                <option value="keyword" selected>Keyword</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="firstname">First Name</option>
+                <option value="lastname">Last Name</option>
+              </select>
+
+              <button
+                class="btn button-with-icon button-with-icon-only search-attribute-add-button"
+                type="button"
+              >
+                <svg
+                  class="icon-for-button"
+                  width="11px"
+                  height="11px"
+                  viewBox="0 0 11 11"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g
+                    id="Symbols"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                      id="Fill-1"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
+
+                <span>Add Search Criteria</span>
+              </button>
+
+              <div
+                class="header-search-attribute-conjoiner conjoiner-disappeared"
+              >
+                and
+              </div>
+            </div>
+
+            <div
+              class="header-search-attribute header-search-attribute-second header-search-attribute-narrow"
+            >
+              <input
+                class="input-search"
+                data-resin-target="searchbar"
+                name="query"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                role="combobox"
+                aria-label="Search for Items by"
+                autocomplete="off"
+                placeholder="Search for Items by"
+                type="text"
+                value=""
+              />
+
+              <select name="attribute2" id="attribute2">
+                <option value="keyword" selected>Keyword</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="firstname">First Name</option>
+                <option value="lastname">Last Name</option>
+              </select>
+
+              <button
+                class="btn button-with-icon button-with-icon-only search-attribute-remove-button"
+                type="button"
+              >
+                <svg
+                  class="icon-for-button"
+                  width="11px"
+                  height="11px"
+                  viewBox="0 0 11 11"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs></defs>
+                  <g
+                    id="Symbols"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    transform="translate(0,5)"
+                  >
+                    <path
+                      d="M0.916666667,1.83333333 C0.4104375,1.83333333 0,1.42295313 0,0.916666667 C0,0.4104375 0.4104375,0 0.916666667,0 L14.0833333,0 C14.5896198,0 15,0.4104375 15,0.916666667 C15,1.42295313 14.5896198,1.83333333 14.0833333,1.83333333 L0.916666667,1.83333333 Z"
+                      id="Fill-1"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </svg>
+
+                <span>Remove Search Criteria</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="header-actions">
+            <!-- <button class="btn button-with-icon button-with-icon-left" type="button" onclick="location.href='modal.html'">
+
+                        <svg class="icon-for-button" width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11" id="Fill-1" fill="#000000"></path>
+                            </g>
+                        </svg>
+
+                        <span>Create New Phone Order</span>
+
+                    </button> -->
+
+            <div class="avatar avatar-buttonless">
+              <span class="avatar-initials">KT</span>
+
+              <img class="avatar-image" src="images/avatars/kevin.jpg" alt="" />
+            </div>
+
+            <!-- <button class="btn profile-button" type="submit" aria-label="Toggle account menu" data-resin-target="accountmenu" aria-haspopup="true" aria-expanded="false">
+        
+                      <div class="avatar">
+        
+                        <span class="avatar-initials">KT</span>
+        
+                        <img class="avatar-image" src="images/avatars/kevin.jpg" alt="" />
+        
+                      </div>
+                    
+                    </button> -->
+          </div>
+        </header>
+
+        <main class="" role="main">
+          <div class="page-content">
+            <div class="overview">
+              <div class="action-bar">
+                <div class="action-bar-title">
+                  <nav class="item-list-breadcrumb" aria-label="Breadcrumb">
+                    <ol class="item-list-breadcrumb-list">
+                      <li class="item-list-breadcrumb-list-item">
+                        <a class="item-list-breadcrumb-link" href="index.html"
+                          >Items</a
+                        >
+                      </li>
+
+                      <li class="item-list-breadcrumb-list-item is-last">
+                        <h1 class="page-title">6708 &mdash; In Production</h1>
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+
+                <div class="item-list-actions">
+                  <button
+                    class="btn button-primary"
+                    type="button"
+                    onclick="location.href='item-detail.html'"
+                  >
+                    Save Changes
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-content">
+              <div class="main-content-scroller main-content-scroller-wide">
+                <div class="main-content-spacer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque at euismod sem, eu faucibus ex. Sed quis tellus
+                    vel urna accumsan fermentum. Sed ac ex vehicula, vulputate
+                    mi et, consequat dolor. Pellentesque ac lectus eros.
+                  </p>
+
+                  <p>
+                    Pellentesque euismod orci tortor, egestas porta massa
+                    vulputate quis. Suspendisse in ipsum orci. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nunc in diam
+                    fringilla, blandit dolor at, luctus velit. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque at euismod sem, eu faucibus ex. Sed quis tellus
+                    vel urna accumsan fermentum. Sed ac ex vehicula, vulputate
+                    mi et, consequat dolor. Pellentesque ac lectus eros.
+                  </p>
+
+                  <p>
+                    Pellentesque euismod orci tortor, egestas porta massa
+                    vulputate quis. Suspendisse in ipsum orci. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nunc in diam
+                    fringilla, blandit dolor at, luctus velit. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque at euismod sem, eu faucibus ex. Sed quis tellus
+                    vel urna accumsan fermentum. Sed ac ex vehicula, vulputate
+                    mi et, consequat dolor. Pellentesque ac lectus eros.
+                  </p>
+
+                  <p>
+                    Pellentesque euismod orci tortor, egestas porta massa
+                    vulputate quis. Suspendisse in ipsum orci. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nunc in diam
+                    fringilla, blandit dolor at, luctus velit. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                  </p>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque at euismod sem, eu faucibus ex. Sed quis tellus
+                    vel urna accumsan fermentum. Sed ac ex vehicula, vulputate
+                    mi et, consequat dolor. Pellentesque ac lectus eros.
+                  </p>
+
+                  <p>
+                    Pellentesque euismod orci tortor, egestas porta massa
+                    vulputate quis. Suspendisse in ipsum orci. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nunc in diam
+                    fringilla, blandit dolor at, luctus velit. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="sidebar-content">
+                <div class="main-content">
+                  <div
+                    id="chat-messages-scroller"
+                    class="main-content-scroller main-content-scroller-wide"
+                  >
+                    <div class="main-content-spacer">
+                      <ul class="chat-status-wrapper">
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct. 19, 2020,</span>
+                              <span class="no-wrap">4:01 PM</span>
+                            </div>
+
+                            <div class="chat-message-author">Arnold W.</div>
+                          </div>
+
+                          <div class="chat-message-status">Script Written</div>
+
+                          <div class="chat-message-message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Pellentesque ut metus posuere, mollis nisi in,
+                            feugiat leo. Quisque et eleifend dolor.
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="chat-status-wrapper">
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct 19, 2020,</span>
+                              <span class="no-wrap">9:21 PM</span>
+                            </div>
+
+                            <!-- <button class="btn button-text-only" type="button" aria-label="Edit Message" role="button" tabindex="0">Edit</button> -->
+
+                            <div class="chat-message-author">by Kent P.</div>
+                          </div>
+
+                          <div class="chat-message-status">Pre-Production</div>
+
+                          <div class="chat-message-message">
+                            Phasellus rhoncus bibendum erat, sit amet consequat
+                            leo mollis ac.
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="chat-status-wrapper">
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct. 20, 2020,</span>
+                              <span class="no-wrap">12:11 PM</span>
+                            </div>
+
+                            <!-- <button class="btn button-text-only" type="button" aria-label="Edit Message" role="button" tabindex="0">Edit</button> -->
+
+                            <div class="chat-message-author">
+                              <span class="no-wrap">by Carl M.</span>
+                            </div>
+                          </div>
+
+                          <div class="chat-message-status">In Production</div>
+
+                          <div class="chat-message-message">
+                            Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia curae; Praesent mauris
+                            felis, congue et tincidunt id, molestie vel arcu.
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="chat-status-wrapper">
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct. 20, 2020,</span>
+                              <span class="no-wrap">1:46 PM</span>
+                            </div>
+
+                            <!-- <button class="btn button-text-only" type="button" aria-label="Edit Message" role="button" tabindex="0">Edit</button> -->
+
+                            <div class="chat-message-author">
+                              <span class="no-wrap">by Brandi S.</span>
+                            </div>
+                          </div>
+
+                          <div class="chat-message-status">Post Production</div>
+
+                          <div class="chat-message-message">
+                            Donec cursus quis enim vitae auctor.
+                          </div>
+                        </li>
+
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct. 20, 2020,</span>
+                              <span class="no-wrap">3:07 PM</span>
+                            </div>
+
+                            <!-- <button class="btn button-text-only" type="button" aria-label="Edit Message" role="button" tabindex="0">Edit</button> -->
+
+                            <div class="chat-message-author">
+                              <span class="no-wrap">by Alejandro A.</span>
+                            </div>
+                          </div>
+
+                          <div class="chat-message-message">
+                            Aliquam nec lacus non nisi tristique commodo commodo
+                            quis dui.
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul class="chat-status-wrapper">
+                        <li class="chat-message">
+                          <div class="chat-message-overview">
+                            <div class="chat-message-time">
+                              <span class="no-wrap">Oct. 20, 2020,</span>
+                              <span class="no-wrap">3:12 PM</span>
+                            </div>
+
+                            <!-- <button class="btn button-text-only" type="button" aria-label="Edit Message" role="button" tabindex="0">Edit</button> -->
+
+                            <div class="chat-message-author">
+                              <span class="no-wrap">by Anna W.</span>
+                            </div>
+                          </div>
+
+                          <div class="chat-message-status">
+                            Released In Theaters
+                          </div>
+
+                          <div class="chat-message-message">
+                            Nullam at tellus diam. Maecenas sit amet ex
+                            elementum, varius libero sed, posuere dui. Nullam
+                            sollicitudin, mauris non volutpat vehicula, metus
+                            libero posuere quam, non interdum metus sapien id
+                            est.
+                            <a
+                              class="message-link"
+                              href="https://en.wikipedia.org/wiki/Green-light"
+                              target="_blank"
+                              >Project Given Green-Light</a
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chat-compose">
+                  <div
+                    class="textarea textarea-chat-compose"
+                    role="textbox"
+                    contenteditable="true"
+                    placeholder="Add a message…"
+                    oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
+                  ></div>
+
+                  <div class="chat-compose-button-group">
+                    <!-- <label for="status">Status</label> -->
+
+                    <select class="select-expanded" name="status" id="status">
+                      <!-- <option value="" disabled>Select Status</option> -->
+                      <!-- <option value="all">All</option> -->
+                      <option value="script-written" disabled>
+                        Script Written
+                      </option>
+                      <option value="pre-production">Pre-Production</option>
+                      <option value="in-production" selected>
+                        In Production
+                      </option>
+                      <option value="post-production">Post Production</option>
+                      <option value="released-in-theaters" disabled>
+                        Released In Theaters
+                      </option>
+                      <option value="released-at-home" disabled>
+                        Released At Home
+                      </option>
+                    </select>
+
+                    <button
+                      class="btn button-primary"
+                      disabled
+                      type="button"
+                      aria-label="Post a Message"
+                      role="button"
+                    >
+                      <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 512 512"
+                        focusable="false"
+                        role="presentation"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="48"
+                          d="M112 244l144-144 144 144M256 120v292"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="./js/detect-touch-and-keyboard.js"></script>
+    <!-- <script type="module" src="./js/peekaboo-message.js"></script> -->
+    <script type="module" src="./js/sidebar-switcher.js"></script>
+    <!-- <script src="js/double-search.js"></script> -->
+    <!-- <script type="module" src="./js/color-swatches.js"></script> -->
+
+    <script>
+      // PRE-SCROLL CHAT DIV TO BOTTOM
+
+      var chatMessagesScroller = document.getElementById(
+        "chat-messages-scroller"
+      );
+      chatMessagesScroller.scrollTop = chatMessagesScroller.scrollHeight;
+    </script>
+  </body>
+</html>

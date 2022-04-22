@@ -1,0 +1,16 @@
+# Configuration file for MegaLinter
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation
+
+APPLY_FIXES: none
+DEFAULT_BRANCH: main
+DISABLE_LINTERS:
+  - JAVASCRIPT_STANDARD
+  - TYPESCRIPT_STANDARD
+  - MARKDOWN_MARKDOWN_LINK_CHECK
+SHOW_ELAPSED_TIME: true
+FILEIO_REPORTER: false
+PRE_COMMANDS:
+  - continue_if_failed: false
+    command: yarn install
+    cwd: workspace
+JSON_V8R_FILTER_REGEX_EXCLUDE: "tools/plop-generators-sugar/.*/*.json"

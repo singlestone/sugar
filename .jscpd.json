@@ -1,0 +1,19 @@
+{
+  "threshold": 10,
+  "reporters": ["html", "markdown"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.rbenv/**",
+    "**/.venv'/**",
+    "**/*cache*/**",
+    "**/.github/**",
+    "**/.idea/**",
+    "**/report/**",
+    "**/*.svg",
+    "sugar/sugar-example/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/*.stories.js"
+  ]
+}

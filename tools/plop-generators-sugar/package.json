@@ -1,0 +1,74 @@
+{
+  "name": "@singlestone/plop-generators-sugar",
+  "version": "0.0.2",
+  "description": "Plop generators config for Sugar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "tools/plop-generators-sugar"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/plop-generators-sugar#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/plop-generators-sugar.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "dts build && cpy '**/templates/**/*' '../dist/' --cwd=src --parents",
+    "clean": "rimraf .turbo node_modules dist",
+    "lint": "dts lint",
+    "prepack": "dts build",
+    "size": "size-limit",
+    "test": "dts test",
+    "test:ci": "dts test"
+  },
+  "peerDependencies": {
+    "node-plop": "~0.30.0",
+    "plop": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@singlestone/eslint-config-sugar": "workspace:^",
+    "@singlestone/prettier-config-sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "babel-jest": "27.5.1",
+    "cpy-cli": "4.1.0",
+    "dts-cli": "1.4.0",
+    "node-plop": "0.30.0",
+    "plop": "3.0.5",
+    "size-limit": "7.0.8",
+    "ts-jest": "27.1.4",
+    "typescript": "4.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(hbs)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "testEnvironment": "node"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/plop-generators-sugar.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/plop-generators-sugar.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}

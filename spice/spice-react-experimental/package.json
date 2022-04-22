@@ -1,0 +1,92 @@
+{
+  "name": "@singlestone/spice-react-experimental",
+  "version": "0.0.1",
+  "description": "React components for Sugar, SingleStone's sweet design system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "spice/spice-react-experimental"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/spice/spice-react-experimental#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^12 || ^14 || >=16"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/spice-react-experimental.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "dts build",
+    "build-storybook": "build-storybook",
+    "clean": "rimraf .turbo node_modules dist",
+    "lint": "dts lint",
+    "prepack": "dts build",
+    "size": "size-limit",
+    "storybook": "start-storybook -p 6008",
+    "test": "dts test",
+    "test-storybook": "test-storybook",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\"",
+    "test:ci": "dts test"
+  },
+  "peerDependencies": {
+    "@singlestone/sugar": "workspace:^",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@singlestone/prettier-config-sugar": "workspace:^",
+    "@singlestone/sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "7.0.8",
+    "@storybook/addon-actions": "6.4.19",
+    "@storybook/addon-essentials": "6.4.19",
+    "@storybook/addon-links": "6.4.19",
+    "@storybook/builder-webpack5": "6.4.19",
+    "@storybook/manager-webpack5": "6.4.19",
+    "@storybook/react": "6.4.19",
+    "@storybook/test-runner": "0.0.4",
+    "@testing-library/dom": "8.11.3",
+    "@testing-library/jest-dom": "5.16.2",
+    "@testing-library/react": "13.0.0",
+    "@types/react": "17.0.41",
+    "@types/react-dom": "18.0.0",
+    "babel-jest": "27.5.1",
+    "babel-loader": "8.2.3",
+    "concurrently": "7.0.0",
+    "dts-cli": "1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "size-limit": "7.0.8",
+    "ts-jest": "27.1.4",
+    "typescript": "4.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/setupTests.ts"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "size-limit": [
+    {
+      "path": "./dist/spice-react-experimental.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/spice-react-experimental.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
