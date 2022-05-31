@@ -2796,14 +2796,14 @@ __metadata:
     dts-cli: 1.4.0
     postcss: 8.4.12
     postcss-import: ^14.0.2
-    postcss-load-config: 3.1.3
+    postcss-load-config: 4.0.1
     size-limit: 7.0.8
     tailwindcss: ^3.0.23
     ts-jest: 27.1.4
     typescript: 4.6.2
   peerDependencies:
     postcss: ^8.4.5
-    postcss-load-config: ^3.1.1
+    postcss-load-config: ^3.1.1 || ^4.0.0
   languageName: unknown
   linkType: soft
 
@@ -2843,7 +2843,7 @@ __metadata:
     babel-jest: 27.5.1
     dts-cli: 1.4.0
     postcss: 8.4.12
-    postcss-load-config: 3.1.3
+    postcss-load-config: 4.0.1
     prettier: 2.6.0
     prettier-plugin-organize-imports: 2.3.4
     prettier-plugin-pkg: 0.11.1
@@ -17045,18 +17045,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-load-config@npm:3.1.3":
-  version: 3.1.3
-  resolution: "postcss-load-config@npm:3.1.3"
+"postcss-load-config@npm:4.0.1":
+  version: 4.0.1
+  resolution: "postcss-load-config@npm:4.0.1"
   dependencies:
-    lilconfig: ^2.0.4
-    yaml: ^1.10.2
+    lilconfig: ^2.0.5
+    yaml: ^2.1.1
   peerDependencies:
+    postcss: ">=8.0.9"
     ts-node: ">=9.0.0"
   peerDependenciesMeta:
+    postcss:
+      optional: true
     ts-node:
       optional: true
-  checksum: 7d187d339f259265bf1de9efff39223b94cb2cabe4610516896a16ec96f713b9b6505b4247d870f134842f8441b442a0fdc33a782b78ae3bec6db2aed4aeafec
+  checksum: b61f890499ed7dcda1e36c20a9582b17d745bad5e2b2c7bc96942465e406bc43ae03f270c08e60d1e29dab1ee50cb26970b5eb20c9aae30e066e20bd607ae4e4
   languageName: node
   linkType: hard
 
@@ -22641,6 +22644,13 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "yaml@npm:2.1.1"
+  checksum: f48bb209918aa57cfaf78ef6448d1a1f8187f45c746f933268b7023dc59e5456004611879126c9bb5ea55b0a2b1c2b392dfde436931ece0c703a3d754562bb96
   languageName: node
   linkType: hard
 
