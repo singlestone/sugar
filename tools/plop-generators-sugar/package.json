@@ -42,7 +42,7 @@
     "@singlestone/eslint-config-sugar": "workspace:^",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
-    "babel-jest": "27.5.1",
+    "babel-jest": "28.1.1",
     "cpy-cli": "4.1.0",
     "dts-cli": "1.4.0",
     "node-plop": "0.30.0",

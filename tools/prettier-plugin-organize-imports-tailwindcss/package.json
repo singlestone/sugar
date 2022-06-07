@@ -45,7 +45,7 @@
     "@size-limit/preset-small-lib": "7.0.8",
     "@types/node": "16.11.26",
     "@types/prettier": "2.4.4",
-    "babel-jest": "27.5.1",
+    "babel-jest": "28.1.1",
     "dts-cli": "1.4.0",
     "postcss": "8.4.12",
     "postcss-load-config": "3.1.3",
