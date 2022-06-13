@@ -54,7 +54,7 @@
     "prettier": "2.6.0",
     "prettier-plugin-organize-imports": "2.3.4",
     "size-limit": "7.0.8",
-    "ts-jest": "27.1.4"
+    "ts-jest": "28.0.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
