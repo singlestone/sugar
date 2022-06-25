@@ -35,11 +35,11 @@
   },
   "peerDependencies": {},
   "devDependencies": {
-    "@babel/core": "7.17.2",
+    "@babel/core": "7.18.5",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
     "babel-jest": "27.5.1",
-    "dts-cli": "1.4.0",
+    "dts-cli": "1.5.1",
     "size-limit": "7.0.8"
   },
   "publishConfig": {
