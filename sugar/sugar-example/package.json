@@ -13,14 +13,14 @@
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:^",
     "@singlestone/prettier-config-sugar": "workspace:^",
-    "prettier": "2.6.0",
-    "stylelint": "14.5.3",
+    "prettier": "2.7.1",
+    "stylelint": "14.9.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-standard": "25.0.0",
     "stylelint-prettier": "2.0.0",
-    "ts-jest": "27.1.4",
-    "typescript": "4.6.2",
-    "vite": "2.8.6"
+    "ts-jest": "27.1.5",
+    "typescript": "4.7.4",
+    "vite": "2.9.12"
   },
   "volta": {
     "extends": "../../package.json"
