@@ -36,7 +36,7 @@
   },
   "peerDependencies": {
     "postcss": "^8.4.5",
-    "postcss-load-config": "^3.1.1"
+    "postcss-load-config": "^3.1.1 || ^4.0.0"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
@@ -56,7 +56,7 @@
     "babel-jest": "27.5.1",
     "dts-cli": "1.5.1",
     "postcss": "8.4.14",
-    "postcss-load-config": "3.1.4",
+    "postcss-load-config": "4.0.1",
     "size-limit": "7.0.8",
     "ts-jest": "27.1.5",
     "typescript": "4.7.4"
