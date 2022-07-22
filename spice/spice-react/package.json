@@ -32,10 +32,10 @@
     "prepack": "dts build",
     "size": "size-limit",
     "storybook": "start-storybook -p 6007",
-    "test": "dts test",
+    "test": "dts test --passWithNoTests",
     "test-storybook": "test-storybook",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\"",
-    "test:ci": "dts test"
+    "test:ci": "dts test --passWithNoTests"
   },
   "peerDependencies": {
     "@singlestone/sugar": "workspace:^",

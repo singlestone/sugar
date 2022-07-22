@@ -30,8 +30,8 @@
     "lint": "dts lint",
     "prepack": "dts build",
     "size": "size-limit",
-    "test": "dts test",
-    "test:ci": "dts test"
+    "test": "dts test --passWithNoTests",
+    "test:ci": "dts test --passWithNoTests"
   },
   "peerDependencies": {
     "node-plop": "~0.30.0 || ~0.31.0",

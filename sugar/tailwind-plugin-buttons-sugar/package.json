@@ -33,8 +33,8 @@
     "prepack": "dts build",
     "size": "size-limit",
     "storybook": "start-storybook -p 6009",
-    "test": "dts test",
-    "test:ci": "dts test"
+    "test": "dts test --passWithNoTests",
+    "test:ci": "dts test --passWithNoTests"
   },
   "peerDependencies": {
     "tailwindcss": "^3.0.0"
