@@ -4,8 +4,7 @@
     "group:linters",
     "group:postcss",
     "group:test",
-    "npm:unpublishSafe",
-    "group:allNonMajor"
+    "npm:unpublishSafe"
   ],
   "labels": ["\uD83D\uDCA1 Type: Chore", "✅ ToDo: Automerge"],
   "prCreation": "not-pending",
