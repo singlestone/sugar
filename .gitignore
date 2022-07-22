@@ -380,3 +380,5 @@ report
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+megalinter-reports/
