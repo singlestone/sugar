@@ -53,8 +53,6 @@ yarn dev
 - Twitter: [@SingleStoneTech](https://twitter.com/SingleStoneTech)
 - Github: [@singlestone](https://github.com/singlestone)
 - LinkedIn: [@singlestone](https://www.linkedin.com/company/singlestone)
-- Slack channel: #sugar-design-system
-- Roadmap: https://miro.com/app/board/uXjVOQwIKNg=/
 
 ## 🤝 Contributing
 
