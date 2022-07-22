@@ -55,19 +55,19 @@ describe("getShadeValue", () => {
       color: colors.blue,
       shade: SugarColorShades.Primary,
       alpha: "0.5",
-      expected: "rgba(37 99 235 0.5)",
+      expected: "rgba(37, 99, 235, 0.5)",
     },
     {
       color: colors.black,
       shade: SugarColorShades.Primary,
       alpha: "0.5",
-      expected: "rgba(0 0 0 0.5)",
+      expected: "rgba(0, 0, 0, 0.5)",
     },
     {
       color: "#031cfc",
       shade: SugarColorShades.PrimaryActive,
       alpha: "0.5",
-      expected: "rgba(3 28 252 0.5)",
+      expected: "rgba(3, 28, 252, 0.5)",
     },
   ];
 
