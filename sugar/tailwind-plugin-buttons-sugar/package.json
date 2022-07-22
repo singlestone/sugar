@@ -43,7 +43,7 @@
     "@singlestone/tailwind-helpers-sugar": "workspace:^"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.9",
     "@mdx-js/react": "1.6.22",
     "@singlestone/postcss-preset-sugar": "workspace:^",
     "@singlestone/prettier-config-sugar": "workspace:^",

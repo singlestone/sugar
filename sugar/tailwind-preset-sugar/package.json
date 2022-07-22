@@ -38,7 +38,7 @@
     "tailwindcss": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.9",
     "@singlestone/eslint-config-sugar": "workspace:^",
     "@singlestone/tailwind-helpers-sugar": "workspace:^",
     "@singlestone/tailwind-theme-sugar": "workspace:^",

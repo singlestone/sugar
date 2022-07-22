@@ -39,7 +39,7 @@
     "@singlestone/tailwind-plugin-form-sugar": "workspace:^"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.9",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
     "babel-jest": "27.5.1",
