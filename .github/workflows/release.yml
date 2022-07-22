@@ -26,10 +26,10 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      # - name: Create Release Pull Request
-      #   uses: changesets/action@v1
-      #   with:
-      #     publish: yarn release
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          publish: yarn release
+        env:
+          GITHUB_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
