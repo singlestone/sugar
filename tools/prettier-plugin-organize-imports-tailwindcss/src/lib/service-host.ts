@@ -23,6 +23,7 @@ SOFTWARE.
  */
 // Modified by Richard Harrah
 
+import { existsSync, readFileSync } from "fs";
 import * as ts from "typescript";
 import { getCompilerOptions } from "./get-compiler-options";
 
@@ -74,5 +75,15 @@ export class ServiceHost implements ts.LanguageServiceHost {
 
   getScriptSnapshot() {
     return ts.ScriptSnapshot.fromString(this.content);
+  }
+
+  readFile(path: string, encoding?: string): string | undefined {
+    return readFileSync(path, {
+      encoding: (encoding as BufferEncoding) ?? "utf-8",
+    });
+  }
+
+  fileExists(path: string): boolean {
+    return existsSync(path);
   }
 }

@@ -1,4 +1,5 @@
 import plugin from "tailwindcss/plugin";
+import { Config } from "tailwindcss/types/config";
 import { defaultPluginConfig } from "./sugar-default-plugin-config";
 import { SugarPluginOptions } from "./sugar-plugin-options.interface";
 
@@ -16,5 +17,5 @@ export const createSugarPlugin = (
         : defaultOptions.prefix;
       plugins.forEach((sugarPlugin) => sugarPlugin(utilFunctions, prefix));
     },
-    (_) => defaultPluginConfig
+    (_) => defaultPluginConfig as Config
   );

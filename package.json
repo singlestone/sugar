@@ -10,6 +10,7 @@
       "tools/*"
     ]
   },
+  "packageManager": "yarn@3.2.1",
   "scripts": {
     "build": "turbo run build",
     "build-storybook": "turbo run build-storybook",
@@ -25,7 +26,7 @@
     "generate": "plop",
     "lint": "turbo run lint",
     "lint:changed": "turbo run lint --since=origin/main",
-    "postinstall": "is-ci || husky install && nr build",
+    "postinstall": "is-ci || husky install",
     "release": "yarn build && changeset publish",
     "storybook": "turbo run storybook --no-cache --parallel --continue",
     "test": "turbo run test",
@@ -61,7 +62,6 @@
     "@types/tailwindcss@3.0.9": "patch:@types/tailwindcss@npm:3.0.9#.yarn/patches/@types-tailwindcss-npm-3.0.9-065f13ce91.patch",
     "postcss-cli@9.1.0": "patch:postcss-cli@npm:9.1.0#.yarn/patches/postcss-cli-npm-9.1.0-ea2e55c876"
   },
-  "packageManager": "yarn@3.2.1",
   "storybook-deployer": {
     "commitMessage": "chore: deploy storybook"
   },
