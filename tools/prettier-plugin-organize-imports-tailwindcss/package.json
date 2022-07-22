@@ -46,7 +46,7 @@
     "@types/node": "16.11.41",
     "@types/prettier": "2.6.3",
     "babel-jest": "27.5.1",
-    "dts-cli": "1.5.1",
+    "dts-cli": "1.5.2",
     "postcss": "8.4.14",
     "postcss-load-config": "4.0.1",
     "prettier": "2.7.1",
