@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-core-sugar",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Core plugin for the sugar design system",
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
     "lint": "dts lint",
     "prepack": "dts build",
     "size": "size-limit",
-    "test": "dts test",
-    "test:ci": "dts test"
+    "test": "dts test --passWithNoTests --passWithNoTests",
+    "test:ci": "dts test --passWithNoTests"
   },
   "dependencies": {
     "@singlestone/tailwind-helpers-sugar": "workspace:^",

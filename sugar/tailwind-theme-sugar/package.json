@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-theme-sugar",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "TailwindCSS theme for Sugar, SingleStone's sweet design system",
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
     "lint": "dts lint",
     "prepack": "dts build",
     "size": "size-limit",
-    "test": "dts test",
-    "test:ci": "dts test"
+    "test": "dts test --passWithNoTests",
+    "test:ci": "dts test --passWithNoTests"
   },
   "peerDependencies": {
     "tailwindcss": "^3.0.0"

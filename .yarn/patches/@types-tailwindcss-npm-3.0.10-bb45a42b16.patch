@@ -1,5 +1,5 @@
 diff --git a/tailwind-config.d.ts b/tailwind-config.d.ts
-index aec7455107f5c7e94590ff1d1ba4a100423a7cd2..68025e8ed0539b5135ad477c18e6e54c59d138fe 100644
+index aec7455107f5c7e94590ff1d1ba4a100423a7cd2..68025e8ed0539b5135ad477c18e6e54c59d138fe 100755
 --- a/tailwind-config.d.ts
 +++ b/tailwind-config.d.ts
 @@ -183,7 +183,7 @@ export type TailwindCorePlugin =

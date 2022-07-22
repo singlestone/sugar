@@ -14,4 +14,4 @@
 "@singlestone/prettier-plugin-organize-imports-tailwindcss": minor
 ---
 
-initial release of packages to npm
+initial release to npm

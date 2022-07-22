@@ -1,7 +1,7 @@
 import { resolve } from "path";
 import postcss from "postcss";
 import tailwindcss from "tailwindcss";
-import colors from "tailwindcss/colors";
+import * as colors from "tailwindcss/colors";
 import { TailwindConfig } from "tailwindcss/tailwind-config";
 import { sugarButtonsPlugin } from "../src";
 

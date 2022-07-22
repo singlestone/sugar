@@ -2971,7 +2971,7 @@ __metadata:
     stylelint-config-prettier: 9.0.3
     stylelint-config-standard: 25.0.0
     stylelint-prettier: 2.0.0
-    tailwindcss: 3.1.4
+    tailwindcss: 3.0.24
     ts-jest: 27.1.5
     webpack: 5.73.0
   languageName: unknown
@@ -3020,7 +3020,7 @@ __metadata:
     dts-cli: 1.5.1
     postcss: 8.4.14
     size-limit: 7.0.8
-    tailwindcss: 3.1.4
+    tailwindcss: 3.0.24
     ts-jest: 27.1.5
   peerDependencies:
     tailwindcss: ^3.0.0
@@ -3067,7 +3067,7 @@ __metadata:
     dts-cli: 1.5.1
     postcss: 8.4.14
     size-limit: 7.0.8
-    tailwindcss: 3.1.4
+    tailwindcss: 3.0.24
     ts-jest: 27.1.5
   peerDependencies:
     tailwindcss: ^3.0.0
@@ -5074,6 +5074,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/tailwindcss@patch:@types/tailwindcss@npm:3.0.10#.yarn/patches/@types-tailwindcss-npm-3.0.10-bb45a42b16.patch::locator=%40singlestone%2Fsugar-monorepo%40workspace%3A.":
+  version: 3.0.10
+  resolution: "@types/tailwindcss@patch:@types/tailwindcss@npm%3A3.0.10#.yarn/patches/@types-tailwindcss-npm-3.0.10-bb45a42b16.patch::version=3.0.10&hash=65af45&locator=%40singlestone%2Fsugar-monorepo%40workspace%3A."
+  checksum: 16fcf9976f7b264f3e13e3db5daa851fa411dceb89a1001f1b23ba5d016abf359c318a600feebbf6a87bcb2a9f50d17b0c7d14691e59305bb2de5acc2dc7706c
+  languageName: node
+  linkType: hard
+
 "@types/tapable@npm:^1, @types/tapable@npm:^1.0.5":
   version: 1.0.8
   resolution: "@types/tapable@npm:1.0.8"
@@ -5716,7 +5723,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-node@npm:^1.6.1, acorn-node@npm:^1.8.2":
+"acorn-node@npm:^1.6.1":
   version: 1.8.2
   resolution: "acorn-node@npm:1.8.2"
   dependencies:
@@ -6091,13 +6098,6 @@ __metadata:
   version: 5.0.1
   resolution: "arg@npm:5.0.1"
   checksum: 9aefbcb1204f8dbd541a045bfe99b6515b4dc697c2f704ef2bb5e9fe5464575d97571e91e673a6f23ad72dd1cc24d7d8cf2d1d828e72c08e4d4f6f9237adc761
-  languageName: node
-  linkType: hard
-
-"arg@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "arg@npm:5.0.2"
-  checksum: 6c69ada1a9943d332d9e5382393e897c500908d91d5cb735a01120d5f71daf1b339b7b8980cbeaba8fd1afc68e658a739746179e4315a26e8a28951ff9930078
   languageName: node
   linkType: hard
 
@@ -8978,19 +8978,6 @@ __metadata:
   bin:
     detective: bin/detective.js
   checksum: 2ab266aecbd695b42e4703cfa560178ceac4308a74baece58185775426e65573d563d84f33e6a3b28ef3a544aa0c039c0730ada939c6458862e6643f66044f32
-  languageName: node
-  linkType: hard
-
-"detective@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "detective@npm:5.2.1"
-  dependencies:
-    acorn-node: ^1.8.2
-    defined: ^1.0.0
-    minimist: ^1.2.6
-  bin:
-    detective: bin/detective.js
-  checksum: dc4601bbc6be850edb3c2dab7a0eaf5a6169a15ad201679c66d40ea1986df816eeaecd590047f15b0780285f3eeea13b82dca0d4c52a47e744a571e326a72dc9
   languageName: node
   linkType: hard
 
@@ -17256,7 +17243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^14.0.2, postcss-import@npm:^14.1.0":
+"postcss-import@npm:^14.0.2":
   version: 14.1.0
   resolution: "postcss-import@npm:14.1.0"
   dependencies:
@@ -20642,42 +20629,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.1.4":
-  version: 3.1.4
-  resolution: "tailwindcss@npm:3.1.4"
-  dependencies:
-    arg: ^5.0.2
-    chokidar: ^3.5.3
-    color-name: ^1.1.4
-    detective: ^5.2.1
-    didyoumean: ^1.2.2
-    dlv: ^1.1.3
-    fast-glob: ^3.2.11
-    glob-parent: ^6.0.2
-    is-glob: ^4.0.3
-    lilconfig: ^2.0.5
-    normalize-path: ^3.0.0
-    object-hash: ^3.0.0
-    picocolors: ^1.0.0
-    postcss: ^8.4.14
-    postcss-import: ^14.1.0
-    postcss-js: ^4.0.0
-    postcss-load-config: ^3.1.4
-    postcss-nested: 5.0.6
-    postcss-selector-parser: ^6.0.10
-    postcss-value-parser: ^4.2.0
-    quick-lru: ^5.1.1
-    resolve: ^1.22.0
-  peerDependencies:
-    postcss: ^8.0.9
-  bin:
-    tailwind: lib/cli.js
-    tailwindcss: lib/cli.js
-  checksum: 716b7d80e51c4904d845920cbb88483114ae6f14b20328b9206f49fd642bbcd390b9764fc574f85901b0377184c5d4eb94c00bcf73e280f81e772cf621d390a5
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:^3.0.23":
+"tailwindcss@npm:3.0.24, tailwindcss@npm:^3.0.23":
   version: 3.0.24
   resolution: "tailwindcss@npm:3.0.24"
   dependencies:

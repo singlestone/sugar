@@ -1,7 +1,6 @@
 import colors from "tailwindcss/colors";
-import { Config } from "tailwindcss/types/config";
 
-export const defaultPluginConfig: Partial<Config> = {
+export const defaultPluginConfig = {
   theme: {
     extend: {
       colors: {

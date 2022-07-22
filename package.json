@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-monorepo",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "SingleStone's sweet design system.",
   "private": true,
   "workspaces": {
@@ -59,7 +59,7 @@
     "typescript": "4.7.4"
   },
   "resolutions": {
-    "@types/tailwindcss@3.0.9": "patch:@types/tailwindcss@npm:3.0.9#.yarn/patches/@types-tailwindcss-npm-3.0.9-065f13ce91.patch",
+    "@types/tailwindcss@3.0.10": "patch:@types/tailwindcss@npm:3.0.10#.yarn/patches/@types-tailwindcss-npm-3.0.10-bb45a42b16.patch",
     "postcss-cli@9.1.0": "patch:postcss-cli@npm:9.1.0#.yarn/patches/postcss-cli-npm-9.1.0-ea2e55c876"
   },
   "storybook-deployer": {
