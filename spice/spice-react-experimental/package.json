@@ -62,7 +62,7 @@
     "babel-jest": "27.5.1",
     "babel-loader": "8.2.5",
     "concurrently": "7.2.2",
-    "dts-cli": "1.5.1",
+    "dts-cli": "1.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "size-limit": "7.0.8",

@@ -54,7 +54,7 @@
     "@types/postcss-import": "14.0.0",
     "@types/tailwindcss": "3.0.10",
     "babel-jest": "27.5.1",
-    "dts-cli": "1.5.1",
+    "dts-cli": "1.5.2",
     "postcss": "8.4.14",
     "postcss-load-config": "4.0.1",
     "size-limit": "7.0.8",

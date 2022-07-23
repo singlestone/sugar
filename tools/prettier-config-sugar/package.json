@@ -50,7 +50,7 @@
     "@types/node": "16.11.41",
     "@types/prettier": "2.6.3",
     "babel-jest": "27.5.1",
-    "dts-cli": "1.5.1",
+    "dts-cli": "1.5.2",
     "prettier": "2.7.1",
     "prettier-plugin-organize-imports": "2.3.4",
     "size-limit": "7.0.8",
