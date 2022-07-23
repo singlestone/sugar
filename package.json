@@ -10,7 +10,7 @@
       "tools/*"
     ]
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "turbo run build",
     "build-storybook": "turbo run build-storybook",
