@@ -15,9 +15,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/ni@npm:0.16.3":
-  version: 0.16.3
-  resolution: "@antfu/ni@npm:0.16.3"
+"@antfu/ni@npm:0.17.2":
+  version: 0.17.2
+  resolution: "@antfu/ni@npm:0.17.2"
   bin:
     na: bin/na.mjs
     nci: bin/nci.mjs
@@ -26,7 +26,7 @@ __metadata:
     nu: bin/nu.mjs
     nun: bin/nun.mjs
     nx: bin/nx.mjs
-  checksum: c108dd0865048a0978e699dacd26573ea8a2197a2a4d679acee210f8a15181ed32745681459f87003ed7db2087ff1a63e2cd51bf2c6e464188feba717918eb08
+  checksum: 350428eb852aba2987c94de21b63e12a948ce3399fe04e7874609302373ed85a5f1d187881d1bb06c64cc1dcd4cad63d69d8effdf78d02d68034d62130e5d05b
   languageName: node
   linkType: hard
 
@@ -4031,7 +4031,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@singlestone/sugar-monorepo@workspace:."
   dependencies:
-    "@antfu/ni": 0.16.3
+    "@antfu/ni": 0.17.2
     "@changesets/changelog-github": 0.4.5
     "@changesets/cli": 2.23.0
     "@storybook/storybook-deployer": 2.8.11
