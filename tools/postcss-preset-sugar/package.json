@@ -50,7 +50,7 @@
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
     "@types/cssnano": "5.1.0",
-    "@types/node": "16.11.41",
+    "@types/node": "16.11.45",
     "@types/postcss-import": "14.0.0",
     "@types/tailwindcss": "3.0.10",
     "babel-jest": "27.5.1",
