@@ -47,7 +47,7 @@
     "@babel/core": "7.18.9",
     "@singlestone/eslint-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
-    "@types/node": "16.11.41",
+    "@types/node": "16.11.45",
     "@types/prettier": "2.6.3",
     "babel-jest": "27.5.1",
     "dts-cli": "1.5.2",

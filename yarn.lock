@@ -3873,7 +3873,7 @@ __metadata:
     "@singlestone/prettier-config-sugar": "workspace:^"
     "@size-limit/preset-small-lib": 7.0.8
     "@types/cssnano": 5.1.0
-    "@types/node": 16.11.41
+    "@types/node": 16.11.45
     "@types/postcss-import": 14.0.0
     "@types/tailwindcss": 3.0.10
     autoprefixer: ^10.4.2
@@ -3901,7 +3901,7 @@ __metadata:
     "@singlestone/eslint-config-sugar": "workspace:^"
     "@singlestone/prettier-plugin-organize-imports-tailwindcss": "workspace:^"
     "@size-limit/preset-small-lib": 7.0.8
-    "@types/node": 16.11.41
+    "@types/node": 16.11.45
     "@types/prettier": 2.6.3
     babel-jest: 27.5.1
     dts-cli: 1.5.2
@@ -3924,7 +3924,7 @@ __metadata:
     "@babel/core": 7.18.9
     "@singlestone/eslint-config-sugar": "workspace:^"
     "@size-limit/preset-small-lib": 7.0.8
-    "@types/node": 16.11.41
+    "@types/node": 16.11.45
     "@types/prettier": 2.6.3
     babel-jest: 27.5.1
     dts-cli: 1.5.2
@@ -6037,10 +6037,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.41, @types/node@npm:^14.0.10 || ^16.0.0, @types/node@npm:^14.14.20 || ^16.0.0":
-  version: 16.11.41
-  resolution: "@types/node@npm:16.11.41"
-  checksum: 808e4d65757bb13cf25e88dfa4e65880efef06652b04baecb051eb90cf090dda9812aa3505b31e963a48041eed7dbe0fc59c44c7c5e117da952ff951bf3a584a
+"@types/node@npm:16.11.45":
+  version: 16.11.45
+  resolution: "@types/node@npm:16.11.45"
+  checksum: 57d61c951024f66d796e71e4a972faef266007398cd4e93a195822fea2d5deb41d0615f394a99ece89772b145ff057321d138c7e3442455dc7d785ff67cebde3
   languageName: node
   linkType: hard
 
@@ -6048,6 +6048,13 @@ __metadata:
   version: 12.20.52
   resolution: "@types/node@npm:12.20.52"
   checksum: b720ee939a43f1427baf1606deee97e50892ff482bf3d64ab8a1eda3a50802a80866a232aeab337621f6ea4fdc4515147d7829337653e9e99d97c3aaeec3615d
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.0.10 || ^16.0.0, @types/node@npm:^14.14.20 || ^16.0.0":
+  version: 16.11.41
+  resolution: "@types/node@npm:16.11.41"
+  checksum: 808e4d65757bb13cf25e88dfa4e65880efef06652b04baecb051eb90cf090dda9812aa3505b31e963a48041eed7dbe0fc59c44c7c5e117da952ff951bf3a584a
   languageName: node
   linkType: hard
 
