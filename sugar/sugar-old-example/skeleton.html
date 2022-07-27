@@ -1,0 +1,2514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no viewport-fit=cover" /> -->
+    <meta name="viewport" content="width=880" />
+
+    <!-- For Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- For iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> -->
+    <!-- Transparent stripe with white letters -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- White stripe with black letters -->
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+    <!-- Black stripe with white letters -->
+
+    <meta name="apple-mobile-web-app-title" content="Sugar" />
+    <!--<link rel="apple-touch-startup-image" href="XXXXXX" />-->
+    <!-- Splash screen -->
+
+    <title>Skeleton Atomic Components - Sugar</title>
+
+    <!-- <meta name="description" content="" />
+  <meta rel="canonical" href="" />
+  <meta rel="author" href="Kevin Tuskey" />
+  <meta name="publisher" href="SingleStone" /> -->
+
+    <!-- Lato webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons version 4.5.10 webfonts -->
+    <!-- <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" /> -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS global reset -->
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+
+    <!-- CSS for this prototype -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="old-variables app-wrapper">
+      <div class="sidebar-container">
+        <nav class="sidebar">
+          <div class="sidebar-logo">
+            <a class="sidebar-logo-link" href="#">
+              <svg
+                class="sidebar-logo-icon"
+                viewBox="0 0 64 36"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <g
+                  transform="translate(-1.000000, -2.000000)"
+                  fill="#FFFFFF"
+                  fill-rule="nonzero"
+                >
+                  <path
+                    d="M9.624,35 L9.624,31.508 L5.376,31.508 L5.376,9.8 L1.524,9.8 L1.524,35 L9.624,35 Z M22.76,35.216 C25.892,35.216 27.44,33.668 27.44,30.536 L27.44,14.264 C27.44,11.132 25.892,9.584 22.76,9.584 L20.708,9.584 C17.576,9.584 16.028,11.132 16.028,14.264 L16.028,30.536 C16.028,33.668 17.576,35.216 20.708,35.216 L22.76,35.216 Z M22.148,31.832 L21.356,31.832 C20.348,31.832 19.88,31.364 19.88,30.356 L19.88,14.444 C19.88,13.436 20.348,12.968 21.356,12.968 L22.148,12.968 C23.12,12.968 23.588,13.436 23.588,14.444 L23.588,30.356 C23.588,31.364 23.12,31.832 22.148,31.832 Z M41.332,35.216 C44.464,35.216 46.012,33.668 46.012,30.536 L46.012,21.248 L40.252,21.248 L40.252,24.56 L42.268,24.56 L42.268,30.356 C42.268,31.364 41.8,31.832 40.792,31.832 L39.928,31.832 C38.92,31.832 38.452,31.364 38.452,30.356 L38.452,14.444 C38.452,13.436 38.92,12.968 39.928,12.968 L40.72,12.968 C41.692,12.968 42.16,13.436 42.16,14.444 L42.16,18.296 L45.94,18.296 L45.94,14.228 C45.94,11.132 44.428,9.584 41.296,9.584 L39.28,9.584 C36.148,9.584 34.6,11.132 34.6,14.264 L34.6,30.536 C34.6,33.668 36.148,35.216 39.28,35.216 L41.332,35.216 Z M59.868,35.216 C63,35.216 64.548,33.668 64.548,30.536 L64.548,14.264 C64.548,11.132 63,9.584 59.868,9.584 L57.816,9.584 C54.684,9.584 53.136,11.132 53.136,14.264 L53.136,30.536 C53.136,33.668 54.684,35.216 57.816,35.216 L59.868,35.216 Z M59.256,31.832 L58.464,31.832 C57.456,31.832 56.988,31.364 56.988,30.356 L56.988,14.444 C56.988,13.436 57.456,12.968 58.464,12.968 L59.256,12.968 C60.228,12.968 60.696,13.436 60.696,14.444 L60.696,30.356 C60.696,31.364 60.228,31.832 59.256,31.832 Z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="sidebar-nav">
+            <ul>
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  aria-current="page"
+                  href="index.html"
+                  title="Items List (simple)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Items List (simple)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="items-dense.html"
+                  title="Items List (dense)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Items List (dense)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="chat.html"
+                  title="Chat Framework"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Chat Framework</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="item-detail.html"
+                  title="Item Detail"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Item Detail</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="modal.html"
+                  title="Modal (create/edit)"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label"
+                    >Modal (create and edit)</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="scroll.html"
+                  title="Scroll Framework"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Scroll Framework</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link"
+                  href="color.html"
+                  title="Color Palette"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Color Palette</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="sidebar-menu-item-link is-currentPage"
+                  href="skeleton.html"
+                  title="Skeleton Atoms"
+                >
+                  <span class="sidebar-menu-item-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 16 16"
+                      focusable="false"
+                      role="presentation"
+                    >
+                      <path
+                        fill="#FFFFFF"
+                        fill-rule="evenodd"
+                        d="M8 1a7 7 0 110 14A7 7 0 018 1zm3.928 4.627a.528.528 0 00-.715.026L6.917 9.931 4.801 7.888l-.068-.056a.458.458 0 00-.606.084.528.528 0 00.026.715l2.406 2.323.062.051c.087.06.187.088.286.082a.52.52 0 00.397-.153l4.653-4.633.055-.068a.458.458 0 00-.084-.606z"
+                      ></path>
+                    </svg>
+                  </span>
+
+                  <span class="sidebar-menu-item-label">Skeleton Atoms</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-switcher">
+            <button class="btn sidebar-switcher-button">
+              Switch to Skinny Nav
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main-content-container">
+        <header
+          class="global-header"
+          data-resin-component="header"
+          role="presentation"
+        >
+          <div class="header-actions">
+            <button
+              id="peekaboo-starter"
+              class="btn button-with-icon button-with-icon-left"
+              type="button"
+            >
+              <svg
+                class="icon-for-button"
+                width="11px"
+                height="11px"
+                viewBox="0 0 11 11"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <span>Create New (and Show Success)</span>
+            </button>
+
+            <!-- <div class="avatar avatar-buttonless">
+
+          <span class="avatar-initials">KT</span>
+
+          <img class="avatar-image" src="images/avatars/kevin.jpg" alt="" />
+
+        </div> -->
+
+            <button
+              class="btn profile-button"
+              type="submit"
+              aria-label="Toggle account menu"
+              data-resin-target="accountmenu"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="avatar">
+                <span class="avatar-initials">KT</span>
+
+                <img
+                  class="avatar-image"
+                  src="images/avatars/kevin.jpg"
+                  alt=""
+                />
+              </div>
+            </button>
+          </div>
+        </header>
+
+        <main class="" role="main">
+          <div class="page-content">
+            <div class="overview"></div>
+
+            <div class="main-content">
+              <div class="main-content-scroller">
+                <div class="main-content-spacer">
+                  <section class="section">
+                    <button class="btn" type="button">Neutral Button</button>
+
+                    <button class="btn button-secondary" type="button">
+                      Secondary Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive"
+                      type="button"
+                    >
+                      Secondary, Destructive Button
+                    </button>
+
+                    <button class="btn button-primary" type="button">
+                      Primary Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive"
+                      type="button"
+                    >
+                      Primary, Destructive Button
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button class="btn" disabled type="button">
+                      Deactivated, Neutral Button
+                    </button>
+
+                    <button class="btn button-secondary" disabled type="button">
+                      Deactivated, Secondary Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Secondary, Destructive Button
+                    </button>
+
+                    <button class="btn button-primary" disabled type="button">
+                      Deactivated, Primary Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Primary, Destructive Button
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button class="btn button-expanded" type="button">
+                      Expanded, Neutral Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-expanded"
+                      type="button"
+                    >
+                      Expanded, Secondary Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-expanded"
+                      type="button"
+                    >
+                      Expanded, Secondary, Destructive Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-expanded"
+                      type="button"
+                    >
+                      Expanded, Primary Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-expanded"
+                      type="button"
+                    >
+                      Expanded, Primary, Destructive Button
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button class="btn button-expanded" disabled type="button">
+                      Deactivated, Expanded, Neutral Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-expanded"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Expanded, Secondary Button
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-expanded"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Expanded, Secondary, Destructive Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-expanded"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Expanded, Primary Button
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-expanded"
+                      disabled
+                      type="button"
+                    >
+                      Deactivated, Expanded, Primary, Destructive Button
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Neutral Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Neutral Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Secondary Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Secondary Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Secondary, Destructive Button with Icon on Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span
+                        >Secondary, Destructive Button with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Primary Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Primary Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Primary, Destructive Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span
+                        >Primary, Destructive Button with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Deactivated, Neutral Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Neutral Button with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Secondary Button with Icon on Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Secondary Button with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Secondary, Destructive Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Secondary, Destructive Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Deactivated, Primary Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Primary Button with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Primary, Destructive Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Primary, Destructive Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-with-icon button-expanded button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Expanded, Neutral Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-with-icon button-expanded button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Expanded, Neutral Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-expanded button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Expanded, Secondary Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-expanded button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Expanded, Secondary Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-expanded button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Expanded, Secondary, Destructive Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-expanded button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span
+                        >Expanded, Secondary, Destructive Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-expanded button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Expanded, Primary Button with Icon on Left</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-expanded button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span>Expanded, Primary Button with Icon on Right</span>
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-expanded button-with-icon button-with-icon-left"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Expanded, Primary, Destructive Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-expanded button-with-icon button-with-icon-right"
+                      type="button"
+                    >
+                      <span
+                        >Expanded, Primary, Destructive Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-expanded button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Expanded, Neutral Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Expanded, Neutral Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-secondary button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Expanded, Secondary Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-secondary button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Expanded, Secondary Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-secondary button-destructive button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Expanded, Secondary, Destructive Button
+                        with Icon on Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-secondary button-destructive button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Expanded, Secondary, Destructive Button
+                        with Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-primary button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Expanded, Primary Button with Icon on
+                        Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-primary button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Expanded, Primary Button with Icon on
+                        Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-primary button-destructive button-with-icon button-with-icon-left"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Expanded, Primary, Destructive Button with
+                        Icon on Left</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-expanded button-primary button-destructive button-with-icon button-with-icon-right"
+                      disabled
+                      type="button"
+                    >
+                      <span
+                        >Deactivated, Expanded, Primary, Destructive Button with
+                        Icon on Right</span
+                      >
+
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-with-icon button-with-icon-only"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Neutral Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-only"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Secondary Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-only"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Secondary, Destructive Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-only"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Primary Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-only"
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Primary, Destructive Button with Icon Only</span>
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <button
+                      class="btn button-with-icon button-with-icon-only"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Deactivated, Neutral Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-with-icon button-with-icon-only"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Deactivated, Secondary Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-secondary button-destructive button-with-icon button-with-icon-only"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Secondary, Destructive Button with Icon
+                        Only</span
+                      >
+                    </button>
+
+                    <button
+                      class="btn button-primary button-with-icon button-with-icon-only"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span>Deactivated, Primary Button with Icon Only</span>
+                    </button>
+
+                    <button
+                      class="btn button-primary button-destructive button-with-icon button-with-icon-only"
+                      disabled
+                      type="button"
+                    >
+                      <svg
+                        class="icon-for-button"
+                        width="11px"
+                        height="11px"
+                        viewBox="0 0 11 11"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+
+                      <span
+                        >Deactivated, Primary, Destructive Button with Icon
+                        Only</span
+                      >
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <div class="button-group">
+                      <button
+                        id="button-copy-link-to-clipboard"
+                        class="btn button-secondary button-copy-to-clipboard"
+                        type="button"
+                      >
+                        <svg
+                          class="icon-for-button"
+                          width="15px"
+                          height="12px"
+                          viewBox="0 0 15 12"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <defs></defs>
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <g
+                              transform="translate(-9.000000, -9.000000)"
+                              stroke="#000000"
+                              stroke-width="2.5"
+                            >
+                              <polyline
+                                points="22 11 14.3 19.4615385 10.4858955 15.7927877"
+                              ></polyline>
+                            </g>
+                          </g>
+                        </svg>
+
+                        <span>Copy Link</span>
+                      </button>
+
+                      <div
+                        id="text-copied-to-clipboard"
+                        class="button-message button-message-hidden"
+                      >
+                        Link copied to clipboard.
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="section">
+                    <button class="btn button-text-only">
+                      Text-Only, Regular Button
+                    </button>
+
+                    <button class="btn button-text-only button-neutral">
+                      Text-Only, Neutral Button
+                    </button>
+                  </section>
+
+                  <section class="section">
+                    <label for="texter1"
+                      >Text Input: Left-aligned, Regular-sized</label
+                    >
+                    <input
+                      type="text"
+                      id="texter1"
+                      name="texter1"
+                      placeholder="Placeholder text goes here"
+                      value=""
+                    />
+
+                    <label for="texter2"
+                      >Text Input: Right-aligned, Regular-sized</label
+                    >
+                    <input
+                      class="input-right-aligned"
+                      type="text"
+                      id="texter2"
+                      name="texter2"
+                      placeholder="Placeholder text goes here"
+                      value=""
+                    />
+                  </section>
+
+                  <section class="section">
+                    <label for="texter3"
+                      >Text Input: Left-aligned, Small-sized</label
+                    >
+                    <input
+                      class="input-small"
+                      type="text"
+                      id="texter3"
+                      name="texter3"
+                      placeholder="Placeholder text goes here"
+                      value=""
+                    />
+
+                    <label for="texter4"
+                      >Text Input: Right-aligned, Small-sized</label
+                    >
+                    <input
+                      class="input-small input-right-aligned"
+                      type="text"
+                      id="texter4"
+                      name="texter4"
+                      placeholder="Placeholder text goes here"
+                      value=""
+                    />
+                  </section>
+
+                  <section class="section">
+                    <label for="searcher1"
+                      >Search Text Input with Icon: Left-aligned,
+                      Regular-sized</label
+                    >
+                    <input
+                      class="input-search"
+                      type="text"
+                      id="searcher1"
+                      name="searcher1"
+                      placeholder="Search"
+                      value=""
+                    />
+
+                    <label for="searcher2"
+                      >Search Text Input with Icon: Left-aligned,
+                      Small-sized</label
+                    >
+                    <input
+                      class="input-search input-small"
+                      type="text"
+                      id="searcher2"
+                      name="searcher2"
+                      placeholder="Search"
+                      value=""
+                    />
+                  </section>
+
+                  <section class="section">
+                    <label for="vendor">Single Select</label>
+                    <select name="vendor" id="vendor">
+                      <option value="" disabled selected>Select Beatle</option>
+                      <option value="john">John</option>
+                      <option value="paul">Paul</option>
+                      <option value="george">George</option>
+                      <option value="ringo">Ringo</option>
+                    </select>
+
+                    <label for="payment"
+                      >Single Select with Option Group Category Headers</label
+                    >
+                    <select name="payment" id="payment">
+                      <option value="" disabled selected>
+                        Select Payment Type
+                      </option>
+                      <optgroup label="Credit Card">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="americanexpress">
+                          American Express
+                        </option>
+                        <option value="discover">Discover</option>
+                      </optgroup>
+                      <optgroup label="Accounts Receivable">
+                        <option value="exchange">Exchange</option>
+                        <option value="selfinsured">Self-Insured</option>
+                        <option value="paidbyclaim">Paid By Claim</option>
+                        <option value="goodwill">Goodwill</option>
+                        <option value="purchaseorder">Purchase Order</option>
+                      </optgroup>
+                      <optgroup label="Gift Card">
+                        <option value="giftcard">Gift Card</option>
+                      </optgroup>
+                    </select>
+
+                    <label for="vendor">Expanded Single Select</label>
+                    <select class="select-expanded" name="status" id="status">
+                      <option value="" disabled selected>Select Status</option>
+                      <option value="fullparticipation">
+                        Full Participation
+                      </option>
+                      <option value="limitedparticipation">
+                        Limited Participation
+                      </option>
+                      <option value="didnotparticipate">
+                        Did Not Participate
+                      </option>
+                    </select>
+                  </section>
+
+                  <section class="section">
+                    <label for="chatter-div"
+                      >Div-Based Textarea that Expands to Multiple Lines
+                      Automatically: Left-aligned, Regular-sized</label
+                    >
+                    <div
+                      class="textarea textarea-chat-compose"
+                      role="textbox"
+                      contenteditable="true"
+                      placeholder="Post a message …"
+                      oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"
+                    ></div>
+
+                    <label for="chatter-textarea"
+                      >Regular Textarea: Left-aligned, Regular-sized</label
+                    >
+                    <textarea
+                      rows="1"
+                      id="chatter-textarea"
+                      name="chatter-textarea"
+                      placeholder="Post a message…"
+                      value=""
+                    ></textarea>
+                  </section>
+
+                  <section class="section">
+                    <label
+                      >Toggle with 2 Options with No JavaScript, Expanded
+                      (Single Use: Multiple toggles require additional classes
+                      to avoid conflicts.)</label
+                    >
+                    <div class="toggler">
+                      <input
+                        id="toggle-on"
+                        class="toggle-item toggle-left"
+                        name="toggle"
+                        value="halffull"
+                        type="radio"
+                        checked=""
+                      />
+                      <label for="toggle-on" class="toggle-button"
+                        >Half-Full</label
+                      >
+                      <input
+                        id="toggle-off"
+                        class="toggle-item toggle-right"
+                        name="toggle"
+                        value="halfempty"
+                        type="radio"
+                      />
+                      <label for="toggle-off" class="toggle-button"
+                        >Half-Empty</label
+                      >
+                    </div>
+
+                    <!-- <label>Toggle with 3 Options Using JavaScript</label>
+                                <div class="segmented-control segmented-control-neutral">
+                                    <span class="selection"></span>
+                                    <div class="option">
+                                        <input type="radio" id="breakfast" name="meal" value="breakfast" checked>
+                                        <label for="breakfast"><span>Breakfast</span></label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="lunch" name="meal" value="lunch">
+                                        <label for="lunch"><span>Lunch</span></label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="dinner" name="meal" value="dinner">
+                                        <label for="dinner"><span>Dinner</span></label>
+                                    </div>
+                                </div> -->
+
+                    <label>Tabs in Neutral Color</label>
+                    <div class="tabs-topic">
+                      <ul class="item-list-topic">
+                        <li
+                          class="item-list-topic-list-item item-list-topic-list-item-selected"
+                        >
+                          <a class="item-list-topic-link" href="#">North</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">Northeast</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">East</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">Southeast</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">South</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">Southwest</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">West</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">Northwest</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <label>Tabs with Icons Beside Text</label>
+                    <div class="tabs-topic">
+                      <ul class="item-list-topic">
+                        <li
+                          class="item-list-topic-list-item item-list-topic-list-item-selected"
+                        >
+                          <a class="item-list-topic-link" href="#">North</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a
+                            class="item-list-topic-link button-with-icon-left"
+                            href="#"
+                          >
+                            <svg
+                              class="icon-for-button icon-color-danger"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              focusable="false"
+                              role="presentation"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M10,0 C4.48605769,0 0,4.48605769 0,10 C0,15.5139423 4.48605769,20 10,20 C15.5139423,20 20,15.5139423 20,10 C20,4.48605769 15.5139423,0 10,0 Z M10,15.3802885 C9.46895697,15.3802885 9.03846154,14.949793 9.03846154,14.41875 C9.03846154,13.887707 9.46895697,13.4572115 10,13.4572115 C10.531043,13.4572115 10.9615385,13.887707 10.9615385,14.41875 C10.9615385,14.949793 10.531043,15.3802885 10,15.3802885 Z M11.0442308,5.70961538 L10.7682692,11.575 C10.7682692,11.9998344 10.4238729,12.3442308 9.99903846,12.3442308 C9.57420404,12.3442308 9.22980769,11.9998344 9.22980769,11.575 L8.95384615,5.7125 L8.95384615,5.71009615 C8.93737375,5.32633862 9.13272187,4.9644678 9.46259151,4.76767552 C9.79246116,4.57088323 10.2036927,4.57088323 10.5335623,4.76767552 C10.863432,4.9644678 11.0587801,5.32633862 11.0423077,5.71009615 L11.0442308,5.70961538 Z"
+                              ></path>
+                            </svg>
+                            <span>South</span>
+                          </a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a class="item-list-topic-link" href="#">East</a>
+                        </li>
+                        <li class="item-list-topic-list-item">
+                          <a
+                            class="item-list-topic-link button-with-icon-right"
+                            href="#"
+                          >
+                            <span>West</span>
+                            <svg
+                              class="icon-for-button icon-color-danger"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              focusable="false"
+                              role="presentation"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M10,0 C4.48605769,0 0,4.48605769 0,10 C0,15.5139423 4.48605769,20 10,20 C15.5139423,20 20,15.5139423 20,10 C20,4.48605769 15.5139423,0 10,0 Z M10,15.3802885 C9.46895697,15.3802885 9.03846154,14.949793 9.03846154,14.41875 C9.03846154,13.887707 9.46895697,13.4572115 10,13.4572115 C10.531043,13.4572115 10.9615385,13.887707 10.9615385,14.41875 C10.9615385,14.949793 10.531043,15.3802885 10,15.3802885 Z M11.0442308,5.70961538 L10.7682692,11.575 C10.7682692,11.9998344 10.4238729,12.3442308 9.99903846,12.3442308 C9.57420404,12.3442308 9.22980769,11.9998344 9.22980769,11.575 L8.95384615,5.7125 L8.95384615,5.71009615 C8.93737375,5.32633862 9.13272187,4.9644678 9.46259151,4.76767552 C9.79246116,4.57088323 10.2036927,4.57088323 10.5335623,4.76767552 C10.863432,4.9644678 11.0587801,5.32633862 11.0423077,5.71009615 L11.0442308,5.70961538 Z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- <label>Neutral-Colored Toggle with 3 Options Using JavaScript</label>
+                                <div class="segmented-control segmented-control-neutral">
+                                    <span class="selection"></span>
+                                    <div class="option">
+                                        <input type="radio" id="rock" name="attack" value="rock" checked>
+                                        <label for="rock"><span>Rock</span></label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="paper" name="attack" value="paper">
+                                        <label for="paper"><span>Paper</span></label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" id="scissors" name="attack" value="scissors">
+                                        <label for="scissors"><span>Scissors</span></label>
+                                    </div>
+                                </div> -->
+                  </section>
+
+                  <section class="section">
+                    <label>Checkbox Buttons &mdash; Enabled</label>
+
+                    <ul>
+                      <li>
+                        <input id="c1" type="checkbox" /><label for="c1"
+                          >Ham</label
+                        >
+                      </li>
+                      <li>
+                        <input id="c2" type="checkbox" checked /><label for="c2"
+                          >Turkey</label
+                        >
+                      </li>
+                      <li>
+                        <input id="c3" type="checkbox" checked /><label for="c3"
+                          >Salami</label
+                        >
+                      </li>
+                    </ul>
+
+                    <label>Checkbox Buttons &mdash; Disabled</label>
+                    <ul>
+                      <li>
+                        <input id="c1d" type="checkbox" disabled /><label
+                          for="c1d"
+                          >Ketchup</label
+                        >
+                      </li>
+                      <li>
+                        <input
+                          id="c2d"
+                          type="checkbox"
+                          checked
+                          disabled
+                        /><label for="c2d">Mustard</label>
+                      </li>
+                      <li>
+                        <input
+                          id="c3d"
+                          type="checkbox"
+                          checked
+                          disabled
+                        /><label for="c3d">Relish</label>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="section">
+                    <label>Radio Buttons &mdash; Enabled</label>
+                    <ul>
+                      <li>
+                        <input
+                          id="r1"
+                          type="radio"
+                          name="radio"
+                          value="here"
+                        /><label for="r1">Here</label>
+                      </li>
+                      <li>
+                        <input
+                          id="r2"
+                          type="radio"
+                          name="radio"
+                          value="there"
+                          checked
+                        /><label for="r2">There</label>
+                      </li>
+                      <li>
+                        <input
+                          id="r3"
+                          type="radio"
+                          name="radio"
+                          value="everywhere"
+                          checked
+                        /><label for="r3">Everywhere</label>
+                      </li>
+                    </ul>
+
+                    <label>Radio Buttons &mdash; Disabled</label>
+                    <ul>
+                      <li>
+                        <input
+                          id="r1d"
+                          type="radio"
+                          name="radio-disabled"
+                          value="empire"
+                          disabled
+                        /><label for="r1d">Empire</label>
+                      </li>
+                      <li>
+                        <input
+                          id="r2d"
+                          type="radio"
+                          name="radio-disabled"
+                          value="rebels"
+                          checked
+                          disabled
+                        /><label for="r2d">Rebels</label>
+                      </li>
+                      <li>
+                        <input
+                          id="r3d"
+                          type="radio"
+                          name="radio-disabled"
+                          value="smugglers"
+                          checked
+                          disabled
+                        /><label for="r3d">Smugglers</label>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="section">
+                    <label>Toggle Switch Buttons &mdash; Enabled</label>
+                    <ul>
+                      <li>
+                        <input id="s1" type="checkbox" class="switch" /><label
+                          for="s1"
+                          >Cherry On Top</label
+                        >
+                      </li>
+                      <li>
+                        <input
+                          id="s2"
+                          type="checkbox"
+                          class="switch"
+                          checked
+                        /><label for="s2">Chocolate Syrup</label>
+                      </li>
+                    </ul>
+
+                    <label>Toggle Switch Buttons &mdash; Disabled</label>
+                    <ul>
+                      <li>
+                        <input
+                          id="s1d"
+                          type="checkbox"
+                          class="switch"
+                          disabled
+                        /><label for="s1d">Extra Mayo</label>
+                      </li>
+                      <li>
+                        <input
+                          id="s2d"
+                          type="checkbox"
+                          class="switch"
+                          checked
+                          disabled
+                        /><label for="s2d">Extra Beef Patty</label>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="section">
+                    <label
+                      >Stepper Incrementer with Disabled Input (Single Use:
+                      Multiple steppers require additional classes to avoid
+                      conflicts.)</label
+                    >
+
+                    <div class="flex-bar stepper-container">
+                      <button
+                        class="btn button-secondary button-with-icon button-with-icon-only button-input-stepper button-input-stepper-decrease"
+                        type="button"
+                      >
+                        <svg
+                          class="icon-for-button"
+                          width="11px"
+                          height="11px"
+                          viewBox="0 0 11 11"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                        >
+                          <defs></defs>
+                          <g
+                            id="Symbols"
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                            transform="translate(0,5)"
+                          >
+                            <path
+                              d="M0.916666667,1.83333333 C0.4104375,1.83333333 0,1.42295313 0,0.916666667 C0,0.4104375 0.4104375,0 0.916666667,0 L14.0833333,0 C14.5896198,0 15,0.4104375 15,0.916666667 C15,1.42295313 14.5896198,1.83333333 14.0833333,1.83333333 L0.916666667,1.83333333 Z"
+                              id="Fill-1"
+                              fill="#000000"
+                            ></path>
+                          </g>
+                        </svg>
+
+                        <span>Decrease</span>
+                      </button>
+
+                      <input
+                        class="input-stepper-input"
+                        type="number"
+                        placeholder="?"
+                        value="2"
+                        min="0"
+                        max="2"
+                        size="1"
+                        disabled
+                      />
+
+                      <button
+                        class="btn button-secondary button-with-icon button-with-icon-only button-input-stepper button-input-stepper-increase"
+                        type="button"
+                      >
+                        <svg
+                          class="icon-for-button"
+                          width="11px"
+                          height="11px"
+                          viewBox="0 0 11 11"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+
+                        <span>Increase</span>
+                      </button>
+                    </div>
+
+                    <!-- <label>Stepper Incrementer with Keyboard-Friendly Input</label>
+
+                                <div class="flex-bar stepper-container stepper-container-keyboard">
+
+                                    <button class="btn button-secondary button-with-icon button-with-icon-only button-input-stepper button-input-stepper-decrease" type="button">
+
+                                        <svg class="icon-for-button" width="11px" height="11px" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <defs></defs>
+                                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0,5)">
+                                                <path d="M0.916666667,1.83333333 C0.4104375,1.83333333 0,1.42295313 0,0.916666667 C0,0.4104375 0.4104375,0 0.916666667,0 L14.0833333,0 C14.5896198,0 15,0.4104375 15,0.916666667 C15,1.42295313 14.5896198,1.83333333 14.0833333,1.83333333 L0.916666667,1.83333333 Z" id="Fill-1" fill="#000000"></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Decrease</span>
+
+                                    </button>
+
+                                    <input class="input-stepper" type="number" placeholder="?" value="2" min="0" max="2" size="1">
+
+                                    <button class="btn button-secondary button-with-icon button-with-icon-only button-input-stepper button-input-stepper-increase" type="button">
+
+                                        <svg class="icon-for-button" width="11px" height="11px" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.5,11 C4.99377083,11 4.58333333,10.5896198 4.58333333,10.0833333 L4.58333333,6.41666667 L0.916666667,6.41666667 C0.4104375,6.41666667 0,6.00628646 0,5.5 C0,4.99377083 0.4104375,4.58333333 0.916666667,4.58333333 L4.58333333,4.58333333 L4.58333333,0.916666667 C4.58333333,0.4104375 4.99377083,0 5.5,0 C6.00628646,0 6.41666667,0.4104375 6.41666667,0.916666667 L6.41666667,4.58333333 L10.0833333,4.58333333 C10.5896198,4.58333333 11,4.99377083 11,5.5 C11,6.00628646 10.5896198,6.41666667 10.0833333,6.41666667 L6.41666667,6.41666667 L6.41666667,10.0833333 C6.41666667,10.5896198 6.00628646,11 5.5,11" clip-rule="evenodd"></path>
+                                        </svg>
+
+                                        <span>Increase</span>
+
+                                    </button>
+
+                                </div> -->
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div id="peekaboo-checker" class="peekaboo-box">
+      <svg
+        class="checkmark"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 52 52"
+      >
+        <!-- The SVG viewBox is 52px wide, 52px tall and positioned at 0px left and 0px right. -->
+
+        <!-- <circle class="checkmark__circle" cx="26" cy="26" r="24" fill="none"/> -->
+        <circle
+          class="checkmark__circle"
+          cx="50%"
+          cy="50%"
+          r="24"
+          fill="none"
+        />
+        <!-- The SVG circle has a radius of 24px and is positioned 26px left and 26px right. -->
+
+        <path
+          class="checkmark__check"
+          fill="none"
+          d="M14.1 27.2l7.1 7.2 16.7-16.8"
+        />
+      </svg>
+
+      <p>New Item Created</p>
+    </div>
+
+    <script type="module" src="./js/detect-touch-and-keyboard.js"></script>
+    <script type="module" src="./js/peekaboo-message.js"></script>
+    <script type="module" src="./js/sidebar-switcher.js"></script>
+    <script type="module" src="./js/double-search.js"></script>
+    <script type="module" src="./js/copy-to-clipboard.js"></script>
+    <!-- <script type="module" src="./js/color-swatches.js"></script> -->
+
+    <script>
+      // BEGIN JAVASCRIPT FOR STEPPER/INCREMENTER INPUT
+
+      var allStepperContainers =
+        document.getElementsByClassName("stepper-container");
+      // Incomplete: Use this to run a for loop where all the buttons and actions are created for each instance of a stepper input.
+      // console.log("Found", allStepperContainers.length, "divs which class starts with stepper-container.");
+
+      const inputStepperButtonDecrease = document.querySelector(
+        ".button-input-stepper-decrease"
+      );
+      const inputStepperButtonIncrease = document.querySelector(
+        ".button-input-stepper-increase"
+      );
+
+      const inputStepperInput = document.querySelector(".input-stepper-input");
+
+      var inputStepperInputValue = inputStepperInput.value;
+
+      const inputStepperInputValueMin = inputStepperInput.getAttribute("min");
+      // console.log(inputStepperInputValueMin);
+      const inputStepperInputValueMax = inputStepperInput.getAttribute("max");
+      // console.log(inputStepperInputValueMax);
+
+      function checkStepperButtons() {
+        // console.log('Check those stepper buttons');
+        if (inputStepperInputValue <= inputStepperInputValueMin) {
+          if (!inputStepperButtonDecrease.disabled) {
+            inputStepperButtonDecrease.disabled = true;
+          }
+        } else {
+          if (inputStepperButtonDecrease.disabled) {
+            inputStepperButtonDecrease.disabled = false;
+          }
+        }
+
+        if (inputStepperInputValue >= inputStepperInputValueMax) {
+          if (!inputStepperButtonIncrease.disabled) {
+            inputStepperButtonIncrease.disabled = true;
+          }
+        } else {
+          if (inputStepperButtonIncrease.disabled) {
+            inputStepperButtonIncrease.disabled = false;
+          }
+        }
+      }
+      checkStepperButtons();
+
+      function stepperButtonActionDecrease() {
+        if (inputStepperInputValue > inputStepperInputValueMin) {
+          inputStepperInputValue--;
+          // inputStepperInputValue = inputStepperInputValue - 1;
+          // console.log('Decrease the stepper value');
+          inputStepperInput.value = inputStepperInputValue;
+          checkStepperButtons();
+        } else {
+          // console.log('The stepper value is at its minimum');
+        }
+      }
+
+      function stepperButtonActionIncrease() {
+        if (inputStepperInputValue < inputStepperInputValueMax) {
+          inputStepperInputValue++;
+          // inputStepperInputValue = inputStepperInputValue + 1;
+          // console.log('Increase the stepper value');
+          inputStepperInput.value = inputStepperInputValue;
+          checkStepperButtons();
+        } else {
+          // console.log('The stepper value is at its maximum');
+        }
+      }
+
+      inputStepperButtonDecrease.onclick = function () {
+        // console.log('Stepper decrease got clicked');
+        stepperButtonActionDecrease();
+      };
+
+      inputStepperButtonIncrease.onclick = function () {
+        // console.log('Stepper increase got clicked');
+        stepperButtonActionIncrease();
+      };
+
+      // END JAVASCRIPT FOR STEPPER/INCREMENTER INPUT
+
+      // BEGIN JAVASCRIPT FOR iOS SEGMENTED CONTROL (SIMILAR TO TOGGLE)
+
+      // Constants
+
+      const SEGMENTED_CONTROL_BASE_SELECTOR = ".segmented-control";
+      const SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR =
+        ".segmented-control .option input";
+      const SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR =
+        ".segmented-control .selection";
+
+      // Main
+
+      document.addEventListener("DOMContentLoaded", setup);
+
+      // Body functions
+
+      function setup() {
+        forEachElement(SEGMENTED_CONTROL_BASE_SELECTOR, (elem) => {
+          elem.addEventListener("change", updatePillPosition);
+        });
+        window.addEventListener("resize", updatePillPosition);
+        // Prevent pill from detaching from element when window resized. Because this is rare, I have not bothered to throttle the event.
+      }
+
+      function updatePillPosition() {
+        forEachElement(
+          SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR,
+          (elem, index) => {
+            if (elem.checked) moveBackgroundPillToElement(elem, index);
+          }
+        );
+      }
+
+      function moveBackgroundPillToElement(elem, index) {
+        document.querySelector(
+          SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR
+        ).style.transform = 'translateX(" + (elem.offsetWidth * index) + "px)';
+      }
+
+      // Helper functions
+
+      function forEachElement(className, fn) {
+        Array.from(document.querySelectorAll(className)).forEach(fn);
+      }
+
+      // END JAVASCRIPT FOR iOS SEGMENTED CONTROL (SIMILAR TO TOGGLE)
+    </script>
+  </body>
+</html>

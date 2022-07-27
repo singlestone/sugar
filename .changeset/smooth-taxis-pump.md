@@ -1,6 +1,6 @@
 ---
 "@singlestone/sugar": minor
-"@singlestone/sugar-example": minor
+"@singlestone/sugar-old-example": minor
 "@singlestone/tailwind-helpers-sugar": minor
 "@singlestone/tailwind-plugin-buttons-sugar": minor
 "@singlestone/tailwind-plugin-core-sugar": minor

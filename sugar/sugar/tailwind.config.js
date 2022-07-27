@@ -5,7 +5,7 @@ module.exports = {
     "./src/**/*.js",
     "./src/**/*.ts",
     "./src/**/*.css",
-    "../../example/*.html",
+    "../sugar-old-example/*.html",
   ],
   theme: {
     extend: {
