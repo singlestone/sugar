@@ -1,0 +1,24 @@
+@layer base {
+  .brand-theme {
+    --accent-color-h: 1;
+    --accent-color-s: 89%;
+    --accent-color-l: 48%;
+
+    --accent-color-hsl: var(--accent-color-h), var(--accent-color-s),
+      var(--accent-color-l);
+
+    --accent-color-light: var(--accent-color-h), var(--accent-color-s),
+      calc(var(--accent-color-l) + 10%);
+
+    --accent-color-lighter: var(--accent-color-h), var(--accent-color-s),
+      calc(var(--accent-color-l) + 16%);
+
+    --accent-color-very-light: var(--accent-color-h), var(--accent-color-s),
+      calc(var(--accent-color-l) + 58%);
+
+    --accent-color-dark: var(--accent-color-h) var(--accent-color-s),
+      calc(var(--accent-color-l) - 12%);
+
+    --accent-color-translucent: hsla(var(--accent-color-hsl), 0.35);
+  }
+}

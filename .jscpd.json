@@ -11,7 +11,7 @@
     "**/.idea/**",
     "**/report/**",
     "**/*.svg",
-    "sugar/sugar-example/**",
+    "sugar/sugar-old-example/**",
     "**/dist/**",
     "**/build/**",
     "**/*.stories.js"
