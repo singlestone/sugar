@@ -68,7 +68,7 @@
   "style": "dist/index.min.css",
   "volta": {
     "node": "16.16.0",
-    "npm": "8.13.1",
+    "npm": "8.15.0",
     "yarn": "1.22.19"
   }
 }
