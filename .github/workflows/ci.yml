@@ -9,48 +9,9 @@ on:
 
 # Define jobs within the workflow
 jobs:
-  prepare-yarn-cache:
-    name: Prepare Cache
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Use Node.js from .nvmrc
-        uses: actions/setup-node@v3
-        with:
-          cache: "yarn"
-          node-version-file: ".nvmrc"
-
-      - name: 'Check or update Yarn cache (fix w/ "yarn install")'
-        env:
-          YARN_ENABLE_SCRIPTS: false # disable post-install scripts
-          YARN_NODE_LINKER: pnp # use pnp linker for better linking performance: it's meant to update yarn cache only
-        run: |
-          yarn install --mode=skip-build
-
-  yarn-validate:
-    name: Validate Yarn dependencies and constraints
-    needs: prepare-yarn-cache
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Use Node.js from .nvmrc
-        uses: actions/setup-node@v3
-        with:
-          cache: "yarn"
-          node-version-file: ".nvmrc"
-
-      - name: 'Check for unmet constraints (fix w/ "yarn constraints --fix")'
-        run: |
-          yarn constraints
-
   # Define a job
   test:
     name: Test on Node 16.x
-    needs: prepare-yarn-cache
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -59,20 +20,16 @@ jobs:
           # fetch the entire git history
           fetch-depth: "0"
 
-      - name: Use Node.js from .nvmrc
-        uses: actions/setup-node@v3
+      - name: Install Dependencies via pnpm
+        uses: ToppleTheNun/action-pnpm-install@v1
         with:
-          cache: "yarn"
-          node-version-file: ".nvmrc"
-
-      - name: Install project dependencies
-        run: yarn install
+          version: 7.9.0
 
       - name: Build changed packages
-        run: yarn build:changed
+        run: pnpm build:changed
 
       - name: Test changed packages
-        run: yarn test:ci:changed
+        run: pnpm test:ci:changed
 
       - name: Test changed Storybooks
-        run: yarn test-storybook:ci:changed
+        run: pnpm test-storybook:ci:changed

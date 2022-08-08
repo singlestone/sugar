@@ -12,6 +12,6 @@ SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PRE_COMMANDS:
   - continue_if_failed: false
-    command: yarn install
+    command: pnpm install
     cwd: workspace
 JSON_V8R_FILTER_REGEX_EXCLUDE: "tools/plop-generators-sugar/.*/*.json"
