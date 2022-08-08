@@ -80,6 +80,7 @@ importers:
       stylelint-prettier: 2.0.0
       tailwindcss: 3.0.24
       ts-jest: 27.1.5
+      wait-on: ^6.0.1
       webpack: 5.73.0
     devDependencies:
       "@babel/core": 7.18.9
@@ -115,6 +116,7 @@ importers:
       stylelint-prettier: 2.0.0_ajb4dyjcjxvkvtnz4mzu4n3pcq
       tailwindcss: 3.0.24
       ts-jest: 27.1.5_oqhb76afynezqzaw4d3qy2iqwi
+      wait-on: 6.0.1
       webpack: 5.73.0
 
   sugar/sugar-old-example:
@@ -5279,14 +5281,14 @@ packages:
     dependencies:
       "@discoveryjs/json-ext": 0.5.7
       "@storybook/builder-webpack4": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
-      "@storybook/builder-webpack5": 6.5.9
+      "@storybook/builder-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/core-client": 6.5.9_5f7f4oajfffdifcutnf2ilgsam
       "@storybook/core-common": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
       "@storybook/core-events": 6.5.9
       "@storybook/csf": 0.0.2--canary.4566f4d.1
       "@storybook/csf-tools": 6.5.9
       "@storybook/manager-webpack4": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
-      "@storybook/manager-webpack5": 6.5.9
+      "@storybook/manager-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/node-logger": 6.5.9
       "@storybook/semver": 7.3.2
       "@storybook/store": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
@@ -5359,10 +5361,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@storybook/builder-webpack5": 6.5.9
+      "@storybook/builder-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/core-client": 6.5.9_gu36zpz44jbquqb5pucyrs7kna
       "@storybook/core-server": 6.5.9_dsn34nnkvqkaiyhkuuwv2j6gmm
-      "@storybook/manager-webpack5": 6.5.9
+      "@storybook/manager-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       webpack: 5.74.0
@@ -8063,6 +8065,17 @@ packages:
     resolution:
       {
         integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==,
+      }
+    dependencies:
+      follow-redirects: 1.15.1
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /axios/0.25.0:
+    resolution:
+      {
+        integrity: sha512-cD8FOb0tRH3uuEe6+evtAbgJtfxr7ly3fQjYcMcuPlgkwVS9xboaVIpcDV+cYQe+yGykgwZCs1pzjntcGa6l5g==,
       }
     dependencies:
       follow-redirects: 1.15.1
@@ -24557,6 +24570,23 @@ packages:
       lodash: 4.17.21
       minimist: 1.2.6
       rxjs: 6.6.7
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  /wait-on/6.0.1:
+    resolution:
+      {
+        integrity: sha512-zht+KASY3usTY5u2LgaNqn/Cd8MukxLGjdcZxT2ns5QzDmTFc4XoWBgC+C/na+sMRZTuVygQoMYwdcVjHnYIVw==,
+      }
+    engines: { node: ">=10.0.0" }
+    hasBin: true
+    dependencies:
+      axios: 0.25.0
+      joi: 17.6.0
+      lodash: 4.17.21
+      minimist: 1.2.6
+      rxjs: 7.5.6
     transitivePeerDependencies:
       - debug
     dev: true
