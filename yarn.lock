@@ -3925,7 +3925,7 @@ __metadata:
     "@storybook/builder-webpack5": 6.5.9
     "@storybook/html": 6.5.9
     "@storybook/manager-webpack5": 6.5.9
-    "@storybook/test-runner": 0.3.0
+    "@storybook/test-runner": 0.5.0
     autoprefixer: 10.4.7
     babel-loader: 8.2.5
     concurrently: 7.3.0
@@ -5302,14 +5302,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test-runner@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@storybook/test-runner@npm:0.3.0"
+"@storybook/test-runner@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@storybook/test-runner@npm:0.5.0"
   dependencies:
     "@storybook/csf": 0.0.2--canary.4566f4d.1
+    can-bind-to-host: ^1.1.1
     commander: ^9.0.0
     global: ^4.4.0
-    is-localhost-ip: ^1.4.0
     jest-playwright-preset: ^1.7.2
     jest-serializer-html: ^7.1.0
     jest-watch-typeahead: ^1.0.0
@@ -5325,7 +5325,7 @@ __metadata:
     jest: ^26.6.3 || ^27.0.0
   bin:
     test-storybook: bin/test-storybook.js
-  checksum: 4f5e9612c1d1efce2163e3ecc5210e91651edfa1c37c3962103b8445e6280b4c75d5ad4681ce1333228db963c942653192379a3327b621caedcd6fca41f14651
+  checksum: e1a49d14f11f85ce4b20fc1ed947720f3f85cf703bfd271caa4fb49af53c3b0a80ebdb0148829ba91c837d0a3ee35ba58ff1b5cc5d7d6732f145b869411bdd56
   languageName: node
   linkType: hard
 
@@ -8227,6 +8227,15 @@ __metadata:
   version: 6.3.0
   resolution: "camelcase@npm:6.3.0"
   checksum: 8c96818a9076434998511251dcb2761a94817ea17dbdc37f47ac080bd088fc62c7369429a19e2178b993497132c8cbcf5cc1f44ba963e76782ba469c0474938d
+  languageName: node
+  linkType: hard
+
+"can-bind-to-host@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "can-bind-to-host@npm:1.1.2"
+  bin:
+    can-bind-to-host: dist/bin/can-bind-to-host.js
+  checksum: dba35c4a8ed477ebe6de4cb81d8668f4598b0af8681e515a23f1015be8f2983cd9f17c251e87b4be2d412794a744ca40f6e56ecc0fc92a4909bb44d1fdc1c19d
   languageName: node
   linkType: hard
 
@@ -13981,13 +13990,6 @@ __metadata:
   version: 1.0.1
   resolution: "is-lambda@npm:1.0.1"
   checksum: 93a32f01940220532e5948538699ad610d5924ac86093fcee83022252b363eb0cc99ba53ab084a04e4fb62bf7b5731f55496257a4c38adf87af9c4d352c71c35
-  languageName: node
-  linkType: hard
-
-"is-localhost-ip@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "is-localhost-ip@npm:1.4.0"
-  checksum: 5f3c64057fe02bd555b410e964157c31bc2e88223b4bf9ecdc060f0d8b346fcc569a09636a959f958483d5cd37ad609872a5a556dc7551fb15f93c5f74201852
   languageName: node
   linkType: hard
 
