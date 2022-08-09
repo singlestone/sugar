@@ -30,7 +30,7 @@
     "lint": "dts lint",
     "prepack": "dts build",
     "size": "size-limit",
-    "test": "dts test --passWithNoTests --passWithNoTests",
+    "test": "dts test --passWithNoTests",
     "test:ci": "dts test --passWithNoTests"
   },
   "dependencies": {
@@ -42,6 +42,7 @@
     "@babel/core": "7.18.9",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
+    "@types/tailwindcss": "3.0.10",
     "babel-jest": "27.5.1",
     "dts-cli": "1.5.2",
     "size-limit": "7.0.8"

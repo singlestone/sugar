@@ -1,4 +1,4 @@
-import colors from "tailwindcss/colors";
+import * as colors from "tailwindcss/colors";
 import { convertHexToRGBA, getShadeValue, SugarColorShades } from "../src";
 
 describe("color helpers", () => {

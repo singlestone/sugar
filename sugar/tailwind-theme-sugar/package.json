@@ -43,6 +43,7 @@
     "@singlestone/tailwind-helpers-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
     "@types/tailwindcss": "3.0.10",
+    "@types/jest": "27.5.2",
     "babel-jest": "27.5.1",
     "dts-cli": "1.5.2",
     "size-limit": "7.0.8",

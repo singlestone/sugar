@@ -10,7 +10,7 @@
       "tools/*"
     ]
   },
-  "packageManager": "yarn@3.2.2",
+  "packageManager": "pnpm@7.9.0",
   "scripts": {
     "build": "turbo run build",
     "build-storybook": "turbo run build-storybook",
@@ -42,6 +42,7 @@
     "@antfu/ni": "0.17.2",
     "@changesets/changelog-github": "0.4.6",
     "@changesets/cli": "2.23.0",
+    "@singlestone/prettier-config-sugar": "workspace:^",
     "@storybook/storybook-deployer": "2.8.11",
     "@tsconfig/create-react-app": "1.0.2",
     "@tsconfig/node12": "1.0.11",
@@ -54,13 +55,10 @@
     "prettier-plugin-pkg": "0.14.1",
     "pretty-quick": "3.1.3",
     "rimraf": "3.0.2",
+    "jest": "^27.0.0",
     "ts-jest": "27.1.5",
     "turbo": "1.3.4",
     "typescript": "4.7.4"
-  },
-  "resolutions": {
-    "@types/tailwindcss@3.0.10": "patch:@types/tailwindcss@npm:3.0.10#.yarn/patches/@types-tailwindcss-npm-3.0.10-bb45a42b16.patch",
-    "postcss-cli@9.1.0": "patch:postcss-cli@npm:9.1.0#.yarn/patches/postcss-cli-npm-9.1.0-ea2e55c876"
   },
   "storybook-deployer": {
     "commitMessage": "chore: deploy storybook"

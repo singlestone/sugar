@@ -110,14 +110,14 @@ If you want to go the usual route and run the project locally, though:
 
 - [Install Node.js](https://nodejs.org/en/download/)
   - We recommend using [Volta](https://volta.sh/) to install NodeJS
-- [Install Yarn](https://classic.yarnpkg.com/en/docs/install)
+- [Install pnpm](https://pnpm.io/installation)
 - [Setup an SSH key with GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 Then in your terminal:
 
 - `git clone git@github.com:singlestone/sugar.git`
 - `cd path/to/your/clone`
-- `yarn install`
+- `pnpm install`
 
 And you should be ready to go!
 
@@ -175,7 +175,7 @@ To contribute code:
 - If your PR is connected to an open issue, add a line in your PR's description that says `closes #123`, where `#123`
   is the number of the issue you're fixing.
 - This project uses [changesets](https://github.com/changesets/changesets) for release management, so please run
-  `yarn changeset` in your terminal to provide what packages should be bumped, their associated semver bump types,
+  `pnpm changeset` in your terminal to provide what packages should be bumped, their associated semver bump types,
   and some markdown which will be inserted into changelogs.
 
 Once you've filed the PR:
@@ -199,13 +199,13 @@ reload feature that will automatically rebuild the entire project when you make 
 To use live reload:
 
 - [Set up the project](#project-setup).
-- In your terminal, run `yarn dev`.
+- In your terminal, run `pnpm dev`.
 
 You can also run the [Storybooks](https://storybook.js.org/) for the projects by following these steps:
 
 - [Set up the project](#project-setup).
-- In your terminal, run `yarn dev`.
-- In your terminal, open a new window, and run `yarn storybook`.
+- In your terminal, run `pnpm dev`.
+- In your terminal, open a new window, and run `pnpm storybook`.
 
 ### Create a new Package
 
@@ -213,7 +213,7 @@ If you want to create a new package, we have good news! We've written some tooli
 a new package relatively painless. Follow the below steps to get started:
 
 - [Set up the project](#project-setup).
-- In your terminal, run `yarn generate`.
+- In your terminal, run `pnpm generate`.
 
 This will prompt you for a few inputs and then generate the necessary files.
 
