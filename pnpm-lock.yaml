@@ -63,11 +63,12 @@ importers:
       "@storybook/builder-webpack5": 6.5.9
       "@storybook/html": 6.5.9
       "@storybook/manager-webpack5": 6.5.9
-      "@storybook/test-runner": 0.3.0
+      "@storybook/test-runner": 0.5.0
       autoprefixer: 10.4.7
       babel-loader: 8.2.5
       concurrently: 7.3.0
       jest: 27.5.1
+      playwright: ^1.14.0
       postcss: 8.4.14
       postcss-cli: 10.0.0
       prettier: 2.7.1
@@ -99,11 +100,12 @@ importers:
       "@storybook/builder-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/html": 6.5.9_ptdt4cz4qaxvt5jw3ep4eiabwa
       "@storybook/manager-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
-      "@storybook/test-runner": 0.3.0_jest@27.5.1
+      "@storybook/test-runner": 0.5.0_jest@27.5.1
       autoprefixer: 10.4.7_postcss@8.4.14
       babel-loader: 8.2.5_sqoqrlbh4fciq6urcohea2fb5a
       concurrently: 7.3.0
       jest: 27.5.1
+      playwright: 1.24.2
       postcss: 8.4.14
       postcss-cli: 10.0.0_postcss@8.4.14
       prettier: 2.7.1
@@ -5281,14 +5283,14 @@ packages:
     dependencies:
       "@discoveryjs/json-ext": 0.5.7
       "@storybook/builder-webpack4": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
-      "@storybook/builder-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
+      "@storybook/builder-webpack5": 6.5.9
       "@storybook/core-client": 6.5.9_5f7f4oajfffdifcutnf2ilgsam
       "@storybook/core-common": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
       "@storybook/core-events": 6.5.9
       "@storybook/csf": 0.0.2--canary.4566f4d.1
       "@storybook/csf-tools": 6.5.9
       "@storybook/manager-webpack4": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
-      "@storybook/manager-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
+      "@storybook/manager-webpack5": 6.5.9
       "@storybook/node-logger": 6.5.9
       "@storybook/semver": 7.3.2
       "@storybook/store": 6.5.9_wcqkhtmu7mswc6yz4uyexck3ty
@@ -5361,10 +5363,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      "@storybook/builder-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
+      "@storybook/builder-webpack5": 6.5.9
       "@storybook/core-client": 6.5.9_gu36zpz44jbquqb5pucyrs7kna
       "@storybook/core-server": 6.5.9_dsn34nnkvqkaiyhkuuwv2j6gmm
-      "@storybook/manager-webpack5": 6.5.9_biqbaboplfbrettd7655fr4n2y
+      "@storybook/manager-webpack5": 6.5.9
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       webpack: 5.74.0
@@ -6076,10 +6078,10 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/test-runner/0.3.0_jest@27.5.1:
+  /@storybook/test-runner/0.5.0_jest@27.5.1:
     resolution:
       {
-        integrity: sha512-G2oommQRgB05tqNYyqm1Is6nh43f5Cyh3aGyhfaK5jjsRDkukL/sF2erf4Afxl1UTUbxwZonVype7YDyuT64Pw==,
+        integrity: sha512-It/lbQ5sBltyrYNozyN/TmI7fBaLupYQTrlvHikWdyVBOUDIWXKBeaR2M2GU2e+0BrqNY7u/JPJNP7diEBGO/Q==,
       }
     hasBin: true
     peerDependencies:
@@ -6089,9 +6091,9 @@ packages:
       jest: ^26.6.3 || ^27.0.0
     dependencies:
       "@storybook/csf": 0.0.2--canary.4566f4d.1
+      can-bind-to-host: 1.1.2
       commander: 9.4.0
       global: 4.4.0
-      is-localhost-ip: 1.4.0
       jest: 27.5.1
       jest-playwright-preset: 1.7.2_jest@27.5.1
       jest-serializer-html: 7.1.0
@@ -9020,6 +9022,14 @@ packages:
         integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==,
       }
     engines: { node: ">=10" }
+
+  /can-bind-to-host/1.1.2:
+    resolution:
+      {
+        integrity: sha512-CqsgmaqiyFRNtP17Ihqa/uHbZxRirntNVNl/kJz31DLKuNRfzvzionkLoUSkElQ6Cz+cpXKA3mhHq4tjbieujA==,
+      }
+    hasBin: true
+    dev: true
 
   /caniuse-api/3.0.0:
     resolution:
@@ -14801,14 +14811,6 @@ packages:
         integrity: sha512-qP1vozQRI+BMOPcjFzrjXuQvdak2pHNUMZoeG2eRbiSqyvbEf/wQtEOTOX1guk6E3t36RkaqiSt8A/6YElNxLQ==,
       }
     engines: { node: ">=12" }
-    dev: true
-
-  /is-localhost-ip/1.4.0:
-    resolution:
-      {
-        integrity: sha512-cN7SzlY7BVxSeoJu5equjsZaKSgD4HCfXrTwu0Jgbq5BbT1BU+D7Lyi/l1KO8H0un0JTlxcQaT/GWVapu+DIDg==,
-      }
-    engines: { node: ">=10" }
     dev: true
 
   /is-map/2.0.2:
