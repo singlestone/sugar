@@ -40,10 +40,8 @@
     "lint": "stylelint src/**/*.css",
     "prepack": "rimraf dist && concurrently 'yarn:build:*'",
     "storybook": "start-storybook -p 6006",
-    "test": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\"",
     "test-storybook": "test-storybook",
-    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\"",
-    "test:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\""
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\""
   },
   "devDependencies": {
     "@babel/core": "7.18.9",
