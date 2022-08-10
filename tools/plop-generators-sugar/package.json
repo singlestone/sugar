@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/plop-generators-sugar",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Plop generators config for Sugar",
   "repository": {
     "type": "git",
