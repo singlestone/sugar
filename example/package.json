@@ -1,0 +1,23 @@
+{
+  "name": "@singlestone/sugar-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf .turbo node_modules dist",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@singlestone/tailwind-plugin-core-sugar": "workspace:^",
+    "tailwindcss": "3.0.24"
+  },
+  "devDependencies": {
+    "@singlestone/eslint-config-sugar": "workspace:^",
+    "@singlestone/postcss-preset-sugar": "workspace:^",
+    "@singlestone/prettier-config-sugar": "workspace:^",
+    "prettier": "2.7.1",
+    "vite": "3.0.0"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
