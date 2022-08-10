@@ -12,8 +12,8 @@ SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PRE_COMMANDS:
   - continue_if_failed: false
-    command: curl -fsSL "https://github.com/pnpm/pnpm/releases/download/v7.9.0/pnpm-linuxstatic-x64" -o /bin/pnpm; chmod +x /bin/pnpm
-    cwd: workspace
+    command: npm install pnpm
+    cwd: root
   - continue_if_failed: false
     command: pnpm install
     cwd: workspace
