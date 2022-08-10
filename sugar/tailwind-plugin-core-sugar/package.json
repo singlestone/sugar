@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-core-sugar",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Core plugin for the sugar design system",
   "repository": {
     "type": "git",
