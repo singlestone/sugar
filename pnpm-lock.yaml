@@ -55,7 +55,6 @@ importers:
       "@singlestone/postcss-preset-sugar": workspace:^
       "@singlestone/prettier-config-sugar": workspace:^
       "@singlestone/tailwind-plugin-core-sugar": workspace:^
-      "@singlestone/tailwind-preset-sugar": workspace:^
       "@storybook/addon-actions": 6.5.9
       "@storybook/addon-essentials": 6.5.9
       "@storybook/addon-links": 6.5.9
@@ -92,7 +91,6 @@ importers:
       "@singlestone/postcss-preset-sugar": link:../../tools/postcss-preset-sugar
       "@singlestone/prettier-config-sugar": link:../../tools/prettier-config-sugar
       "@singlestone/tailwind-plugin-core-sugar": link:../tailwind-plugin-core-sugar
-      "@singlestone/tailwind-preset-sugar": link:../tailwind-preset-sugar
       "@storybook/addon-actions": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/addon-essentials": 6.5.9_nca7kiwwl4c4zwzd2kflud6jzi
       "@storybook/addon-links": 6.5.9_biqbaboplfbrettd7655fr4n2y
@@ -306,68 +304,6 @@ importers:
       size-limit: 7.0.8
       tailwindcss: 3.0.24
       ts-jest: 27.1.5_c6nfml6tmlsu53kudjgflbfxoe
-
-  sugar/tailwind-preset-sugar:
-    specifiers:
-      "@babel/core": 7.18.9
-      "@singlestone/eslint-config-sugar": workspace:^
-      "@singlestone/prettier-config-sugar": workspace:^
-      "@singlestone/tailwind-helpers-sugar": workspace:^
-      "@singlestone/tailwind-plugin-buttons-sugar": workspace:^
-      "@singlestone/tailwind-plugin-form-sugar": workspace:^
-      "@singlestone/tailwind-theme-sugar": workspace:^
-      "@size-limit/preset-small-lib": 7.0.8
-      "@types/jest": 27.5.2
-      "@types/tailwindcss": 3.0.10
-      babel-jest: 27.5.1
-      dts-cli: 1.5.2
-      size-limit: 7.0.8
-      ts-jest: 27.1.5
-      typescript: 4.7.4
-    devDependencies:
-      "@babel/core": 7.18.9
-      "@singlestone/eslint-config-sugar": link:../../tools/eslint-config-sugar
-      "@singlestone/prettier-config-sugar": link:../../tools/prettier-config-sugar
-      "@singlestone/tailwind-helpers-sugar": link:../tailwind-helpers-sugar
-      "@singlestone/tailwind-plugin-buttons-sugar": link:../tailwind-plugin-buttons-sugar
-      "@singlestone/tailwind-plugin-form-sugar": link:../tailwind-plugin-form-sugar
-      "@singlestone/tailwind-theme-sugar": link:../tailwind-theme-sugar
-      "@size-limit/preset-small-lib": 7.0.8_size-limit@7.0.8
-      "@types/jest": 27.5.2
-      "@types/tailwindcss": 3.0.10
-      babel-jest: 27.5.1_@babel+core@7.18.9
-      dts-cli: 1.5.2_babel-jest@27.5.1
-      size-limit: 7.0.8
-      ts-jest: 27.1.5_3mktufrkfgjdf6fhk55tsot3jq
-      typescript: 4.7.4
-
-  sugar/tailwind-theme-sugar:
-    specifiers:
-      "@babel/core": 7.18.9
-      "@singlestone/eslint-config-sugar": workspace:^
-      "@singlestone/prettier-config-sugar": workspace:^
-      "@singlestone/tailwind-helpers-sugar": workspace:^
-      "@size-limit/preset-small-lib": 7.0.8
-      "@types/jest": 27.5.2
-      "@types/tailwindcss": 3.0.10
-      babel-jest: 27.5.1
-      dts-cli: 1.5.2
-      size-limit: 7.0.8
-      ts-jest: 27.1.5
-      typescript: 4.7.4
-    devDependencies:
-      "@babel/core": 7.18.9
-      "@singlestone/eslint-config-sugar": link:../../tools/eslint-config-sugar
-      "@singlestone/prettier-config-sugar": link:../../tools/prettier-config-sugar
-      "@singlestone/tailwind-helpers-sugar": link:../tailwind-helpers-sugar
-      "@size-limit/preset-small-lib": 7.0.8_size-limit@7.0.8
-      "@types/jest": 27.5.2
-      "@types/tailwindcss": 3.0.10
-      babel-jest: 27.5.1_@babel+core@7.18.9
-      dts-cli: 1.5.2_babel-jest@27.5.1
-      size-limit: 7.0.8
-      ts-jest: 27.1.5_3mktufrkfgjdf6fhk55tsot3jq
-      typescript: 4.7.4
 
   tools/eslint-config-sugar:
     specifiers:
