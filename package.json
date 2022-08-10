@@ -27,7 +27,7 @@
     "lint": "turbo run lint",
     "lint:changed": "turbo run lint --since=origin/main",
     "postinstall": "is-ci || husky install && nr build",
-    "release": "yarn build && changeset publish",
+    "release": "pnpm build && changeset publish",
     "storybook": "turbo run storybook --no-cache --parallel --continue",
     "test": "turbo run test",
     "test-storybook": "turbo run test-storybook",
@@ -66,7 +66,6 @@
   "style": "dist/index.min.css",
   "volta": {
     "node": "16.16.0",
-    "npm": "8.15.0",
-    "yarn": "1.22.19"
+    "npm": "8.15.0"
   }
 }

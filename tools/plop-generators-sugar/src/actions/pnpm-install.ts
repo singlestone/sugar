@@ -4,19 +4,15 @@ import { join } from "path";
 
 const didSucceed = (code: number | null) => code === 0;
 
-export const yarnInstall: CustomActionFunction = (
-  answers,
-  config,
-  plop
-): Promise<string> => {
+export const pnpmInstall: CustomActionFunction = (answers): Promise<string> => {
   const cwd = join(process.cwd(), answers.packageType, answers.packageName);
   return new Promise((resolve, reject) => {
-    const process = spawn("yarn", ["install"], { cwd, stdio: "inherit" });
+    const process = spawn("pnpm", ["install"], { cwd, stdio: "inherit" });
     process.on("close", (code) => {
       if (didSucceed(code)) {
-        resolve(`yarn install completed successfully`);
+        resolve(`pnpm install completed successfully`);
       } else {
-        reject(`yarn install failed with exit code ${code}`);
+        reject(`pnpm install failed with exit code ${code}`);
       }
     });
     process.on("error", (err) => {

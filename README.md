@@ -30,19 +30,7 @@
 ## Install
 
 ```shell
-yarn install
-```
-
-## Run tests
-
-```shell
-yarn test
-```
-
-## Run example project for testing
-
-```shell
-yarn dev
+pnpm install
 ```
 
 ## Author
