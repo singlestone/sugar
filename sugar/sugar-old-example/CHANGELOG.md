@@ -1,5 +1,11 @@
 # @singlestone/sugar-old-example
 
+## 0.2.2
+
+### Patch Changes
+
+- [#57](https://github.com/singlestone/sugar/pull/57) [`81b569a`](https://github.com/singlestone/sugar/commit/81b569aa813356b15fc4bb5ad4a2919ef02a8c2f) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - remove @singlestone/sugar-compiled
+
 ## 0.2.1
 
 ### Patch Changes
