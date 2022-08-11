@@ -345,7 +345,7 @@ importers:
       '@size-limit/preset-small-lib': 7.0.8
       '@types/jest': 27.5.2
       '@types/node': 16.11.45
-      '@types/prettier': 2.6.3
+      '@types/prettier': 2.7.0
       babel-jest: 27.5.1
       dts-cli: 1.5.2
       prettier: 2.7.1
@@ -366,7 +366,7 @@ importers:
       '@size-limit/preset-small-lib': 7.0.8_size-limit@7.0.8
       '@types/jest': 27.5.2
       '@types/node': 16.11.45
-      '@types/prettier': 2.6.3
+      '@types/prettier': 2.7.0
       babel-jest: 27.5.1_@babel+core@7.18.9
       dts-cli: 1.5.2_iai5srmircnfjtb4yhpalh5c3q
       prettier: 2.7.1
@@ -381,7 +381,7 @@ importers:
       '@size-limit/preset-small-lib': 7.0.8
       '@types/jest': 27.5.2
       '@types/node': 16.11.45
-      '@types/prettier': 2.6.3
+      '@types/prettier': 2.7.0
       babel-jest: 27.5.1
       dts-cli: 1.5.2
       postcss: 8.4.14
@@ -399,7 +399,7 @@ importers:
       '@size-limit/preset-small-lib': 7.0.8_size-limit@7.0.8
       '@types/jest': 27.5.2
       '@types/node': 16.11.45
-      '@types/prettier': 2.6.3
+      '@types/prettier': 2.7.0
       babel-jest: 27.5.1_@babel+core@7.18.9
       dts-cli: 1.5.2_iai5srmircnfjtb4yhpalh5c3q
       postcss: 8.4.14
@@ -4398,10 +4398,6 @@ packages:
     resolution: {integrity: sha512-rYonq8jtSbdbBKNpi2xzi9CGFF7IcS/tzX6vMKFH1TMberRgTgTzYqCzRHPavBej/KId/AJd255iDSOsLv8esQ==}
     dependencies:
       postcss: 8.4.14
-    dev: true
-
-  /@types/prettier/2.6.3:
-    resolution: {integrity: sha512-ymZk3LEC/fsut+/Q5qejp6R9O1rMxz3XaRHDV6kX8MrGAhOSPqVARbDi+EZvInBpw+BnCX3TD240byVkOfQsHg==}
     dev: true
 
   /@types/prettier/2.7.0:
