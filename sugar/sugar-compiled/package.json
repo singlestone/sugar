@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-compiled",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Compiled implementation of Sugar.",
   "repository": {
     "type": "git",
