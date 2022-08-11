@@ -389,7 +389,7 @@ importers:
       prettier: 2.7.1
       prettier-plugin-organize-imports: 2.3.4
       prettier-plugin-pkg: 0.14.1
-      prettier-plugin-tailwindcss: 0.1.11
+      prettier-plugin-tailwindcss: 0.1.13
       size-limit: 7.0.8
       ts-jest: 27.1.5
       typescript: 4.7.4
@@ -407,7 +407,7 @@ importers:
       prettier: 2.7.1
       prettier-plugin-organize-imports: 2.3.4_gd3y7r3s3evy6b2vthd7dmacga
       prettier-plugin-pkg: 0.14.1_prettier@2.7.1
-      prettier-plugin-tailwindcss: 0.1.11_prettier@2.7.1
+      prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
       size-limit: 7.0.8
       ts-jest: 27.1.5_3mktufrkfgjdf6fhk55tsot3jq
       typescript: 4.7.4
@@ -13427,15 +13427,6 @@ packages:
       prettier: 2.7.1
     dev: false
 
-  /prettier-plugin-tailwindcss/0.1.11_prettier@2.7.1:
-    resolution: {integrity: sha512-a28+1jvpIZQdZ/W97wOXb6VqI762MKE/TxMMuibMEHhyYsSxQA8Ek30KObd5kJI2HF1ldtSYprFayXJXi3pz8Q==}
-    engines: {node: '>=12.17.0'}
-    peerDependencies:
-      prettier: '>=2.2.0'
-    dependencies:
-      prettier: 2.7.1
-    dev: true
-
   /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
     resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
     engines: {node: '>=12.17.0'}
@@ -13443,7 +13434,6 @@ packages:
       prettier: '>=2.2.0'
     dependencies:
       prettier: 2.7.1
-    dev: false
 
   /prettier/1.19.1:
     resolution: {integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==}
