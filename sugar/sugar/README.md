@@ -1,4 +1,4 @@
-# tailwind-plugin-core-sugar
+# sugar
 
 > Core plugin for the sugar design system
 
@@ -17,7 +17,7 @@ Inside the Sugar monorepo, install it with a dev dependency like so:
 ```json
 {
   "devDependencies": {
-    "@singlestone/tailwind-plugin-core-sugar": "workspace:^"
+    "@singlestone/sugar": "workspace:^"
   }
 }
 ```

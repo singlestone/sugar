@@ -54,7 +54,7 @@ importers:
       "@singlestone/eslint-config-sugar": workspace:^
       "@singlestone/postcss-preset-sugar": workspace:^
       "@singlestone/prettier-config-sugar": workspace:^
-      "@singlestone/tailwind-plugin-core-sugar": workspace:^
+      "@singlestone/sugar": workspace:^
       "@storybook/addon-actions": 6.5.9
       "@storybook/addon-essentials": 6.5.9
       "@storybook/addon-links": 6.5.9
@@ -90,7 +90,7 @@ importers:
       "@singlestone/eslint-config-sugar": link:../../tools/eslint-config-sugar
       "@singlestone/postcss-preset-sugar": link:../../tools/postcss-preset-sugar
       "@singlestone/prettier-config-sugar": link:../../tools/prettier-config-sugar
-      "@singlestone/tailwind-plugin-core-sugar": link:../tailwind-plugin-core-sugar
+      "@singlestone/sugar": link:../sugar
       "@storybook/addon-actions": 6.5.9_biqbaboplfbrettd7655fr4n2y
       "@storybook/addon-essentials": 6.5.9_nca7kiwwl4c4zwzd2kflud6jzi
       "@storybook/addon-links": 6.5.9_biqbaboplfbrettd7655fr4n2y
@@ -229,7 +229,7 @@ importers:
       tailwindcss: 3.0.24
       ts-jest: 27.1.5_fcyj66gors2eo5ihtdsp6fisfu
 
-  sugar/tailwind-plugin-core-sugar:
+  sugar/sugar:
     specifiers:
       "@babel/core": 7.18.9
       "@singlestone/prettier-config-sugar": workspace:^

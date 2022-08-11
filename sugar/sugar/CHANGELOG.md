@@ -1,4 +1,4 @@
-# @singlestone/tailwind-plugin-core-sugar
+# @singlestone/sugar
 
 ## 0.1.0
 

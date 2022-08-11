@@ -1,13 +1,13 @@
 {
-  "name": "@singlestone/tailwind-plugin-core-sugar",
+  "name": "@singlestone/sugar",
   "version": "0.1.0",
   "description": "Core plugin for the sugar design system",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/tailwind-plugin-core-sugar"
+    "directory": "sugar/sugar"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/tailwind-plugin-core-sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/sugar#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
@@ -17,7 +17,7 @@
     "node": "^12 || ^14 || >=16"
   },
   "main": "./dist/index.js",
-  "module": "./dist/tailwind-plugin-core-sugar.esm.js",
+  "module": "./dist/sugar.esm.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -53,11 +53,11 @@
   },
   "size-limit": [
     {
-      "path": "./dist/tailwind-plugin-core-sugar.cjs.production.min.js",
+      "path": "./dist/sugar.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/tailwind-plugin-core-sugar.esm.js",
+      "path": "./dist/sugar.esm.js",
       "limit": "10 KB"
     }
   ],
