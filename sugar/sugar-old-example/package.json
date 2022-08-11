@@ -7,12 +7,12 @@
     "clean": "rimraf .turbo node_modules dist",
     "dev": "vite"
   },
-  "dependencies": {
-    "@singlestone/sugar-compiled": "workspace:^"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:^",
+    "@singlestone/postcss-preset-sugar": "workspace:^",
     "@singlestone/prettier-config-sugar": "workspace:^",
+    "@singlestone/sugar": "workspace:^",
     "prettier": "2.7.1",
     "stylelint": "14.9.1",
     "stylelint-config-prettier": "9.0.3",
@@ -20,7 +20,11 @@
     "stylelint-prettier": "2.0.0",
     "ts-jest": "27.1.5",
     "typescript": "4.7.4",
-    "vite": "3.0.0"
+    "vite": "3.0.0",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "3.0.24",
+    "postcss-load-config": "^4.0.1"
   },
   "volta": {
     "extends": "../../package.json"
