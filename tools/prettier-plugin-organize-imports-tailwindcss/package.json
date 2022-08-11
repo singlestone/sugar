@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/prettier-plugin-organize-imports-tailwindcss",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "PostCSS config for Sugar",
   "repository": {
     "type": "git",

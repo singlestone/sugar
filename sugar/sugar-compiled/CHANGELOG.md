@@ -1,5 +1,11 @@
 # @singlestone/sugar-compiled
 
+## 0.2.1
+
+### Patch Changes
+
+- [#55](https://github.com/singlestone/sugar/pull/55) [`2b9a0ce`](https://github.com/singlestone/sugar/commit/2b9a0cea868430f0525ecf6c4b276dcd17e69284) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - republish all packages
+
 ## 0.2.0
 
 ### Minor Changes
