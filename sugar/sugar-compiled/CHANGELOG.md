@@ -1,4 +1,4 @@
-# @singlestone/sugar
+# @singlestone/sugar-compiled
 
 ## 0.1.0
 

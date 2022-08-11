@@ -8,7 +8,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@singlestone/sugar": "workspace:^"
+    "@singlestone/sugar-compiled": "workspace:^"
   },
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:^",

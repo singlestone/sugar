@@ -45,7 +45,7 @@ importers:
       turbo: 1.4.3
       typescript: 4.7.4
 
-  sugar/sugar:
+  sugar/sugar-compiled:
     specifiers:
       "@babel/core": 7.18.9
       "@babel/preset-env": 7.18.9
@@ -123,7 +123,7 @@ importers:
     specifiers:
       "@singlestone/eslint-config-sugar": workspace:^
       "@singlestone/prettier-config-sugar": workspace:^
-      "@singlestone/sugar": workspace:^
+      "@singlestone/sugar-compiled": workspace:^
       prettier: 2.7.1
       stylelint: 14.9.1
       stylelint-config-prettier: 9.0.3
@@ -133,7 +133,7 @@ importers:
       typescript: 4.7.4
       vite: 3.0.0
     dependencies:
-      "@singlestone/sugar": link:../sugar
+      "@singlestone/sugar-compiled": link:../sugar-compiled
     devDependencies:
       "@singlestone/eslint-config-sugar": link:../../tools/eslint-config-sugar
       "@singlestone/prettier-config-sugar": link:../../tools/prettier-config-sugar
@@ -2569,7 +2569,7 @@ packages:
     dependencies:
       "@jridgewell/trace-mapping": 0.3.9
 
-  /@csstools/selector-specificity/2.0.2_444rcjjorr3kpoqtvoodsr46pu:
+  /@csstools/selector-specificity/2.0.2_pnx64jze6bptzcedy5bidi3zdi:
     resolution:
       {
         integrity: sha512-IkpVW/ehM1hWKln4fCA3NzJU8KwD+kIOvPZA4cqxoJHtE21CCzjyp+Kxbu0i5I4tBNOlXPL9mjwnWlL0VEG4Fg==,
@@ -2579,7 +2579,7 @@ packages:
       postcss: ^8.2
       postcss-selector-parser: ^6.0.10
     dependencies:
-      postcss: 8.4.14
+      postcss: 8.4.16
       postcss-selector-parser: 6.0.10
     dev: true
 
@@ -8792,7 +8792,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -19587,7 +19587,7 @@ packages:
       }
     dev: true
 
-  /postcss-safe-parser/6.0.0_postcss@8.4.14:
+  /postcss-safe-parser/6.0.0_postcss@8.4.16:
     resolution:
       {
         integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==,
@@ -19596,7 +19596,7 @@ packages:
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.14
+      postcss: 8.4.16
     dev: true
 
   /postcss-selector-parser/6.0.10:
@@ -19940,20 +19940,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-    dev: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution:
-      {
-        integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==,
-      }
-    peerDependencies:
-      bluebird: "*"
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.5:
@@ -22507,7 +22493,7 @@ packages:
     engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
     hasBin: true
     dependencies:
-      "@csstools/selector-specificity": 2.0.2_444rcjjorr3kpoqtvoodsr46pu
+      "@csstools/selector-specificity": 2.0.2_pnx64jze6bptzcedy5bidi3zdi
       balanced-match: 2.0.0
       colord: 2.9.2
       cosmiconfig: 7.0.1
@@ -22532,10 +22518,10 @@ packages:
       micromatch: 4.0.5
       normalize-path: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.14
+      postcss: 8.4.16
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0_postcss@8.4.14
+      postcss-safe-parser: 6.0.0_postcss@8.4.16
       postcss-selector-parser: 6.0.10
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0

@@ -1,4 +1,4 @@
-# sugar
+# sugar-compiled
 
 > SingleStone's sweet design system, built with Tailwind.
 

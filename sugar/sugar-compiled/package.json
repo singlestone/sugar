@@ -1,5 +1,5 @@
 {
-  "name": "@singlestone/sugar",
+  "name": "@singlestone/sugar-compiled",
   "version": "0.1.0",
   "description": "Compiled implementation of Sugar.",
   "repository": {
@@ -7,7 +7,7 @@
     "url": "https://github.com/singlestone/sugar.git",
     "directory": "sugar/sugar"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/packages/sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/packages/sugar-compiled#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
