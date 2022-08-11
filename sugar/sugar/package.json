@@ -84,8 +84,8 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "style": "dist/index.min.css",
-  "unpkg": "dist/index.min.css",
+  "style": "./dist/index.min.css",
+  "unpkg": "./dist/index.min.css",
   "volta": {
     "extends": "../../package.json"
   }
