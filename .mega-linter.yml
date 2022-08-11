@@ -12,7 +12,10 @@ SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
 PRE_COMMANDS:
   - continue_if_failed: false
-    command: npm i -g pnpm
+    command: corepack enable
+    cwd: workspace
+  - continue_if_failed: false
+    command: corepack prepare pnpm@7.9.0 --activate
     cwd: workspace
   - continue_if_failed: false
     command: pnpm install

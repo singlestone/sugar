@@ -118,6 +118,7 @@ Then in your terminal:
 - `git clone git@github.com:singlestone/sugar.git`
 - `cd path/to/your/clone`
 - `pnpm install`
+- `pnpm build`
 
 And you should be ready to go!
 

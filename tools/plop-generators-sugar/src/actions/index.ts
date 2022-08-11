@@ -1,1 +1,1 @@
-export * from "./yarn-install";
+export * from "./pnpm-install";

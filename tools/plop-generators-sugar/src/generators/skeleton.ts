@@ -1,6 +1,6 @@
 import { PlopGeneratorConfig } from "node-plop";
 import { join } from "path";
-import { yarnInstall } from "../actions";
+import { pnpmInstall } from "../actions";
 
 const resolveTemplateFile = (fileName: string) =>
   join(__dirname, "generators", "templates", "skeleton", fileName);
@@ -73,6 +73,6 @@ export const skeleton: PlopGeneratorConfig = {
       path: "{{packageType}}/{{packageName}}/tsconfig.json",
       templateFile: resolveTemplateFile("tsconfig.json"),
     },
-    yarnInstall,
+    pnpmInstall,
   ],
 };

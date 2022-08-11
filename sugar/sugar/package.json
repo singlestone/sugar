@@ -29,19 +29,19 @@
     "system"
   ],
   "scripts": {
-    "build": "rimraf dist && concurrently 'yarn:build:*'",
+    "build": "rimraf dist && concurrently 'pnpm:build:*'",
     "build-storybook": "build-storybook",
     "build:minified": "postcss --env production -o dist/index.min.css src/index.css",
     "build:unminified": "postcss -o dist/index.css src/index.css",
     "clean": "rimraf .turbo node_modules dist",
-    "dev": "concurrently 'yarn:dev:*'",
+    "dev": "concurrently 'pnpm:dev:*'",
     "dev:minified": "postcss --env production --verbose -w -o dist/index.min.css src/index.css",
     "dev:unminified": "postcss --verbose -w -o dist/index.css src/index.css",
     "lint": "stylelint src/**/*.css",
-    "prepack": "rimraf dist && concurrently 'yarn:build:*'",
+    "prepack": "rimraf dist && concurrently 'pnpm:build:*'",
     "storybook": "start-storybook -p 6006",
     "test-storybook": "playwright install && test-storybook",
-    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && yarn test-storybook\""
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"npx wait-on tcp:6006 && pnpm test-storybook\""
   },
   "devDependencies": {
     "@babel/core": "7.18.9",
@@ -84,8 +84,8 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  "style": "dist/index.min.css",
-  "unpkg": "dist/index.min.css",
+  "style": "./dist/index.min.css",
+  "unpkg": "./dist/index.min.css",
   "volta": {
     "extends": "../../package.json"
   }
