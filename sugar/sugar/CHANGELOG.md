@@ -1,5 +1,11 @@
 # @singlestone/sugar
 
+## 0.2.0
+
+### Minor Changes
+
+- [#52](https://github.com/singlestone/sugar/pull/52) [`067870c`](https://github.com/singlestone/sugar/commit/067870c9daebd50c5710df91e7f065f964f0b3f1) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - rename @singlestone/tailwind-plugin-core-sugar to @singlestone/sugar
+
 ## 0.1.0
 
 ### Minor Changes
