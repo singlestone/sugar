@@ -28,7 +28,7 @@
     "build": "dts build && cpy '**/templates/**/*' '../dist/' --cwd=src --parents",
     "clean": "rimraf .turbo node_modules dist",
     "lint": "dts lint",
-    "prepack": "dts build",
+    "prepare": "dts build",
     "size": "size-limit",
     "test": "dts test --passWithNoTests",
     "test:ci": "dts test --passWithNoTests"
