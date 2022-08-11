@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("@singlestone/tailwind-plugin-core-sugar").sugarCorePlugin({
+    require("@singlestone/sugar").sugarCorePlugin({
       prefix: "sugar",
     }),
   ],
