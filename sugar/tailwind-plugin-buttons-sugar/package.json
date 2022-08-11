@@ -30,7 +30,7 @@
     "clean": "rimraf .turbo node_modules dist",
     "dev": "dts watch --noClean",
     "lint": "dts lint",
-    "prepack": "dts build",
+    "prepare": "dts build",
     "size": "size-limit",
     "storybook": "start-storybook -p 6009",
     "test": "dts test --passWithNoTests",

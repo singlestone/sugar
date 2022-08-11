@@ -3,13 +3,6 @@
   "version": "0.0.0",
   "description": "SingleStone's sweet design system.",
   "private": true,
-  "workspaces": {
-    "packages": [
-      "spice/*",
-      "sugar/*",
-      "tools/*"
-    ]
-  },
   "packageManager": "pnpm@7.9.0",
   "scripts": {
     "build": "turbo run build",
@@ -26,7 +19,7 @@
     "generate": "plop",
     "lint": "turbo run lint",
     "lint:changed": "turbo run lint --since=origin/main",
-    "postinstall": "is-ci || husky install",
+    "prepare": "is-ci || husky install",
     "release": "pnpm build && changeset publish",
     "storybook": "turbo run storybook --no-cache --parallel --continue",
     "test": "turbo run test",
@@ -63,7 +56,6 @@
   "storybook-deployer": {
     "commitMessage": "chore: deploy storybook"
   },
-  "style": "dist/index.min.css",
   "volta": {
     "node": "16.16.0",
     "npm": "8.15.0"

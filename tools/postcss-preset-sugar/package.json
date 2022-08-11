@@ -29,7 +29,7 @@
     "clean": "rimraf .turbo node_modules dist",
     "dev": "dts watch --noClean --verbose",
     "lint": "dts lint",
-    "prepack": "dts build",
+    "prepare": "dts build",
     "size": "size-limit",
     "test": "dts test --passWithNoTests",
     "test:ci": "dts test --passWithNoTests"
