@@ -8,7 +8,7 @@ importers:
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.23.0
       '@singlestone/prettier-config-sugar': workspace:^
-      '@storybook/storybook-deployer': 2.8.11
+      '@storybook/storybook-deployer': 2.8.12
       '@tsconfig/create-react-app': 1.0.2
       '@tsconfig/node12': 1.0.11
       doctoc: 2.2.0
@@ -29,7 +29,7 @@ importers:
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.23.0
       '@singlestone/prettier-config-sugar': link:tools/prettier-config-sugar
-      '@storybook/storybook-deployer': 2.8.11
+      '@storybook/storybook-deployer': 2.8.12
       '@tsconfig/create-react-app': 1.0.2
       '@tsconfig/node12': 1.0.11
       doctoc: 2.2.0
@@ -4061,8 +4061,8 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/storybook-deployer/2.8.11:
-    resolution: {integrity: sha512-0jaMvMzu1F0TwBSxWm+cpeybB/TSaeepHXDCf7eYilRw51Ijtq5XiwnOTNf1LoXmdeEMLkRnflfj2JWjeQYp/Q==}
+  /@storybook/storybook-deployer/2.8.12:
+    resolution: {integrity: sha512-1mPVG+kYLoKSTg2/cCCaY0CwS55+t7pcLEbIDx3KY+16gyFIW01UvlHdIJWRIm4d6GIGuEL1a4ChDgIJ464Ihw==}
     hasBin: true
     dependencies:
       git-url-parse: 11.6.0
