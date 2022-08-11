@@ -25,44 +25,45 @@
   ],
   "scripts": {
     "analyze": "size-limit --why",
-    "build": "dts build",
+    "build": "tsup",
     "clean": "rimraf .turbo node_modules dist",
-    "dev": "dts watch --noClean --verbose",
-    "lint": "dts lint",
-    "prepare": "dts build",
+    "dev": "tsup --watch --noClean --verbose",
+    "lint": "eslint src test",
+    "prepare": "tsup",
     "size": "size-limit",
-    "test": "dts test --passWithNoTests",
-    "test:ci": "dts test --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:ci": "jest --passWithNoTests"
   },
   "peerDependencies": {
     "prettier": "^2.5.1"
   },
   "dependencies": {
     "@singlestone/prettier-plugin-organize-imports-tailwindcss": "workspace:^",
-    "prettier-plugin-pkg": "^0.14.0",
-    "prettier-plugin-tailwindcss": "^0.1.8",
+    "prettier-plugin-pkg": "^0.16.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "typescript": "^4.6.2"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9",
+    "@babel/core": "7.18.10",
     "@singlestone/eslint-config-sugar": "workspace:^",
-    "@size-limit/preset-small-lib": "7.0.8",
-    "@types/jest": "27.5.2",
+    "@singlestone/tsup-config-sugar": "workspace:^",
+    "@size-limit/preset-small-lib": "8.0.0",
+    "@types/jest": "28.1.6",
     "@types/node": "16.11.45",
-    "@types/prettier": "2.6.3",
-    "babel-jest": "27.5.1",
-    "dts-cli": "1.5.2",
+    "@types/prettier": "2.7.0",
+    "babel-jest": "28.1.3",
+    "eslint": "8.21.0",
+    "jest": "28.1.3",
+    "jest-environment-jsdom": "28.1.3",
     "prettier": "2.7.1",
-    "prettier-plugin-organize-imports": "2.3.4",
-    "size-limit": "7.0.8",
-    "ts-jest": "27.1.5"
+    "prettier-plugin-organize-imports": "3.0.3",
+    "size-limit": "8.0.0",
+    "ts-jest": "28.0.7",
+    "tsup": "5.12.7"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
-  },
-  "jest": {
-    "testEnvironment": "node"
   },
   "prettier": {
     "plugins": [

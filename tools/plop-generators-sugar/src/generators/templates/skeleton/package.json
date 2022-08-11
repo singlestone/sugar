@@ -25,21 +25,22 @@
   ],
   "scripts": {
     "analyze": "size-limit --why",
-    "build": "dts build",
+    "build": "tsup",
     "clean": "rimraf .turbo node_modules dist",
-    "lint": "dts lint",
-    "prepare": "dts build",
+    "lint": "eslint src test",
+    "prepare": "tsup",
     "size": "size-limit",
-    "test": "dts test --passWithNoTests",
-    "test:ci": "dts test --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:ci": "jest --passWithNoTests"
   },
   "peerDependencies": {},
   "devDependencies": {
+    "@singlestone/tsup-config-sugar": "workspace:^",
+    "tsup": "5.12.7",
     "@babel/core": "7.18.9",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "7.0.8",
     "babel-jest": "27.5.1",
-    "dts-cli": "1.5.2",
     "size-limit": "7.0.8"
   },
   "publishConfig": {

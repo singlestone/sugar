@@ -25,42 +25,40 @@
   ],
   "scripts": {
     "analyze": "size-limit --why",
-    "build": "dts build && cpy '**/templates/**/*' '../dist/' --cwd=src --parents",
+    "build": "tsup && cpy '**/templates/**/*' '../dist/' --cwd=src --parents",
     "clean": "rimraf .turbo node_modules dist",
-    "lint": "dts lint",
-    "prepare": "dts build",
+    "lint": "eslint src test",
+    "prepare": "tsup",
     "size": "size-limit",
-    "test": "dts test --passWithNoTests",
-    "test:ci": "dts test --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "test:ci": "jest --passWithNoTests"
   },
   "peerDependencies": {
     "node-plop": "~0.30.0 || ~0.31.0",
     "plop": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9",
+    "@singlestone/tsup-config-sugar": "workspace:^",
+    "tsup": "5.12.7",
+    "@babel/core": "7.18.10",
     "@singlestone/eslint-config-sugar": "workspace:^",
+    "eslint": "8.21.0",
     "@singlestone/prettier-config-sugar": "workspace:^",
-    "@size-limit/preset-small-lib": "7.0.8",
-    "@types/jest": "27.5.2",
-    "babel-jest": "27.5.1",
+    "@size-limit/preset-small-lib": "8.0.0",
+    "@types/jest": "28.1.6",
+    "babel-jest": "28.1.3",
     "cpy-cli": "4.1.0",
-    "dts-cli": "1.5.2",
     "node-plop": "0.31.0",
     "plop": "3.1.1",
-    "size-limit": "7.0.8",
-    "ts-jest": "27.1.5",
+    "size-limit": "8.0.0",
+    "ts-jest": "28.0.7",
+    "jest": "28.1.3",
+    "jest-environment-jsdom": "28.1.3",
     "typescript": "4.7.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(hbs)$": "<rootDir>/__mocks__/fileMock.js"
-    },
-    "testEnvironment": "node"
   },
   "size-limit": [
     {
