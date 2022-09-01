@@ -1,4 +1,9 @@
 import colors from "tailwindcss/colors";
+import { TailwindValuesFontFamily } from "tailwindcss/tailwind-config";
+import defaultTheme from "tailwindcss/defaultTheme";
+
+const defaultThemeFontFamily: TailwindValuesFontFamily =
+  defaultTheme.fontFamily as TailwindValuesFontFamily;
 
 export const defaultPluginConfig = {
   theme: {
@@ -9,7 +14,7 @@ export const defaultPluginConfig = {
         destructive: colors.red,
       },
       fontFamily: {
-        sans: ["Lato", ...require("tailwindcss/defaultTheme").fontFamily.sans],
+        sans: ["Lato", ...defaultThemeFontFamily.sans],
       },
     },
   },

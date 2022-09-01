@@ -57,6 +57,7 @@ const organizeImports = (code: string, options: ParserOptions) => {
     if (options.parentParser === "vue") {
       return code; // we already did the preprocessing for the `vue` parent parser
     } else if (options.parser === "vue") {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
       const { getVueSFCScript } = require("./lib/get-vue-sfc-script");
 
       const script = getVueSFCScript(code, filePath);

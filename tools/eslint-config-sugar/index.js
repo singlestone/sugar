@@ -1,9 +1,12 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 module.exports = {
+  env: {
+    node: true,
+  },
   extends: [
-    require.resolve("dts-cli/conf/eslint-config-react-app"),
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier",
-    "plugin:prettier/recommended",
   ],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
 };

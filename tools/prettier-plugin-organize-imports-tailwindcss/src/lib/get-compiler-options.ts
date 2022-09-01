@@ -27,7 +27,7 @@ import { dirname } from "path";
 import * as ts from "typescript";
 
 const compilerOptionsCache = new Map();
-export const getCompilerOptions = (tsconfig: string = "") => {
+export const getCompilerOptions = (tsconfig = "") => {
   const cachedCompilerOptions = compilerOptionsCache.get(tsconfig);
 
   if (cachedCompilerOptions) {

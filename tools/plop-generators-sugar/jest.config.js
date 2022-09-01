@@ -6,8 +6,14 @@ module.exports = {
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   collectCoverageFrom: ["src/**/*.{ts,tsx,js,jsx}"],
+  testEnvironment: "node",
   testMatch: ["<rootDir>/**/*.(spec|test).{ts,tsx,js,jsx}"],
-  testURL: "http://localhost",
+  moduleNameMapper: {
+    "\\.(hbs)$": "<rootDir>/__mocks__/fileMock.js",
+  },
+  testEnvironmentOptions: {
+    url: "http://localhost",
+  },
   watchPlugins: [
     "jest-watch-typeahead/filename",
     "jest-watch-typeahead/testname",
