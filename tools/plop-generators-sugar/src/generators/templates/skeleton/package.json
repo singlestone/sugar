@@ -39,7 +39,7 @@
     "tsup": "5.12.9",
     "@babel/core": "7.18.9",
     "@singlestone/prettier-config-sugar": "workspace:^",
-    "@size-limit/preset-small-lib": "7.0.8",
+    "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.0.3",
     "size-limit": "7.0.8"
   },
