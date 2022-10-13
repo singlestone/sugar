@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@antfu/ni': 0.18.0
+      '@antfu/ni': 0.18.2
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.24.4
       '@singlestone/prettier-config-sugar': workspace:^
@@ -26,7 +26,7 @@ importers:
       turbo: 1.5.6
       typescript: 4.8.3
     devDependencies:
-      '@antfu/ni': 0.18.0
+      '@antfu/ni': 0.18.2
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.24.4
       '@singlestone/prettier-config-sugar': link:tools/prettier-config-sugar
@@ -532,8 +532,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.15
     dev: true
 
-  /@antfu/ni/0.18.0:
-    resolution: {integrity: sha512-D0eek5EV8wOUpZNVAs/mPyeC5TMWFXqchqCyPiR6Lj5FgmSJw0EpFLqAczHX0O5+Jc07N7NBwBip85Gi1MBJnA==}
+  /@antfu/ni/0.18.2:
+    resolution: {integrity: sha512-OZalxEGupqCd8hKV2wyT5IHQTx1BR5/iXZEbseLpSdgcSn8fLjLOqi+LLhLly0a1XIkCAUeknV5/JXvMbjIstA==}
     hasBin: true
     dev: true
 
