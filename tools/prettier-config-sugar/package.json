@@ -49,7 +49,7 @@
     "@singlestone/tsup-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "8.1.0",
     "@types/jest": "29.0.2",
-    "@types/node": "16.11.45",
+    "@types/node": "16.11.65",
     "@types/prettier": "2.7.0",
     "babel-jest": "29.0.3",
     "eslint": "8.23.1",
