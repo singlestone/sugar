@@ -12,12 +12,12 @@
     "prepare": "tsup"
   },
   "peerDependencies": {
-    "tsup": "^5.12.7"
+    "tsup": "^5.12.7 || ^6.0.0"
   },
   "devDependencies": {
     "@types/node": "16.11.65",
     "tsup": "6.2.3",
-    "typescript": "4.8.3"
+    "typescript": "4.8.4"
   },
   "volta": {
     "extends": "../../package.json"

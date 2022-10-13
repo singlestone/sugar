@@ -34,18 +34,18 @@
     "test:ci": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.2.1",
+    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.2.1",
+    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.19.1",
-    "@singlestone/eslint-config-sugar": "workspace:^",
-    "@singlestone/prettier-config-sugar": "workspace:^",
-    "@singlestone/tsup-config-sugar": "workspace:^",
+    "@babel/core": "7.19.3",
+    "@singlestone/eslint-config-sugar": "workspace:^0.2.1",
+    "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
+    "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
     "@size-limit/preset-small-lib": "8.1.0",
     "@types/tailwindcss": "3.0.10",
-    "babel-jest": "29.0.3",
+    "babel-jest": "29.1.2",
     "jest-watch-typeahead": "2.2.0",
     "size-limit": "8.1.0",
     "tsup": "6.2.3"
