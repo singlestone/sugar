@@ -36,7 +36,7 @@
   "peerDependencies": {},
   "devDependencies": {
     "@singlestone/tsup-config-sugar": "workspace:^",
-    "tsup": "5.12.9",
+    "tsup": "6.2.3",
     "@babel/core": "7.18.9",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "8.1.0",
