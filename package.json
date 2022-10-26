@@ -36,7 +36,7 @@
     "@changesets/changelog-github": "0.4.7",
     "@changesets/cli": "2.25.0",
     "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
-    "@storybook/storybook-deployer": "2.8.12",
+    "@storybook/storybook-deployer": "2.8.16",
     "@tsconfig/create-react-app": "1.0.2",
     "@tsconfig/node12": "1.0.11",
     "doctoc": "2.2.1",

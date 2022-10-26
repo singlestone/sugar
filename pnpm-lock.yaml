@@ -8,7 +8,7 @@ importers:
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.0
       '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@storybook/storybook-deployer': 2.8.12
+      '@storybook/storybook-deployer': 2.8.16
       '@tsconfig/create-react-app': 1.0.2
       '@tsconfig/node12': 1.0.11
       doctoc: 2.2.1
@@ -30,7 +30,7 @@ importers:
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.0
       '@singlestone/prettier-config-sugar': link:tools/prettier-config-sugar
-      '@storybook/storybook-deployer': 2.8.12
+      '@storybook/storybook-deployer': 2.8.16
       '@tsconfig/create-react-app': 1.0.2
       '@tsconfig/node12': 1.0.11
       doctoc: 2.2.1
@@ -4186,11 +4186,11 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/storybook-deployer/2.8.12:
-    resolution: {integrity: sha512-1mPVG+kYLoKSTg2/cCCaY0CwS55+t7pcLEbIDx3KY+16gyFIW01UvlHdIJWRIm4d6GIGuEL1a4ChDgIJ464Ihw==}
+  /@storybook/storybook-deployer/2.8.16:
+    resolution: {integrity: sha512-DRQrjyLKaRLXMYo7SNUznyGabtOLJ0b9yfBKNVMu6PsUHJifGPabXuNXmRPZ6qvyhHUSKLQgeLaX8L3Og6uFUg==}
     hasBin: true
     dependencies:
-      git-url-parse: 11.6.0
+      git-url-parse: 12.0.0
       glob: 7.2.3
       parse-repo: 1.0.4
       shelljs: 0.8.5
@@ -8233,11 +8233,6 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /filter-obj/1.1.0:
-    resolution: {integrity: sha512-8rXg1ZnX7xzy2NGDVkBVaAy+lSlPNwad13BtgSlLuxfIslyt5Vg64U7tFcCt4WS1R0hvtnQybT/IyCkGZ3DpXQ==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /finalhandler/1.2.0:
     resolution: {integrity: sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==}
     engines: {node: '>= 0.8'}
@@ -8675,17 +8670,17 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /git-up/4.0.5:
-    resolution: {integrity: sha512-YUvVDg/vX3d0syBsk/CKUTib0srcQME0JyHkL5BaYdwLsiCslPWmDSi8PUMo9pXYjrryMcmsCoCgsTpSCJEQaA==}
+  /git-up/6.0.0:
+    resolution: {integrity: sha512-6RUFSNd1c/D0xtGnyWN2sxza2bZtZ/EmI9448n6rCZruFwV/ezeEn2fJP7XnUQGwf0RAtd/mmUCbtH6JPYA2SA==}
     dependencies:
       is-ssh: 1.4.0
-      parse-url: 6.0.5
+      parse-url: 7.0.2
     dev: true
 
-  /git-url-parse/11.6.0:
-    resolution: {integrity: sha512-WWUxvJs5HsyHL6L08wOusa/IXYtMuCAhrMmnTjQPpBU0TTHyDhnOATNH3xNQz7YOQUsqIIPTGr4xiVti1Hsk5g==}
+  /git-url-parse/12.0.0:
+    resolution: {integrity: sha512-I6LMWsxV87vysX1WfsoglXsXg6GjQRKq7+Dgiseo+h0skmp5Hp2rzmcEIRQot9CPA+uzU7x1x7jZdqvTFGnB+Q==}
     dependencies:
-      git-up: 4.0.5
+      git-up: 6.0.0
     dev: true
 
   /github-slugger/1.4.0:
@@ -12259,26 +12254,23 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /parse-path/4.0.4:
-    resolution: {integrity: sha512-Z2lWUis7jlmXC1jeOG9giRO2+FsuyNipeQ43HAjqAZjwSe3SEf+q/84FGPHoso3kyntbxa4c4i77t3m6fGf8cw==}
+  /parse-path/5.0.0:
+    resolution: {integrity: sha512-qOpH55/+ZJ4jUu/oLO+ifUKjFPNZGfnPJtzvGzKN/4oLMil5m9OH4VpOj6++9/ytJcfks4kzH2hhi87GL/OU9A==}
     dependencies:
-      is-ssh: 1.4.0
-      protocols: 1.4.8
-      qs: 6.11.0
-      query-string: 6.14.1
+      protocols: 2.0.1
     dev: true
 
   /parse-repo/1.0.4:
     resolution: {integrity: sha512-RdwYLh7cmxByP/BfeZX0QfIVfeNrH2fWgK1aLsGK+G6nCO4WTlCks4J7aW0O3Ap9BCPDF/e8rGTT50giQr10zg==}
     dev: true
 
-  /parse-url/6.0.5:
-    resolution: {integrity: sha512-e35AeLTSIlkw/5GFq70IN7po8fmDUjpDPY1rIK+VubRfsUvBonjQ+PBZG+vWMACnQSmNlvl524IucoDmcioMxA==}
+  /parse-url/7.0.2:
+    resolution: {integrity: sha512-PqO4Z0eCiQ08Wj6QQmrmp5YTTxpYfONdOEamrtvK63AmzXpcavIVQubGHxOEwiIoDZFb8uDOoQFS0NCcjqIYQg==}
     dependencies:
       is-ssh: 1.4.0
       normalize-url: 6.1.0
-      parse-path: 4.0.4
-      protocols: 1.4.8
+      parse-path: 5.0.0
+      protocols: 2.0.1
     dev: true
 
   /parse5/6.0.1:
@@ -13212,10 +13204,6 @@ packages:
       xtend: 4.0.2
     dev: true
 
-  /protocols/1.4.8:
-    resolution: {integrity: sha512-IgjKyaUSjsROSO8/D49Ab7hP8mJgTYcqApOqdPhLoPxAplXmkp+zRvsrSQjFn5by0rhm4VH0GAUELIPpx7B1yg==}
-    dev: true
-
   /protocols/2.0.1:
     resolution: {integrity: sha512-/XJ368cyBJ7fzLMwLKv1e4vLxOju2MNAIokcr7meSaNcVbWz/CPcW22cP04mwxOErdA5mwjA8Q6w/cdAQxVn7Q==}
     dev: true
@@ -13290,16 +13278,6 @@ packages:
     engines: {node: '>=0.6'}
     dependencies:
       side-channel: 1.0.4
-    dev: true
-
-  /query-string/6.14.1:
-    resolution: {integrity: sha512-XDxAeVmpfu1/6IjyT/gXHOl+S0vQ9owggJ30hhWKdHAsNPOcasn5o9BW0eejZqL2e4vMjhAxoW3jVHcD6mbcYw==}
-    engines: {node: '>=6'}
-    dependencies:
-      decode-uri-component: 0.2.0
-      filter-obj: 1.1.0
-      split-on-first: 1.1.0
-      strict-uri-encode: 2.0.0
     dev: true
 
   /querystring-es3/0.2.1:
@@ -14380,11 +14358,6 @@ packages:
     resolution: {integrity: sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==}
     dev: true
 
-  /split-on-first/1.1.0:
-    resolution: {integrity: sha512-43ZssAJaMusuKWL8sKUBQXHWOpq8d6CfN/u1p4gUzfJkM05C8rxTmYrkIPTXapZpORA6LkkzcUulJ8FqA7Uudw==}
-    engines: {node: '>=6'}
-    dev: true
-
   /split-string/3.1.0:
     resolution: {integrity: sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==}
     engines: {node: '>=0.10.0'}
@@ -14473,11 +14446,6 @@ packages:
     resolution: {integrity: sha512-9GHUiM5hMiCi6Y03jD2ARC1ettBXkQBoQAe7nJsPknnI0ow10aXjTnew8QtYQmLjzn974BnmWEAJgCY6ZP1DeQ==}
     dependencies:
       mixme: 0.5.4
-    dev: true
-
-  /strict-uri-encode/2.0.0:
-    resolution: {integrity: sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==}
-    engines: {node: '>=4'}
     dev: true
 
   /string-length/4.0.2:
