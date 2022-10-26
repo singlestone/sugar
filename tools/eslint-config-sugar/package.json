@@ -30,8 +30,8 @@
     "typescript": "^4.7.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.40.0",
-    "@typescript-eslint/parser": "5.40.0",
+    "@typescript-eslint/eslint-plugin": "5.40.1",
+    "@typescript-eslint/parser": "5.40.1",
     "eslint-config-prettier": "8.5.0"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
     "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.1.2",
-    "eslint": "8.25.0",
+    "eslint": "8.26.0",
     "jest": "29.1.2",
     "jest-environment-jsdom": "29.1.2",
     "jest-watch-typeahead": "2.2.0",
