@@ -15,7 +15,7 @@
     "tsup": "^5.12.7 || ^6.0.0"
   },
   "devDependencies": {
-    "@types/node": "16.11.65",
+    "@types/node": "16.18.3",
     "tsup": "6.5.0",
     "typescript": "4.8.4"
   },
