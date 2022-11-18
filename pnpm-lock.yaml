@@ -124,7 +124,7 @@ importers:
       '@singlestone/prettier-config-sugar': workspace:^0.2.1
       '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
       '@size-limit/preset-small-lib': 8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/tailwindcss': 3.0.10
       babel-jest: 29.3.1
@@ -142,7 +142,7 @@ importers:
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config-sugar
       '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/tailwindcss': 3.0.10
       babel-jest: 29.3.1_@babel+core@7.20.2
@@ -173,7 +173,7 @@ importers:
       '@storybook/builder-webpack5': 6.5.13
       '@storybook/html': 6.5.13
       '@storybook/manager-webpack5': 6.5.13
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/tailwindcss': 3.0.10
       autoprefixer: 10.4.13
@@ -206,7 +206,7 @@ importers:
       '@storybook/builder-webpack5': 6.5.13_typescript@4.8.4
       '@storybook/html': 6.5.13_abv6zd2yuixyrq2xo66ghbc63a
       '@storybook/manager-webpack5': 6.5.13_typescript@4.8.4
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/tailwindcss': 3.0.10
       autoprefixer: 10.4.13_postcss@8.4.19
@@ -331,7 +331,7 @@ importers:
       '@singlestone/prettier-config-sugar': workspace:^0.2.1
       '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
       '@size-limit/preset-small-lib': 8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       babel-jest: 29.3.1
       cpy-cli: 4.2.0
       eslint: 8.27.0
@@ -350,7 +350,7 @@ importers:
       '@singlestone/prettier-config-sugar': link:../prettier-config-sugar
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       babel-jest: 29.3.1_@babel+core@7.20.2
       cpy-cli: 4.2.0
       eslint: 8.27.0
@@ -371,7 +371,7 @@ importers:
       '@singlestone/prettier-config-sugar': workspace:^0.2.1
       '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
       '@size-limit/preset-small-lib': 8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/postcss-import': 14.0.0
       '@types/tailwindcss': 3.0.10
@@ -401,7 +401,7 @@ importers:
       '@singlestone/prettier-config-sugar': link:../prettier-config-sugar
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/postcss-import': 14.0.0
       '@types/tailwindcss': 3.0.10
@@ -424,7 +424,7 @@ importers:
       '@singlestone/prettier-plugin-organize-imports-tailwindcss': workspace:^0.2.1
       '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
       '@size-limit/preset-small-lib': 8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/prettier': 2.7.1
       babel-jest: 29.3.1
@@ -450,7 +450,7 @@ importers:
       '@singlestone/eslint-config-sugar': link:../eslint-config-sugar
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/prettier': 2.7.1
       babel-jest: 29.3.1_@babel+core@7.20.2
@@ -470,7 +470,7 @@ importers:
       '@singlestone/eslint-config-sugar': workspace:^0.2.1
       '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
       '@size-limit/preset-small-lib': 8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/prettier': 2.7.1
       babel-jest: 29.3.1
@@ -493,7 +493,7 @@ importers:
       '@singlestone/eslint-config-sugar': link:../eslint-config-sugar
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@types/jest': 29.2.2
+      '@types/jest': 29.2.3
       '@types/node': 16.18.3
       '@types/prettier': 2.7.1
       babel-jest: 29.3.1_@babel+core@7.20.2
@@ -2265,7 +2265,7 @@ packages:
       '@types/node': 18.11.9
       chalk: 4.1.2
       jest-message-util: 29.3.1
-      jest-util: 29.2.1
+      jest-util: 29.3.1
       slash: 3.0.0
     dev: true
 
@@ -4494,8 +4494,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.2.2:
-    resolution: {integrity: sha512-og1wAmdxKoS71K2ZwSVqWPX6OVn3ihZ6ZT2qvZvZQm90lJVDyXIjYcu4Khx2CNIeaFv12rOU/YObOsI3VOkzog==}
+  /@types/jest/29.2.3:
+    resolution: {integrity: sha512-6XwoEbmatfyoCjWRX7z0fKMmgYKe9+/HrviJ5k0X/tjJWHGAezZOfYaxqQKuzG/TvQyr+ktjm4jgbk0s4/oF2w==}
     dependencies:
       expect: 29.3.1
       pretty-format: 29.3.1
@@ -6099,7 +6099,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1
+      promise-inflight: 1.0.1_bluebird@3.7.2
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -13336,6 +13336,17 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
+    dev: true
+
+  /promise-inflight/1.0.1_bluebird@3.7.2:
+    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
+    dependencies:
+      bluebird: 3.7.2
     dev: true
 
   /promise.allsettled/1.0.6:

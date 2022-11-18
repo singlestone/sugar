@@ -58,7 +58,7 @@
     "@storybook/builder-webpack5": "6.5.13",
     "@storybook/html": "6.5.13",
     "@storybook/manager-webpack5": "6.5.13",
-    "@types/jest": "29.2.2",
+    "@types/jest": "29.2.3",
     "@types/node": "16.18.3",
     "@types/tailwindcss": "3.0.10",
     "autoprefixer": "10.4.13",
