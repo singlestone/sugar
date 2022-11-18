@@ -1,8 +1,9 @@
 import {
   createSugarPlugin,
   SugarColorFamilies,
+  SugarTailwindPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
-import { TailwindColorGroup } from "tailwindcss/tailwind-config";
+import { KeyValuePair } from "tailwindcss/types/config";
 import * as Styles from "./buttons.styles";
 
 const sugarPillButtons = (
@@ -30,26 +31,24 @@ const sugarPillButtons = (
 
   matchComponents(
     {
-      [`${prefix}-button-filled`]: (value: TailwindColorGroup | string) =>
+      [`${prefix}-button-filled`]: (value: KeyValuePair | string) =>
         Styles.buttonMatchPrimary(theme, { value }),
-      [`${prefix}-button-darker-filled`]: (
-        value: TailwindColorGroup | string
-      ) => Styles.buttonMatchPrimaryDarker(theme, { value }),
-      [`${prefix}-button-lighter-filled`]: (
-        value: TailwindColorGroup | string
-      ) => Styles.buttonMatchPrimaryLighter(theme, { value }),
-      [`${prefix}-button-outlined`]: (value: TailwindColorGroup | string) =>
+      [`${prefix}-button-darker-filled`]: (value: KeyValuePair | string) =>
+        Styles.buttonMatchPrimaryDarker(theme, { value }),
+      [`${prefix}-button-lighter-filled`]: (value: KeyValuePair | string) =>
+        Styles.buttonMatchPrimaryLighter(theme, { value }),
+      [`${prefix}-button-outlined`]: (value: KeyValuePair | string) =>
         Styles.buttonMatchSecondary(theme, { value }),
-      [`${prefix}-button-darker-outlined`]: (
-        value: TailwindColorGroup | string
-      ) => Styles.buttonMatchSecondaryDarker(theme, { value }),
-      [`${prefix}-button-lighter-outlined`]: (
-        value: TailwindColorGroup | string
-      ) => Styles.buttonMatchSecondaryLighter(theme, { value }),
+      [`${prefix}-button-darker-outlined`]: (value: KeyValuePair | string) =>
+        Styles.buttonMatchSecondaryDarker(theme, { value }),
+      [`${prefix}-button-lighter-outlined`]: (value: KeyValuePair | string) =>
+        Styles.buttonMatchSecondaryLighter(theme, { value }),
     },
     { values: theme("colors") }
   );
 };
 
 export const sugarButtonsComponents = [sugarPillButtons];
-export const sugarButtonsPlugin = createSugarPlugin([sugarPillButtons]);
+export const sugarButtonsPlugin: SugarTailwindPlugin = createSugarPlugin(
+  sugarButtonsComponents
+);

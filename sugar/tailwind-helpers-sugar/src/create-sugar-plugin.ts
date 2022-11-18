@@ -6,9 +6,13 @@ const defaultOptions = {
   prefix: "sugar",
 };
 
+export type SugarTailwindPlugin = ReturnType<
+  typeof plugin.withOptions<SugarPluginOptions>
+>;
+
 export const createSugarPlugin = (
-  plugins: ((utils: any, prefix: string) => void)[]
-) =>
+  plugins: ((utils: unknown, prefix: string) => void)[]
+): SugarTailwindPlugin =>
   plugin.withOptions<SugarPluginOptions>(
     (options) => (utilFunctions) => {
       const prefix: string = options?.prefix
@@ -16,5 +20,5 @@ export const createSugarPlugin = (
         : defaultOptions.prefix;
       plugins.forEach((sugarPlugin) => sugarPlugin(utilFunctions, prefix));
     },
-    (_) => defaultPluginConfig
+    () => defaultPluginConfig
   );
