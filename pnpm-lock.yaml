@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@antfu/ni': 0.18.5
+      '@antfu/ni': 0.18.8
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.2
       '@singlestone/prettier-config-sugar': workspace:^0.2.1
@@ -26,7 +26,7 @@ importers:
       turbo: 1.6.3
       typescript: 4.8.4
     devDependencies:
-      '@antfu/ni': 0.18.5
+      '@antfu/ni': 0.18.8
       '@changesets/changelog-github': 0.4.7
       '@changesets/cli': 2.25.2
       '@singlestone/prettier-config-sugar': link:tools/prettier-config-sugar
@@ -532,11 +532,9 @@ packages:
       '@jridgewell/trace-mapping': 0.3.17
     dev: true
 
-  /@antfu/ni/0.18.5:
-    resolution: {integrity: sha512-DJBCKbrFBqDysPccVwJzBEHsHUl0QKHDWNDxZaeqJvVlwJzMqrjAKda/NS9CMMP2J1ewJFmj0PuE6lCP1uuChA==}
+  /@antfu/ni/0.18.8:
+    resolution: {integrity: sha512-0m++AudwQq+wWAz/Ax7g+sh/wFW51HHQ6BtPLsuTAsFIzWB/bv/0COwZE7BRS+u0nqMb6Ks6nlk6cY1TpPDwHg==}
     hasBin: true
-    dependencies:
-      fzf: 0.5.1
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -8693,10 +8691,6 @@ packages:
 
   /functions-have-names/1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
-    dev: true
-
-  /fzf/0.5.1:
-    resolution: {integrity: sha512-AJ9BBt/3K/IyCF+pQjdG194kVSS1hU/v/RnZgiCtYZzA0rj2OBVwwjBRUOclo9yJl2ovjtdw3C31/8/rnT0uug==}
     dev: true
 
   /gauge/3.0.2:
