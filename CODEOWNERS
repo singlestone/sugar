@@ -1,7 +1,9 @@
 # These owners will be the default owners for everything in the
 # repo unless a later match takes precedence.
-*                   @singlestone/design-system-maintainers
-package.json        @singlestone/design-system-package-maintainers
-pnpm-lock.yaml      @singlestone/design-system-package-maintainers
-.nvmrc              @singlestone/design-system-package-maintainers
-.github/*           @singlestone/design-system-package-maintainers
+*                   @singlestone/design-system-reviewers
+package.json        @singlestone/design-system-maintainers
+pnpm-lock.yaml      @singlestone/design-system-maintainers
+.nvmrc              @singlestone/design-system-maintainers
+.changeset/*        @singlestone/design-system-maintainers
+.github/*           @singlestone/design-system-maintainers
+CHANGELOG.md        @singlestone/design-system-maintainers
