@@ -58,7 +58,7 @@
     "commitMessage": "chore: deploy storybook"
   },
   "volta": {
-    "node": "16.18.1",
+    "node": "18.12.1",
     "npm": "9.1.2"
   }
 }
