@@ -109,7 +109,7 @@ to do any of this setup. Yes, [even code](#contribute-code).
 If you want to go the usual route and run the project locally, though:
 
 - [Install Node.js](https://nodejs.org/en/download/)
-  - We recommend using [Volta](https://volta.sh/) to install NodeJS
+  - We recommend using [Volta](https://volta.sh/) or [nvm](https://github.com/nvm-sh/nvm) to install NodeJS
 - [Install pnpm](https://pnpm.io/installation)
 - [Setup an SSH key with GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
