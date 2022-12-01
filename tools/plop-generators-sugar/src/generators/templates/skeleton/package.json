@@ -40,7 +40,7 @@
     "@babel/core": "7.20.2",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "8.1.0",
-    "babel-jest": "29.0.3",
+    "babel-jest": "29.3.1",
     "size-limit": "8.1.0"
   },
   "publishConfig": {
