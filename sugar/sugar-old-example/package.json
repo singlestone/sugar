@@ -13,7 +13,7 @@
     "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
     "@singlestone/sugar": "workspace:^0.2.1",
     "autoprefixer": "10.4.13",
-    "eslint": "8.27.0",
+    "eslint": "8.28.0",
     "jest-watch-typeahead": "2.2.1",
     "postcss": "8.4.19",
     "postcss-load-config": "4.0.1",
