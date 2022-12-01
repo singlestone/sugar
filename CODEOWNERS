@@ -1,3 +1,5 @@
 # These owners will be the default owners for everything in the
 # repo unless a later match takes precedence.
-*   @singlestone/design-system-maintainers
+*                   @singlestone/design-system-maintainers
+package.json        @singlestone/design-system-package-maintainers
+pnpm-lock.yaml      @singlestone/design-system-package-maintainers
