@@ -6,7 +6,7 @@
     "group:test",
     "npm:unpublishSafe"
   ],
-  "labels": ["\uD83D\uDCA1 Type: Chore", "✅ ToDo: Automerge"],
+  "labels": ["\uD83D\uDCA1 Type: Chore", "🚦 Status: Automerge"],
   "prCreation": "not-pending",
   "semanticCommits": "enabled"
 }

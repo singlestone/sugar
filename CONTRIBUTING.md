@@ -335,7 +335,7 @@ Some notes:
 
 [Needs Collaborator](#join-the-project-team): Maintainer
 
-PRs are automatically merged by Kodiak if they have `✅ ToDo: Automerge` label and have been [approved](#review-pull-requests)
+PRs are automatically merged by Kodiak if they have `🚦 Status: Automerge` label and have been [approved](#review-pull-requests)
 by a maintainer. PRs should not be merged manually.
 
 ## Tag A Release

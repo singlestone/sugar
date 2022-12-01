@@ -1,7 +1,7 @@
 version = 1
 
 [merge]
-automerge_label = ["✅ ToDo: Automerge"]
+automerge_label = ["🚦 Status: Automerge"]
 
 [merge.message]
 title = "pull_request_title" # default: "github_default"
