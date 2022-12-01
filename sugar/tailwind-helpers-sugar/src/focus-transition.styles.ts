@@ -1,15 +1,15 @@
-import { TailwindColorGroup } from "tailwindcss/tailwind-config";
+import { KeyValuePair } from "tailwindcss/types/config";
 import { getShadeValue } from "./color-helpers";
 import { SugarColorShades } from "./sugar-color-shades.enum";
 
 export interface FocusTransitionOptions {
-  accentColors?: TailwindColorGroup;
+  accentColors?: KeyValuePair;
   initialRingWidth?: string | number;
   offsetColor?: string;
 }
 
 export interface FocusVisibleTransitionOptions {
-  accentColors?: TailwindColorGroup;
+  accentColors?: KeyValuePair;
   offsetColor?: string;
 }
 
@@ -18,7 +18,7 @@ interface TransitionConfig {
 }
 
 interface FocusVisibleTransitionConfig {
-  accentColors: TailwindColorGroup;
+  accentColors: KeyValuePair;
   offsetColor: string;
 }
 

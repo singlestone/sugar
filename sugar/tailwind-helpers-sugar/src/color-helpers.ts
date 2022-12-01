@@ -1,4 +1,4 @@
-import type { TailwindColorGroup } from "tailwindcss/tailwind-config";
+import type { KeyValuePair } from "tailwindcss/types/config";
 import { SugarColorFamilies } from "./sugar-color-families.enum";
 import { SugarColorShades } from "./sugar-color-shades.enum";
 import { SugarPluginColorOptions } from "./sugar-plugin-color-options.interface";
@@ -30,7 +30,7 @@ export const convertHexToRGBA = (
 };
 
 export const getShadeValue = (
-  color: TailwindColorGroup | string,
+  color: KeyValuePair | string,
   shade: SugarColorShades,
   alphaVariable: string | number | null = null
 ): string => {
@@ -39,9 +39,9 @@ export const getShadeValue = (
 };
 
 export const getColor = (
-  theme: any,
+  theme: (selector: string) => string | KeyValuePair,
   { colorFamily, value }: SugarPluginColorOptions = {}
-): string | TailwindColorGroup => {
+): string | KeyValuePair => {
   if (value) {
     return value;
   }

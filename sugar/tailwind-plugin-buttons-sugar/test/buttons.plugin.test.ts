@@ -2,10 +2,14 @@ import { resolve } from "path";
 import postcss from "postcss";
 import tailwindcss from "tailwindcss";
 import * as colors from "tailwindcss/colors";
-import { TailwindConfig } from "tailwindcss/tailwind-config";
+import { Config } from "tailwindcss/types/config";
 import { sugarButtonsPlugin } from "../src";
+import { SugarPluginOptions } from "@singlestone/tailwind-helpers-sugar";
 
-const run = (config: TailwindConfig, pluginOptions: any = undefined) => {
+const run = (
+  config: Partial<Config>,
+  pluginOptions: SugarPluginOptions = {}
+) => {
   const { currentTestName } = expect.getState();
   config = {
     ...{
@@ -15,7 +19,7 @@ const run = (config: TailwindConfig, pluginOptions: any = undefined) => {
     ...config,
   };
 
-  return postcss(tailwindcss(config)).process(
+  return postcss(tailwindcss(config as Config)).process(
     ["@tailwind base;", "@tailwind components;", "@tailwind utilities"].join(
       "\n"
     ),
@@ -34,8 +38,11 @@ const createTestClassNames = (
     []
   );
 
-const getClassCreationTest = (className: string, options: any = undefined) => {
-  const config: TailwindConfig = {
+const getClassCreationTest = (
+  className: string,
+  options: SugarPluginOptions = {}
+) => {
+  const config: Partial<Config> = {
     safelist: [className],
     theme: {},
   };

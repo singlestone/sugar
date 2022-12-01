@@ -1,7 +1,10 @@
-import { TailwindColorFunction } from "tailwindcss/tailwind-config";
-
 const withOpacity =
-  (variable: string, type: "hsl" | "rgb"): TailwindColorFunction =>
+  (
+    variable: string,
+    type: "hsl" | "rgb"
+  ): ((
+    arg: Partial<{ opacityVariable: string; opacityValue: number }>
+  ) => string) =>
   ({ opacityValue = "" }) =>
     opacityValue
       ? `${type}(var(${variable}), ${opacityValue})`
