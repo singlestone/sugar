@@ -50,7 +50,7 @@
     "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
     "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
     "@size-limit/preset-small-lib": "8.1.0",
-    "@types/jest": "29.2.3",
+    "@types/jest": "29.2.4",
     "@types/node": "18.11.10",
     "@types/postcss-import": "14.0.0",
     "babel-jest": "29.3.1",
