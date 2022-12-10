@@ -94,6 +94,8 @@ jobs:
         with:
           # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
+          # Disable saving GitHub auth token in git config
+          persist-credentials: false
 
       - name: 📥 Install Dependencies via pnpm
         uses: ToppleTheNun/action-pnpm-install@v1
