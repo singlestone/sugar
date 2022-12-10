@@ -97,7 +97,7 @@ jobs:
       - name: 🚀 Create Release Pull Request
         uses: changesets/action@v1
         with:
-          version: chmod +x ./update-lock.sh && ./update-lock.sh
+          version: bash ./update-lock.sh
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_GITHUB_TOKEN }}
