@@ -1,4 +1,5 @@
 import { Meta } from "@storybook/html";
+
 import { ButtonTemplate } from "../button.template";
 
 export default {

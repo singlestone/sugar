@@ -1,14 +1,16 @@
 import {
+  type SugarPluginComponent,
+  type SugarTailwindPlugin,
   createSugarPlugin,
   SugarColorFamilies,
-  SugarTailwindPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
 import { KeyValuePair } from "tailwindcss/types/config";
+
 import * as Styles from "./buttons.styles";
 
-const sugarPillButtons = (
-  { addComponents, matchComponents, theme }: any,
-  prefix: string
+const sugarPillButtons: SugarPluginComponent = (
+  { addComponents, matchComponents, theme },
+  prefix
 ) => {
   addComponents({
     [`.${prefix}-button`]: Styles.buttonBase(theme),

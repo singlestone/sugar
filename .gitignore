@@ -382,3 +382,5 @@ report
 !.yarn/versions
 
 megalinter-reports/
+
+.eslintcache

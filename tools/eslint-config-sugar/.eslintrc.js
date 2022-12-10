@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ["prettier"],
+  extends: ["eslint:recommended"],
+  env: {
+    node: true,
+  },
 };

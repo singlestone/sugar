@@ -1,4 +1,4 @@
 {
-  "extends": "../../tsconfig.node12.json",
+  "extends": "../../tsconfig.node14.json",
   "include": ["src", "types"]
 }

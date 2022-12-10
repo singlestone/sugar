@@ -1,9 +1,10 @@
 import { convertHexToRGBA } from "@singlestone/tailwind-helpers-sugar";
+import { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
-export const labelBase = (theme: any) => {
+export const labelBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
   return {
     display: "block",
-    border: 0,
+    border: "0",
     color: convertHexToRGBA(theme("colors.black"), "0.6"),
     lineHeight: theme("lineHeight.tight"),
     letterSpacing: theme("letterSpacing.wider"),

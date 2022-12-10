@@ -1,4 +1,5 @@
 import { NodePlopAPI } from "plop";
+
 import { pnpmInstall } from "./actions";
 import { skeleton } from "./generators";
 

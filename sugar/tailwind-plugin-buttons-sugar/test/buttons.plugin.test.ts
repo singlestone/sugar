@@ -1,10 +1,11 @@
+import { SugarPluginOptions } from "@singlestone/tailwind-helpers-sugar";
 import { resolve } from "path";
 import postcss from "postcss";
 import tailwindcss from "tailwindcss";
 import * as colors from "tailwindcss/colors";
 import { Config } from "tailwindcss/types/config";
+
 import { sugarButtonsPlugin } from "../src";
-import { SugarPluginOptions } from "@singlestone/tailwind-helpers-sugar";
 
 const run = (
   config: Partial<Config>,

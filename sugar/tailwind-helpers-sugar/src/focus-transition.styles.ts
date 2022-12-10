@@ -1,43 +1,44 @@
-import { KeyValuePair } from "tailwindcss/types/config";
+import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
+
 import { getShadeValue } from "./color-helpers";
 import { SugarColorShades } from "./sugar-color-shades.enum";
 
 export interface FocusTransitionOptions {
-  accentColors?: KeyValuePair;
-  initialRingWidth?: string | number;
+  accentColors?: CSSRuleObject;
+  initialRingWidth?: string;
   offsetColor?: string;
 }
 
 export interface FocusVisibleTransitionOptions {
-  accentColors?: KeyValuePair;
+  accentColors?: CSSRuleObject;
   offsetColor?: string;
 }
 
 interface TransitionConfig {
-  initialRingWidth: string | number;
+  initialRingWidth: string;
 }
 
 interface FocusVisibleTransitionConfig {
-  accentColors: KeyValuePair;
+  accentColors: CSSRuleObject;
   offsetColor: string;
 }
 
-const getDefaultTransitionOptions = (theme: any): TransitionConfig => ({
+const getDefaultTransitionOptions = (): TransitionConfig => ({
   initialRingWidth: "30px",
 });
 
 const getDefaultFocusVisibleTransitionOptions = (
-  theme: any
+  theme: PluginAPI["theme"]
 ): FocusVisibleTransitionConfig => ({
   accentColors: theme("colors.blue"),
   offsetColor: theme("colors.white"),
 });
 
 export const focusTransition = (
-  theme: any,
-  options?: FocusTransitionOptions | undefined
-) => {
-  const ftOptions = { ...getDefaultTransitionOptions(theme), ...options };
+  theme: PluginAPI["theme"],
+  options?: FocusTransitionOptions
+): CSSRuleObject => {
+  const ftOptions = { ...getDefaultTransitionOptions(), ...options };
   return {
     "--tw-ring-inset": "var(--tw-empty,/*!*/ /*!*/)",
     "--tw-ring-offset-width": "2px",
@@ -51,9 +52,9 @@ export const focusTransition = (
 };
 
 export const focusVisibleTransition = (
-  theme: any,
-  options?: FocusVisibleTransitionOptions | undefined
-) => {
+  theme: PluginAPI["theme"],
+  options?: FocusVisibleTransitionOptions
+): CSSRuleObject => {
   const fvtOptions = {
     ...getDefaultFocusVisibleTransitionOptions(theme),
     ...options,
