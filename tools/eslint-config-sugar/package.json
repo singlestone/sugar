@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/eslint-config-sugar",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "eslint config for Sugar, SingleStone&#x27;s sweet design system",
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
-    "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
+    "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.3.1",
     "eslint": "8.29.0",

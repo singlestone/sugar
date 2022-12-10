@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-buttons-sugar",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Tailwind plugin for sugar design system buttons",
   "repository": {
     "type": "git",
@@ -41,15 +41,15 @@
     "tailwindcss": "^3.1.0"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.2.1"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
     "@mdx-js/react": "1.6.22",
-    "@singlestone/eslint-config-sugar": "workspace:^0.2.1",
-    "@singlestone/postcss-preset-sugar": "workspace:^0.2.1",
-    "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
-    "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
+    "@singlestone/eslint-config-sugar": "workspace:^0.3.0",
+    "@singlestone/postcss-preset-sugar": "workspace:^0.3.0",
+    "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
+    "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "@storybook/addon-actions": "6.5.14",
     "@storybook/addon-docs": "6.5.14",

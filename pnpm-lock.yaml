@@ -53,12 +53,12 @@ importers:
   sugar/sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.2.1
-      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.2.1
-      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
+      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.3.0
+      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       babel-jest: 29.3.1
       jest-watch-typeahead: 2.2.1
@@ -81,10 +81,10 @@ importers:
 
   sugar/sugar-old-example:
     specifiers:
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/postcss-preset-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/sugar': workspace:^0.2.1
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/postcss-preset-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/sugar': workspace:^0.3.0
       autoprefixer: 10.4.13
       eslint: 8.29.0
       jest-watch-typeahead: 2.2.1
@@ -120,9 +120,9 @@ importers:
   sugar/tailwind-helpers-sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@types/jest': 29.2.4
       '@types/node': 18.11.12
@@ -159,11 +159,11 @@ importers:
     specifiers:
       '@babel/core': 7.20.5
       '@mdx-js/react': 1.6.22
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/postcss-preset-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/postcss-preset-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@storybook/addon-actions': 6.5.14
       '@storybook/addon-docs': 6.5.14
@@ -224,11 +224,11 @@ importers:
     specifiers:
       '@babel/core': 7.20.5
       '@mdx-js/react': 1.6.22
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/postcss-preset-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/postcss-preset-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@storybook/addon-actions': 6.5.14
       '@storybook/addon-docs': 6.5.14
@@ -284,7 +284,7 @@ importers:
   tools/eslint-config-sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@typescript-eslint/eslint-plugin': 5.46.0
       '@typescript-eslint/parser': 5.46.0
@@ -323,9 +323,9 @@ importers:
   tools/plop-generators-sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@types/jest': 29.2.4
       babel-jest: 29.3.1
@@ -363,9 +363,9 @@ importers:
   tools/postcss-preset-sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/prettier-config-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/prettier-config-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@types/jest': 29.2.4
       '@types/node': 18.11.12
@@ -414,8 +414,8 @@ importers:
   tools/prettier-config-sugar:
     specifiers:
       '@babel/core': 7.20.5
-      '@singlestone/eslint-config-sugar': workspace:^0.2.1
-      '@singlestone/tsup-config-sugar': workspace:^0.0.0-development
+      '@singlestone/eslint-config-sugar': workspace:^0.3.0
+      '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@types/jest': 29.2.4
       '@types/node': 18.11.12

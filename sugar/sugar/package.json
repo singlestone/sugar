@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Core plugin for the sugar design system",
   "repository": {
     "type": "git",
@@ -35,15 +35,15 @@
     "test:ci": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.2.1",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.2.1",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.2.1"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0",
+    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.3.0",
+    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
-    "@singlestone/eslint-config-sugar": "workspace:^0.2.1",
-    "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
-    "@singlestone/tsup-config-sugar": "workspace:^0.0.0-development",
+    "@singlestone/eslint-config-sugar": "workspace:^0.3.0",
+    "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
+    "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.3.1",
     "jest-watch-typeahead": "2.2.1",
