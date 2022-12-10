@@ -5,12 +5,13 @@ import {
   SugarColorFamilies,
   SugarMeasurements,
 } from "@singlestone/tailwind-helpers-sugar";
+import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
-export const inputBase = (theme: any) => {
+export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
   return {
     display: "block",
     appearance: "none",
-    border: 0,
+    border: "0",
     borderRadius: theme("borderRadius.lg"),
     color: theme("colors.black"),
     backgroundColor: convertHexToRGBA(theme("colors.black"), "0.1"),
@@ -18,7 +19,7 @@ export const inputBase = (theme: any) => {
     fontWeight: theme("fontWeight.normal"),
     letterSpacing: theme("letterSpacing.wide"),
     lineHeight: theme("lineHeight.7"),
-    padding: 0,
+    padding: "0",
     fontFamily: theme("fontFamily.sans"),
     paddingLeft: theme("spacing.3"),
     height: theme(SugarMeasurements.FormControlHeight),
@@ -29,7 +30,7 @@ export const inputBase = (theme: any) => {
       accentColors: theme(SugarColorFamilies.ACCENT),
     }),
     "&:focus-visible": {
-      ...focusVisibleTransition(theme, {}),
+      ...focusVisibleTransition(theme),
       backgroundColor: theme("colors.white"),
     },
     "&::placeholder": {

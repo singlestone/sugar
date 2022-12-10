@@ -7,8 +7,9 @@ import {
   SugarMeasurements,
   SugarPluginColorOptions,
 } from "@singlestone/tailwind-helpers-sugar";
+import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
-const buttonBase = (theme: any) => ({
+const buttonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   display: "block",
   margin: theme("spacing.0"),
   padding: `0 ${theme("spacing.9")}`,
@@ -35,11 +36,11 @@ const buttonBase = (theme: any) => ({
 });
 
 const buttonPrimaryBase = (
-  theme: any,
-  backgroundColor: string,
-  hoverColor: string,
-  activeColor: string
-) => ({
+  theme: PluginAPI["theme"],
+  backgroundColor: ReturnType<typeof getShadeValue>,
+  hoverColor: ReturnType<typeof getShadeValue>,
+  activeColor: ReturnType<typeof getShadeValue>
+): CSSRuleObject => ({
   ...buttonBase(theme),
   color: theme("colors.white"),
   backgroundColor: backgroundColor,
@@ -53,9 +54,9 @@ const buttonPrimaryBase = (
 });
 
 const buttonMatchPrimary = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonPrimaryBase(
     theme,
@@ -66,9 +67,9 @@ const buttonMatchPrimary = (
 };
 
 const buttonMatchPrimaryDarker = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonPrimaryBase(
     theme,
@@ -79,9 +80,9 @@ const buttonMatchPrimaryDarker = (
 };
 
 const buttonMatchPrimaryLighter = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonPrimaryBase(
     theme,
@@ -92,11 +93,11 @@ const buttonMatchPrimaryLighter = (
 };
 
 const buttonSecondaryBase = (
-  theme: any,
-  color: string,
-  hoverBackgroundColor: string,
-  activeBackGroundColor: string
-) => ({
+  theme: PluginAPI["theme"],
+  color: ReturnType<typeof getShadeValue>,
+  hoverBackgroundColor: ReturnType<typeof getShadeValue>,
+  activeBackGroundColor: ReturnType<typeof getShadeValue>
+): CSSRuleObject => ({
   ...buttonBase(theme),
   color,
   borderColor: color,
@@ -110,9 +111,9 @@ const buttonSecondaryBase = (
 });
 
 const buttonMatchSecondary = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonSecondaryBase(
     theme,
@@ -123,9 +124,9 @@ const buttonMatchSecondary = (
 };
 
 const buttonMatchSecondaryDarker = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonSecondaryBase(
     theme,
@@ -136,9 +137,9 @@ const buttonMatchSecondaryDarker = (
 };
 
 const buttonMatchSecondaryLighter = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => {
+): CSSRuleObject => {
   const color = getColor(theme, options);
   return buttonSecondaryBase(
     theme,
@@ -149,20 +150,20 @@ const buttonMatchSecondaryLighter = (
 };
 
 const buttonMatchGhost = (
-  theme: any,
+  theme: PluginAPI["theme"],
   options: SugarPluginColorOptions = {}
-) => ({
+): CSSRuleObject => ({
   ...buttonMatchSecondary(theme, options),
   border: "none",
 });
 
 export {
   buttonBase,
+  buttonMatchGhost,
   buttonMatchPrimary,
   buttonMatchPrimaryDarker,
   buttonMatchPrimaryLighter,
   buttonMatchSecondary,
   buttonMatchSecondaryDarker,
   buttonMatchSecondaryLighter,
-  buttonMatchGhost,
 };

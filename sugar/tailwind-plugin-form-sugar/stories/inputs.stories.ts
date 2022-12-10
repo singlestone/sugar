@@ -10,6 +10,7 @@ export default {
 const InputTemplate = ({
   className = "",
   disabled = false,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   label = "",
   placeholder = "",
 }) => {

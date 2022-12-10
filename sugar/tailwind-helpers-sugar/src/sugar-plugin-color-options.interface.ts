@@ -1,4 +1,6 @@
+import type { KeyValuePair } from "tailwindcss/types/config";
+
 export interface SugarPluginColorOptions {
-  value?: any;
+  value?: KeyValuePair | string;
   colorFamily?: string;
 }

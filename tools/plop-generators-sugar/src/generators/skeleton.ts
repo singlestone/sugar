@@ -1,5 +1,6 @@
 import { PlopGeneratorConfig } from "node-plop";
 import { join } from "path";
+
 import { pnpmInstall } from "../actions";
 
 const resolveTemplateFile = (fileName: string) =>
@@ -18,7 +19,7 @@ export const skeleton: PlopGeneratorConfig = {
       type: "input",
       name: "packageName",
       message: "What is the name of the package (minus the scope)?",
-      validate(value: any) {
+      validate(value) {
         if (/.+/.test(value)) {
           return true;
         }
@@ -29,7 +30,7 @@ export const skeleton: PlopGeneratorConfig = {
       type: "input",
       name: "packageDescription",
       message: "What is the description of the package?",
-      validate(value: any) {
+      validate(value) {
         if (/.+/.test(value)) {
           return true;
         }

@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node12/tsconfig.json",
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "esModuleInterop": true,
     "module": "esnext",
@@ -8,5 +8,5 @@
     "resolveJsonModule": true
   },
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Sugar Node 12"
+  "display": "Sugar Node 14"
 }
