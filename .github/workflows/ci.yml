@@ -97,7 +97,7 @@ jobs:
       - name: 🚀 Create Release Pull Request
         uses: changesets/action@v1
         with:
-          version: pnpm dlx changeset version && pnpm install --lockfile-only
+          version: pnpm dlx --package=@changesets/cli changeset version && pnpm install --lockfile-only
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_GITHUB_TOKEN }}
