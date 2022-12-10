@@ -8,7 +8,6 @@
 "@singlestone/plop-generators-sugar": minor
 "@singlestone/postcss-preset-sugar": minor
 "@singlestone/prettier-config-sugar": minor
-"@singlestone/prettier-plugin-organize-imports-tailwindcss": minor
 "@singlestone/tsup-config-sugar": minor
 ---
 
