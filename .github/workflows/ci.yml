@@ -8,7 +8,7 @@ on:
 
 permissions:
   actions: write
-  contents: read
+  contents: write
 
 env:
   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -103,6 +103,8 @@ jobs:
         with:
           version: bash ./update-lock.sh
           publish: pnpm release
+          commit: "chore: version packages"
+          title: "chore: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
