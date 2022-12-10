@@ -36,7 +36,7 @@
     "@antfu/ni": "0.18.8",
     "@changesets/changelog-github": "0.4.7",
     "@changesets/cli": "2.25.2",
-    "@singlestone/prettier-config-sugar": "workspace:^0.2.1",
+    "@singlestone/prettier-config-sugar": "workspace:*",
     "@storybook/storybook-deployer": "2.8.16",
     "@tsconfig/create-react-app": "1.0.3",
     "@tsconfig/node14": "1.0.3",
