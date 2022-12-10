@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npx changeset version
-pnpm install --lockfile-only
+pnpm changeset version
+#pnpm install --lockfile-only
