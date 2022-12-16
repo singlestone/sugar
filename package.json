@@ -61,7 +61,7 @@
   },
   "volta": {
     "node": "18.12.1",
-    "npm": "9.1.3"
+    "npm": "9.2.0"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,md,mdx,yml,graphql,scss,css}": [
