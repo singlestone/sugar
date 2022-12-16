@@ -38,7 +38,7 @@
   "devDependencies": {
     "@singlestone/tsup-config-sugar": "workspace:^",
     "tsup": "6.5.0",
-    "@babel/core": "7.20.2",
+    "@babel/core": "7.20.5",
     "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.3.1",
