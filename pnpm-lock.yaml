@@ -97,7 +97,7 @@ importers:
       stylelint-prettier: 2.0.0
       tailwindcss: 3.2.4
       typescript: 4.9.4
-      vite: 4.0.1
+      vite: 4.0.2
     devDependencies:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config-sugar
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-preset-sugar
@@ -115,7 +115,7 @@ importers:
       stylelint-prettier: 2.0.0_lzrral356zwd7lm6e3scl4w4om
       tailwindcss: 3.2.4_postcss@8.4.20
       typescript: 4.9.4
-      vite: 4.0.1
+      vite: 4.0.2
 
   sugar/tailwind-helpers-sugar:
     specifiers:
@@ -16470,8 +16470,8 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite/4.0.1:
-    resolution: {integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==}
+  /vite/4.0.2:
+    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
