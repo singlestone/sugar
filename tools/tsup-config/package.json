@@ -12,9 +12,11 @@
     "prepare": "tsup"
   },
   "peerDependencies": {
-    "tsup": "^5.12.7 || ^6.0.0"
+    "tsup": "^6.0.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.46.0",
+    "@typescript-eslint/parser": "5.46.0",
     "@types/node": "18.11.17",
     "tsup": "6.5.0",
     "typescript": "4.9.4"

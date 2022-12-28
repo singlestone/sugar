@@ -1,4 +1,4 @@
-import { skeleton } from "../../src/generators/skeleton";
+import { skeleton } from "../../src/generators";
 
 it("prompts for package type", () => {
   expect(skeleton.prompts).toEqual(

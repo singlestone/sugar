@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "SingleStone's sweet design system.",
   "private": true,
-  "packageManager": "pnpm@7.18.2",
+  "packageManager": "pnpm@7.21.0",
   "scripts": {
     "build": "turbo run build",
     "build-storybook": "turbo run build-storybook",
@@ -32,14 +32,15 @@
     "test:ci": "turbo run test:ci",
     "test:ci:changed": "turbo run test:ci --since=origin/main"
   },
-  "devDependencies": {
+  "dependencies": {
     "@antfu/ni": "0.18.8",
     "@changesets/changelog-github": "0.4.7",
     "@changesets/cli": "2.25.2",
+    "@singlestone/plop-generators-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@storybook/storybook-deployer": "2.8.16",
-    "@tsconfig/create-react-app": "1.0.3",
     "@tsconfig/node14": "1.0.3",
+    "@tsconfig/vite-react": "1.0.1",
     "doctoc": "2.2.1",
     "husky": "8.0.2",
     "is-ci": "3.0.1",
@@ -56,19 +57,8 @@
     "turbo": "1.6.3",
     "typescript": "4.9.4"
   },
-  "storybook-deployer": {
-    "commitMessage": "chore: deploy storybook"
-  },
   "volta": {
     "node": "18.12.1",
     "npm": "9.2.0"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,md,mdx,yml,graphql,scss,css}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --format stylish --max-warnings 0 --fix"
-    ]
   }
 }

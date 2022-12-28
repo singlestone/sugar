@@ -1,10 +1,8 @@
 import { PlopGeneratorConfig } from "node-plop";
 import { join } from "path";
 
-import { pnpmInstall } from "../actions";
-
 const resolveTemplateFile = (fileName: string) =>
-  join(__dirname, "generators", "templates", "skeleton", fileName);
+  join(__dirname, "templates", "skeleton", fileName);
 
 export const skeleton: PlopGeneratorConfig = {
   description: "empty package in a directory",
@@ -13,7 +11,7 @@ export const skeleton: PlopGeneratorConfig = {
       type: "list",
       name: "packageType",
       message: "Which type of skeleton package would you like to create?",
-      choices: ["sugar", "spice", "tools"],
+      choices: ["sugar", "tools"],
     },
     {
       type: "input",
@@ -42,12 +40,12 @@ export const skeleton: PlopGeneratorConfig = {
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/.eslintrc.js",
-      templateFile: resolveTemplateFile("eslintrc.js"),
+      templateFile: resolveTemplateFile("eslintrc.js.hbs"),
     },
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/.gitignore",
-      templateFile: resolveTemplateFile("gitignore"),
+      templateFile: resolveTemplateFile("gitignore.hbs"),
     },
     {
       type: "add",
@@ -74,6 +72,8 @@ export const skeleton: PlopGeneratorConfig = {
       path: "{{packageType}}/{{packageName}}/tsconfig.json",
       templateFile: resolveTemplateFile("tsconfig.json"),
     },
-    pnpmInstall,
+    {
+      type: "installDependencies",
+    },
   ],
 };
