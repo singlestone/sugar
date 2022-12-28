@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@antfu/ni': 0.18.8
       '@changesets/changelog-github': 0.4.7
-      '@changesets/cli': 2.25.2
+      '@changesets/cli': 2.26.0
       '@singlestone/plop-generators-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@storybook/storybook-deployer': 2.8.16
@@ -31,7 +31,7 @@ importers:
     dependencies:
       '@antfu/ni': 0.18.8
       '@changesets/changelog-github': 0.4.7
-      '@changesets/cli': 2.25.2
+      '@changesets/cli': 2.26.0
       '@singlestone/plop-generators-sugar': link:tools/plop-generators
       '@singlestone/prettier-config-sugar': link:tools/prettier-config
       '@storybook/storybook-deployer': 2.8.16
@@ -2083,8 +2083,8 @@ packages:
       - encoding
     dev: false
 
-  /@changesets/cli/2.25.2:
-    resolution: {integrity: sha512-ACScBJXI3kRyMd2R8n8SzfttDHi4tmKSwVwXBazJOylQItSRSF4cGmej2E4FVf/eNfGy6THkL9GzAahU9ErZrA==}
+  /@changesets/cli/2.26.0:
+    resolution: {integrity: sha512-0cbTiDms+ICTVtEwAFLNW0jBNex9f5+fFv3I771nBvdnV/mOjd1QJ4+f8KtVSOrwD9SJkk9xbDkWFb0oXd8d1Q==}
     hasBin: true
     dependencies:
       '@babel/runtime': 7.20.7
@@ -2095,7 +2095,7 @@ packages:
       '@changesets/errors': 0.1.4
       '@changesets/get-dependents-graph': 1.3.5
       '@changesets/get-release-plan': 3.0.16
-      '@changesets/git': 1.5.0
+      '@changesets/git': 2.0.0
       '@changesets/logger': 0.0.5
       '@changesets/pre': 1.0.14
       '@changesets/read': 0.5.9
@@ -2173,17 +2173,6 @@ packages:
 
   /@changesets/get-version-range-type/0.3.2:
     resolution: {integrity: sha512-SVqwYs5pULYjYT4op21F2pVbcrca4qA/bAA3FmFXKMN7Y+HcO8sbZUTx3TAy2VXulP2FACd1aC7f2nTuqSPbqg==}
-    dev: false
-
-  /@changesets/git/1.5.0:
-    resolution: {integrity: sha512-Xo8AT2G7rQJSwV87c8PwMm6BAc98BnufRMsML7m7Iw8Or18WFvFmxqG5aOL5PBvhgq9KrKvaeIBNIymracSuHg==}
-    dependencies:
-      '@babel/runtime': 7.20.7
-      '@changesets/errors': 0.1.4
-      '@changesets/types': 5.2.1
-      '@manypkg/get-packages': 1.1.3
-      is-subdir: 1.2.0
-      spawndamnit: 2.0.0
     dev: false
 
   /@changesets/git/2.0.0:
@@ -2768,7 +2757,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       '@types/yargs': 15.0.14
       chalk: 4.1.2
     dev: true
@@ -4714,14 +4703,14 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
     dev: true
 
   /@types/glob/8.0.0:
     resolution: {integrity: sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
     dev: true
 
   /@types/graceful-fs/4.1.5:
@@ -4817,7 +4806,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       form-data: 3.0.1
     dev: true
 
@@ -4913,7 +4902,7 @@ packages:
   /@types/webpack-sources/3.2.0:
     resolution: {integrity: sha512-Ft7YH3lEVRQ6ls8k4Ff1oB4jN6oy/XmU6tQISKdhfh+1mR+viZFphS6WL0IrtDOzvefmJg5a0s7ZQoRXwqTEFg==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       '@types/source-list-map': 0.1.2
       source-map: 0.7.4
     dev: true
@@ -4921,7 +4910,7 @@ packages:
   /@types/webpack/4.41.33:
     resolution: {integrity: sha512-PPajH64Ft2vWevkerISMtnZ8rTs4YmRbs+23c402J0INmxDKCrhZNvwZYtzx96gY2wAtXdrK1BS2fiC8MlLr3g==}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       '@types/tapable': 1.0.8
       '@types/uglify-js': 3.17.1
       '@types/webpack-sources': 3.2.0
@@ -10506,11 +10495,11 @@ packages:
       ts-node:
         optional: true
     dependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@jest/test-sequencer': 29.3.1
       '@jest/types': 29.3.1
       '@types/node': 18.11.17
-      babel-jest: 29.3.1_@babel+core@7.20.5
+      babel-jest: 29.3.1_@babel+core@7.20.7
       chalk: 4.1.2
       ci-info: 3.7.0
       deepmerge: 4.2.2
@@ -10639,7 +10628,7 @@ packages:
     dependencies:
       '@jest/types': 26.6.2
       '@types/graceful-fs': 4.1.5
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.10
@@ -10816,7 +10805,7 @@ packages:
     resolution: {integrity: sha512-S5wqyz0DXnNJPd/xfIzZ5Xnp1HrJWBczg8mMfMpN78OJ5eDxXyf+Ygld9wX1DnUWbIbhM1YDY95NjR4CBXkb2g==}
     engines: {node: '>= 10.14.2'}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       graceful-fs: 4.2.10
     dev: true
 
@@ -10856,7 +10845,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       chalk: 4.1.2
       graceful-fs: 4.2.10
       is-ci: 2.0.0
@@ -10918,7 +10907,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -10927,7 +10916,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.11.17
+      '@types/node': 18.11.18
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
