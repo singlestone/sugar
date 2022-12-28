@@ -1,13 +1,13 @@
 {
-  "name": "@singlestone/sugar",
-  "version": "0.3.0",
-  "description": "Core plugin for the sugar design system",
+  "name": "@singlestone/{{kebabCase packageName}}-sugar",
+  "version": "0.0.0",
+  "description": "{{packageDescription}}",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/sugar"
+    "directory": "{{packageType}}/{{kebabCase packageName}}"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/{{packageType}}/{{kebabCase packageName}}#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
@@ -17,7 +17,7 @@
     "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
-  "module": "./dist/sugar.esm.js",
+  "module": "./dist/{{kebabCase packageName}}-sugar.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -29,28 +29,22 @@
     "clean": "rimraf .turbo node_modules dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
-    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
     "test": "jest --passWithNoTests",
-    "test:ci": "jest --passWithNoTests"
+    "test:ci": "jest --passWithNoTests",
+    "prepublishOnly": "rm -rf ./package && clean-publish",
+    "postpublish": "rm -rf ./package"
   },
-  "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.3.0"
-  },
+  "peerDependencies": {},
   "devDependencies": {
+    "@singlestone/tsup-config-sugar": "workspace:^",
+    "tsup": "6.5.0",
     "@babel/core": "7.20.5",
-    "@singlestone/eslint-config-sugar": "workspace:^0.3.0",
-    "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
-    "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
+    "@singlestone/prettier-config-sugar": "workspace:^",
     "@size-limit/preset-small-lib": "8.1.0",
     "babel-jest": "29.3.1",
-    "jest-watch-typeahead": "2.2.1",
-    "size-limit": "8.1.0",
-    "tsup": "6.5.0"
+    "size-limit": "8.1.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -59,15 +53,12 @@
   },
   "size-limit": [
     {
-      "path": "./dist/sugar.cjs.production.min.js",
+      "path": "./dist/{{kebabCase packageName}}.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/sugar.esm.js",
+      "path": "./dist/{{kebabCase packageName}}.esm.js",
       "limit": "10 KB"
     }
-  ],
-  "volta": {
-    "extends": "../../package.json"
-  }
+  ]
 }

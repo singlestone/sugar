@@ -1,23 +1,24 @@
 {
-  "name": "@singlestone/sugar",
+  "name": "@singlestone/plop-generators-sugar",
   "version": "0.3.0",
-  "description": "Core plugin for the sugar design system",
+  "description": "Plop generators config for Sugar",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/sugar"
+    "directory": "tools/plop-generators-sugar"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/plop-generators-sugar#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
+  "private": true,
   "engines": {
     "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
-  "module": "./dist/sugar.esm.js",
+  "module": "./dist/plop-generators-sugar.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -25,7 +26,7 @@
   ],
   "scripts": {
     "analyze": "size-limit --why",
-    "build": "tsup",
+    "build": "tsup --publicDir",
     "clean": "rimraf .turbo node_modules dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
@@ -36,10 +37,9 @@
     "test": "jest --passWithNoTests",
     "test:ci": "jest --passWithNoTests"
   },
-  "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.3.0"
+  "peerDependencies": {
+    "node-plop": "~0.30.0 || ~0.31.0",
+    "plop": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
@@ -47,10 +47,19 @@
     "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
     "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
+    "@types/jest": "29.2.4",
     "babel-jest": "29.3.1",
+    "cpy-cli": "4.2.0",
+    "eslint": "8.30.0",
+    "jest": "29.3.1",
+    "jest-environment-jsdom": "29.3.1",
     "jest-watch-typeahead": "2.2.1",
+    "node-plop": "0.31.0",
+    "plop": "3.1.1",
     "size-limit": "8.1.0",
-    "tsup": "6.5.0"
+    "ts-jest": "29.0.3",
+    "tsup": "6.5.0",
+    "typescript": "4.9.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -59,11 +68,11 @@
   },
   "size-limit": [
     {
-      "path": "./dist/sugar.cjs.production.min.js",
+      "path": "./dist/plop-generators-sugar.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/sugar.esm.js",
+      "path": "./dist/plop-generators-sugar.esm.js",
       "limit": "10 KB"
     }
   ],

@@ -1,23 +1,24 @@
 {
-  "name": "@singlestone/sugar",
+  "name": "@singlestone/postcss-preset-sugar",
   "version": "0.3.0",
-  "description": "Core plugin for the sugar design system",
+  "description": "PostCSS config for Sugar",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/sugar"
+    "directory": "tools/postcss-preset-sugar"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/postcss-preset-sugar#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
+  "private": true,
   "engines": {
     "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
-  "module": "./dist/sugar.esm.js",
+  "module": "./dist/postcss-preset-sugar.esm.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -27,6 +28,7 @@
     "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo node_modules dist",
+    "dev": "tsup --watch --noClean --verbose",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
@@ -36,10 +38,15 @@
     "test": "jest --passWithNoTests",
     "test:ci": "jest --passWithNoTests"
   },
+  "peerDependencies": {
+    "postcss": "^8.4.5",
+    "postcss-load-config": "^3.1.1 || ^4.0.0"
+  },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.3.0",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.3.0"
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
     "@babel/core": "7.20.5",
@@ -47,10 +54,20 @@
     "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
     "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
+    "@types/jest": "29.2.4",
+    "@types/node": "18.11.17",
+    "@types/postcss-import": "14.0.0",
     "babel-jest": "29.3.1",
+    "eslint": "8.30.0",
+    "jest": "29.3.1",
+    "jest-environment-jsdom": "29.3.1",
     "jest-watch-typeahead": "2.2.1",
+    "postcss": "8.4.20",
+    "postcss-load-config": "4.0.1",
     "size-limit": "8.1.0",
-    "tsup": "6.5.0"
+    "ts-jest": "29.0.3",
+    "tsup": "6.5.0",
+    "typescript": "4.9.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -59,11 +76,11 @@
   },
   "size-limit": [
     {
-      "path": "./dist/sugar.cjs.production.min.js",
+      "path": "./dist/postcss-preset-sugar.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/sugar.esm.js",
+      "path": "./dist/postcss-preset-sugar.esm.js",
       "limit": "10 KB"
     }
   ],
