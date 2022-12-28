@@ -1,1 +1,1 @@
-export * from "./pnpm-install";
+export * from "./install-dependencies";

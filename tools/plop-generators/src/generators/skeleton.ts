@@ -1,8 +1,8 @@
 import { PlopGeneratorConfig } from "node-plop";
 import { join } from "path";
 
-const resolveTemplateFile = (fileName: string) =>
-  join(__dirname, "templates", "skeleton", fileName);
+const resolveTemplateFile = (...fileNameParts: string[]) =>
+  join(__dirname, "templates", "skeleton", ...fileNameParts);
 
 export const skeleton: PlopGeneratorConfig = {
   description: "empty package in a directory",
@@ -50,27 +50,47 @@ export const skeleton: PlopGeneratorConfig = {
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/LICENSE",
-      templateFile: resolveTemplateFile("LICENSE"),
+      templateFile: resolveTemplateFile("LICENSE.hbs"),
     },
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/package.json",
-      templateFile: resolveTemplateFile("package.json"),
+      templateFile: resolveTemplateFile("package.json.hbs"),
     },
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/.prettierrc.js",
-      templateFile: resolveTemplateFile("prettierrc.js"),
+      templateFile: resolveTemplateFile("prettierrc.js.hbs"),
     },
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/README.md",
-      templateFile: resolveTemplateFile("README.md"),
+      templateFile: resolveTemplateFile("README.md.hbs"),
     },
     {
       type: "add",
       path: "{{packageType}}/{{packageName}}/tsconfig.json",
-      templateFile: resolveTemplateFile("tsconfig.json"),
+      templateFile: resolveTemplateFile("tsconfig.json.hbs"),
+    },
+    {
+      type: "add",
+      path: "{{packageType}}/{{packageName}}/tsup.config.ts",
+      templateFile: resolveTemplateFile("tsup.config.ts.hbs"),
+    },
+    {
+      type: "add",
+      path: "{{packageType}}/{{packageName}}/src/index.ts",
+      templateFile: resolveTemplateFile("src", "index.ts.hbs"),
+    },
+    {
+      type: "add",
+      path: "{{packageType}}/{{packageName}}/src/sum.ts",
+      templateFile: resolveTemplateFile("src", "sum.ts.hbs"),
+    },
+    {
+      type: "add",
+      path: "{{packageType}}/{{packageName}}/src/sum.test.ts",
+      templateFile: resolveTemplateFile("src", "sum.test.ts.hbs"),
     },
     {
       type: "installDependencies",

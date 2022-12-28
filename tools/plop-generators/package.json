@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "analyze": "size-limit --why",
-    "build": "tsup --onSuccess=\"cpy templates/ dist/\"",
+    "build": "tsup --publicDir",
     "clean": "rimraf .turbo node_modules dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",

@@ -1,13 +1,13 @@
 {
-  "name": "@singlestone/{{packageName}}",
+  "name": "@singlestone/{{kebabCase packageName}}-sugar",
   "version": "0.0.0",
   "description": "{{packageDescription}}",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "{{packageType}}/{{packageName}}"
+    "directory": "{{packageType}}/{{kebabCase packageName}}"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/{{packageType}}/{{packageName}}#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/{{packageType}}/{{kebabCase packageName}}#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
@@ -17,7 +17,7 @@
     "node": "^12 || ^14 || >=16"
   },
   "main": "./dist/index.js",
-  "module": "./dist/{{packageName}}.esm.js",
+  "module": "./dist/{{kebabCase packageName}}-sugar.esm.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -50,11 +50,11 @@
   },
   "size-limit": [
     {
-      "path": "./dist/{{packageName}}.cjs.production.min.js",
+      "path": "./dist/{{kebabCase packageName}}.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/{{packageName}}.esm.js",
+      "path": "./dist/{{kebabCase packageName}}.esm.js",
       "limit": "10 KB"
     }
   ]

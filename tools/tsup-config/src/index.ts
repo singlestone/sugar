@@ -8,4 +8,5 @@ export const defineSugarTsupConfig = () =>
     clean: !overrideOptions.watch,
     dts: true,
     format: ["cjs", "esm"],
+    publicDir: overrideOptions.publicDir,
   }));
