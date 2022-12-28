@@ -1,5 +1,5 @@
 {
-  "baseBranch": "origin/main",
+  "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
@@ -39,6 +39,9 @@
     },
     "storybook": {
       "cache": false
+    },
+    "size": {
+      "dependsOn": ["^build"]
     }
   }
 }

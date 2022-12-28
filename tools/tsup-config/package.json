@@ -1,11 +1,21 @@
 {
   "name": "@singlestone/tsup-config-sugar",
   "version": "0.3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "tools/tsup-config-sugar"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/tsup-config-sugar#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
   "private": true,
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -15,9 +25,9 @@
     "tsup": "^6.0.0"
   },
   "devDependencies": {
+    "@types/node": "18.11.17",
     "@typescript-eslint/eslint-plugin": "5.46.0",
     "@typescript-eslint/parser": "5.46.0",
-    "@types/node": "18.11.17",
     "tsup": "6.5.0",
     "typescript": "4.9.4"
   },

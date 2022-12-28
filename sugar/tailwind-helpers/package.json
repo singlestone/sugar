@@ -1,7 +1,7 @@
 {
   "name": "@singlestone/tailwind-helpers-sugar",
   "version": "0.3.0",
-  "description": "Helper functions for use in Sugar, SingleStone&#x27;s sweet design system",
+  "description": "Helper functions for use in Sugar, SingleStone's sweet design system",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
@@ -14,7 +14,7 @@
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
   "engines": {
-    "node": "^12 || ^14 || >=16"
+    "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
   "module": "./dist/tailwind-helpers-sugar.esm.js",
@@ -29,7 +29,9 @@
     "clean": "rimraf .turbo node_modules dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
+    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
+    "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
     "test": "jest --passWithNoTests",
     "test:ci": "jest --passWithNoTests"
@@ -58,7 +60,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "access": "public",
+    "directory": "package"
   },
   "size-limit": [
     {

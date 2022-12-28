@@ -14,11 +14,11 @@
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
   "engines": {
-    "node": "^12 || ^14 || >=16"
+    "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
   "module": "./dist/{{kebabCase packageName}}-sugar.esm.js",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -32,7 +32,9 @@
     "prepare": "tsup",
     "size": "size-limit",
     "test": "jest --passWithNoTests",
-    "test:ci": "jest --passWithNoTests"
+    "test:ci": "jest --passWithNoTests",
+    "prepublishOnly": "rm -rf ./package && clean-publish",
+    "postpublish": "rm -rf ./package"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -46,7 +48,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "access": "public",
+    "directory": "package"
   },
   "size-limit": [
     {

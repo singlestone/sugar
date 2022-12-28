@@ -13,12 +13,13 @@
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
+  "private": true,
   "engines": {
-    "node": "^12 || ^14 || >=16"
+    "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
   "module": "./dist/postcss-preset-sugar.esm.js",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -30,7 +31,9 @@
     "dev": "tsup --watch --noClean --verbose",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
+    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
+    "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
     "test": "jest --passWithNoTests",
     "test:ci": "jest --passWithNoTests"
@@ -68,7 +71,8 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public"
+    "access": "public",
+    "directory": "package"
   },
   "size-limit": [
     {
