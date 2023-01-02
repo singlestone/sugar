@@ -1,4 +1,22 @@
 {
   "extends": "../../tsconfig.node14.json",
-  "include": ["src", "types"]
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "paths": {
+      "@singlestone/tailwind-helpers-sugar/*": ["../tailwind-helpers/src/*"],
+      "@singlestone/tailwind-helpers-sugar": ["../tailwind-helpers/src/index"],
+      "@singlestone/tailwind-plugin-buttons-sugar/*": [
+        "../tailwind-plugin-buttons/src/*"
+      ],
+      "@singlestone/tailwind-plugin-buttons-sugar": [
+        "../tailwind-plugin-buttons/src/index"
+      ],
+      "@singlestone/tailwind-plugin-form-sugar/*": [
+        "../tailwind-plugin-form/src/*"
+      ],
+      "@singlestone/tailwind-plugin-form-sugar": [
+        "../tailwind-plugin-form/src/index"
+      ]
+    }
+  }
 }

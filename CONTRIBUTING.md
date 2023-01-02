@@ -202,12 +202,6 @@ To use live reload:
 - [Set up the project](#project-setup).
 - In your terminal, run `pnpm dev`.
 
-You can also run the [Storybooks](https://storybook.js.org/) for the projects by following these steps:
-
-- [Set up the project](#project-setup).
-- In your terminal, run `pnpm dev`.
-- In your terminal, open a new window, and run `pnpm storybook`.
-
 ### Create a new Package
 
 If you want to create a new package, we have good news! We've written some tooling to make scaffolding
