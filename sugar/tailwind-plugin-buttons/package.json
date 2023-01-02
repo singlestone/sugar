@@ -34,8 +34,8 @@
     "prepare": "tsup",
     "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
-    "test": "jest --passWithNoTests",
-    "test:ci": "jest --passWithNoTests"
+    "test": "vitest",
+    "test:ci": "vitest"
   },
   "peerDependencies": {
     "tailwindcss": "^3.1.0"
@@ -52,20 +52,15 @@
     "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "@storybook/html": "7.0.0-beta.19",
-    "@types/jest": "29.2.5",
     "@types/node": "18.11.18",
     "autoprefixer": "10.4.13",
-    "babel-jest": "29.3.1",
     "babel-loader": "9.1.0",
-    "jest": "29.3.1",
-    "jest-environment-jsdom": "29.3.1",
-    "jest-watch-typeahead": "2.2.1",
     "postcss": "8.4.20",
     "size-limit": "8.1.0",
     "tailwindcss": "3.2.4",
-    "ts-jest": "29.0.3",
     "tsup": "6.5.0",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "vitest": "0.26.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
