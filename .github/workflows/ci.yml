@@ -48,22 +48,6 @@ jobs:
       - name: ⚡ Run tests
         run: pnpm run test:ci
 
-  test-storybook:
-    name: ⚡ Test Storybook
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
-
-      - name: ⚡ Run Storybook tests
-        run: pnpm run test-storybook:ci
-
   build:
     name: 🔨 Build
     runs-on: ubuntu-latest
@@ -83,7 +67,7 @@ jobs:
   release:
     name: 🚀 Release
     runs-on: ubuntu-latest
-    needs: [lint, test, test-storybook, build]
+    needs: [lint, test, build]
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     steps:
       - name: 🛑 Cancel Previous Runs

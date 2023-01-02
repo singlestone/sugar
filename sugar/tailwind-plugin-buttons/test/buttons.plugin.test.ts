@@ -4,6 +4,7 @@ import postcss from "postcss";
 import tailwindcss from "tailwindcss";
 import * as colors from "tailwindcss/colors";
 import { Config } from "tailwindcss/types/config";
+import { describe, expect, test } from "vitest";
 
 import { sugarButtonsPlugin } from "../src";
 

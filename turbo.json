@@ -5,10 +5,6 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "build-storybook": {
-      "dependsOn": ["^build", "^build-storybook"],
-      "outputs": ["storybook-static/**"]
-    },
     "test": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
@@ -16,14 +12,6 @@
     "test:ci": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
-    },
-    "test-storybook": {
-      "dependsOn": ["^build"],
-      "outputs": ["storybook-static/**"]
-    },
-    "test-storybook:ci": {
-      "dependsOn": ["^build"],
-      "outputs": ["storybook-static/**"]
     },
     "lint": {
       "outputs": []
@@ -35,9 +23,6 @@
       "cache": false
     },
     "clean": {
-      "cache": false
-    },
-    "storybook": {
       "cache": false
     },
     "size": {

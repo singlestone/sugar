@@ -1,9 +1,7 @@
 {
   "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
-    "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
     "isolatedModules": true,
     "resolveJsonModule": true
   },

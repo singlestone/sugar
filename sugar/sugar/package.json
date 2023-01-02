@@ -27,14 +27,15 @@
     "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo node_modules dist",
+    "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup",
     "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
-    "test": "jest --passWithNoTests",
-    "test:ci": "jest --passWithNoTests"
+    "test": "vitest",
+    "test:ci": "vitest"
   },
   "dependencies": {
     "@singlestone/tailwind-helpers-sugar": "workspace:^0.3.0",
@@ -47,10 +48,9 @@
     "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
     "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
-    "babel-jest": "29.3.1",
-    "jest-watch-typeahead": "2.2.1",
     "size-limit": "8.1.0",
-    "tsup": "6.5.0"
+    "tsup": "6.5.0",
+    "vitest": "0.26.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

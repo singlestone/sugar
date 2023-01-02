@@ -1,3 +1,5 @@
+import { expect, it } from "vitest";
+
 import { sugarPostcssPresetFn } from "../src";
 
 it("includes postcss-import", async () => {

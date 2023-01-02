@@ -1,11 +1,11 @@
-import { Meta } from "@storybook/html";
+import type { Meta } from "@storybook/html";
 
 export default {
-  title: "Inputs",
+  title: "Forms/Inputs",
   parameters: {
     layout: "centered",
   },
-} as Meta;
+} satisfies Meta;
 
 const InputTemplate = ({
   className = "",

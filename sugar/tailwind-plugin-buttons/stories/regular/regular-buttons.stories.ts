@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/html";
+import type { Meta } from "@storybook/html";
 
 import { ButtonTemplate } from "../button.template";
 
@@ -7,7 +7,7 @@ export default {
   parameters: {
     layout: "centered",
   },
-} as Meta;
+} satisfies Meta;
 
 export const PrimaryRegularButton = ButtonTemplate.bind({});
 PrimaryRegularButton.args = {

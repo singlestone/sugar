@@ -1,3 +1,5 @@
+import { expect, it } from "vitest";
+
 import { skeleton } from "../../src/generators";
 
 it("prompts for package type", () => {

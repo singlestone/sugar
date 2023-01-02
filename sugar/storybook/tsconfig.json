@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.node14.json",
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "paths": {
+      "@singlestone/tailwind-helpers-sugar/*": [
+        "../tailwind-helpers-sugar/src/*"
+      ],
+      "@singlestone/tailwind-helpers-sugar": [
+        "../tailwind-helpers-sugar/src/index"
+      ]
+    }
+  }
+}

@@ -31,20 +31,21 @@
     "lint:fix": "nr lint --fix",
     "prepare": "tsup",
     "size": "size-limit",
-    "test": "jest --passWithNoTests",
-    "test:ci": "jest --passWithNoTests",
+    "test": "vitest",
+    "test:ci": "vitest",
     "prepublishOnly": "rm -rf ./package && clean-publish",
     "postpublish": "rm -rf ./package"
   },
   "peerDependencies": {},
   "devDependencies": {
-    "@singlestone/tsup-config-sugar": "workspace:^",
-    "tsup": "6.5.0",
-    "@babel/core": "7.20.5",
+    "@singlestone/eslint-config-sugar": "workspace:^",
     "@singlestone/prettier-config-sugar": "workspace:^",
+    "@singlestone/tsup-config-sugar": "workspace:^",
+    "@babel/core": "7.20.5",
     "@size-limit/preset-small-lib": "8.1.0",
-    "babel-jest": "29.3.1",
-    "size-limit": "8.1.0"
+    "size-limit": "8.1.0",
+    "tsup": "6.5.0",
+    "vitest": "0.26.3"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
