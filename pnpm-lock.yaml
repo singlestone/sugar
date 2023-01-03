@@ -93,7 +93,7 @@ importers:
 
   sugar/sugar:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/prettier-config-sugar': workspace:^0.3.0
       '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
@@ -109,7 +109,7 @@ importers:
       '@singlestone/tailwind-plugin-buttons-sugar': link:../tailwind-plugin-buttons
       '@singlestone/tailwind-plugin-form-sugar': link:../tailwind-plugin-form
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
@@ -157,7 +157,7 @@ importers:
 
   sugar/tailwind-helpers:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/prettier-config-sugar': workspace:^0.3.0
       '@singlestone/tsup-config-sugar': workspace:^0.3.0
@@ -170,7 +170,7 @@ importers:
       typescript: 4.9.4
       vitest: 0.26.3
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
@@ -186,7 +186,7 @@ importers:
 
   sugar/tailwind-plugin-buttons:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@mdx-js/react': 1.6.22
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/postcss-preset-sugar': workspace:^0.3.0
@@ -207,17 +207,17 @@ importers:
     dependencies:
       '@singlestone/tailwind-helpers-sugar': link:../tailwind-helpers
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@mdx-js/react': 1.6.22_react@17.0.2
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.5
+      '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.7
       '@types/node': 18.11.18
       autoprefixer: 10.4.13_postcss@8.4.20
-      babel-loader: 9.1.0_ztqwsvkb6z73luspkai6ilstpu
+      babel-loader: 9.1.0_lkd654lvpl423ugsqn5olungie
       postcss: 8.4.20
       size-limit: 8.1.0
       tailwindcss: 3.2.4_postcss@8.4.20
@@ -228,7 +228,7 @@ importers:
 
   sugar/tailwind-plugin-form:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@mdx-js/react': 1.6.22
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/postcss-preset-sugar': workspace:^0.3.0
@@ -248,16 +248,16 @@ importers:
     dependencies:
       '@singlestone/tailwind-helpers-sugar': link:../tailwind-helpers
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@mdx-js/react': 1.6.22_react@17.0.2
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.5
+      '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.7
       autoprefixer: 10.4.13_postcss@8.4.20
-      babel-loader: 9.1.0_ztqwsvkb6z73luspkai6ilstpu
+      babel-loader: 9.1.0_lkd654lvpl423ugsqn5olungie
       postcss: 8.4.20
       size-limit: 8.1.0
       tailwindcss: 3.2.4_postcss@8.4.20
@@ -268,7 +268,7 @@ importers:
 
   tools/eslint-config:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
       '@typescript-eslint/eslint-plugin': 5.47.1
@@ -285,7 +285,7 @@ importers:
       '@typescript-eslint/parser': 5.47.1_iukboom6ndih5an6iafl45j2fe
       eslint-plugin-simple-import-sort: 8.0.0_eslint@8.31.0
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
       eslint: 8.31.0
@@ -298,7 +298,7 @@ importers:
 
   tools/plop-generators:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/prettier-config-sugar': workspace:^0.3.0
       '@singlestone/tsup-config-sugar': workspace:^0.3.0
@@ -312,7 +312,7 @@ importers:
       typescript: 4.9.4
       vitest: 0.26.3
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
       '@singlestone/tsup-config-sugar': link:../tsup-config
@@ -329,7 +329,7 @@ importers:
 
   tools/postcss-config:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/prettier-config-sugar': workspace:^0.3.0
       '@singlestone/tsup-config-sugar': workspace:^0.3.0
@@ -353,7 +353,7 @@ importers:
       postcss-import: 15.1.0_postcss@8.4.20
       tailwindcss: 3.2.4_postcss@8.4.20
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
       '@singlestone/tsup-config-sugar': link:../tsup-config
@@ -371,7 +371,7 @@ importers:
 
   tools/prettier-config:
     specifiers:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': workspace:^0.3.0
       '@singlestone/tsup-config-sugar': workspace:^0.3.0
       '@size-limit/preset-small-lib': 8.1.0
@@ -391,7 +391,7 @@ importers:
       prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
       typescript: 4.9.4
     devDependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/tsup-config-sugar': link:../tsup-config
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
@@ -452,29 +452,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@babel/core/7.20.5:
-    resolution: {integrity: sha512-UdOWmk4pNWTm/4DlPUl/Pt4Gz4rcEMb7CY0Y3eJl5Yz1vI8ZJGmHWaVE55LoxRjdpx0z259GE9U5STA9atUinQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.20.7
-      '@babel/helper-compilation-targets': 7.20.7_@babel+core@7.20.5
-      '@babel/helper-module-transforms': 7.20.11
-      '@babel/helpers': 7.20.7
-      '@babel/parser': 7.20.7
-      '@babel/template': 7.20.7
-      '@babel/traverse': 7.20.10
-      '@babel/types': 7.20.7
-      convert-source-map: 1.9.0
-      debug: 4.3.4
-      gensync: 1.0.0-beta.2
-      json5: 2.2.2
-      semver: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/core/7.20.7:
     resolution: {integrity: sha512-t1ZjCluspe5DW24bn2Rr1CDb2v9rn/hROtg9a2tmd0+QYf4bsloYfLQzjG4qHPNMhWtKdGC33R5AxGR2Af2cBw==}
     engines: {node: '>=6.9.0'}
@@ -520,20 +497,6 @@ packages:
     dependencies:
       '@babel/helper-explode-assignable-expression': 7.18.6
       '@babel/types': 7.20.7
-    dev: true
-
-  /@babel/helper-compilation-targets/7.20.7_@babel+core@7.20.5:
-    resolution: {integrity: sha512-4tGORmfQcrc+bvrjb5y3dG9Mx1IOZjsHqQVUz7XCNHO+iTmqxWnVg3KRygjGmpRLJGdQSKuvFinbIb0CnZwHAQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-    dependencies:
-      '@babel/compat-data': 7.20.10
-      '@babel/core': 7.20.5
-      '@babel/helper-validator-option': 7.18.6
-      browserslist: 4.21.4
-      lru-cache: 5.1.1
-      semver: 6.3.0
     dev: true
 
   /@babel/helper-compilation-targets/7.20.7_@babel+core@7.20.7:
@@ -3273,23 +3236,6 @@ packages:
       - vite-plugin-glimmerx
     dev: true
 
-  /@storybook/html/7.0.0-beta.19_@babel+core@7.20.5:
-    resolution: {integrity: sha512-PJylrz7N+DfU/dfUNvJeiYEdKN9swhpVqvX1GRBr/VRVJGBllFfHzxyP0FTQl31+RzxdZ2zr147ejcfjDugGHw==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@babel/core': '*'
-    dependencies:
-      '@babel/core': 7.20.5
-      '@storybook/core-client': 7.0.0-beta.19
-      '@storybook/docs-tools': 7.0.0-beta.19
-      '@storybook/global': 5.0.0
-      '@storybook/preview-api': 7.0.0-beta.19
-      '@storybook/types': 7.0.0-beta.19
-      ts-dedent: 2.2.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@storybook/html/7.0.0-beta.19_@babel+core@7.20.7:
     resolution: {integrity: sha512-PJylrz7N+DfU/dfUNvJeiYEdKN9swhpVqvX1GRBr/VRVJGBllFfHzxyP0FTQl31+RzxdZ2zr147ejcfjDugGHw==}
     engines: {node: '>=16.0.0'}
@@ -4530,14 +4476,14 @@ packages:
       '@babel/core': 7.20.7
     dev: true
 
-  /babel-loader/9.1.0_ztqwsvkb6z73luspkai6ilstpu:
+  /babel-loader/9.1.0_lkd654lvpl423ugsqn5olungie:
     resolution: {integrity: sha512-Antt61KJPinUMwHwIIz9T5zfMgevnfZkEVWYDWlG888fgdvRRGD0JTuf/fFozQnfT+uq64sk1bmdHDy/mOEWnA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       '@babel/core': ^7.12.0
       webpack: '>=5'
     dependencies:
-      '@babel/core': 7.20.5
+      '@babel/core': 7.20.7
       find-cache-dir: 3.3.2
       schema-utils: 4.0.0
       webpack: 5.75.0_esbuild@0.15.18
@@ -7898,12 +7844,6 @@ packages:
 
   /json-stable-stringify-without-jsonify/1.0.1:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
-
-  /json5/2.2.2:
-    resolution: {integrity: sha512-46Tk9JiOL2z7ytNQWFLpj99RZkVgeHf87yGQKsIkaPz1qSH9UczKH1rO7K3wgRselo0tYMUNfecYpm/p1vC7tQ==}
-    engines: {node: '>=6'}
-    hasBin: true
-    dev: true
 
   /json5/2.2.3:
     resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
