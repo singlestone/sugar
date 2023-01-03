@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@antfu/ni': 0.18.8
-      '@changesets/changelog-github': 0.4.7
+      '@changesets/changelog-github': 0.4.8
       '@changesets/cli': 2.26.0
       '@singlestone/plop-generators-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
@@ -27,7 +27,7 @@ importers:
       typescript: 4.9.4
     dependencies:
       '@antfu/ni': 0.18.8
-      '@changesets/changelog-github': 0.4.7
+      '@changesets/changelog-github': 0.4.8
       '@changesets/cli': 2.26.0
       '@singlestone/plop-generators-sugar': link:tools/plop-generators
       '@singlestone/prettier-config-sugar': link:tools/prettier-config
@@ -1758,8 +1758,8 @@ packages:
       '@changesets/types': 5.2.1
     dev: false
 
-  /@changesets/changelog-github/0.4.7:
-    resolution: {integrity: sha512-UUG5sKwShs5ha1GFnayUpZNcDGWoY7F5XxhOEHS62sDPOtoHQZsG3j1nC5RxZ3M1URHA321cwVZHeXgu99Y3ew==}
+  /@changesets/changelog-github/0.4.8:
+    resolution: {integrity: sha512-jR1DHibkMAb5v/8ym77E4AMNWZKB5NPzw5a5Wtqm1JepAuIF+hrKp2u04NKM14oBZhHglkCfrla9uq8ORnK/dw==}
     dependencies:
       '@changesets/get-github-info': 0.5.2
       '@changesets/types': 5.2.1
