@@ -6,6 +6,6 @@ if (process.platform === "win32") {
 }
 
 chmodSync(
-  join(__dirname, "..", "node_modules", "husky", "lib", "bin.js"),
+  join(import.meta.url, "..", "node_modules", "husky", "lib", "bin.js"),
   "755"
 );
