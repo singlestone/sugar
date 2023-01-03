@@ -69,7 +69,7 @@ importers:
       react-dom: 18.2.0
       storybook: 7.0.0-beta.19
       tailwindcss: 3.2.4
-      vite: 4.0.3
+      vite: 4.0.4
     devDependencies:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
@@ -81,7 +81,7 @@ importers:
       '@storybook/addon-links': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
       '@storybook/blocks': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
       '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.7
-      '@storybook/html-vite': 7.0.0-beta.19_n3e4e25d6wprhjinygq72fwnim
+      '@storybook/html-vite': 7.0.0-beta.19_3qxphiifunnpj6d5fo7em45bqa
       '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
       autoprefixer: 10.4.13_postcss@8.4.20
       postcss: 8.4.20
@@ -89,7 +89,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       storybook: 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
       tailwindcss: 3.2.4_postcss@8.4.20
-      vite: 4.0.3
+      vite: 4.0.4
 
   sugar/sugar:
     specifiers:
@@ -136,7 +136,7 @@ importers:
       stylelint-prettier: 2.0.0
       tailwindcss: 3.2.4
       typescript: 4.9.4
-      vite: 4.0.3
+      vite: 4.0.4
     devDependencies:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
@@ -153,7 +153,7 @@ importers:
       stylelint-prettier: 2.0.0_vlobltqgtuonqzkkvhdynwehdm
       tailwindcss: 3.2.4_postcss@8.4.20
       typescript: 4.9.4
-      vite: 4.0.3
+      vite: 4.0.4
 
   sugar/tailwind-helpers:
     specifiers:
@@ -2881,7 +2881,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/builder-vite/7.0.0-beta.19_vite@4.0.3:
+  /@storybook/builder-vite/7.0.0-beta.19_vite@4.0.4:
     resolution: {integrity: sha512-WHwjXiadz80pJTVz8rH/065p+cLzORar7WpgUgl91FaopNDS4qIhGvNlMbFjto1RqnZInzoV3eqZMD4QlTdmvQ==}
     peerDependencies:
       '@preact/preset-vite': '*'
@@ -2914,7 +2914,7 @@ packages:
       rollup: 3.9.1
       rollup-plugin-external-globals: 0.7.1_rollup@3.9.1
       slash: 3.0.0
-      vite: 4.0.3
+      vite: 4.0.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3245,12 +3245,12 @@ packages:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
 
-  /@storybook/html-vite/7.0.0-beta.19_n3e4e25d6wprhjinygq72fwnim:
+  /@storybook/html-vite/7.0.0-beta.19_3qxphiifunnpj6d5fo7em45bqa:
     resolution: {integrity: sha512-BIu6cqyCudRoSWCZojeV4GwZ+hGZh0qxRYADdaHJ3RDuZcDgSs3FfQAP3oqvulZGTe2nIomYk1n7xbp2gJbCRA==}
     engines: {node: ^14.18 || >=16}
     dependencies:
       '@storybook/addons': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
-      '@storybook/builder-vite': 7.0.0-beta.19_vite@4.0.3
+      '@storybook/builder-vite': 7.0.0-beta.19_vite@4.0.4
       '@storybook/channel-postmessage': 7.0.0-beta.19
       '@storybook/channel-websocket': 7.0.0-beta.19
       '@storybook/client-api': 7.0.0-beta.19
@@ -11953,7 +11953,7 @@ packages:
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.0.3_@types+node@18.11.18
+      vite: 4.0.4_@types+node@18.11.18
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -11964,8 +11964,8 @@ packages:
       - terser
     dev: true
 
-  /vite/4.0.3:
-    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
+  /vite/4.0.4:
+    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -11997,8 +11997,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.3_@types+node@18.11.18:
-    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
+  /vite/4.0.4_@types+node@18.11.18:
+    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -12066,7 +12066,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 4.0.3_@types+node@18.11.18
+      vite: 4.0.4_@types+node@18.11.18
       vite-node: 0.26.3_@types+node@18.11.18
     transitivePeerDependencies:
       - less
