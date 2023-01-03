@@ -39,7 +39,7 @@
     "eslint-plugin-simple-import-sort": "8.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.5",
+    "@babel/core": "7.20.7",
     "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
     "@size-limit/preset-small-lib": "8.1.0",
     "eslint": "8.31.0",
