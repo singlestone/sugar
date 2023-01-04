@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     require("@singlestone/sugar").sugarCorePlugin({
       prefix: "sugar",
+      useMatchClasses: true,
     }),
   ],
 };

@@ -4,11 +4,12 @@ import type { PluginAPI } from "tailwindcss/types/config";
 import { defaultPluginConfig } from "./sugar-default-plugin-config";
 import { SugarPluginOptions } from "./sugar-plugin-options.interface";
 
-const defaultOptions = {
+const defaultOptions: SugarPluginOptions = {
   prefix: "sugar",
+  useMatchClasses: false,
 };
 
-export type SugarPluginComponent = (utils: PluginAPI, prefix: string) => void;
+export type SugarPluginComponent = (utils: PluginAPI, options: SugarPluginOptions) => void;
 
 export type SugarTailwindPlugin = ReturnType<
   typeof plugin.withOptions<SugarPluginOptions>
@@ -19,10 +20,10 @@ export const createSugarPlugin = (
 ): SugarTailwindPlugin =>
   plugin.withOptions<SugarPluginOptions>(
     (options) => (utilFunctions: PluginAPI) => {
-      const prefix: string = options?.prefix
-        ? options.prefix
-        : defaultOptions.prefix;
-      plugins.forEach((sugarPlugin) => sugarPlugin(utilFunctions, prefix));
+      plugins.forEach((sugarPlugin) => sugarPlugin(utilFunctions, {
+        ...defaultOptions,
+        ...options
+      }));
     },
     () => defaultPluginConfig
   );

@@ -71,6 +71,7 @@ describe("sugarButtonsPlugin", () => {
       ["sugar-button-destructive"],
       ["sugar-button-secondary-destructive"],
       ["sugar-button-neutral"],
+      ["sugar-button-with-icon"]
     ];
     test.each(expectedClasses)("create %s class", (className: string) =>
       getClassCreationTest(className)
@@ -104,7 +105,7 @@ describe("sugarButtonsPlugin", () => {
     );
 
     test.each(testCases)("create %s dynamic class", (className: string) =>
-      getClassCreationTest(className)
+      getClassCreationTest(className, {useMatchClasses: true})
     );
   });
 });

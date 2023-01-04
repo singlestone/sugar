@@ -22,3 +22,10 @@ SecondaryDestructiveButton.args = {
   className: "sugar-button-secondary-destructive",
   label: "Secondary Destructive",
 };
+
+export const GhostDestructiveButton = ButtonTemplate.bind({});
+GhostDestructiveButton.args = {
+  disabled: false,
+  className: "sugar-button-ghost-destructive",
+  label: "Ghost Destructive",
+};

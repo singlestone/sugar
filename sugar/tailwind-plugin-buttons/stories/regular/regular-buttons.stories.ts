@@ -22,3 +22,10 @@ SecondaryRegularButton.args = {
   className: "sugar-button-secondary",
   label: "Secondary Regular Button",
 };
+
+export const GhostRegularButton = ButtonTemplate.bind({});
+GhostRegularButton.args = {
+  disabled: false,
+  className: "sugar-button-ghost",
+  label: "Ghost Regular Button",
+};

@@ -10,7 +10,7 @@ import * as Styles from "./buttons.styles";
 
 const sugarPillButtons: SugarPluginComponent = (
   { addComponents, matchComponents, theme },
-  prefix
+  {prefix, useMatchClasses}
 ) => {
   addComponents({
     [`.${prefix}-button`]: Styles.buttonBase(theme),
@@ -29,8 +29,17 @@ const sugarPillButtons: SugarPluginComponent = (
       colorFamily: SugarColorFamilies.NEUTRAL,
     }),
     [`.${prefix}-button-ghost`]: Styles.buttonMatchGhost(theme),
+    [`.${prefix}-button-ghost-destructive`]: Styles.buttonMatchGhost(theme, {
+      colorFamily: SugarColorFamilies.DESTRUCTIVE,
+    }),
+    [`.${prefix}-button-ghost-neutral`]: Styles.buttonMatchGhost(theme, {
+      colorFamily: SugarColorFamilies.NEUTRAL,
+    }),
+    [`.${prefix}-button-with-icon`]: Styles.buttonWithIcon(theme),
+    [`.${prefix}-button-icon-only`]: Styles.buttonIconOnly(theme),
   });
 
+if (useMatchClasses) {
   matchComponents(
     {
       [`${prefix}-button-filled`]: (value: KeyValuePair | string) =>
@@ -48,6 +57,7 @@ const sugarPillButtons: SugarPluginComponent = (
     },
     { values: theme("colors") }
   );
+}
 };
 
 export const sugarButtonsComponents = [sugarPillButtons];
