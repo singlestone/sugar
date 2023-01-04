@@ -1,11 +1,15 @@
 import { chmodSync } from "fs";
-import { join } from "path";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 
 if (process.platform === "win32") {
   process.exit(0);
 }
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 chmodSync(
-  join(import.meta.url, "..", "node_modules", "husky", "lib", "bin.js"),
+  join(__dirname, "..", "node_modules", "husky", "lib", "bin.js"),
   "755"
 );

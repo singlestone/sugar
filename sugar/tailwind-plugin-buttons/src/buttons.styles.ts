@@ -157,8 +157,32 @@ const buttonMatchGhost = (
   border: "none",
 });
 
+const iconButtonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+  svg:{
+    height: theme(SugarMeasurements.ButtonIconSize),
+    width: theme(SugarMeasurements.ButtonIconSize)
+  }
+});
+const buttonWithIcon = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+  display: "inline-flex",
+  flexDirection: "row",
+  flexWrap: "nowrap",
+  justifyContent: "center",
+  gap: theme("spacing.2"),
+  alignItems: "center",
+  ...iconButtonBase(theme),
+});
+
+const buttonIconOnly = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+  ...buttonWithIcon(theme),
+  width: theme(SugarMeasurements.FormControlHeight),
+  borderRadius: theme("borderRadius.full"),
+  padding: "0"
+});
+
 export {
   buttonBase,
+  buttonIconOnly,
   buttonMatchGhost,
   buttonMatchPrimary,
   buttonMatchPrimaryDarker,
@@ -166,4 +190,5 @@ export {
   buttonMatchSecondary,
   buttonMatchSecondaryDarker,
   buttonMatchSecondaryLighter,
+  buttonWithIcon
 };
