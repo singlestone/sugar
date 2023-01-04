@@ -6,8 +6,7 @@ if (process.platform === "win32") {
   process.exit(0);
 }
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 chmodSync(
   join(__dirname, "..", "node_modules", "husky", "lib", "bin.js"),
