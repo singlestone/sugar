@@ -29,6 +29,12 @@ const sugarPillButtons: SugarPluginComponent = (
       colorFamily: SugarColorFamilies.NEUTRAL,
     }),
     [`.${prefix}-button-ghost`]: Styles.buttonMatchGhost(theme),
+    [`.${prefix}-button-ghost-destructive`]: Styles.buttonMatchGhost(theme, {
+      colorFamily: SugarColorFamilies.DESTRUCTIVE,
+    }),
+    [`.${prefix}-button-ghost-neutral`]: Styles.buttonMatchGhost(theme, {
+      colorFamily: SugarColorFamilies.NEUTRAL,
+    }),
     [`.${prefix}-button-with-icon`]: Styles.buttonWithIcon(theme),
     [`.${prefix}-button-icon-only`]: Styles.buttonIconOnly(theme),
   });
