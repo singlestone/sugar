@@ -1,4 +1,5 @@
 import {
+  disabledControlStyles,
   focusTransition,
   focusVisibleTransition,
   getColor,
@@ -25,10 +26,7 @@ const buttonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   transitionProperty: theme("transitionProperty.colors"),
   transitionTimingFunction: theme("transitionTimingFunction.out"),
   transitionDuration: theme("transitionDuration.150"),
-  "&:disabled": {
-    cursor: "not-allowed",
-    opacity: theme("opacity.50"),
-  },
+  ...disabledControlStyles(theme),
   ...focusTransition(theme),
   "&:focus-visible": {
     ...focusVisibleTransition(theme),
@@ -158,10 +156,10 @@ const buttonMatchGhost = (
 });
 
 const iconButtonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
-  svg:{
+  svg: {
     height: theme(SugarMeasurements.ButtonIconSize),
-    width: theme(SugarMeasurements.ButtonIconSize)
-  }
+    width: theme(SugarMeasurements.ButtonIconSize),
+  },
 });
 const buttonWithIcon = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   display: "inline-flex",
@@ -177,7 +175,7 @@ const buttonIconOnly = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ...buttonWithIcon(theme),
   width: theme(SugarMeasurements.FormControlHeight),
   borderRadius: theme("borderRadius.full"),
-  padding: "0"
+  padding: "0",
 });
 
 export {
@@ -190,5 +188,5 @@ export {
   buttonMatchSecondary,
   buttonMatchSecondaryDarker,
   buttonMatchSecondaryLighter,
-  buttonWithIcon
+  buttonWithIcon,
 };

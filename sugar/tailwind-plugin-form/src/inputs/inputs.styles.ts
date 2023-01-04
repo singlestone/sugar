@@ -1,5 +1,6 @@
 import {
   convertHexToRGBA,
+  disabledControlStyles,
   focusTransition,
   focusVisibleTransition,
   SugarColorFamilies,
@@ -26,6 +27,7 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
     width: "100%",
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
+    ...disabledControlStyles(theme),
     ...focusTransition(theme, {
       accentColors: theme(SugarColorFamilies.ACCENT),
     }),
