@@ -1,5 +1,0 @@
-{
-  "extends": "@tsconfig/vite-react/tsconfig.json",
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Sugar React"
-}

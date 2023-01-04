@@ -10,10 +10,6 @@ permissions:
   actions: write
   contents: write
 
-env:
-  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-
 # Define jobs within the workflow
 jobs:
   lint:
@@ -46,7 +42,7 @@ jobs:
         uses: ToppleTheNun/action-pnpm-install@v1
 
       - name: ⚡ Run tests
-        run: pnpm run test:ci
+        run: pnpm run test
 
   build:
     name: 🔨 Build

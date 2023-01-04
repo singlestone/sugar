@@ -1,1 +1,3 @@
-module.exports = require("@singlestone/prettier-config-sugar");
+module.exports = {
+  plugins: ["prettier-plugin-pkg"],
+};
