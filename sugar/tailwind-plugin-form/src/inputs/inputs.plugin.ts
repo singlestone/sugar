@@ -1,12 +1,14 @@
 import { SugarPluginComponent } from "@singlestone/tailwind-helpers-sugar";
 
-import { inputBase } from "./inputs.styles";
+import { textInput } from "./inputs.styles";
+import { selectInputStyles } from "./select-input.styles";
 
 export const sugarTextInput: SugarPluginComponent = (
   { addComponents, theme },
-    {prefix}
+  { prefix }
 ) => {
   addComponents({
-    [`.${prefix}-text-input`]: inputBase(theme),
+    [`.${prefix}-text-input`]: textInput(theme),
+    [`.${prefix}-select-input`]: selectInputStyles(theme),
   });
 };

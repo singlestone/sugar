@@ -14,14 +14,11 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
     appearance: "none",
     border: "0",
     borderRadius: theme("borderRadius.lg"),
-    color: theme("colors.black"),
-    backgroundColor: convertHexToRGBA(theme("colors.black"), "0.1"),
     fontSize: theme("fontSize.lg"),
     fontWeight: theme("fontWeight.normal"),
     letterSpacing: theme("letterSpacing.wide"),
     lineHeight: theme("lineHeight.7"),
     padding: "0",
-    fontFamily: theme("fontFamily.sans"),
     paddingLeft: theme("spacing.3"),
     height: theme(SugarMeasurements.FormControlHeight),
     width: "100%",
@@ -35,8 +32,14 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
       ...focusVisibleTransition(theme),
       backgroundColor: theme("colors.white"),
     },
-    "&::placeholder": {
-      color: convertHexToRGBA(theme("colors.black"), "0.6"),
-    },
   };
 };
+
+export const textInput = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+  ...inputBase(theme),
+  color: theme("colors.black"),
+  backgroundColor: convertHexToRGBA(theme("colors.black"), "0.1"),
+  "&::placeholder": {
+    color: convertHexToRGBA(theme("colors.black"), "0.6"),
+  },
+});
