@@ -54,7 +54,7 @@ describe("sugarFormsPlugin", () => {
   });
 
   describe("Static Components", () => {
-    const expectedClasses = [["sugar-text-input"]];
+    const expectedClasses = [["sugar-text-input", "sugar-select-input"]];
     test.each(expectedClasses)("create %s class", (className: string) =>
       getClassCreationTest(className)
     );
