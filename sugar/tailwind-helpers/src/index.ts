@@ -1,6 +1,7 @@
 export * from "./color-helpers";
 export * from "./colors-with-opacity";
 export * from "./create-sugar-plugin";
+export * from "./disabled-control-styles";
 export * from "./focus-transition.styles";
 export * from "./sugar-color-families.enum";
 export * from "./sugar-color-shades.enum";
