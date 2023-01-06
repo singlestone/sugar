@@ -3,7 +3,7 @@ import { SugarPluginComponent } from "@singlestone/tailwind-helpers-sugar";
 import { textInput } from "./inputs.styles";
 import { selectInputStyles } from "./select-input.styles";
 
-export const sugarTextInput: SugarPluginComponent = (
+export const sugarInputs: SugarPluginComponent = (
   { addComponents, theme },
   { prefix }
 ) => {
