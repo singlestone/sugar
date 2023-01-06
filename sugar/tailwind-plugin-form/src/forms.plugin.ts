@@ -1,6 +1,6 @@
 import {
-  createSugarPlugin,
   type SugarTailwindPlugin,
+  createSugarPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
 
 import { sugarFormsCommon } from "./common/common.plugin";
