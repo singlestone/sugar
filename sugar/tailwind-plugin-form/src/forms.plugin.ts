@@ -3,8 +3,9 @@ import {
   createSugarPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
 
-import { sugarTextInput } from "./inputs/inputs.plugin";
+import { sugarFormsCommon } from "./common/common.plugin";
+import { sugarInputs } from "./inputs/inputs.plugin";
 
-export const sugarFormsComponents = [sugarTextInput];
+export const sugarFormsComponents = [sugarInputs, sugarFormsCommon];
 export const sugarFormsPlugin: SugarTailwindPlugin =
   createSugarPlugin(sugarFormsComponents);

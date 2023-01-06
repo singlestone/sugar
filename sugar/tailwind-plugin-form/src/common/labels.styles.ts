@@ -8,7 +8,7 @@ export const labelBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
     color: convertHexToRGBA(theme("colors.black"), "0.6"),
     lineHeight: theme("lineHeight.tight"),
     letterSpacing: theme("letterSpacing.wider"),
-    fontSize: theme("fontSize.sm"),
+    fontSize: theme("fontSize.base"),
     marginBottom: theme("spacing.1"),
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",

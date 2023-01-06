@@ -1,27 +1,44 @@
-import type { Meta } from "@storybook/html";
+import type { Meta, StoryObj } from "@storybook/html";
+
+import { createLabel } from "./label.template";
+
+interface InputArgs {
+  className: string;
+  disabled: boolean;
+  label: string;
+  placeholder: string;
+}
+const createInput = (args: InputArgs) => {
+  const container = document.createElement("div");
+  const label = createLabel({
+    inputName: "story-input",
+    label: args.label,
+  });
+  container.appendChild(label);
+  const input = document.createElement("input");
+  input.className = args.className;
+  input.placeholder = args.placeholder;
+  input.name = "story-input";
+  input.type = "text";
+  input.disabled = args.disabled;
+  container.appendChild(input);
+
+  return container;
+};
 
 export default {
   title: "Forms/Inputs",
   parameters: {
     layout: "centered",
   },
-} satisfies Meta;
+} satisfies Meta<InputArgs>;
 
-const InputTemplate = ({
-  className = "",
-  disabled = false,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  label = "",
-  placeholder = "",
-}) => {
-  const disabledString = disabled ? `disabled` : "";
-  return `<input class="${className}" ${disabledString} type="text" placeholder="${placeholder}" />`;
-};
-
-export const TextInput = InputTemplate.bind({});
-TextInput.args = {
-  disabled: false,
-  className: "sugar-text-input",
-  label: "Text Input",
-  placeholder: "Text Input",
+export const TextInput: StoryObj<InputArgs> = {
+  render: (args) => createInput(args),
+  args: {
+    disabled: false,
+    className: "sugar-text-input",
+    label: "Text Input",
+    placeholder: "Text Input",
+  },
 };
