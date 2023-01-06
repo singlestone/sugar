@@ -49,6 +49,7 @@ export const selectInput: StoryObj<SelectArgs> = {
     options: [
       "Select an Option",
       "Short Text",
+      "Another Option",
       "Really Long Text Really Long Text Really Long Text Really Long Text Really Long Text Really Long Text Really Long Text Really Long Text",
     ],
   },
