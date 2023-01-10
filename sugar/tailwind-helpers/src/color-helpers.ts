@@ -36,7 +36,7 @@ export const getShadeValue = (
   alphaVariable: string | number | null = null
 ) => {
   const colorValue: CSSRuleObject | string = theme(`colors.${color}`);
-  let hex = "";
+  let hex = color;
   if (colorValue) {
     hex =
       typeof colorValue === "string"

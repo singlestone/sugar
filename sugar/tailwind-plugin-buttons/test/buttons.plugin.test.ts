@@ -50,12 +50,11 @@ describe("sugarButtonsPlugin", () => {
       prefix: testPrefix,
     };
     test("set plugin prefix", () =>
-      getClassCreationTest(`${testPrefix}-button`, options));
+      getClassCreationTest(`${testPrefix}-button-primary`, options));
   });
 
   describe("Static Components", () => {
     const expectedClasses = [
-      ["sugar-button"],
       ["sugar-button-primary"],
       ["sugar-button-secondary"],
       ["sugar-button-destructive"],

@@ -1,8 +1,19 @@
 import colors from "tailwindcss/colors";
-import { describe, expect, test } from "vitest";
+import { describe, expect, test, vi } from "vitest";
 
 import { convertHexToRGBA, getShadeValue, SugarColorShades } from "../src";
 
+const theme = vi.fn().mockImplementation((color) => {
+  if (color === "colors.blue") {
+    return colors.blue;
+  }
+
+  if (color === "colors.black") {
+    return colors.black;
+  }
+
+  return undefined;
+});
 describe("color helpers", () => {
   describe("convertHexToRGBA", () => {
     const noAlphaTests = [
@@ -36,12 +47,12 @@ describe("color helpers", () => {
 describe("getShadeValue", () => {
   const noAlphaTests = [
     {
-      color: colors.blue,
+      color: "blue",
       shade: SugarColorShades.Primary,
       expected: colors.blue[SugarColorShades.Primary],
     },
     {
-      color: colors.black,
+      color: "black",
       shade: SugarColorShades.Primary,
       expected: colors.black,
     },
@@ -54,13 +65,13 @@ describe("getShadeValue", () => {
 
   const alphaTestCases = [
     {
-      color: colors.blue,
+      color: "blue",
       shade: SugarColorShades.Primary,
       alpha: "0.5",
       expected: "rgba(37, 99, 235, 0.5)",
     },
     {
-      color: colors.black,
+      color: "black",
       shade: SugarColorShades.Primary,
       alpha: "0.5",
       expected: "rgba(0, 0, 0, 0.5)",
@@ -76,14 +87,14 @@ describe("getShadeValue", () => {
   test.each(noAlphaTests)(
     "Get value without alphaVariable",
     ({ color, shade, expected }) => {
-      expect(getShadeValue(color, shade)).toEqual(expected);
+      expect(getShadeValue(theme, color, shade)).toEqual(expected);
     }
   );
 
   test.each(alphaTestCases)(
-    "Get value without alphaVariable",
+    "Get value with alphaVariable",
     ({ color, shade, alpha, expected }) => {
-      expect(getShadeValue(color, shade, alpha)).toEqual(expected);
+      expect(getShadeValue(theme, color, shade, alpha)).toEqual(expected);
     }
   );
 });
