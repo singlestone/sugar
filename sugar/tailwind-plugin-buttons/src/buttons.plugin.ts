@@ -1,7 +1,7 @@
 import {
-  createSugarPlugin,
   type SugarPluginComponent,
   type SugarTailwindPlugin,
+  createSugarPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
 
 import * as Styles from "./buttons.styles";
