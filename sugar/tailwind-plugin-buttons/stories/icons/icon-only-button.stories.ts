@@ -31,9 +31,3 @@ DestructiveIconOnly.args = {
   disabled: false,
   className: "sugar-button-destructive sugar-button-icon-only",
 };
-
-export const GhostIconOnly = IconOnlyTemplate.bind({});
-GhostIconOnly.args = {
-  disabled: false,
-  className: "sugar-button-ghost sugar-button-icon-only",
-};

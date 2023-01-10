@@ -1,16 +1,13 @@
-import {
-  getShadeValue,
-  SugarColorFamilies,
-  SugarColorShades,
-} from "@singlestone/tailwind-helpers-sugar";
+import { getShadeValue } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
 import { inputBase } from "./inputs.styles";
 
 export const selectInputStyles = (theme: PluginAPI["theme"]): CSSRuleObject => {
   const selectColor = getShadeValue(
-    theme(SugarColorFamilies.ACCENT),
-    SugarColorShades.Primary
+    theme,
+    theme("sugarFormControls.selectColorFamily"),
+    theme("sugarFormControls.selectColorShade")
   );
   return {
     ...inputBase(theme),

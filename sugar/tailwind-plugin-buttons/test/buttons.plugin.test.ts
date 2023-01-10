@@ -2,7 +2,6 @@ import { SugarPluginOptions } from "@singlestone/tailwind-helpers-sugar";
 import { resolve } from "path";
 import postcss from "postcss";
 import tailwindcss from "tailwindcss";
-import * as colors from "tailwindcss/colors";
 import { Config } from "tailwindcss/types/config";
 import { describe, expect, test } from "vitest";
 
@@ -30,15 +29,6 @@ const run = (
     }
   );
 };
-
-const createTestClassNames = (
-  baseClassNames: string[][],
-  value: string
-): string[][] =>
-  baseClassNames.reduce(
-    (acc: string[][], [baseClass]) => [...acc, [`${baseClass}-${value}`]],
-    []
-  );
 
 const getClassCreationTest = (
   className: string,
@@ -71,41 +61,10 @@ describe("sugarButtonsPlugin", () => {
       ["sugar-button-destructive"],
       ["sugar-button-secondary-destructive"],
       ["sugar-button-neutral"],
-      ["sugar-button-with-icon"]
+      ["sugar-button-with-icon"],
     ];
     test.each(expectedClasses)("create %s class", (className: string) =>
       getClassCreationTest(className)
-    );
-  });
-
-  describe("Dynamic Components", () => {
-    const classNameBases = [
-      ["sugar-button-filled"],
-      ["sugar-button-lighter-filled"],
-      ["sugar-button-darker-filled"],
-      ["sugar-button-outlined"],
-      ["sugar-button-darker-outlined"],
-      ["sugar-button-lighter-outlined"],
-    ];
-
-    const testColors = {
-      red: colors.red,
-      blue: colors.blue,
-      white: colors.white,
-      gray: colors.gray,
-      transparent: colors.transparent,
-    };
-
-    const testCases: string[][] = Object.keys(testColors).reduce(
-      (acc: string[][], color) => [
-        ...acc,
-        ...createTestClassNames(classNameBases, color),
-      ],
-      []
-    );
-
-    test.each(testCases)("create %s dynamic class", (className: string) =>
-      getClassCreationTest(className, {useMatchClasses: true})
     );
   });
 });

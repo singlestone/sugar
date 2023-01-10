@@ -2,11 +2,9 @@ import {
   disabledControlStyles,
   focusTransition,
   focusVisibleTransition,
-  getColor,
   getShadeValue,
-  SugarColorShades,
+  SugarButtonConfig,
   SugarMeasurements,
-  SugarPluginColorOptions,
 } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
@@ -35,9 +33,9 @@ const buttonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
 
 const buttonPrimaryBase = (
   theme: PluginAPI["theme"],
-  backgroundColor: ReturnType<typeof getShadeValue>,
-  hoverColor: ReturnType<typeof getShadeValue>,
-  activeColor: ReturnType<typeof getShadeValue>
+  backgroundColor: string,
+  hoverColor: string,
+  activeColor: string
 ): CSSRuleObject => ({
   ...buttonBase(theme),
   color: theme("colors.white"),
@@ -51,108 +49,66 @@ const buttonPrimaryBase = (
   },
 });
 
-const buttonMatchPrimary = (
+const buttonMatch = (
   theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
+  value: SugarButtonConfig
 ): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonPrimaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.Primary),
-    getShadeValue(color, SugarColorShades.PrimaryHover),
-    getShadeValue(color, SugarColorShades.PrimaryActive)
-  );
-};
-
-const buttonMatchPrimaryDarker = (
-  theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonPrimaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.PrimaryDarker),
-    getShadeValue(color, SugarColorShades.PrimaryDarkerHover),
-    getShadeValue(color, SugarColorShades.PrimaryDarkerActive)
-  );
-};
-
-const buttonMatchPrimaryLighter = (
-  theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonPrimaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.PrimaryLighter),
-    getShadeValue(color, SugarColorShades.PrimaryLighterHover),
-    getShadeValue(color, SugarColorShades.PrimaryLighterActive)
-  );
+  const styleFn: {
+    [key: string]: (
+      theme: PluginAPI["theme"],
+      ...colors: string[]
+    ) => CSSRuleObject;
+  } = {
+    filled: buttonPrimaryBase,
+    outlined: buttonSecondaryBase,
+    ghost: buttonGhostBase,
+  };
+  return value
+    ? styleFn[value.type](
+        theme,
+        getShadeValue(theme, value.color, value.base),
+        getShadeValue(theme, value.color, value.hover),
+        getShadeValue(theme, value.color, value.active)
+      )
+    : {};
 };
 
 const buttonSecondaryBase = (
   theme: PluginAPI["theme"],
-  color: ReturnType<typeof getShadeValue>,
-  hoverBackgroundColor: ReturnType<typeof getShadeValue>,
-  activeBackGroundColor: ReturnType<typeof getShadeValue>
+  baseColor: string,
+  hoverColor: string,
+  activeColor: string
 ): CSSRuleObject => ({
   ...buttonBase(theme),
-  color,
-  borderColor: color,
-  backgroundColor: theme("colors.white"),
+  color: baseColor,
+  borderColor: baseColor,
+  backgroundColor: "transparent",
   "&:hover:not([disabled])": {
-    backgroundColor: hoverBackgroundColor,
+    backgroundColor: hoverColor,
   },
   "&:active, &:focus:active": {
-    backgroundColor: activeBackGroundColor,
+    backgroundColor: activeColor,
   },
 });
-
-const buttonMatchSecondary = (
+const buttonGhostBase = (
   theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonSecondaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.Primary),
-    getShadeValue(color, SugarColorShades.SecondaryHover),
-    getShadeValue(color, SugarColorShades.SecondaryActive)
-  );
-};
-
-const buttonMatchSecondaryDarker = (
-  theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonSecondaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.PrimaryDarker),
-    getShadeValue(color, SugarColorShades.SecondaryHover),
-    getShadeValue(color, SugarColorShades.SecondaryActive)
-  );
-};
-
-const buttonMatchSecondaryLighter = (
-  theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => {
-  const color = getColor(theme, options);
-  return buttonSecondaryBase(
-    theme,
-    getShadeValue(color, SugarColorShades.PrimaryLighter),
-    getShadeValue(color, SugarColorShades.SecondaryHover),
-    getShadeValue(color, SugarColorShades.SecondaryActive)
-  );
-};
-
-const buttonMatchGhost = (
-  theme: PluginAPI["theme"],
-  options: SugarPluginColorOptions = {}
-): CSSRuleObject => ({
-  ...buttonMatchSecondary(theme, options),
+  baseColor: string,
+  hoverColor: string,
+  activeColor: string
+) => ({
+  ...buttonSecondaryBase(theme, baseColor, hoverColor, activeColor),
   border: "none",
+  padding: `0.375rem 0.125rem`,
+  backgroundColor: "transparent",
+  height: "auto",
+  "&:active, &:focus:active": {
+    backgroundColor: "transparent",
+  },
+  "&:hover:not([disabled])": {
+    backgroundColor: "transparent",
+    textDecoration: "underline",
+    textDecorationThickness: "2px",
+  },
 });
 
 const iconButtonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
@@ -178,15 +134,4 @@ const buttonIconOnly = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   padding: "0",
 });
 
-export {
-  buttonBase,
-  buttonIconOnly,
-  buttonMatchGhost,
-  buttonMatchPrimary,
-  buttonMatchPrimaryDarker,
-  buttonMatchPrimaryLighter,
-  buttonMatchSecondary,
-  buttonMatchSecondaryDarker,
-  buttonMatchSecondaryLighter,
-  buttonWithIcon,
-};
+export { buttonBase, buttonIconOnly, buttonMatch, buttonWithIcon };

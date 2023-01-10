@@ -9,10 +9,5 @@ module.exports = {
       pattern: /.*/,
     },
   ],
-  plugins: [
-    require("@singlestone/sugar").sugarCorePlugin({
-      prefix: "sugar",
-      useMatchClasses: true,
-    }),
-  ],
+  plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };

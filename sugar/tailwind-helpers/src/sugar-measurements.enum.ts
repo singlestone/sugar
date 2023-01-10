@@ -1,4 +1,4 @@
 export enum SugarMeasurements {
-  FormControlHeight = "spacing.10",
-  ButtonIconSize = "spacing.5"
+  FormControlHeight = "sugarMeasurements.formControlHeight",
+  ButtonIconSize = "sugarMeasurements.buttonSize",
 }
