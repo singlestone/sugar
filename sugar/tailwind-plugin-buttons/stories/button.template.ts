@@ -1,10 +1,16 @@
-export const ButtonTemplate = ({
-  className = "",
-  disabled = false,
-  label = "",
-}) => {
-  const disabledString = disabled ? `disabled` : "";
-  return `
-      <button class="${className}" ${disabledString} type="button">${label}</button>
-    `;
+export interface ButtonArgs {
+  className: string;
+  disabled: boolean;
+}
+
+export const createButton = (
+  content: string,
+  { className = "", disabled = false }: ButtonArgs
+) => {
+  const button = document.createElement("button");
+  button.innerHTML = content;
+  button.className = className;
+  button.disabled = disabled;
+
+  return button;
 };

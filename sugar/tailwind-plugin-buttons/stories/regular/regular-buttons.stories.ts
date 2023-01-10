@@ -1,31 +1,34 @@
-import type { Meta } from "@storybook/html";
+import type { Meta, StoryObj } from "@storybook/html";
 
-import { ButtonTemplate } from "../button.template";
+import { ButtonArgs, createButton } from "../button.template";
 
 export default {
   title: "Buttons/Regular",
   parameters: {
     layout: "centered",
   },
-} satisfies Meta;
+} satisfies Meta<ButtonArgs>;
 
-export const PrimaryRegularButton = ButtonTemplate.bind({});
-PrimaryRegularButton.args = {
-  disabled: false,
-  className: "sugar-button-primary",
-  label: "Primary Regular Button",
+export const PrimaryRegularButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Primary Regular Button", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-primary",
+  },
 };
 
-export const SecondaryRegularButton = ButtonTemplate.bind({});
-SecondaryRegularButton.args = {
-  disabled: false,
-  className: "sugar-button-secondary",
-  label: "Secondary Regular Button",
+export const SecondaryRegularButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Secondary Regular Button", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-secondary",
+  },
 };
 
-export const GhostRegularButton = ButtonTemplate.bind({});
-GhostRegularButton.args = {
-  disabled: false,
-  className: "sugar-button-ghost",
-  label: "Ghost Regular Button",
+export const GhostRegularButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Ghost Regular Button", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-ghost",
+  },
 };

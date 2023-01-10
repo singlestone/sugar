@@ -9,10 +9,18 @@ module.exports = {
       pattern: /.*/,
     },
   ],
-  plugins: [
-    require("@singlestone/sugar").sugarCorePlugin({
-      prefix: "sugar",
-      useMatchClasses: true,
-    }),
-  ],
+  theme: {
+    extend: {
+      sugarButtons: {
+        action: {
+          type: "filled",
+          color: "green",
+          base: "500",
+          active: "600",
+          hover: "700",
+        },
+      },
+    },
+  },
+  plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };

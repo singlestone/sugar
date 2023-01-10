@@ -1,45 +1,55 @@
-import { Meta } from "@storybook/html";
+import { Meta, StoryObj } from "@storybook/html";
 
-import { IconButtonTemplate, sampleIcon } from "../icon-button.template";
+import { ButtonArgs, createButton } from "../button.template";
+import { sampleIcon } from "../icon-button.icon";
 
 export default {
   title: "Buttons/Text and Icon",
   parameters: {
     layout: "centered",
   },
-} satisfies Meta;
+} satisfies Meta<ButtonArgs>;
 
-const IconLeftTemplate = IconButtonTemplate(`${sampleIcon}Icon left`);
-const IconRightTemplate = IconButtonTemplate(`Icon Right${sampleIcon}`);
-const IconsSurroundTemplate = IconButtonTemplate(
-  `${sampleIcon}Icons Surround${sampleIcon}`
-);
+const IconLeftContent = `${sampleIcon}Icon left`;
+const IconRightContent = `Icon Right${sampleIcon}`;
+const IconsSurroundContent = `${sampleIcon}Icons Surround${sampleIcon}`;
 
-export const IconLeft = IconLeftTemplate.bind({});
-IconLeft.args = {
-  disabled: false,
-  className: "sugar-button-primary sugar-button-with-icon",
+export const IconLeft: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconLeftContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-primary sugar-button-with-icon",
+  },
 };
 
-export const IconRight = IconRightTemplate.bind({});
-IconRight.args = {
-  disabled: false,
-  className: "sugar-button-primary sugar-button-with-icon",
-};
-export const IconsSurround = IconsSurroundTemplate.bind({});
-IconsSurround.args = {
-  disabled: false,
-  className: "sugar-button-primary sugar-button-with-icon",
+export const IconRight: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconRightContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-primary sugar-button-with-icon",
+  },
 };
 
-export const Secondary = IconLeftTemplate.bind({});
-Secondary.args = {
-  disabled: false,
-  className: "sugar-button-secondary sugar-button-with-icon",
+export const IconsSurround: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconsSurroundContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-primary sugar-button-with-icon",
+  },
 };
 
-export const Ghost = IconLeftTemplate.bind({});
-Ghost.args = {
-  disabled: false,
-  className: "sugar-button-ghost sugar-button-with-icon",
+export const Secondary: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconLeftContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-secondary sugar-button-with-icon",
+  },
+};
+
+export const Ghost: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconLeftContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-ghost sugar-button-with-icon",
+  },
 };
