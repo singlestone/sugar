@@ -1,31 +1,34 @@
-import type { Meta } from "@storybook/html";
+import type { Meta, StoryObj } from "@storybook/html";
 
-import { ButtonTemplate } from "../button.template";
+import { ButtonArgs, createButton } from "../button.template";
 
 export default {
   title: "Buttons/Destructive",
   parameters: {
     layout: "centered",
   },
-} satisfies Meta;
+} satisfies Meta<ButtonArgs>;
 
-export const PrimaryDestructiveButton = ButtonTemplate.bind({});
-PrimaryDestructiveButton.args = {
-  disabled: false,
-  className: "sugar-button-destructive",
-  label: "Primary Destructive",
+export const PrimaryDestructiveButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Primary Destructive", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-destructive",
+  },
 };
 
-export const SecondaryDestructiveButton = ButtonTemplate.bind({});
-SecondaryDestructiveButton.args = {
-  disabled: false,
-  className: "sugar-button-secondary-destructive",
-  label: "Secondary Destructive",
+export const SecondaryDestructiveButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Secondary Destructive", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-secondary-destructive",
+  },
 };
 
-export const GhostDestructiveButton = ButtonTemplate.bind({});
-GhostDestructiveButton.args = {
-  disabled: false,
-  className: "sugar-button-ghost-destructive",
-  label: "Ghost Destructive",
+export const GhostDestructiveButton: StoryObj<ButtonArgs> = {
+  render: (args) => createButton("Ghost Destructive", args),
+  args: {
+    disabled: false,
+    className: "sugar-button-ghost-destructive",
+  },
 };

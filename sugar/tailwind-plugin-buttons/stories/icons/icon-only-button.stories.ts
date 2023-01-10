@@ -1,6 +1,7 @@
-import { Meta } from "@storybook/html";
+import { Meta, StoryObj } from "@storybook/html";
 
-import { IconButtonTemplate, sampleIcon } from "../icon-button.template";
+import { ButtonArgs, createButton } from "../button.template";
+import { sampleIcon } from "../icon-button.icon";
 
 export default {
   title: "Buttons/Icon Only",
@@ -9,25 +10,39 @@ export default {
   },
 } satisfies Meta;
 
-const IconOnlyTemplate = IconButtonTemplate(`
+const IconOnlyContent = `
 ${sampleIcon}
 <span class="sr-only">Add</span>
-`);
+`;
 
-export const PrimaryIconOnly = IconOnlyTemplate.bind({});
-PrimaryIconOnly.args = {
-  disabled: false,
-  className: "sugar-button-primary sugar-button-icon-only",
+export const PrimaryIconOnly: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconOnlyContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-primary sugar-button-icon-only",
+  },
 };
 
-export const SecondaryIconOnly = IconOnlyTemplate.bind({});
-SecondaryIconOnly.args = {
-  disabled: false,
-  className: "sugar-button-secondary sugar-button-icon-only",
+export const SecondaryIconOnly: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconOnlyContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-secondary sugar-button-icon-only",
+  },
 };
 
-export const DestructiveIconOnly = IconOnlyTemplate.bind({});
-DestructiveIconOnly.args = {
-  disabled: false,
-  className: "sugar-button-destructive sugar-button-icon-only",
+export const DestructiveIconOnly: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconOnlyContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-destructive sugar-button-icon-only",
+  },
+};
+
+export const NeutralIconOnly: StoryObj<ButtonArgs> = {
+  render: (args) => createButton(IconOnlyContent, args),
+  args: {
+    disabled: false,
+    className: "sugar-button-neutral sugar-button-icon-only",
+  },
 };
