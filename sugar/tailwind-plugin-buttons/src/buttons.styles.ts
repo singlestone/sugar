@@ -98,16 +98,19 @@ const buttonGhostBase = (
 ) => ({
   ...buttonSecondaryBase(theme, baseColor, hoverColor, activeColor),
   border: "none",
-  padding: `0.375rem 0.125rem`,
-  backgroundColor: "transparent",
-  height: "auto",
-  "&:active, &:focus:active": {
+
+  "&:not(.sugar-button-icon-only)": {
+    padding: `0.375rem 0.125rem`,
     backgroundColor: "transparent",
-  },
-  "&:hover:not([disabled])": {
-    backgroundColor: "transparent",
-    textDecoration: "underline",
-    textDecorationThickness: "2px",
+    height: "auto",
+    "&:active, &:focus:active": {
+      backgroundColor: "transparent",
+    },
+    "&:hover:not([disabled])": {
+      backgroundColor: "transparent",
+      textDecoration: "underline",
+      textDecorationThickness: "2px",
+    },
   },
 });
 
