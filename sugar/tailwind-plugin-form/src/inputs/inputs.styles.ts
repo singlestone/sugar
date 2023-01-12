@@ -3,7 +3,6 @@ import {
   disabledControlStyles,
   focusTransition,
   focusVisibleTransition,
-  SugarColorFamilies,
   SugarMeasurements,
 } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
@@ -24,10 +23,10 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
     width: "100%",
     "-webkit-font-smoothing": "antialiased",
     "-moz-osx-font-smoothing": "grayscale",
-    ...disabledControlStyles(theme),
-    ...focusTransition(theme, {
-      accentColors: theme(SugarColorFamilies.ACCENT),
-    }),
+    "&:disabled": {
+      ...disabledControlStyles(theme),
+    },
+    ...focusTransition(theme),
     "&:focus-visible": {
       ...focusVisibleTransition(theme),
       backgroundColor: theme("colors.white"),
