@@ -24,9 +24,7 @@ const buttonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   transitionProperty: theme("transitionProperty.colors"),
   transitionTimingFunction: theme("transitionTimingFunction.out"),
   transitionDuration: theme("transitionDuration.150"),
-  "&:disabled": {
-    ...disabledControlStyles(theme),
-  },
+  ...disabledControlStyles(theme),
   ...focusTransition(theme),
   "&:focus-visible": {
     ...focusVisibleTransition(theme),
