@@ -57,7 +57,7 @@
     "@types/node": "18.11.18",
     "@types/postcss-import": "14.0.0",
     "eslint": "8.31.0",
-    "postcss": "8.4.20",
+    "postcss": "8.4.21",
     "postcss-load-config": "4.0.1",
     "size-limit": "8.1.0",
     "tsup": "6.5.0",
