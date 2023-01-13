@@ -13,7 +13,7 @@ importers:
       '@tsconfig/vite-react': 1.0.1
       clean-publish: 4.0.2
       doctoc: 2.2.1
-      husky: 8.0.2
+      husky: 8.0.3
       is-ci: 3.0.1
       lint-staged: 13.1.0
       plop: 3.1.1
@@ -35,7 +35,7 @@ importers:
       '@tsconfig/vite-react': 1.0.1
       clean-publish: 4.0.2
       doctoc: 2.2.1
-      husky: 8.0.2
+      husky: 8.0.3
       is-ci: 3.0.1
       lint-staged: 13.1.0
       plop: 3.1.1
@@ -2518,7 +2518,7 @@ packages:
       '@storybook/csf-plugin': 7.0.0-beta.19
       '@storybook/csf-tools': 7.0.0-beta.19
       '@storybook/global': 5.0.0
-      '@storybook/mdx2-csf': 1.0.0-next.3
+      '@storybook/mdx2-csf': 1.0.0-next.4
       '@storybook/node-logger': 7.0.0-beta.19
       '@storybook/postinstall': 7.0.0-beta.19
       '@storybook/preview-api': 7.0.0-beta.19
@@ -2862,7 +2862,7 @@ packages:
       '@storybook/client-logger': 7.0.0-beta.19
       '@storybook/core-common': 7.0.0-beta.19
       '@storybook/csf-plugin': 7.0.0-beta.19
-      '@storybook/mdx2-csf': 1.0.0-next.3
+      '@storybook/mdx2-csf': 1.0.0-next.4
       '@storybook/node-logger': 7.0.0-beta.19
       '@storybook/preview': 7.0.0-beta.19
       '@storybook/preview-api': 7.0.0-beta.19
@@ -3310,8 +3310,8 @@ packages:
     resolution: {integrity: sha512-MQsPBhUw8og4Qkif2OPMFk4O1JI2ruk7MteMTUULDSxTWn01r8DsuKyKYPAxX9FMY/5GoosKaG2yStgJY5unTA==}
     dev: true
 
-  /@storybook/mdx2-csf/1.0.0-next.3:
-    resolution: {integrity: sha512-obodj5cDa943eAPNmawzwviiaheWLvI39/o36O+fwkW8jxxXgyEMgad0mLTiwKjlvitLVoHa4Znm5aIN6TW08A==}
+  /@storybook/mdx2-csf/1.0.0-next.4:
+    resolution: {integrity: sha512-nvRgYdpYvXsvSgCzKc4LQA1JxtJzmv47IsFAsh1rTz5FoHyK8watLU2WqX9T4w52fpFXBHx7RwGEsCRt0XgZlQ==}
     dev: true
 
   /@storybook/node-logger/7.0.0-beta.19:
@@ -7175,8 +7175,8 @@ packages:
     engines: {node: '>=12.20.0'}
     dev: false
 
-  /husky/8.0.2:
-    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: false
