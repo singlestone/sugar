@@ -25,7 +25,7 @@ const checkboxRadioBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
     ...disabledControlStyles(theme),
   },
 
-  "&:disabled:not(:checked)": {
+  "&:disabled, &:disabled:checked": {
     backgroundColor: getShadeValue(theme, "neutral", "300"),
   },
   ...focusTransition(theme),
@@ -64,9 +64,11 @@ const checkboxRadioChecked = (theme: PluginAPI["theme"]): CSSRuleObject => {
   );
   return {
     backgroundColor: color,
-    borderColor: color,
     transition:
       "transform 0.6s cubic-bezier(0.2, 0.85, 0.32, 1.2), opacity 0.15s ease-out",
+    "&:not(:disabled)": {
+      borderColor: color,
+    },
   };
 };
 
@@ -121,10 +123,6 @@ export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
       transform: "rotate(45deg)",
       opacity: "1",
     },
-
-    // "&:disabled": {
-    //   ...disabledControlStyles(theme)
-    // }
   },
 
   "& + label": {
