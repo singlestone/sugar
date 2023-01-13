@@ -380,3 +380,5 @@ report
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+tools/plop-generators/public

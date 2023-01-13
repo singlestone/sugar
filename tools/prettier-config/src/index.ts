@@ -1,7 +1,5 @@
 import { Config } from "prettier";
 
-export const prettierConfigSugar: Config = {
+export default {
   plugins: ["prettier-plugin-pkg"],
-};
-
-export default prettierConfigSugar;
+} satisfies Config;

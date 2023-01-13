@@ -14,6 +14,8 @@
     "dev:changed": "turbo run dev --no-cache --parallel --continue --since=origin/main",
     "dev:presets": "turbo run dev --no-cache --parallel --continue --no-deps --include-dependencies --scope=*preset*",
     "doctoc": "doctoc .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "generate": "plop",
     "lint": "turbo run lint",
     "lint:changed": "turbo run lint --since=origin/main",
@@ -32,18 +34,17 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@tsconfig/node14": "1.0.3",
     "@tsconfig/vite-react": "1.0.1",
-    "clean-publish": "4.0.2",
+    "clean-publish": "4.1.1",
     "doctoc": "2.2.1",
     "plop": "3.1.1",
-    "prettier": "2.8.1",
+    "prettier": "2.8.2",
     "prettier-plugin-pkg": "0.17.1",
-    "rimraf": "3.0.2",
-    "turbo": "1.6.3",
+    "rimraf": "4.0.4",
+    "tsx": "3.12.2",
+    "turbo": "1.7.0",
     "typescript": "4.9.4"
   },
-  "devDependencies": {
-    "tsx": "3.12.1"
-  },
+  "prettier": "@singlestone/prettier-config-sugar",
   "volta": {
     "node": "18.12.1",
     "npm": "9.2.0"
