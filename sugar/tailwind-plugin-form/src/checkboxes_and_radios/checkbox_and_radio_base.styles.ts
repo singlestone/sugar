@@ -7,7 +7,9 @@ import {
 } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
-const checkboxRadioBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioBase = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   appearance: "none",
   height: theme("sugarFormControls.checkBoxRadioDimensions"),
   width: theme("sugarFormControls.checkBoxRadioDimensions"),
@@ -35,7 +37,9 @@ const checkboxRadioBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   },
 });
 
-const checkboxRadioBefore = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioBefore = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   content: "''",
   display: "block",
   left: "-1px",
@@ -45,7 +49,9 @@ const checkboxRadioBefore = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   width: theme("sugarFormControls.checkBoxRadioDimensions"),
 });
 
-const checkboxRadioAfter = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioAfter = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   height: theme(SugarMeasurements.FormControlHeight),
   content: "''", // need to tell postcss to render an empty string
   display: "block",
@@ -56,7 +62,9 @@ const checkboxRadioAfter = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   opacity: "0",
 });
 
-const checkboxRadioChecked = (theme: PluginAPI["theme"]): CSSRuleObject => {
+export const checkboxRadioChecked = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => {
   const color = getShadeValue(
     theme,
     theme("sugarFormControls.checkBoxRadioCheckedColorFamily"),
@@ -72,7 +80,9 @@ const checkboxRadioChecked = (theme: PluginAPI["theme"]): CSSRuleObject => {
   };
 };
 
-const checkboxRadioHover = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioHover = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   borderColor: getShadeValue(
     theme,
     theme("sugarFormControls.checkBoxRadioCheckedColorFamily"),
@@ -85,7 +95,9 @@ const checkboxRadioHover = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ),
 });
 
-const checkboxRadioLabel = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioLabel = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   fontSize: theme("fontSize.lg"),
   letterSpacing: theme("letterSpacing.wide"),
   lineHeight: theme("sugarFormControls.checkBoxRadioDimensions"),
@@ -94,38 +106,4 @@ const checkboxRadioLabel = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   cursor: "pointer",
   userSelect: "none",
   padding: `0 ${theme("spacing.2")}`,
-});
-
-export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
-  ...checkboxRadioBase(theme),
-  borderRadius: theme("borderRadius.DEFAULT"),
-  "&:hover:not(:checked):not(:disabled)": {
-    ...checkboxRadioHover(theme),
-  },
-  "&::before": {
-    ...checkboxRadioBefore(theme),
-  },
-  "&::after": {
-    ...checkboxRadioAfter(theme),
-    opacity: "0",
-    width: "8px",
-    height: "14px",
-    border: `3px solid ${theme("colors.white")}`,
-    borderTop: "0",
-    borderLeft: "0",
-    left: "10px",
-    top: "4px",
-    transform: "rotate(20deg)",
-  },
-  "&:checked": {
-    ...checkboxRadioChecked(theme),
-    "&::after": {
-      transform: "rotate(45deg)",
-      opacity: "1",
-    },
-  },
-
-  "& + label": {
-    ...checkboxRadioLabel(theme),
-  },
 });
