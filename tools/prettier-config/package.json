@@ -43,8 +43,7 @@
   },
   "dependencies": {
     "prettier-plugin-pkg": "^0.17.1",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "typescript": "^4.9.4"
+    "prettier-plugin-tailwindcss": "^0.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.20.7",
@@ -55,9 +54,9 @@
     "@types/prettier": "2.7.2",
     "eslint": "8.31.0",
     "prettier": "2.8.1",
-    "prettier-plugin-organize-imports": "3.2.1",
     "size-limit": "8.1.0",
     "tsup": "6.5.0",
+    "typescript": "4.9.4",
     "vitest": "0.26.3"
   },
   "publishConfig": {
@@ -67,8 +66,7 @@
   },
   "prettier": {
     "plugins": [
-      "prettier-plugin-pkg",
-      "prettier-plugin-organize-imports"
+      "prettier-plugin-pkg"
     ]
   },
   "size-limit": [
