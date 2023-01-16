@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`hslWithOpacity > does not include opacity if opacityValue is falsy 1`] = `"var(--test)"`;
+
+exports[`hslWithOpacity > includes opacity if opacityValue is truthy 1`] = `"hsl(var(--test), 0.5)"`;
+
+exports[`rgbWithOpacity > does not include opacity if opacityValue is falsy 1`] = `"var(--test)"`;
+
+exports[`rgbWithOpacity > includes opacity if opacityValue is truthy 1`] = `"rgb(var(--test), 0.5)"`;

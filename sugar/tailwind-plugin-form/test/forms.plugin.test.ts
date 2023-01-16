@@ -49,14 +49,17 @@ describe("sugarFormsPlugin", () => {
     const options = {
       prefix: testPrefix,
     };
-    test("set plugin prefix", () =>
-      getClassCreationTest(`${testPrefix}-text-input`, options));
+    test("set plugin prefix", () => {
+      expect(
+        getClassCreationTest(`${testPrefix}-text-input`, options)
+      ).toMatchSnapshot();
+    });
   });
 
   describe("Static Components", () => {
     const expectedClasses = [["sugar-text-input", "sugar-select-input"]];
-    test.each(expectedClasses)("create %s class", (className: string) =>
-      getClassCreationTest(className)
-    );
+    test.each(expectedClasses)("create %s class", (className: string) => {
+      expect(getClassCreationTest(className)).toMatchSnapshot();
+    });
   });
 });

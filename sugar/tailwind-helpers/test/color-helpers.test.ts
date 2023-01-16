@@ -16,29 +16,22 @@ const theme = vi.fn().mockImplementation((color) => {
 });
 describe("color helpers", () => {
   describe("convertHexToRGBA", () => {
-    const noAlphaTests = [
-      ["#031cfc", "rgb(3, 28, 252)"],
-      ["#ddd", "rgb(221, 221, 221)"],
-      ["#dd", "rgb(0, 0, 0)"],
-    ];
+    const noAlphaTests = [["#031cfc"], ["#ddd"], ["#dd"]];
 
     const alphaTestCases = [
-      ["#031cfc", "0.5", "rgba(3, 28, 252, 0.5)"],
-      ["#ddd", "0.1", "rgba(221, 221, 221, 0.1)"],
-      ["#dd", "0", "rgba(0, 0, 0, 0)"],
+      ["#031cfc", "0.5"],
+      ["#ddd", "0.1"],
+      ["#dd", "0"],
     ];
 
-    test.each(noAlphaTests)(
-      "Convert s% without alphaVariable",
-      (hex, expected) => {
-        expect(convertHexToRGBA(hex)).toEqual(expected);
-      }
-    );
+    test.each(noAlphaTests)("Convert s% without alphaVariable", (hex) => {
+      expect(convertHexToRGBA(hex)).toMatchSnapshot();
+    });
 
     test.each(alphaTestCases)(
       "Convert s% with s% opacity",
-      (hex, alphaVariable, expected) => {
-        expect(convertHexToRGBA(hex, alphaVariable)).toEqual(expected);
+      (hex, alphaVariable) => {
+        expect(convertHexToRGBA(hex, alphaVariable)).toMatchSnapshot();
       }
     );
   });
@@ -49,17 +42,14 @@ describe("getShadeValue", () => {
     {
       color: "blue",
       shade: SugarColorShades.Primary,
-      expected: colors.blue[SugarColorShades.Primary],
     },
     {
       color: "black",
       shade: SugarColorShades.Primary,
-      expected: colors.black,
     },
     {
       color: "#031cfc",
       shade: SugarColorShades.PrimaryActive,
-      expected: "#031cfc",
     },
   ];
 
@@ -68,33 +58,30 @@ describe("getShadeValue", () => {
       color: "blue",
       shade: SugarColorShades.Primary,
       alpha: "0.5",
-      expected: "rgba(37, 99, 235, 0.5)",
     },
     {
       color: "black",
       shade: SugarColorShades.Primary,
       alpha: "0.5",
-      expected: "rgba(0, 0, 0, 0.5)",
     },
     {
       color: "#031cfc",
       shade: SugarColorShades.PrimaryActive,
       alpha: "0.5",
-      expected: "rgba(3, 28, 252, 0.5)",
     },
   ];
 
   test.each(noAlphaTests)(
     "Get value without alphaVariable",
-    ({ color, shade, expected }) => {
-      expect(getShadeValue(theme, color, shade)).toEqual(expected);
+    ({ color, shade }) => {
+      expect(getShadeValue(theme, color, shade)).toMatchSnapshot();
     }
   );
 
   test.each(alphaTestCases)(
     "Get value with alphaVariable",
-    ({ color, shade, alpha, expected }) => {
-      expect(getShadeValue(theme, color, shade, alpha)).toEqual(expected);
+    ({ color, shade, alpha }) => {
+      expect(getShadeValue(theme, color, shade, alpha)).toMatchSnapshot();
     }
   );
 });
