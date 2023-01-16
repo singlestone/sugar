@@ -1,0 +1,15 @@
+// Vitest Snapshot v1
+
+exports[`sugarButtonsPlugin > Plugin options > set plugin prefix 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-destructive class 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-neutral class 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-primary class 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-secondary class 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-secondary-destructive class 1`] = `Promise {}`;
+
+exports[`sugarButtonsPlugin > Static Components > create sugar-button-with-icon class 1`] = `Promise {}`;
