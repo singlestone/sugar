@@ -17,13 +17,13 @@ const createRadio = (args: RadioArgs): HTMLElement => {
   radio.type = "radio";
   radio.className = args.classname;
   radio.disabled = args.disabled;
-  radio.id = radioName;
+  radio.id = args.id;
   radio.name = radioName;
   radio.value = args.id;
   radio.checked = args.checked;
 
   const label = document.createElement("label");
-  label.htmlFor = radioName;
+  label.htmlFor = args.id;
   label.innerText = args.label;
 
   container.appendChild(radio);
@@ -34,17 +34,21 @@ const createRadio = (args: RadioArgs): HTMLElement => {
 const createFieldSet = (
   radios: RadioArgs[],
   legendText: string
-): HTMLFieldSetElement => {
-  const fieldset: HTMLFieldSetElement = document.createElement("fieldset");
-  const legend = document.createElement("legend");
+): HTMLElement => {
+  const labelID = `${legendText}-id`;
+  const group: HTMLElement = document.createElement("div");
+  group.role = "radiogroup";
+  group.setAttribute("aria-labledby", labelID);
+  const legend = document.createElement("div");
+  legend.id = labelID;
   legend.className = "text-lg tracking-wide font-semibold mb-4";
   legend.innerText = legendText;
-  fieldset.appendChild(legend);
+  group.appendChild(legend);
   radios.forEach((radio) => {
     const radioElm = createRadio(radio);
-    fieldset.appendChild(radioElm);
+    group.appendChild(radioElm);
   });
-  return fieldset;
+  return group;
 };
 const createRadios = () => {
   const baseArgs = {
@@ -57,19 +61,19 @@ const createRadios = () => {
       ...baseArgs,
       label: "Yes",
       name: "enabled-radio",
-      id: "yes",
+      id: "id-yes",
     },
     {
       ...baseArgs,
       label: "No",
       name: "enabled-radio",
-      id: "no",
+      id: "id-no",
     },
     {
       ...baseArgs,
       label: "Maybe",
       name: "enabled-radio",
-      id: "maybe",
+      id: "id-maybe",
     },
   ];
   const disabledButtons: RadioArgs[] = [
@@ -79,27 +83,53 @@ const createRadios = () => {
       checked: true,
       label: "Yes",
       name: "disabled-radio",
-      id: "yes-dis",
+      id: "id-yes-dis",
     },
     {
       ...baseArgs,
       disabled: true,
       label: "No",
       name: "disabled-radio",
-      id: "no-dis",
+      id: "id-no-dis",
     },
     {
       ...baseArgs,
       disabled: true,
       label: "Maybe",
       name: "disabled-radio",
-      id: "maybe-dis",
+      id: "id-maybe-dis",
+    },
+  ];
+
+  const mixedButtons: RadioArgs[] = [
+    {
+      ...baseArgs,
+      disabled: true,
+      checked: false,
+      label: "Yes",
+      name: "mixed-radio",
+      id: "id-yes-mix",
+    },
+    {
+      ...baseArgs,
+      disabled: false,
+      label: "No",
+      name: "mixed-radio",
+      id: "id-no-mix",
+    },
+    {
+      ...baseArgs,
+      disabled: false,
+      label: "Maybe",
+      name: "mixed-radio",
+      id: "id-maybe-mix",
     },
   ];
   const container = document.createElement("div");
-  container.className = "grid grid-cols-2 gap-8";
+  container.className = "grid grid-cols-3 gap-8";
   container.appendChild(createFieldSet(enabledButtons, "Enabled"));
   container.appendChild(createFieldSet(disabledButtons, "Disabled"));
+  container.appendChild(createFieldSet(mixedButtons, "Both"));
   return container;
 };
 
