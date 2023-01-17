@@ -37,6 +37,10 @@ export const checkboxRadioBase = (
     "&:checked": {
       backgroundColor: getShadeValue(theme, "neutral", "400"),
     },
+
+    "&:checked, &:checked + label": {
+      cursor: "not-allowed",
+    },
   },
   "&:hover:not(:checked):not(:disabled)": {
     ...checkboxRadioHover(theme),
