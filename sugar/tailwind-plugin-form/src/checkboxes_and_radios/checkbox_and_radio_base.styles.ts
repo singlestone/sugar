@@ -31,16 +31,19 @@ export const checkboxRadioBase = (
     ...disabledControlStyles(theme),
   },
 
-  "&:disabled, &:disabled:checked": {
+  "&:disabled": {
     backgroundColor: getShadeValue(theme, "neutral", "300"),
+
+    "&:checked": {
+      backgroundColor: getShadeValue(theme, "neutral", "400"),
+    },
   },
   "&:hover:not(:checked):not(:disabled)": {
     ...checkboxRadioHover(theme),
   },
   ...focusTransition(theme),
-  "&:focus-visible": {
+  "&:focus-visible, &:focus-visible:checked": {
     ...focusVisibleTransition(theme),
-    backgroundColor: theme("colors.white"),
   },
 
   "& + label": {

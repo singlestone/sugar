@@ -26,6 +26,11 @@ export const radioStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
       transform: "scale(0.375)",
       opacity: "1",
     },
+    "&:disabled": {
+      "&:after": {
+        opacity: ".6",
+      },
+    },
   },
 
   "&:checked, &:checked + label": {
