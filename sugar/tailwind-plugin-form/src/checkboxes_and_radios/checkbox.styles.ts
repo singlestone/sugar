@@ -3,21 +3,12 @@ import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 import {
   checkboxRadioAfter,
   checkboxRadioBase,
-  checkboxRadioBefore,
   checkboxRadioChecked,
-  checkboxRadioHover,
-  checkboxRadioLabel,
 } from "./checkbox_and_radio_base.styles";
 
 export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ...checkboxRadioBase(theme),
   borderRadius: theme("borderRadius.DEFAULT"),
-  "&:hover:not(:checked):not(:disabled)": {
-    ...checkboxRadioHover(theme),
-  },
-  "&::before": {
-    ...checkboxRadioBefore(theme),
-  },
   "&::after": {
     ...checkboxRadioAfter(theme),
     opacity: "0",
@@ -26,7 +17,7 @@ export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
     border: `3px solid ${theme("colors.white")}`,
     borderTop: "0",
     borderLeft: "0",
-    left: "10px",
+    left: "9px",
     top: "4px",
     transform: "rotate(20deg)",
   },
@@ -36,9 +27,5 @@ export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
       transform: "rotate(45deg)",
       opacity: "1",
     },
-  },
-
-  "& + label": {
-    ...checkboxRadioLabel(theme),
   },
 });

@@ -19,6 +19,7 @@ const createInput = (args: InputArgs) => {
   input.className = args.className;
   input.placeholder = args.placeholder;
   input.name = "story-input";
+  input.id = "story-input";
   input.type = "text";
   input.disabled = args.disabled;
   container.appendChild(input);

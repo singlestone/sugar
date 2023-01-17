@@ -10,6 +10,7 @@ import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 export const checkboxRadioBase = (
   theme: PluginAPI["theme"]
 ): CSSRuleObject => ({
+  flexShrink: "0",
   appearance: "none",
   height: theme("sugarFormControls.checkBoxRadioDimensions"),
   width: theme("sugarFormControls.checkBoxRadioDimensions"),
@@ -23,6 +24,9 @@ export const checkboxRadioBase = (
   backgroundColor: theme("colors.white"),
   transition:
     "background-color 0.15s ease-out, border-color 0.15s ease-out, box-shadow 0.2s",
+  "&::before": {
+    ...checkboxRadioBefore(theme),
+  },
   "&:disabled, &:disabled + label": {
     ...disabledControlStyles(theme),
   },
@@ -30,10 +34,17 @@ export const checkboxRadioBase = (
   "&:disabled, &:disabled:checked": {
     backgroundColor: getShadeValue(theme, "neutral", "300"),
   },
+  "&:hover:not(:checked):not(:disabled)": {
+    ...checkboxRadioHover(theme),
+  },
   ...focusTransition(theme),
   "&:focus-visible": {
     ...focusVisibleTransition(theme),
     backgroundColor: theme("colors.white"),
+  },
+
+  "& + label": {
+    ...checkboxRadioLabel(theme),
   },
 });
 
@@ -98,12 +109,13 @@ export const checkboxRadioHover = (
 export const checkboxRadioLabel = (
   theme: PluginAPI["theme"]
 ): CSSRuleObject => ({
+  flexShrink: "1",
   fontSize: theme("fontSize.lg"),
   letterSpacing: theme("letterSpacing.wide"),
-  lineHeight: theme("sugarFormControls.checkBoxRadioDimensions"),
+  lineHeight: theme("lineHeight.tight"),
   display: "inline-block",
   verticalAlign: "top",
   cursor: "pointer",
   userSelect: "none",
-  padding: `0 ${theme("spacing.2")}`,
+  padding: `0.125rem ${theme("spacing.2")}`,
 });

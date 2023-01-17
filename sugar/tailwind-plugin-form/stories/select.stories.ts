@@ -19,6 +19,7 @@ const createSelect = (args: SelectArgs) => {
   const select = document.createElement("select");
   select.className = args.className;
   select.name = inputName;
+  select.id = inputName;
   select.disabled = args.disabled;
   args.options.forEach((option, i) => {
     const optElm = document.createElement("option");
