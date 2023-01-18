@@ -32,7 +32,7 @@ export const checkboxRadioBase = (
   },
 
   "&:disabled": {
-    backgroundColor: getShadeValue(theme, "neutral", "300"),
+    backgroundColor: getShadeValue(theme, "neutral", "200"),
 
     "&:checked": {
       backgroundColor: getShadeValue(theme, "neutral", "400"),

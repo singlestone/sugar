@@ -1,3 +1,4 @@
+import { getShadeValue } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
 import {
@@ -28,7 +29,7 @@ export const radioStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
     },
     "&:disabled": {
       "&:after": {
-        opacity: ".6",
+        backgroundColor: getShadeValue(theme, "neutral", "200"),
       },
     },
   },
