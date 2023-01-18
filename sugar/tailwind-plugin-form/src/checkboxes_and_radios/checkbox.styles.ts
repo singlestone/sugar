@@ -1,3 +1,4 @@
+import { getShadeValue } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
 import {
@@ -9,7 +10,7 @@ import {
 export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ...checkboxRadioBase(theme),
   borderRadius: theme("borderRadius.DEFAULT"),
-  "&::after": {
+  "&:after": {
     ...checkboxRadioAfter(theme),
     opacity: "0",
     width: "8px",
@@ -26,6 +27,9 @@ export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
     "&::after": {
       transform: "rotate(45deg)",
       opacity: "1",
+    },
+    "&:disabled:after": {
+      borderColor: getShadeValue(theme, "neutral", "200"),
     },
   },
 });
