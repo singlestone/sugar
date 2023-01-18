@@ -31,7 +31,7 @@
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
-    "prepare": "tsup",
+    "prepare": "tsup --publicDir",
     "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
     "test": "vitest",
