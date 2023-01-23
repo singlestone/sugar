@@ -6,36 +6,38 @@ interface CheckboxArgs {
 }
 
 const createDiv = () => document.createElement("div");
-const createCheckBox = (args: CheckboxArgs) => {
+const createCheckBoxes = (args: CheckboxArgs) => {
   const checkboxName = "storycheckbox";
   const container = document.createElement("div");
   container.className = "flex flex-col gap-2";
 
   const rowOne = createDiv();
+  rowOne.className = "flex flex-nowrap";
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  checkbox.name = checkboxName;
+  checkbox.id = checkboxName;
   checkbox.className = args.className;
   checkbox.disabled = args.disabled;
 
   const label: HTMLLabelElement = document.createElement("label");
-  label.className = "sugar-checkbox-label";
+  label.className = "sugar-checkbox-label shrink-1";
   label.htmlFor = checkboxName;
   label.innerText = args.label;
   rowOne.appendChild(checkbox);
   rowOne.appendChild(label);
 
   const rowTwo = createDiv();
+  rowTwo.className = "flex flex-nowrap";
   const disabledCheckbox = document.createElement("input");
   disabledCheckbox.type = "checkbox";
-  disabledCheckbox.name = "disabled";
+  disabledCheckbox.id = "disabled";
   disabledCheckbox.className = args.className;
   disabledCheckbox.checked = true;
   disabledCheckbox.disabled = true;
 
   const disabledLabel: HTMLLabelElement = document.createElement("label");
   disabledLabel.className = "sugar-checkbox-label";
-  disabledLabel.htmlFor = checkboxName;
+  disabledLabel.htmlFor = "disabled";
   disabledLabel.innerText = `${args.label} disabled`;
   rowTwo.appendChild(disabledCheckbox);
   rowTwo.appendChild(disabledLabel);
@@ -52,7 +54,7 @@ export default {
   },
 } satisfies Meta<CheckboxArgs>;
 export const Checkboxes: StoryObj<CheckboxArgs> = {
-  render: (args) => createCheckBox(args),
+  render: (args) => createCheckBoxes(args),
   args: {
     className: "sugar-checkbox",
     disabled: false,

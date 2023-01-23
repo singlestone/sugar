@@ -7,7 +7,10 @@ import {
 } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
-const checkboxRadioBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioBase = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
+  flexShrink: "0",
   appearance: "none",
   height: theme("sugarFormControls.checkBoxRadioDimensions"),
   width: theme("sugarFormControls.checkBoxRadioDimensions"),
@@ -21,21 +24,40 @@ const checkboxRadioBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   backgroundColor: theme("colors.white"),
   transition:
     "background-color 0.15s ease-out, border-color 0.15s ease-out, box-shadow 0.2s",
+  "&::before": {
+    ...checkboxRadioBefore(theme),
+  },
   "&:disabled, &:disabled + label": {
     ...disabledControlStyles(theme),
   },
 
-  "&:disabled, &:disabled:checked": {
-    backgroundColor: getShadeValue(theme, "neutral", "300"),
+  "&:disabled": {
+    backgroundColor: getShadeValue(theme, "neutral", "200"),
+
+    "&:checked": {
+      backgroundColor: getShadeValue(theme, "neutral", "400"),
+    },
+
+    "&:checked, &:checked + label": {
+      cursor: "not-allowed",
+    },
+  },
+  "&:hover:not(:checked):not(:disabled)": {
+    ...checkboxRadioHover(theme),
   },
   ...focusTransition(theme),
-  "&:focus-visible": {
+  "&:focus-visible, &:focus-visible:checked": {
     ...focusVisibleTransition(theme),
-    backgroundColor: theme("colors.white"),
+  },
+
+  "& + label": {
+    ...checkboxRadioLabel(theme),
   },
 });
 
-const checkboxRadioBefore = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioBefore = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   content: "''",
   display: "block",
   left: "-1px",
@@ -45,7 +67,9 @@ const checkboxRadioBefore = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   width: theme("sugarFormControls.checkBoxRadioDimensions"),
 });
 
-const checkboxRadioAfter = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioAfter = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   height: theme(SugarMeasurements.FormControlHeight),
   content: "''", // need to tell postcss to render an empty string
   display: "block",
@@ -56,7 +80,9 @@ const checkboxRadioAfter = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   opacity: "0",
 });
 
-const checkboxRadioChecked = (theme: PluginAPI["theme"]): CSSRuleObject => {
+export const checkboxRadioChecked = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => {
   const color = getShadeValue(
     theme,
     theme("sugarFormControls.checkBoxRadioCheckedColorFamily"),
@@ -72,7 +98,9 @@ const checkboxRadioChecked = (theme: PluginAPI["theme"]): CSSRuleObject => {
   };
 };
 
-const checkboxRadioHover = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioHover = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
   borderColor: getShadeValue(
     theme,
     theme("sugarFormControls.checkBoxRadioCheckedColorFamily"),
@@ -85,47 +113,16 @@ const checkboxRadioHover = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ),
 });
 
-const checkboxRadioLabel = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+export const checkboxRadioLabel = (
+  theme: PluginAPI["theme"]
+): CSSRuleObject => ({
+  flexShrink: "1",
   fontSize: theme("fontSize.lg"),
   letterSpacing: theme("letterSpacing.wide"),
-  lineHeight: theme("sugarFormControls.checkBoxRadioDimensions"),
+  lineHeight: theme("lineHeight.tight"),
   display: "inline-block",
   verticalAlign: "top",
   cursor: "pointer",
   userSelect: "none",
-  padding: `0 ${theme("spacing.2")}`,
-});
-
-export const checkboxStyles = (theme: PluginAPI["theme"]): CSSRuleObject => ({
-  ...checkboxRadioBase(theme),
-  borderRadius: theme("borderRadius.DEFAULT"),
-  "&:hover:not(:checked):not(:disabled)": {
-    ...checkboxRadioHover(theme),
-  },
-  "&::before": {
-    ...checkboxRadioBefore(theme),
-  },
-  "&::after": {
-    ...checkboxRadioAfter(theme),
-    opacity: "0",
-    width: "8px",
-    height: "14px",
-    border: `3px solid ${theme("colors.white")}`,
-    borderTop: "0",
-    borderLeft: "0",
-    left: "10px",
-    top: "4px",
-    transform: "rotate(20deg)",
-  },
-  "&:checked": {
-    ...checkboxRadioChecked(theme),
-    "&::after": {
-      transform: "rotate(45deg)",
-      opacity: "1",
-    },
-  },
-
-  "& + label": {
-    ...checkboxRadioLabel(theme),
-  },
+  padding: `0.125rem ${theme("spacing.2")}`,
 });
