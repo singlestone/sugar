@@ -29,7 +29,7 @@
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/sugar": "workspace:*",
-    "@singlestone/tsup-config-sugar": "workspace:*",
+    "@singlestone/tsup-config-node": "workspace:*",
     "@storybook/addon-essentials": "7.0.0-beta.19",
     "@storybook/addon-interactions": "7.0.0-beta.19",
     "@storybook/addon-links": "7.0.0-beta.19",

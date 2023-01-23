@@ -1,12 +1,12 @@
 {
-  "name": "@singlestone/tsup-config-sugar",
+  "name": "@singlestone/tsup-config-node",
   "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "tools/tsup-config-sugar"
+    "directory": "tools/tsup-config-node"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/tsup-config-sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/tools/tsup-config-node#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },

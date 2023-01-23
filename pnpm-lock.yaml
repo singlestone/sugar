@@ -41,10 +41,10 @@ importers:
   sugar/storybook:
     specifiers:
       '@singlestone/eslint-config-sugar': workspace:*
-      '@singlestone/postcss-preset-sugar': workspace:^
-      '@singlestone/prettier-config-sugar': workspace:^
-      '@singlestone/sugar': workspace:^
-      '@singlestone/tsup-config-sugar': workspace:^
+      '@singlestone/postcss-preset-sugar': workspace:*
+      '@singlestone/prettier-config-sugar': workspace:*
+      '@singlestone/sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@storybook/addon-essentials': 7.0.0-beta.19
       '@storybook/addon-interactions': 7.0.0-beta.19
       '@storybook/addon-links': 7.0.0-beta.19
@@ -64,7 +64,7 @@ importers:
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/sugar': link:../sugar
-      '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
+      '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
       '@storybook/addon-essentials': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-interactions': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-links': 7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y
@@ -88,7 +88,7 @@ importers:
       '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
       '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.3.0
       '@singlestone/tailwind-plugin-form-sugar': workspace:^0.3.0
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       size-limit: 8.1.1
       tsup: 6.5.0
@@ -101,7 +101,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
-      '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
+      '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       size-limit: 8.1.1
       tsup: 6.5.0
@@ -149,7 +149,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@types/node': 18.11.18
       eslint: 8.31.0
@@ -162,7 +162,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
-      '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
+      '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       '@types/node': 18.11.18
       eslint: 8.31.0
@@ -181,7 +181,7 @@ importers:
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@storybook/html': 7.0.0-beta.19
       '@types/node': 18.11.18
@@ -201,7 +201,7 @@ importers:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
-      '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
+      '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.12
       '@types/node': 18.11.18
@@ -223,7 +223,7 @@ importers:
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/tailwind-helpers-sugar': workspace:^0.3.0
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@storybook/html': 7.0.0-beta.19
       autoprefixer: 10.4.13
@@ -242,7 +242,7 @@ importers:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
-      '@singlestone/tsup-config-sugar': link:../../tools/tsup-config
+      '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.12
       autoprefixer: 10.4.13_postcss@8.4.21
@@ -258,7 +258,7 @@ importers:
   tools/eslint-config:
     specifiers:
       '@babel/core': 7.20.12
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@typescript-eslint/eslint-plugin': 5.48.1
       '@typescript-eslint/parser': 5.48.1
@@ -275,7 +275,7 @@ importers:
       eslint-plugin-simple-import-sort: 8.0.0_eslint@8.31.0
     devDependencies:
       '@babel/core': 7.20.12
-      '@singlestone/tsup-config-sugar': link:../tsup-config
+      '@singlestone/tsup-config-node': link:../tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       eslint: 8.31.0
       prettier: 2.8.2
@@ -290,7 +290,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       cpy-cli: 4.2.0
       eslint: 8.31.0
@@ -304,7 +304,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
-      '@singlestone/tsup-config-sugar': link:../tsup-config
+      '@singlestone/tsup-config-node': link:../tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       cpy-cli: 4.2.0
       eslint: 8.31.0
@@ -321,7 +321,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@types/node': 18.11.18
       '@types/postcss-import': 14.0.0
@@ -345,7 +345,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
-      '@singlestone/tsup-config-sugar': link:../tsup-config
+      '@singlestone/tsup-config-node': link:../tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       '@types/node': 18.11.18
       '@types/postcss-import': 14.0.0
@@ -362,7 +362,7 @@ importers:
     specifiers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': workspace:*
-      '@singlestone/tsup-config-sugar': workspace:*
+      '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
       '@types/node': 18.11.18
       '@types/prettier': 2.7.2
@@ -380,7 +380,7 @@ importers:
     devDependencies:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../eslint-config
-      '@singlestone/tsup-config-sugar': link:../tsup-config
+      '@singlestone/tsup-config-node': link:../tsup-config-node
       '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
       '@types/node': 18.11.18
       '@types/prettier': 2.7.2
@@ -392,7 +392,7 @@ importers:
       vitest: 0.27.1
     publishDirectory: package
 
-  tools/tsup-config:
+  tools/tsup-config-node:
     specifiers:
       '@types/node': 18.11.18
       '@typescript-eslint/eslint-plugin': 5.48.1
@@ -2547,7 +2547,7 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  /@rollup/pluginutils/5.0.2_rollup@3.9.1:
+  /@rollup/pluginutils/5.0.2_rollup@3.10.0:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2559,7 +2559,7 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.9.1
+      rollup: 3.10.0
     dev: true
 
   /@sinclair/typebox/0.24.51:
@@ -3012,10 +3012,10 @@ packages:
       '@storybook/node-logger': 7.0.0-beta.19
       '@types/ejs': 3.1.1
       '@types/find-cache-dir': 3.2.1
-      '@yarnpkg/esbuild-plugin-pnp': 3.0.0-rc.15_esbuild@0.16.12
+      '@yarnpkg/esbuild-plugin-pnp': 3.0.0-rc.15_esbuild@0.16.17
       browser-assert: 1.2.1
       ejs: 3.1.8
-      esbuild: 0.16.12
+      esbuild: 0.16.17
       esbuild-plugin-alias: 0.2.1
       express: 4.18.2
       find-cache-dir: 4.0.0
@@ -3057,8 +3057,8 @@ packages:
       glob: 7.2.3
       glob-promise: 4.2.2_glob@7.2.3
       magic-string: 0.26.7
-      rollup: 3.9.1
-      rollup-plugin-external-globals: 0.7.1_rollup@3.9.1
+      rollup: 3.10.0
+      rollup-plugin-external-globals: 0.7.1_rollup@3.10.0
       slash: 3.0.0
       vite: 4.0.4
     transitivePeerDependencies:
@@ -3938,7 +3938,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 16.18.11
+      '@types/node': 18.11.18
       form-data: 3.0.1
     dev: true
 
@@ -4279,13 +4279,13 @@ packages:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
     dev: true
 
-  /@yarnpkg/esbuild-plugin-pnp/3.0.0-rc.15_esbuild@0.16.12:
+  /@yarnpkg/esbuild-plugin-pnp/3.0.0-rc.15_esbuild@0.16.17:
     resolution: {integrity: sha512-kYzDJO5CA9sy+on/s2aIW0411AklfCi8Ck/4QDivOqsMKpStZA2SsR+X27VTggGwpStWaLrjJcDcdDMowtG8MA==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       esbuild: '>=0.10.0'
     dependencies:
-      esbuild: 0.16.12
+      esbuild: 0.16.17
       tslib: 2.4.1
     dev: true
 
@@ -10281,16 +10281,16 @@ packages:
     hasBin: true
     dev: false
 
-  /rollup-plugin-external-globals/0.7.1_rollup@3.9.1:
+  /rollup-plugin-external-globals/0.7.1_rollup@3.10.0:
     resolution: {integrity: sha512-3U2OBhCa/D57P2SA9fx1CGS1xi9h7x7L3+nnAJ0563nIucQysHQdebfKYoI+2WZVkRdVuZKh4M+rgoF0B5W9Ag==}
     peerDependencies:
       rollup: ^2.25.0 || ^3.3.0
     dependencies:
-      '@rollup/pluginutils': 5.0.2_rollup@3.9.1
+      '@rollup/pluginutils': 5.0.2_rollup@3.10.0
       estree-walker: 3.0.1
       is-reference: 3.0.0
       magic-string: 0.26.7
-      rollup: 3.9.1
+      rollup: 3.10.0
     dev: true
 
   /rollup/3.10.0:
