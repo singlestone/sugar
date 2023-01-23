@@ -382,3 +382,6 @@ report
 !.yarn/versions
 
 tools/plop-generators/public
+
+# pnpm
+pnpm-lock.yaml
