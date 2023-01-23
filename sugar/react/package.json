@@ -1,0 +1,85 @@
+{
+  "name": "@singlestone/sugar-react",
+  "version": "0.0.0",
+  "description": "React bindings for Sugar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/singlestone/sugar.git",
+    "directory": "sugar/react"
+  },
+  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/react#readme",
+  "bugs": {
+    "url": "https://github.com/singlestone/sugar/issues"
+  },
+  "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
+  "license": "MIT",
+  "engines": {
+    "node": "^14 || ^16 || >= 18"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "tsup",
+    "clean": "rimraf .turbo node_modules dist",
+    "dev": "tsup --watch",
+    "lint": "eslint --format stylish --max-warnings 0 --cache .",
+    "lint:fix": "nr lint --fix",
+    "postpublish": "rm -rf ./package",
+    "prepare": "tsup",
+    "prepublishOnly": "rm -rf ./package && clean-publish",
+    "size": "size-limit",
+    "start": "vite",
+    "test": "vitest",
+    "test:ci": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.5",
+    "@singlestone/eslint-config-sugar": "workspace:*",
+    "@singlestone/postcss-preset-sugar": "workspace:*",
+    "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar": "workspace:*",
+    "@singlestone/tsup-config-react": "workspace:*",
+    "@size-limit/preset-small-lib": "8.1.0",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@types/testing-library__jest-dom": "5.14.5",
+    "@vitejs/plugin-react": "3.0.1",
+    "jsdom": "21.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "size-limit": "8.1.0",
+    "tsup": "6.5.0",
+    "vite": "4.0.4",
+    "vitest": "0.26.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "directory": "package"
+  },
+  "prettier": "@singlestone/prettier-config-sugar",
+  "size-limit": [
+    {
+      "path": "./dist/react.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/react.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
