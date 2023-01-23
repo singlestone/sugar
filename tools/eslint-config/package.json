@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
-    "@singlestone/tsup-config-sugar": "workspace:^0.3.0",
+    "@singlestone/tsup-config-node": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.1",
     "eslint": "8.31.0",
     "prettier": "2.8.2",

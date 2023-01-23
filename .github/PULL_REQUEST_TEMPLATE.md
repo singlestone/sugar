@@ -45,4 +45,4 @@
 - [ ] I have read the **CONTRIBUTING** document.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
-- [ ] I added a changeset via `yarn changeset` if my changes should be released.
+- [ ] I added a changeset via `pnpm run changeset` if my changes should be released.

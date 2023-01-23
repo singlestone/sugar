@@ -17,12 +17,12 @@ Inside the Sugar monorepo, install it with a dev dependency like so:
 ```json
 {
   "devDependencies": {
-    "@singlestone/prettier-config-sugar": "workspace:^"
+    "@singlestone/prettier-config-sugar": "workspace:*"
   }
 }
 ```
 
-Outside the monorepo, install it with an actual version instead of `workspace:^`.
+Outside the monorepo, install it with an actual version instead of `workspace:*`.
 
 ## Usage
 

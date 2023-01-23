@@ -17,12 +17,12 @@ Inside the Sugar monorepo, install it with a dev dependency like so:
 ```json
 {
   "devDependencies": {
-    "@singlestone/postcss-preset-sugar": "workspace:^"
+    "@singlestone/postcss-preset-sugar": "workspace:*"
   }
 }
 ```
 
-Outside the monorepo, install it with an actual version instead of `workspace:^`.
+Outside the monorepo, install it with an actual version instead of `workspace:*`.
 
 ## Usage
 

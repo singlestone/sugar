@@ -8,10 +8,10 @@
     "dev": "vite"
   },
   "devDependencies": {
-    "@singlestone/eslint-config-sugar": "workspace:^0.3.0",
-    "@singlestone/postcss-preset-sugar": "workspace:^0.3.0",
-    "@singlestone/prettier-config-sugar": "workspace:^0.3.0",
-    "@singlestone/sugar": "workspace:^0.3.0",
+    "@singlestone/eslint-config-sugar": "workspace:*",
+    "@singlestone/postcss-preset-sugar": "workspace:*",
+    "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar": "workspace:*",
     "autoprefixer": "10.4.13",
     "eslint": "8.31.0",
     "postcss": "8.4.21",

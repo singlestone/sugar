@@ -1,13 +1,13 @@
 {
-  "name": "@singlestone/{{kebabCase packageName}}-sugar",
+  "name": "@singlestone/sugar-react",
   "version": "0.0.0",
-  "description": "{{packageDescription}}",
+  "description": "React bindings for Sugar",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "{{packageType}}/{{kebabCase packageName}}"
+    "directory": "sugar/react"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/{{packageType}}/{{kebabCase packageName}}#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/react#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
@@ -27,24 +27,44 @@
     "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo node_modules dist",
+    "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
+    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "size": "size-limit",
-    "test": "vitest",
-    "test:ci": "vitest",
     "prepublishOnly": "rm -rf ./package && clean-publish",
-    "postpublish": "rm -rf ./package"
+    "size": "size-limit",
+    "start": "vite",
+    "test": "vitest",
+    "test:ci": "vitest"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
+  },
   "devDependencies": {
-    "@singlestone/eslint-config-sugar": "workspace:*",
-    "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
     "@babel/core": "7.20.5",
+    "@singlestone/eslint-config-sugar": "workspace:*",
+    "@singlestone/postcss-preset-sugar": "workspace:*",
+    "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar": "workspace:*",
+    "@singlestone/tsup-config-react": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.0",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "14.4.3",
+    "@types/react": "18.0.27",
+    "@types/react-dom": "18.0.10",
+    "@types/testing-library__jest-dom": "5.14.5",
+    "@vitejs/plugin-react": "3.0.1",
+    "jsdom": "21.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "size-limit": "8.1.0",
     "tsup": "6.5.0",
+    "vite": "4.0.4",
     "vitest": "0.26.3"
   },
   "publishConfig": {
@@ -55,11 +75,11 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/{{kebabCase packageName}}.cjs.production.min.js",
+      "path": "./dist/react.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/{{kebabCase packageName}}.esm.js",
+      "path": "./dist/react.esm.js",
       "limit": "10 KB"
     }
   ]

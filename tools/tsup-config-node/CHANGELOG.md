@@ -1,4 +1,4 @@
-# @singlestone/tsup-config-sugar
+# @singlestone/tsup-config-node
 
 ## 0.3.0
 
