@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ComponentPropsWithoutRef, MouseEventHandler, useState } from "react";
+import { ComponentPropsWithoutRef, useState } from "react";
 import { expect, it } from "vitest";
 
 import { Button } from "./Button";
