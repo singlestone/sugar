@@ -1,4 +1,6 @@
-export const sugarDefaultButtonConfig = {
+import { SugarButtonConfig } from "./sugar-button-config.interface";
+
+export const sugarDefaultButtonConfig: { [key: string]: SugarButtonConfig } = {
   primary: {
     type: "filled",
     color: "accent",
