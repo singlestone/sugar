@@ -1,4 +1,9 @@
 {
   "extends": "../../tsconfig.node14.json",
-  "include": ["src", "types"]
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "paths": {
+      "@singlestone/test-utils-sugar/*": ["../../tools/test-utils/src/*"]
+    }
+  }
 }
