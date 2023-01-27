@@ -5,7 +5,7 @@ import { createMockThemeFn } from "./mocks/create-mock-theme";
 
 const theme = createMockThemeFn(
   {
-    "--sugar-ring-width": "sugarFocusStyles.initialRingWidth"
+    "--sugar-ring-width": "sugarFocusStyles.initialRingWidth",
   },
   defaultPluginConfig
 );
