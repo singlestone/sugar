@@ -1,12 +1,14 @@
 import { describe, expect, test } from "vitest";
 
-import { defaultPluginConfig,focusTransition } from "../src";
+import { defaultPluginConfig, focusTransition } from "../src";
 import { createMockThemeFn } from "./mocks/create-mock-theme";
 
 const theme = createMockThemeFn(
   {
-    "--sugar-ring-width": "sugarFocusStyles.initialRingWidth" // value
-  }, defaultPluginConfig);
+    "--sugar-ring-width": "sugarFocusStyles.initialRingWidth"
+  },
+  defaultPluginConfig
+);
 
 describe("focus-transition styles", () => {
   test("focusTransition", () => {
@@ -14,5 +16,4 @@ describe("focus-transition styles", () => {
   });
 
   test.todo("focusVisibleTransition");
-})
-
+});

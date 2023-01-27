@@ -9,9 +9,8 @@ const theme = createMockThemeFn(
     checkBoxRadioBorder: "colors.neutral.400",
     checkBoxRadioDimensions: "spacing.7",
   },
-  defaultPluginConfig,
+  defaultPluginConfig
 );
-
 
 test("sugarDefaultFormConfig", () => {
   expect(sugarDefaultFormConfig(theme)).toMatchSnapshot();

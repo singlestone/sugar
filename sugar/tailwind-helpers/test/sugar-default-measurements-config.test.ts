@@ -8,9 +8,8 @@ const theme = createMockThemeFn(
     formControlHeight: "spacing.10",
     buttonSize: "spacing.5",
   },
-  defaultPluginConfig,
+  defaultPluginConfig
 );
-
 
 test("sugarDefaultFormConfig", () => {
   expect(sugarDefaultMeasurementsConfig(theme)).toMatchSnapshot();

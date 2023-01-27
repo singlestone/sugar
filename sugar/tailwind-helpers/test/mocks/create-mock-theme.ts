@@ -11,20 +11,20 @@ export const createMockThemeFn = (
     .fn()
     .mockImplementation(
       (value: string): CSSRuleObject | string | undefined | unknown => {
-
         for (const v of Object.values(mockTheme)) {
           const configTheme = config.theme;
 
           if (config == defaultPluginConfig) {
             for (const k of Object.keys(defaultPluginConfig.theme)) {
-              let property, propertyValue = '';
+              let property,
+                propertyValue = "";
 
               /*
                 Check the theme is referencing a property with a value
                 Example: theme("sugarFocusStyles.initialRingWidth")
               */
-              if(value.includes(".")) {
-                [property, propertyValue] = value.split('.');
+              if (value.includes(".")) {
+                [property, propertyValue] = value.split(".");
               }
 
               /*
@@ -33,7 +33,7 @@ export const createMockThemeFn = (
                 property of the theme
               */
               // TODO: In the future, this should chain recursively.
-              if(k == property) {
+              if (k == property) {
                 return defaultPluginConfig.theme[k][propertyValue];
               }
             }
