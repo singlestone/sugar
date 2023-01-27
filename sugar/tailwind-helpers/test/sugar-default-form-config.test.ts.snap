@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`sugar-default-form-config > disabledControlStyles 1`] = `
+exports[`sugarDefaultFormConfig 1`] = `
 {
   "checkBoxRadioBorder": "2px solid colors.neutral.400",
   "checkBoxRadioCheckedColorFamily": "accent",

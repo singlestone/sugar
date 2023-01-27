@@ -1,9 +1,7 @@
-import { describe, expect, test } from "vitest";
+import { expect, test } from "vitest";
 
 import { sugarDefaultButtonConfig } from "../src";
 
-describe("sugar default button config", () => {
-  test("sugarDefaultButtonConfig", () => {
-    expect(sugarDefaultButtonConfig).toMatchSnapshot();
-  });
+test("sugarDefaultButtonConfig", () => {
+  expect(sugarDefaultButtonConfig).toMatchSnapshot();
 });

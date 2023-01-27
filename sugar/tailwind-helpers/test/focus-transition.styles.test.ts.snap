@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`disabled-control-styles > disabledControlStyles 1`] = `
+exports[`focus-transition styles > focusTransition 1`] = `
 {
   "--sugar-ring-width": "30px",
   "--tw-ring-color": "transparent",

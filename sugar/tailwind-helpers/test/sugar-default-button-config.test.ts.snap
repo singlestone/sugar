@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`sugar default button config > sugarDefaultButtonConfig 1`] = `
+exports[`sugarDefaultButtonConfig 1`] = `
 {
   "destructive": {
     "active": "800",

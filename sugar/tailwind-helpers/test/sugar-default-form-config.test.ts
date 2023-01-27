@@ -1,7 +1,7 @@
-import { describe, expect, test } from "vitest";
+import { expect, test } from "vitest";
 
 import { defaultPluginConfig, sugarDefaultFormConfig } from "../src";
-import { createMockThemeFn } from "./create-mock-theme";
+import { createMockThemeFn } from "./mocks/create-mock-theme";
 
 const theme = createMockThemeFn(
   {
@@ -9,11 +9,10 @@ const theme = createMockThemeFn(
     checkBoxRadioBorder: "colors.neutral.400",
     checkBoxRadioDimensions: "spacing.7",
   },
-  defaultPluginConfig
+  defaultPluginConfig,
 );
 
-describe("sugar-default-form-config", () => {
-  test("disabledControlStyles", () => {
-    expect(sugarDefaultFormConfig(theme)).toMatchSnapshot();
-  });
+
+test("sugarDefaultFormConfig", () => {
+  expect(sugarDefaultFormConfig(theme)).toMatchSnapshot();
 });

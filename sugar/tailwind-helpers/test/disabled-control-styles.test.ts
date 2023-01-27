@@ -1,16 +1,10 @@
-import { describe, expect, test, vi } from "vitest";
+import { expect, test } from "vitest";
 
-import { disabledControlStyles } from "../src";
+import { defaultPluginConfig, disabledControlStyles } from "../src";
+import { createMockThemeFn } from "./mocks/create-mock-theme";
 
-const theme = vi.fn().mockImplementation((opacity) => {
-  if (opacity) {
-    return ".50";
-  }
-  return undefined;
-});
+const theme = createMockThemeFn({opacity: "opacity.50"}, defaultPluginConfig);
 
-describe("disabled-control-styles", () => {
-  test("disabledControlStyles", () => {
-    expect(disabledControlStyles(theme)).toMatchSnapshot();
-  });
+test("disabledControlStyles", () => {
+  expect(disabledControlStyles(theme)).toMatchSnapshot();
 });
