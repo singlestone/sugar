@@ -1,14 +1,7 @@
-import { describe, expect, test, vi } from "vitest";
+import { describe, expect, test } from "vitest";
 
-import { focusTransition, sugarDefaultFocusConfig, defaultPluginConfig } from "../src";
+import { defaultPluginConfig,focusTransition } from "../src";
 import { createMockThemeFn } from "./mocks/create-mock-theme";
-
-// const theme = vi.fn().mockImplementation((sugarFocusStyles) => {
-//   if (sugarFocusStyles) {
-//     return sugarDefaultFocusConfig.initialRingWidth;
-//   }
-//   return undefined;
-// });
 
 const theme = createMockThemeFn(
   {
