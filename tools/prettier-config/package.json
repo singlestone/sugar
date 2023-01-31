@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/prettier-config-sugar",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "PostCSS config for Sugar",
   "repository": {
     "type": "git",

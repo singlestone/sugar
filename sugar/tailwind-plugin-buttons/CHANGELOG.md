@@ -1,5 +1,14 @@
 # @singlestone/tailwind-plugin-buttons-sugar
 
+## 0.4.1
+
+### Patch Changes
+
+- [#238](https://github.com/singlestone/sugar/pull/238) [`72cc139`](https://github.com/singlestone/sugar/commit/72cc13939d812b4c46b9a75a1ccb492dcf11b9c1) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - republish
+
+- Updated dependencies [[`72cc139`](https://github.com/singlestone/sugar/commit/72cc13939d812b4c46b9a75a1ccb492dcf11b9c1)]:
+  - @singlestone/tailwind-helpers-sugar@0.4.1
+
 ## 0.4.0
 
 ### Minor Changes

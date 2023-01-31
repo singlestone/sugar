@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-form-sugar",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Tailwind plugin for sugar design system buttons",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     "tailwindcss": "^3.1.0"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.4.0"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
