@@ -13,6 +13,7 @@
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
+  "private": true,
   "engines": {
     "node": "^14 || ^16 || >= 18"
   },
