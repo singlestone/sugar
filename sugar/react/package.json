@@ -13,7 +13,6 @@
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
-  "private": true,
   "engines": {
     "node": "^14 || ^16 || >= 18"
   },
@@ -40,7 +39,7 @@
     "test:ci": "vitest"
   },
   "peerDependencies": {
-    "react": "^18.0.0"
+    "react": ">=16.0.0"
   },
   "dependencies": {
     "clsx": "^1.2.1"
