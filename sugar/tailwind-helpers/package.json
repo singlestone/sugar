@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-helpers-sugar",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "Helper functions for use in Sugar, SingleStone's sweet design system",
   "repository": {
     "type": "git",
