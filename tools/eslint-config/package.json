@@ -45,7 +45,7 @@
     "eslint": "8.31.0",
     "prettier": "2.8.2",
     "prettier-plugin-pkg": "0.17.1",
-    "size-limit": "8.1.1",
+    "size-limit": "8.1.2",
     "tsup": "6.5.0",
     "typescript": "4.9.4"
   },
