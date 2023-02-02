@@ -52,7 +52,7 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/sugar": "workspace:*",
     "@singlestone/tsup-config-react": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.0",
+    "@size-limit/preset-small-lib": "8.1.2",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
