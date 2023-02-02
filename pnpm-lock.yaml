@@ -58,7 +58,7 @@ importers:
       jsdom: 21.1.0
       react: 18.2.0
       react-dom: 18.2.0
-      size-limit: 8.1.0
+      size-limit: 8.1.2
       tsup: 6.5.0
       vite: 4.0.4
       vitest: 0.26.3
@@ -71,7 +71,7 @@ importers:
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/sugar': link:../sugar
       '@singlestone/tsup-config-react': link:../../tools/tsup-config-react
-      '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
+      '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.2
       '@testing-library/jest-dom': 5.16.5
       '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
       '@testing-library/user-event': 14.4.3_ua4wuun3fnehcjqtqj2e2ldgpe
@@ -82,7 +82,7 @@ importers:
       jsdom: 21.1.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      size-limit: 8.1.0
+      size-limit: 8.1.2
       tsup: 6.5.0
       vite: 4.0.4
       vitest: 0.26.3_jsdom@21.1.0
@@ -140,7 +140,7 @@ importers:
       '@singlestone/tailwind-plugin-form-sugar': workspace:^0.4.1
       '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0
       vitest: 0.27.1
     dependencies:
@@ -152,8 +152,8 @@ importers:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
-      size-limit: 8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
+      size-limit: 8.1.2
       tsup: 6.5.0
       vitest: 0.27.1
     publishDirectory: package
@@ -203,7 +203,7 @@ importers:
       '@size-limit/preset-small-lib': 8.1.1
       '@types/node': 18.11.18
       eslint: 8.31.0
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4
       tsup: 6.5.0
       typescript: 4.9.4
@@ -213,10 +213,10 @@ importers:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       '@types/node': 18.11.18
       eslint: 8.31.0
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4_postcss@8.4.21
       tsup: 6.5.0_k22f457wtryv7dv7ltdlwpdpdm
       typescript: 4.9.4
@@ -238,7 +238,7 @@ importers:
       autoprefixer: 10.4.13
       babel-loader: 9.1.2
       postcss: 8.4.21
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4
       tsup: 6.5.0
       typescript: 4.9.4
@@ -252,13 +252,13 @@ importers:
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.12
       '@types/node': 18.11.18
       autoprefixer: 10.4.13_postcss@8.4.21
       babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
       postcss: 8.4.21
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4_postcss@8.4.21
       tsup: 6.5.0_k22f457wtryv7dv7ltdlwpdpdm
       typescript: 4.9.4
@@ -279,7 +279,7 @@ importers:
       autoprefixer: 10.4.13
       babel-loader: 9.1.2
       postcss: 8.4.21
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4
       tsup: 6.5.0
       typescript: 4.9.4
@@ -293,12 +293,12 @@ importers:
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config-node': link:../../tools/tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       '@storybook/html': 7.0.0-beta.19_@babel+core@7.20.12
       autoprefixer: 10.4.13_postcss@8.4.21
       babel-loader: 9.1.2_la66t7xldg4uecmyawueag5wkm
       postcss: 8.4.21
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: 3.2.4_postcss@8.4.21
       tsup: 6.5.0_k22f457wtryv7dv7ltdlwpdpdm
       typescript: 4.9.4
@@ -316,7 +316,7 @@ importers:
       eslint-plugin-simple-import-sort: 8.0.0
       prettier: 2.8.2
       prettier-plugin-pkg: 0.17.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0
       typescript: 4.9.4
     dependencies:
@@ -326,11 +326,11 @@ importers:
     devDependencies:
       '@babel/core': 7.20.12
       '@singlestone/tsup-config-node': link:../tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       eslint: 8.31.0
       prettier: 2.8.2
       prettier-plugin-pkg: 0.17.1_prettier@2.8.2
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
     publishDirectory: package
@@ -346,7 +346,7 @@ importers:
       eslint: 8.31.0
       node-plop: 0.31.0
       plop: 3.1.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0
       typescript: 4.9.4
       vitest: 0.27.1
@@ -355,12 +355,12 @@ importers:
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
       '@singlestone/tsup-config-node': link:../tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       cpy-cli: 4.2.0
       eslint: 8.31.0
       node-plop: 0.31.0
       plop: 3.1.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
       vitest: 0.27.1
@@ -381,7 +381,7 @@ importers:
       postcss: 8.4.21
       postcss-import: ^15.1.0
       postcss-load-config: 4.0.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tailwindcss: ^3.2.4
       tsup: 6.5.0
       typescript: 4.9.4
@@ -396,13 +396,13 @@ importers:
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
       '@singlestone/tsup-config-node': link:../tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       '@types/node': 18.11.18
       '@types/postcss-import': 14.0.0
       eslint: 8.31.0
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0_k22f457wtryv7dv7ltdlwpdpdm
       typescript: 4.9.4
       vitest: 0.27.1
@@ -420,7 +420,7 @@ importers:
       prettier: 2.8.2
       prettier-plugin-pkg: ^0.17.1
       prettier-plugin-tailwindcss: ^0.2.1
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0
       typescript: 4.9.4
       vitest: 0.27.1
@@ -431,12 +431,12 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/tsup-config-node': link:../tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.1
+      '@size-limit/preset-small-lib': 8.1.1_size-limit@8.1.2
       '@types/node': 18.11.18
       '@types/prettier': 2.7.2
       eslint: 8.31.0
       prettier: 2.8.2
-      size-limit: 8.1.1
+      size-limit: 8.1.2
       tsup: 6.5.0_typescript@4.9.4
       typescript: 4.9.4
       vitest: 0.27.1
@@ -449,7 +449,7 @@ importers:
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.0
-      size-limit: 8.1.0
+      size-limit: 8.1.2
       tsup: 6.5.0
       vitest: 0.26.3
     devDependencies:
@@ -457,8 +457,8 @@ importers:
       '@singlestone/eslint-config-sugar': link:../eslint-config
       '@singlestone/prettier-config-sugar': link:../prettier-config
       '@singlestone/tsup-config-node': link:../tsup-config-node
-      '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
-      size-limit: 8.1.0
+      '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.2
+      size-limit: 8.1.2
       tsup: 6.5.0
       vitest: 0.26.3
     publishDirectory: package
@@ -2490,7 +2490,7 @@ packages:
     resolution: {integrity: sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==}
     dev: true
 
-  /@size-limit/esbuild/8.1.0_size-limit@8.1.0:
+  /@size-limit/esbuild/8.1.0_size-limit@8.1.2:
     resolution: {integrity: sha512-Lq+vJAUO13RXbiNF4bZOB07LmzMURkbV8Z6dhAkhTdAVWYLUn0zjfIe3O6IMwhj9dqJ0WtadhKHJvNQKG+po3w==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -2498,10 +2498,10 @@ packages:
     dependencies:
       esbuild: 0.15.18
       nanoid: 3.3.4
-      size-limit: 8.1.0
+      size-limit: 8.1.2
     dev: true
 
-  /@size-limit/esbuild/8.1.1_size-limit@8.1.1:
+  /@size-limit/esbuild/8.1.1_size-limit@8.1.2:
     resolution: {integrity: sha512-Y071Vs3M3pxNplE98SFf32IREXSMzBErkO2uAeh3CeZfyUOItpH59ETlmEAAf7blCRrUXhygecJl80NbRNWSsA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -2509,47 +2509,47 @@ packages:
     dependencies:
       esbuild: 0.16.17
       nanoid: 3.3.4
-      size-limit: 8.1.1
+      size-limit: 8.1.2
     dev: true
 
-  /@size-limit/file/8.1.0_size-limit@8.1.0:
+  /@size-limit/file/8.1.0_size-limit@8.1.2:
     resolution: {integrity: sha512-Ur+NgJSRHBnbQBrD8X2doxXYdBcVJsMxe2KfWrUmnZ6wYz09YKhQ1iYLqNztjf2yf/JEp00zp1vyhmimUQfUHQ==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
       size-limit: 8.1.0
     dependencies:
       semver: 7.3.7
-      size-limit: 8.1.0
+      size-limit: 8.1.2
     dev: true
 
-  /@size-limit/file/8.1.1_size-limit@8.1.1:
+  /@size-limit/file/8.1.1_size-limit@8.1.2:
     resolution: {integrity: sha512-4VW3r5TuKXGyycrWdhKhYaBSpWQq2sxuz0UOMoKYiTGcYBM6Sqpk4342RbnoIjVDmj7kyD4PS4eBstUnvF3TSA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
       size-limit: 8.1.1
     dependencies:
       semver: 7.3.8
-      size-limit: 8.1.1
+      size-limit: 8.1.2
     dev: true
 
-  /@size-limit/preset-small-lib/8.1.0_size-limit@8.1.0:
+  /@size-limit/preset-small-lib/8.1.0_size-limit@8.1.2:
     resolution: {integrity: sha512-fs0XD0+rN4SVKGUwae7VMX1uDqK+oUYNGlPe7E0oKhwAH6ek08iH8qiEm0q9IKDrsCfZ9/d/pqNpg9di3p1SVw==}
     peerDependencies:
       size-limit: 8.1.0
     dependencies:
-      '@size-limit/esbuild': 8.1.0_size-limit@8.1.0
-      '@size-limit/file': 8.1.0_size-limit@8.1.0
-      size-limit: 8.1.0
+      '@size-limit/esbuild': 8.1.0_size-limit@8.1.2
+      '@size-limit/file': 8.1.0_size-limit@8.1.2
+      size-limit: 8.1.2
     dev: true
 
-  /@size-limit/preset-small-lib/8.1.1_size-limit@8.1.1:
+  /@size-limit/preset-small-lib/8.1.1_size-limit@8.1.2:
     resolution: {integrity: sha512-AB1v9zQ9F3ii/3xOJQOHmxaPsuQ3BgA99P2NtpOg5l0vP/306k/xfvveZL98a6gk20hIWWysrzrI1ydKeF9Iaw==}
     peerDependencies:
       size-limit: 8.1.1
     dependencies:
-      '@size-limit/esbuild': 8.1.1_size-limit@8.1.1
-      '@size-limit/file': 8.1.1_size-limit@8.1.1
-      size-limit: 8.1.1
+      '@size-limit/esbuild': 8.1.1_size-limit@8.1.2
+      '@size-limit/file': 8.1.1_size-limit@8.1.2
+      size-limit: 8.1.2
     dev: true
 
   /@storybook/addon-actions/7.0.0-beta.19_biqbaboplfbrettd7655fr4n2y:
@@ -5175,10 +5175,6 @@ packages:
   /ci-info/3.7.1:
     resolution: {integrity: sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==}
     engines: {node: '>=8'}
-
-  /ci-job-number/1.2.2:
-    resolution: {integrity: sha512-CLOGsVDrVamzv8sXJGaILUVI6dsuAkouJP/n6t+OxLPeeA4DDby7zn9SB6EUpa1H7oIKoE+rMmkW80zYsFfUjA==}
-    dev: true
 
   /class-utils/0.3.6:
     resolution: {integrity: sha512-qOhPa/Fj7s6TY8H8esGu5QNpMMQxz79h+urzrNYN6mn+9BnxlDGf5QZ+XeCDsxSjPqsSR56XOZOJmpeurnLMeg==}
@@ -10850,32 +10846,15 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/8.1.0:
-    resolution: {integrity: sha512-bUL+Uyyt/G+a1XzKlI2WKHVDepmXtqMDhF65pdtjccheiQTNjExWW4nFefgbRL2QgNTzRfK6ayFKjO3o4ER4gg==}
+  /size-limit/8.1.2:
+    resolution: {integrity: sha512-/EfKz9I/K2ouBN+BcrTX2WiaPTOX5yiCXtM07jYpuVtyzX9r4FDUsuCq13nNmoWqRFYbtH/7wqgRLvF40AGKoQ==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     hasBin: true
     dependencies:
       bytes-iec: 3.1.1
       chokidar: 3.5.3
-      ci-job-number: 1.2.2
       globby: 11.1.0
       lilconfig: 2.0.6
-      mkdirp: 1.0.4
-      nanospinner: 1.1.0
-      picocolors: 1.0.0
-    dev: true
-
-  /size-limit/8.1.1:
-    resolution: {integrity: sha512-8Zx+SJVxwcsDBYEl3Xt+FilpuxshVcgq446L8e1k8xD+Qa4LuUmFeesb+oiaRpoJnWCrOd7QUaiU9kFVocIeHQ==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
-    hasBin: true
-    dependencies:
-      bytes-iec: 3.1.1
-      chokidar: 3.5.3
-      ci-job-number: 1.2.2
-      globby: 11.1.0
-      lilconfig: 2.0.6
-      mkdirp: 1.0.4
       nanospinner: 1.1.0
       picocolors: 1.0.0
     dev: true

@@ -48,7 +48,7 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config-node": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.1",
-    "size-limit": "8.1.1",
+    "size-limit": "8.1.2",
     "tsup": "6.5.0",
     "vitest": "0.27.1"
   },
