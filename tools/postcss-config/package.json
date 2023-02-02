@@ -53,7 +53,7 @@
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.1",
+    "@size-limit/preset-small-lib": "8.1.2",
     "@types/node": "18.11.18",
     "@types/postcss-import": "14.0.0",
     "eslint": "8.31.0",

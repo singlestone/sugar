@@ -50,7 +50,7 @@
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.1",
+    "@size-limit/preset-small-lib": "8.1.2",
     "@storybook/html": "7.0.0-beta.19",
     "@types/node": "18.11.18",
     "autoprefixer": "10.4.13",

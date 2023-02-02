@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/core": "7.20.12",
     "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.1",
+    "@size-limit/preset-small-lib": "8.1.2",
     "eslint": "8.31.0",
     "prettier": "2.8.2",
     "prettier-plugin-pkg": "0.17.1",
