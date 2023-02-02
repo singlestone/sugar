@@ -49,8 +49,11 @@ describe("sugarButtonsPlugin", () => {
     const options = {
       prefix: testPrefix,
     };
-    test("set plugin prefix", () =>
-      getClassCreationTest(`${testPrefix}-button-primary`, options));
+    test("set plugin prefix", () => {
+      expect(
+        getClassCreationTest(`${testPrefix}-button-primary`, options)
+      ).toMatchSnapshot();
+    });
   });
 
   describe("Static Components", () => {
@@ -62,8 +65,8 @@ describe("sugarButtonsPlugin", () => {
       ["sugar-button-neutral"],
       ["sugar-button-with-icon"],
     ];
-    test.each(expectedClasses)("create %s class", (className: string) =>
-      getClassCreationTest(className)
-    );
+    test.each(expectedClasses)("create %s class", (className: string) => {
+      expect(getClassCreationTest(className)).toMatchSnapshot();
+    });
   });
 });

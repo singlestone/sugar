@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`sugarFormsPlugin > Plugin options > set plugin prefix 1`] = `Promise {}`;
+
+exports[`sugarFormsPlugin > Static Components > create sugar-text-input class 1`] = `Promise {}`;

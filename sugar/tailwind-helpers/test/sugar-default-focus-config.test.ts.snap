@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`sugarDefaultFocusConfig 1`] = `
+{
+  "focusColorFamily": "accent",
+  "focusOffsetColor": "#fff",
+  "focusShade": "600",
+  "initialRingWidth": "30px",
+}
+`;

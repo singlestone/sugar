@@ -1,0 +1,25 @@
+// Vitest Snapshot v1
+
+exports[`color helpers > convertHexToRGBA > Convert s% with s% opacity #031cfc 0.5 1`] = `"rgba(3, 28, 252, 0.5)"`;
+
+exports[`color helpers > convertHexToRGBA > Convert s% with s% opacity #dd 0 1`] = `"rgba(0, 0, 0, 0)"`;
+
+exports[`color helpers > convertHexToRGBA > Convert s% with s% opacity #ddd 0.1 1`] = `"rgba(221, 221, 221, 0.1)"`;
+
+exports[`color helpers > convertHexToRGBA > Convert s% without alphaVariable #031cfc 1`] = `"rgb(3, 28, 252)"`;
+
+exports[`color helpers > convertHexToRGBA > Convert s% without alphaVariable #dd 1`] = `"rgb(0, 0, 0)"`;
+
+exports[`color helpers > convertHexToRGBA > Convert s% without alphaVariable #ddd 1`] = `"rgb(221, 221, 221)"`;
+
+exports[`getShadeValue > Get value with alphaVariable 1`] = `"rgba(37, 99, 235, 0.5)"`;
+
+exports[`getShadeValue > Get value with alphaVariable 2`] = `"rgba(0, 0, 0, 0.5)"`;
+
+exports[`getShadeValue > Get value with alphaVariable 3`] = `"rgba(3, 28, 252, 0.5)"`;
+
+exports[`getShadeValue > Get value without alphaVariable 1`] = `"#2563eb"`;
+
+exports[`getShadeValue > Get value without alphaVariable 2`] = `"#000"`;
+
+exports[`getShadeValue > Get value without alphaVariable 3`] = `"#031cfc"`;

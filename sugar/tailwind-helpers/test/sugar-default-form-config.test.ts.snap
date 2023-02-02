@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`sugarDefaultFormConfig 1`] = `
+{
+  "checkBoxRadioBorder": "2px solid colors.neutral.400",
+  "checkBoxRadioCheckedColorFamily": "accent",
+  "checkBoxRadioCheckedColorShade": "600",
+  "checkBoxRadioDimensions": "spacing.7",
+  "checkBoxRadioHoverColorShade": "200",
+  "selectColorFamily": "accent",
+  "selectColorShade": "600",
+}
+`;

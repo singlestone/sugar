@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`sugarDefaultFormConfig 1`] = `
+{
+  "buttonSize": "spacing.5",
+  "formControlHeight": "spacing.10",
+}
+`;

@@ -1,0 +1,62 @@
+// Vitest Snapshot v1
+
+exports[`sugarDefaultButtonConfig 1`] = `
+{
+  "destructive": {
+    "active": "800",
+    "base": "600",
+    "color": "destructive",
+    "hover": "700",
+    "type": "filled",
+  },
+  "ghost": {
+    "active": "200",
+    "base": "600",
+    "color": "accent",
+    "hover": "100",
+    "type": "ghost",
+  },
+  "ghost-destructive": {
+    "active": "200",
+    "base": "600",
+    "color": "destructive",
+    "hover": "100",
+    "type": "ghost",
+  },
+  "ghost-neutral": {
+    "active": "200",
+    "base": "600",
+    "color": "neutral",
+    "hover": "100",
+    "type": "ghost",
+  },
+  "neutral": {
+    "active": "200",
+    "base": "600",
+    "color": "neutral",
+    "hover": "100",
+    "type": "outlined",
+  },
+  "primary": {
+    "active": "800",
+    "base": "600",
+    "color": "accent",
+    "hover": "700",
+    "type": "filled",
+  },
+  "secondary": {
+    "active": "200",
+    "base": "600",
+    "color": "accent",
+    "hover": "100",
+    "type": "outlined",
+  },
+  "secondary-destructive": {
+    "active": "200",
+    "base": "600",
+    "color": "destructive",
+    "hover": "100",
+    "type": "outlined",
+  },
+}
+`;
