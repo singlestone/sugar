@@ -18,9 +18,13 @@
     "node": "^14 || ^16 || >= 18"
   },
   "scripts": {
-    "build": "storybook build",
+    "build": "concurrently \"pnpm:build:*\"",
+    "build:storybook": "storybook build",
+    "build:tailwindcss": "tailwind -i ./src/tailwind.css -o ./public/tailwind.css",
     "clean": "rimraf .turbo node_modules dist",
-    "dev": "storybook dev -p 6006",
+    "dev": "concurrently \"pnpm:dev:*\"",
+    "dev:storybook": "storybook dev -p 6006",
+    "dev:tailwindcss": "tailwind -i ./src/tailwind.css -o ./public/tailwind.css --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix"
   },
@@ -38,6 +42,7 @@
     "@storybook/html-vite": "7.0.0-beta.38",
     "@storybook/testing-library": "0.0.13",
     "autoprefixer": "10.4.13",
+    "concurrently": "^7.6.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
