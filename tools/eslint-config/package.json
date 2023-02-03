@@ -34,16 +34,16 @@
     "typescript": "^4.7.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.48.1",
-    "@typescript-eslint/parser": "5.48.1",
+    "@typescript-eslint/eslint-plugin": "5.50.0",
+    "@typescript-eslint/parser": "5.50.0",
     "eslint-plugin-simple-import-sort": "8.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
     "@singlestone/tsup-config-node": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
-    "eslint": "8.31.0",
-    "prettier": "2.8.2",
+    "eslint": "8.33.0",
+    "prettier": "2.8.3",
     "prettier-plugin-pkg": "0.17.1",
     "size-limit": "8.1.2",
     "tsup": "6.5.0",
