@@ -48,7 +48,7 @@
     "@singlestone/tsup-config-node": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
     "cpy-cli": "4.2.0",
-    "eslint": "8.31.0",
+    "eslint": "8.33.0",
     "node-plop": "0.31.0",
     "plop": "3.1.1",
     "size-limit": "8.1.2",
