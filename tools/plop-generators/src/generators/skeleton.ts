@@ -49,6 +49,11 @@ export const skeleton: PlopGeneratorConfig = {
     },
     {
       type: "add",
+      path: "{{packageType}}/{{packageName}}/.eslintignore",
+      templateFile: resolveTemplateFile("eslintignore.hbs"),
+    },
+    {
+      type: "add",
       path: "{{packageType}}/{{packageName}}/LICENSE",
       templateFile: resolveTemplateFile("LICENSE.hbs"),
     },
