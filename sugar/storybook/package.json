@@ -18,7 +18,7 @@
     "node": "^14 || ^16 || >= 18"
   },
   "scripts": {
-    "build": "concurrently \"pnpm:build:*\"",
+    "build": "pnpm run build:tailwindcss && pnpm run build:storybook",
     "build:storybook": "storybook build",
     "build:tailwindcss": "tailwind -i ./src/tailwind.css -o ./public/tailwind.css",
     "clean": "rimraf .turbo node_modules dist",
@@ -42,7 +42,6 @@
     "@storybook/html-vite": "7.0.0-beta.38",
     "@storybook/testing-library": "0.0.13",
     "autoprefixer": "10.4.13",
-    "concurrently": "^7.6.0",
     "postcss": "8.4.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
