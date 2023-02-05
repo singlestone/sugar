@@ -60,7 +60,7 @@ importers:
       react-dom: 18.2.0
       size-limit: 8.1.2
       tsup: 6.5.0
-      vite: 4.0.4
+      vite: 4.1.1
       vitest: 0.28.3
     dependencies:
       clsx: 1.2.1
@@ -78,13 +78,13 @@ importers:
       '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
       '@types/testing-library__jest-dom': 5.14.5
-      '@vitejs/plugin-react': 3.0.1_vite@4.0.4
+      '@vitejs/plugin-react': 3.0.1_vite@4.1.1
       jsdom: 21.1.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       size-limit: 8.1.2
       tsup: 6.5.0
-      vite: 4.0.4
+      vite: 4.1.1
       vitest: 0.28.3_jsdom@21.1.0
     publishDirectory: package
 
@@ -108,7 +108,7 @@ importers:
       react-dom: 18.2.0
       storybook: 7.0.0-beta.38
       tailwindcss: 3.2.4
-      vite: 4.0.4
+      vite: 4.1.1
     devDependencies:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
@@ -120,7 +120,7 @@ importers:
       '@storybook/addon-links': 7.0.0-beta.38_biqbaboplfbrettd7655fr4n2y
       '@storybook/blocks': 7.0.0-beta.38_biqbaboplfbrettd7655fr4n2y
       '@storybook/html': 7.0.0-beta.38_@babel+core@7.20.12
-      '@storybook/html-vite': 7.0.0-beta.38_xemu6iwr7dgkmz3maxhqhokzey
+      '@storybook/html-vite': 7.0.0-beta.38_ubmskp6bdvwueogx2vt4s5s4hm
       '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
@@ -128,7 +128,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       storybook: 7.0.0-beta.38
       tailwindcss: 3.2.4_postcss@8.4.21
-      vite: 4.0.4
+      vite: 4.1.1
 
   sugar/sugar:
     specifiers:
@@ -175,7 +175,7 @@ importers:
       stylelint-prettier: 2.0.0
       tailwindcss: 3.2.4
       typescript: 4.9.5
-      vite: 4.0.4
+      vite: 4.1.1
     devDependencies:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
@@ -192,7 +192,7 @@ importers:
       stylelint-prettier: 2.0.0_hzc4avq63uavvrxva5ujb3uabe
       tailwindcss: 3.2.4_postcss@8.4.21
       typescript: 4.9.5
-      vite: 4.0.4
+      vite: 4.1.1
 
   sugar/tailwind-helpers:
     specifiers:
@@ -3139,7 +3139,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/builder-vite/7.0.0-beta.38_vite@4.0.4:
+  /@storybook/builder-vite/7.0.0-beta.38_vite@4.1.1:
     resolution: {integrity: sha512-FfgS3tHLbcF5O+g6IBjqwCR6UBrT+YnF4Ozgp/kCmXNEg/JVJ5W0yzYQXlFhp9Sbbpf8NghZiEPnNUinqbRm1w==}
     peerDependencies:
       '@preact/preset-vite': '*'
@@ -3173,7 +3173,7 @@ packages:
       magic-string: 0.27.0
       rollup: 3.10.0
       slash: 3.0.0
-      vite: 4.0.4
+      vite: 4.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3477,12 +3477,12 @@ packages:
     resolution: {integrity: sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==}
     dev: true
 
-  /@storybook/html-vite/7.0.0-beta.38_xemu6iwr7dgkmz3maxhqhokzey:
+  /@storybook/html-vite/7.0.0-beta.38_ubmskp6bdvwueogx2vt4s5s4hm:
     resolution: {integrity: sha512-0+G9bmAqLrsp+Mfd2afhFaOBzAb8U29/eBDUaZpTqmIuFI54zpPaj6gUTyie0xeKWq0MOOdATttBPOb5GMkg4Q==}
     engines: {node: ^14.18 || >=16}
     dependencies:
       '@storybook/addons': 7.0.0-beta.38_biqbaboplfbrettd7655fr4n2y
-      '@storybook/builder-vite': 7.0.0-beta.38_vite@4.0.4
+      '@storybook/builder-vite': 7.0.0-beta.38_vite@4.1.1
       '@storybook/channel-postmessage': 7.0.0-beta.38
       '@storybook/channel-websocket': 7.0.0-beta.38
       '@storybook/client-api': 7.0.0-beta.38
@@ -4289,7 +4289,7 @@ packages:
       '@typescript-eslint/types': 5.50.0
       eslint-visitor-keys: 3.3.0
 
-  /@vitejs/plugin-react/3.0.1_vite@4.0.4:
+  /@vitejs/plugin-react/3.0.1_vite@4.1.1:
     resolution: {integrity: sha512-mx+QvYwIbbpOIJw+hypjnW1lAbKDHtWK5ibkF/V1/oMBu8HU/chb+SnqJDAsLq1+7rGqjktCEomMTM5KShzUKQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -4300,7 +4300,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.0.4
+      vite: 4.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -12288,7 +12288,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.1.1_@types+node@18.11.18
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -12299,8 +12299,8 @@ packages:
       - terser
     dev: true
 
-  /vite/4.0.4:
-    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
+  /vite/4.1.1:
+    resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -12332,8 +12332,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.4_@types+node@18.11.18:
-    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
+  /vite/4.1.1_@types+node@18.11.18:
+    resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -12409,7 +12409,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.1.1_@types+node@18.11.18
       vite-node: 0.28.3_@types+node@18.11.18
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
@@ -12465,7 +12465,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.1.1_@types+node@18.11.18
       vite-node: 0.28.3_@types+node@18.11.18
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
