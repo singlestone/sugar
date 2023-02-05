@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "SingleStone's sweet design system.",
   "private": true,
-  "packageManager": "pnpm@7.26.2",
+  "packageManager": "pnpm@7.26.3",
   "scripts": {
     "build": "turbo run build",
     "build:changed": "turbo run build --since=origin/main",
