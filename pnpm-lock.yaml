@@ -138,9 +138,9 @@ importers:
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/sugar-cli': workspace:*
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.1
-      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.5.1
-      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.5.1
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.2
+      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.5.2
+      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.5.2
       '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.2
       size-limit: 8.1.2
@@ -237,7 +237,7 @@ importers:
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/sugar-cli': workspace:*
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.1
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.2
       '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.2
       '@storybook/html': 7.0.0-beta.41
@@ -281,7 +281,7 @@ importers:
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/sugar-cli': workspace:*
-      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.1
+      '@singlestone/tailwind-helpers-sugar': workspace:^0.5.2
       '@singlestone/tsup-config-node': workspace:*
       '@size-limit/preset-small-lib': 8.1.2
       '@storybook/html': 7.0.0-beta.41

@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-cli",
-  "version": "0.0.0",
+  "version": "0.5.2",
   "description": "Utilities for testing",
   "repository": {
     "type": "git",
