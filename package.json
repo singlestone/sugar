@@ -47,6 +47,6 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "volta": {
     "node": "18.13.0",
-    "npm": "9.4.0"
+    "npm": "9.4.1"
   }
 }
