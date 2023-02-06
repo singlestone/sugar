@@ -20,7 +20,7 @@
     "lint": "turbo run lint",
     "lint:changed": "turbo run lint --since=origin/main",
     "lint:fix": "turbo run lint:fix",
-    "release": "pnpm build && pnpm publish -r",
+    "release": "pnpm build && pnpm run -r prepublishOnly && changeset publish",
     "test": "turbo run test",
     "test:changed": "turbo run test --since=origin/main",
     "test:ci": "turbo run test:ci",
