@@ -1,5 +1,11 @@
 # @singlestone/storybook-sugar
 
+## 0.5.0
+
+### Patch Changes
+
+- [#249](https://github.com/singlestone/sugar/pull/249) [`cad53d5`](https://github.com/singlestone/sugar/commit/cad53d58ce5db65a29c24002053eae2d325a333b) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - fix select chevron color
+
 ## 0.4.1
 
 ### Patch Changes
