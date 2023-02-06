@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/eslint-config-sugar",
-  "version": "0.4.1",
+  "version": "0.5.1",
   "description": "eslint config for Sugar, SingleStone&#x27;s sweet design system",
   "repository": {
     "type": "git",
