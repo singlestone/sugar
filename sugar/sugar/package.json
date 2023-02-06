@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Core plugin for the sugar design system",
   "repository": {
     "type": "git",
@@ -38,9 +38,9 @@
     "test:ci": "vitest"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.5.1",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.5.1",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.5.1"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.5.2",
+    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.5.2",
+    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.5.2"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
