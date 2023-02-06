@@ -33,13 +33,14 @@
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest",
-    "prepublishOnly": "rm -rf ./package && clean-publish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
     "postpublish": "rm -rf ./package"
   },
   "peerDependencies": {},
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar-cli": "workspace:*",
     "@singlestone/tsup-config-node": "workspace:*",
     "@babel/core": "7.20.5",
     "@size-limit/preset-small-lib": "8.1.0",

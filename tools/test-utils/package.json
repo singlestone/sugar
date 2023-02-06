@@ -18,7 +18,7 @@
     "node": "^14 || ^16 || >= 18"
   },
   "main": "./dist/index.js",
-  "module": "./dist/test-utils-sugar.esm.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -30,9 +30,7 @@
     "clean": "rimraf .turbo node_modules dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
-    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish",
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -49,11 +47,6 @@
     "size-limit": "8.1.2",
     "tsup": "6.5.0",
     "vitest": "0.28.3"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "directory": "package"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
