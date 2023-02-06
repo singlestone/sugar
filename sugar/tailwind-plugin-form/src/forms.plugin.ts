@@ -1,6 +1,6 @@
 import {
-  type SugarTailwindPlugin,
   createSugarPlugin,
+  type SugarTailwindPlugin,
 } from "@singlestone/tailwind-helpers-sugar";
 
 import { sugarCheckboxAndRadio } from "./checkboxes_and_radios/checkbox_and_radio.plugin";

@@ -32,7 +32,7 @@
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -44,6 +44,7 @@
     "@babel/core": "7.20.12",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar-cli": "workspace:*",
     "@singlestone/tsup-config-node": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
     "@types/node": "18.11.18",
