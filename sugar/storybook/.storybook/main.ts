@@ -1,4 +1,6 @@
-module.exports = {
+import { StorybookConfig } from "@storybook/html-vite";
+
+const config: StorybookConfig = {
   stories: [
     "../../tailwind-plugin-buttons/stories/**/*.stories.@(js|jsx|ts|tsx)",
     "../../tailwind-plugin-form/stories/**/*.stories.@(js|jsx|ts|tsx)",
@@ -17,3 +19,5 @@ module.exports = {
   },
   staticDirs: ["../public"],
 };
+
+export default config;
