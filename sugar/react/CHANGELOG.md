@@ -1,5 +1,11 @@
 # @singlestone/sugar-react
 
+## 0.5.3
+
+### Patch Changes
+
+- [#263](https://github.com/singlestone/sugar/pull/263) [`8dcff1c`](https://github.com/singlestone/sugar/commit/8dcff1c0aa37b42aa9aeb1f50c95b563203bfa7c) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - add Select component
+
 ## 0.5.2
 
 ### Patch Changes
