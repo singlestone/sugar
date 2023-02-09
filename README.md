@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to @singlestone/sugar 👋</h1>
 <p>
-  <a href="https://github.com/singlestone/sugar#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  <a href="https://npmjs.com/package/@singlestone/sugar" target="_blank">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@singlestone/sugar?style=flat-square">
   </a>
   <a href="https://github.com/singlestone/sugar/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/singlestone/sugar" />
