@@ -1,4 +1,9 @@
-# react
+<h1 align="center">Welcome to @singlestone/sugar-react 👋</h1>
+<p>
+  <a href="https://npmjs.com/package/@singlestone/sugar-react" target="_blank">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@singlestone/sugar-react">
+  </a>
+</p>
 
 > React bindings for Sugar
 
@@ -22,7 +27,23 @@ Inside the Sugar monorepo, install it with a dev dependency like so:
 }
 ```
 
-Outside the monorepo, install it with an actual version instead of `workspace:^`.
+### npm
+
+```shell
+$ npm install @singlestone/sugar-react
+```
+
+### Yarn
+
+```shell
+$ yarn add @singlestone/sugar-react
+```
+
+### pnpm
+
+```shell
+$ pnpm install @singlestone/sugar-react
+```
 
 ## Usage
 
