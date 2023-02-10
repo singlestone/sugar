@@ -1,5 +1,11 @@
 # @singlestone/sugar-react
 
+## 0.5.4
+
+### Patch Changes
+
+- [#273](https://github.com/singlestone/sugar/pull/273) [`cb8276b`](https://github.com/singlestone/sugar/commit/cb8276bddacd15b6fbe2ba24a21d5926681150c8) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - export Select component
+
 ## 0.5.3
 
 ### Patch Changes
