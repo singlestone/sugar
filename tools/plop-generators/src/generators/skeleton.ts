@@ -16,7 +16,7 @@ export const skeleton: PlopGeneratorConfig = {
     {
       type: "input",
       name: "packageName",
-      message: "What is the name of the package (minus the scope)?",
+      message: 'What is the name of the package (minus the scope and "sugar")?',
       validate(value) {
         if (/.+/.test(value)) {
           return true;
@@ -61,11 +61,6 @@ export const skeleton: PlopGeneratorConfig = {
       type: "add",
       path: "{{packageType}}/{{packageName}}/package.json",
       templateFile: resolveTemplateFile("package.json.hbs"),
-    },
-    {
-      type: "add",
-      path: "{{packageType}}/{{packageName}}/.prettierrc.js",
-      templateFile: resolveTemplateFile("prettierrc.js.hbs"),
     },
     {
       type: "add",

@@ -1,3 +1,4 @@
-import { defineSugarTsupConfig } from "@singlestone/tsup-config-react";
+import { browserConfig } from "@singlestone/tsup-config";
+import { defineConfig } from "tsup";
 
-export default defineSugarTsupConfig();
+export default defineConfig((options) => ({ ...browserConfig(options) }));

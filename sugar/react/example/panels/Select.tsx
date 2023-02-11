@@ -5,13 +5,13 @@ import {
   Button,
   getSugarColor,
   getSugarVariant,
+  Select,
   SugarColor,
   SugarVariant,
-} from "../src";
-import { Select } from "../src/Select";
-import { getButtonDisplayValue } from "./utils";
+} from "../../src";
+import { getButtonDisplayValue } from "../utils";
 
-export const SelectExample = () => {
+export const SelectPanel = () => {
   const [color, setColor] = useState<SugarColor | undefined>();
   const [variant, setVariant] = useState<SugarVariant | undefined>();
 
@@ -26,7 +26,7 @@ export const SelectExample = () => {
   };
 
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col">
       <h1 className="flex-initial inline-block text-left text-base text-black text-lg tracking-wider leading-tight">
         Select
       </h1>
