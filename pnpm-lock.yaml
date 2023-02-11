@@ -368,7 +368,7 @@ importers:
       '@size-limit/preset-small-lib': 8.1.2
       cpy-cli: 4.2.0
       eslint: 8.33.0
-      node-plop: 0.31.0
+      node-plop: 0.31.1
       plop: 3.1.1
       size-limit: 8.1.2
       tsup: 6.6.0
@@ -383,7 +383,7 @@ importers:
       '@size-limit/preset-small-lib': 8.1.2_size-limit@8.1.2
       cpy-cli: 4.2.0
       eslint: 8.33.0
-      node-plop: 0.31.0
+      node-plop: 0.31.1
       plop: 3.1.1
       size-limit: 8.1.2
       tsup: 6.6.0_typescript@4.9.5
@@ -9236,8 +9236,8 @@ packages:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
     dev: true
 
-  /node-plop/0.31.0:
-    resolution: {integrity: sha512-aKLPxiBoFTNUovvtK8j/Whc4PZREkYx6htw2HJPiU8wYquXmN8pkd9B3xlFo6AJ4ZlzFsQSf/NXR5xET8EqRYw==}
+  /node-plop/0.31.1:
+    resolution: {integrity: sha512-qmXJJt3YETFt/e0dtMADVpvck6EvN01Jig086o+J3M6G++mWA7iJ3Pqz4m4kvlynh73Iz2/rcZzxq7xTiF+aIQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       '@types/inquirer': 8.2.5
@@ -9757,7 +9757,7 @@ packages:
       interpret: 2.2.0
       liftoff: 4.0.0
       minimist: 1.2.7
-      node-plop: 0.31.0
+      node-plop: 0.31.1
       ora: 6.1.2
       v8flags: 4.0.0
 
