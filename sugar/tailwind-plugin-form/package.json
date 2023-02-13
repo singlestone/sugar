@@ -51,7 +51,7 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
-    "@storybook/html": "7.0.0-beta.41",
+    "@storybook/html": "7.0.0-beta.45",
     "autoprefixer": "10.4.13",
     "babel-loader": "9.1.2",
     "delete-publishconfig-directory": "1.0.0",
