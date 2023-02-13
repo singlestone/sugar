@@ -2,4 +2,4 @@
 "@singlestone/sugar-react": patch
 ---
 
-add Select, TextInput, Label, and Checkbox components
+add TextInput, Label, and Checkbox components
