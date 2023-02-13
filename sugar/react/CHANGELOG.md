@@ -1,5 +1,11 @@
 # @singlestone/sugar-react
 
+## 0.5.5
+
+### Patch Changes
+
+- [#276](https://github.com/singlestone/sugar/pull/276) [`be33b41`](https://github.com/singlestone/sugar/commit/be33b41bb5aa11c8a94681622445f0bff2a86950) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - add TextInput, Label, and Checkbox components
+
 ## 0.5.4
 
 ### Patch Changes
