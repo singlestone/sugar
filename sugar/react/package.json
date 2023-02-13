@@ -53,11 +53,11 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.2",
+    "@size-limit/preset-small-lib": "8.2.4",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
-    "@types/react": "18.0.27",
+    "@types/react": "18.0.28",
     "@types/react-dom": "18.0.10",
     "@types/testing-library__jest-dom": "5.14.5",
     "@vitejs/plugin-react": "3.1.0",
@@ -65,10 +65,10 @@
     "jsdom": "21.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "size-limit": "8.1.2",
-    "tsup": "6.6.0",
+    "size-limit": "8.2.4",
+    "tsup": "6.6.2",
     "vite": "4.1.1",
-    "vitest": "0.28.4"
+    "vitest": "0.28.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
