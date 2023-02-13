@@ -114,7 +114,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: 📧 Send a Slack notification if a publish happens
-        uses: ToppleTheNun/changesets-slack-publish-action@v1
+        uses: ToppleTheNun/changesets-publish-slack-action@v1
         if: steps.changesets.outputs.published == 'true'
         with:
           publishedPackages: ${{ steps.changesets.outputs.publishedPackages }}
