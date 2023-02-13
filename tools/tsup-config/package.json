@@ -1,5 +1,5 @@
 {
-  "name": "@singlestone/tsup-config-node",
+  "name": "@singlestone/tsup-config",
   "version": "0.5.2",
   "repository": {
     "type": "git",

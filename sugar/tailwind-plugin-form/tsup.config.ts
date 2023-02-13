@@ -1,3 +1,10 @@
-import { defineSugarTsupConfig } from "@singlestone/tsup-config-node";
+import { join } from "node:path";
 
-export default defineSugarTsupConfig();
+import { nodeConfig, touchFile } from "@singlestone/tsup-config";
+import { defineConfig } from "tsup";
+
+export default defineConfig((options) => ({
+  ...nodeConfig(options),
+  // touch files to trigger hot reloads
+  onSuccess: touchFile(join(__dirname, "../sugar/src/index.ts")),
+}));

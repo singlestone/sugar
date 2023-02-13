@@ -32,7 +32,7 @@
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -49,12 +49,12 @@
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/sugar-cli": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
+    "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
     "@storybook/html": "7.0.0-beta.41",
     "autoprefixer": "10.4.13",
     "babel-loader": "9.1.2",
+    "delete-publishconfig-directory": "1.0.0",
     "postcss": "8.4.21",
     "size-limit": "8.1.2",
     "tailwindcss": "3.2.4",
@@ -70,11 +70,11 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/tailwind-plugin-form-sugar.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/tailwind-plugin-form-sugar.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
   ],

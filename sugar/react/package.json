@@ -34,7 +34,7 @@
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "size": "size-limit",
     "start": "vite",
     "test": "vitest",
@@ -52,8 +52,7 @@
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/sugar": "workspace:*",
-    "@singlestone/sugar-cli": "workspace:*",
-    "@singlestone/tsup-config-react": "workspace:*",
+    "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.1.2",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -62,6 +61,7 @@
     "@types/react-dom": "18.0.10",
     "@types/testing-library__jest-dom": "5.14.5",
     "@vitejs/plugin-react": "3.1.0",
+    "delete-publishconfig-directory": "1.0.0",
     "jsdom": "21.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -78,12 +78,15 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/react.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/react.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
-  ]
+  ],
+  "volta": {
+    "extends": "../../package.json"
+  }
 }

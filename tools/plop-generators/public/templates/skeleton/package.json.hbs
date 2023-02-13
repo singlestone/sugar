@@ -1,5 +1,5 @@
 {
-  "name": "@singlestone/{{kebabCase packageName}}-sugar",
+  "name": "@singlestone/sugar-{{kebabCase packageName}}",
   "version": "0.0.0",
   "description": "{{packageDescription}}",
   "repository": {
@@ -33,15 +33,16 @@
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest",
-    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "postpublish": "rm -rf ./package"
   },
   "peerDependencies": {},
   "devDependencies": {
+    "@types/node": "18.11.18",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/sugar-cli": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
+    "delete-publishconfig-directory": "1.0.0",
+    "@singlestone/tsup-config": "workspace:*",
     "@babel/core": "7.20.5",
     "@size-limit/preset-small-lib": "8.1.0",
     "size-limit": "8.1.0",
@@ -56,12 +57,15 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/{{kebabCase packageName}}.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/{{kebabCase packageName}}.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
-  ]
+  ],
+  "volta": {
+    "extends": "../../package.json"
+  }
 }
