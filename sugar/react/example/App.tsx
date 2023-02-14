@@ -5,6 +5,7 @@ import {
 } from "./panels/Button";
 import { CheckboxPanel } from "./panels/Checkbox";
 import { InputPanel } from "./panels/Input";
+import { RadioGroupPanel } from "./panels/RadioGroup";
 import { SelectPanel } from "./panels/Select";
 
 export const App = () => (
@@ -24,6 +25,7 @@ export const App = () => (
         <SelectPanel />
         <InputPanel />
         <CheckboxPanel />
+        <RadioGroupPanel />
       </div>
     </main>
   </div>

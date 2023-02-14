@@ -1,4 +1,4 @@
-import { Label, TextInput } from "../../src/Input";
+import { Label, TextInput } from "../../src";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const InputPanel = () => {

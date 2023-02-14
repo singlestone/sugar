@@ -1,4 +1,4 @@
-import { Checkbox, Label } from "../../src/Input";
+import { Checkbox, Label } from "../../src";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const CheckboxPanel = () => {

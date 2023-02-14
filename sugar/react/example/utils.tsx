@@ -1,4 +1,4 @@
-import { SugarColor, SugarVariant } from "../src";
+import { SugarColor, SugarVariant } from "~/index";
 
 export const getButtonDisplayValue = (
   color: SugarColor | undefined,

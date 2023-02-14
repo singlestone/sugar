@@ -1,12 +1,12 @@
-import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
   Button,
   ButtonWithIcon,
   IconOnlyButton,
 } from "../../src";
-import { getButtonDisplayValue } from "../utils";
 import { Checkmark } from "../Checkmark";
+import { getButtonDisplayValue } from "../utils";
+import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const ButtonsPanel = () => (
   <PanelRoot>
