@@ -1,14 +1,9 @@
 module.exports = {
   mode: "jit",
   content: [
-    "../tailwind-plugin-buttons/stories/**/*.stories.@(js|jsx|ts|tsx)",
-    "../tailwind-plugin-form/stories/**/*.stories.@(js|jsx|ts|tsx)",
+    "./stories/**/*.stories.@(js|jsx|ts|tsx)",
+    "./node_modules/@singlestone/sugar-react/dist/*.js",
   ],
   safelist: [],
-  theme: {
-    extend: {
-      sugarButtons: {},
-    },
-  },
   plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };

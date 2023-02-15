@@ -11,7 +11,7 @@ export const RadioGroupPanel = () => {
 
   return (
     <PanelRoot>
-      <PanelHeading>Radio Group (FieldSet)</PanelHeading>
+      <PanelHeading>Radio Group</PanelHeading>
       <PanelBody direction="col">
         <div className="items-start">
           <RadioGroupFieldset name="example" onChange={onChange} value={value}>
