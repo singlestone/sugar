@@ -148,8 +148,8 @@ importers:
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/tailwind-helpers-sugar': workspace:^0.5.2
-      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.5.2
-      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.5.2
+      '@singlestone/tailwind-plugin-buttons-sugar': workspace:^0.5.6
+      '@singlestone/tailwind-plugin-form-sugar': workspace:^0.5.6
       '@singlestone/tsup-config': workspace:*
       '@size-limit/preset-small-lib': 8.2.4
       '@types/node': 18.13.0

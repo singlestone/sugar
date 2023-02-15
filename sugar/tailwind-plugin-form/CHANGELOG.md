@@ -1,5 +1,11 @@
 # @singlestone/tailwind-plugin-form-sugar
 
+## 0.5.6
+
+### Patch Changes
+
+- [#289](https://github.com/singlestone/sugar/pull/289) [`f97b8a4`](https://github.com/singlestone/sugar/commit/f97b8a44dfc724116ff35afe4082040da9d4133d) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - update READMEs
+
 ## 0.5.2
 
 ### Patch Changes

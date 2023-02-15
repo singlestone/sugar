@@ -1,5 +1,13 @@
 # @singlestone/sugar-react
 
+## 0.5.6
+
+### Patch Changes
+
+- [#292](https://github.com/singlestone/sugar/pull/292) [`c2bc78a`](https://github.com/singlestone/sugar/commit/c2bc78aed2dc5fefd5ca4abf641090d2839f4262) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - add Radio Group components
+
+- [#289](https://github.com/singlestone/sugar/pull/289) [`f97b8a4`](https://github.com/singlestone/sugar/commit/f97b8a44dfc724116ff35afe4082040da9d4133d) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - update READMEs
+
 ## 0.5.5
 
 ### Patch Changes

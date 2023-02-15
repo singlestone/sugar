@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-buttons-sugar",
-  "version": "0.5.2",
+  "version": "0.5.6",
   "description": "Tailwind plugin for sugar design system buttons",
   "repository": {
     "type": "git",
