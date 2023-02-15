@@ -1,15 +1,15 @@
 import clsx from "clsx";
 import { ComponentPropsWithoutRef, forwardRef } from "react";
 
-export const TextInput = forwardRef<
+export const PasswordInput = forwardRef<
   HTMLInputElement,
   Omit<ComponentPropsWithoutRef<"input">, "checked" | "defaultChecked" | "type">
 >(({ className, ...props }, ref) => (
   <input
     className={clsx("sugar-text-input", className)}
     ref={ref}
-    type="text"
+    type="password"
     {...props}
   />
 ));
-TextInput.displayName = "TextInput";
+PasswordInput.displayName = "PasswordInput";

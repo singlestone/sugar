@@ -1,29 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { ChangeEventHandler, ComponentPropsWithRef, useState } from "react";
 import { expect, it } from "vitest";
 
 import { TextInput } from "./TextInput";
 
-const TestTextInput = ({
-  defaultValue,
-  value,
-  ...props
-}: Omit<ComponentPropsWithRef<typeof TextInput>, "onChange">) => {
-  const [actualValue, setActualValue] = useState<
-    string | number | readonly string[]
-  >(defaultValue ?? "");
-  const onChange: ChangeEventHandler<HTMLInputElement> = (event) => {
-    setActualValue(event.target.value);
-  };
-
-  return (
-    <TextInput onChange={onChange} value={value ?? actualValue} {...props} />
-  );
-};
-
-it("renders a TextInput", async () => {
-  render(<TestTextInput />);
+it("renders a textbox", async () => {
+  render(<TextInput />);
 
   await screen.findByRole("textbox");
 
@@ -31,23 +13,23 @@ it("renders a TextInput", async () => {
 });
 
 it("can have a defaultValue value", async () => {
-  render(<TestTextInput defaultValue="test" />);
+  render(<TextInput defaultValue="test" />);
 
   await screen.findByRole("textbox");
 
   expect(screen.getByRole("textbox")).toHaveValue("test");
 });
 
-it("can override a defaultChecked value", async () => {
-  render(<TestTextInput defaultValue="test" value="nottest" />);
+it("can have a value", async () => {
+  render(<TextInput readOnly value="nottest" />);
 
   await screen.findByRole("textbox");
 
   expect(screen.getByRole("textbox")).toHaveValue("nottest");
 });
 
-it("can change values", async () => {
-  render(<TestTextInput />);
+it("changes values when typed in", async () => {
+  render(<TextInput />);
 
   await userEvent.click(screen.getByRole("textbox"));
   await userEvent.type(screen.getByRole("textbox"), "test");

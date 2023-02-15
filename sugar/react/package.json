@@ -66,6 +66,7 @@
     "prettier": "2.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-element-to-jsx-string": "^15.0.0",
     "size-limit": "8.2.4",
     "tsup": "6.6.2",
     "vite": "4.1.1",

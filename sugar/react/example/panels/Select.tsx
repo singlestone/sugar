@@ -10,6 +10,7 @@ import {
   SugarVariant,
 } from "../../src";
 import { getButtonDisplayValue } from "../utils";
+import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const SelectPanel = () => {
   const [color, setColor] = useState<SugarColor | undefined>();
@@ -26,11 +27,9 @@ export const SelectPanel = () => {
   };
 
   return (
-    <div className="flex flex-col">
-      <h1 className="flex-initial inline-block text-left text-base text-black text-lg tracking-wider leading-tight">
-        Select
-      </h1>
-      <div className="flex flex-grow flex-col gap-3 bg-white rounded-md overflow-hidden p-3 items-center">
+    <PanelRoot>
+      <PanelHeading>Select</PanelHeading>
+      <PanelBody>
         <Select defaultValue="" onChange={handleChange}>
           <option disabled value="">
             Select an Option
@@ -46,7 +45,7 @@ export const SelectPanel = () => {
         <Button color={color} variant={variant}>
           {getButtonDisplayValue(color, variant)}
         </Button>
-      </div>
-    </div>
+      </PanelBody>
+    </PanelRoot>
   );
 };
