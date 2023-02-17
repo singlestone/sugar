@@ -32,10 +32,34 @@ const getButtonDisplayValue = (
   return [...parts, "button"].join(" ");
 };
 
-export const Select: Story = {
+export const Accent: Story = {
   render: (args) => (
     <div className="flex w-1/2">
-      <SugarSelect {...args}>
+      <SugarSelect color="accent" {...args}>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </SugarSelect>
+    </div>
+  ),
+};
+
+export const Destructive: Story = {
+  render: (args) => (
+    <div className="flex w-1/2">
+      <SugarSelect color="destructive" {...args}>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </SugarSelect>
+    </div>
+  ),
+};
+
+export const Neutral: Story = {
+  render: (args) => (
+    <div className="flex w-1/2">
+      <SugarSelect color="neutral" {...args}>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
