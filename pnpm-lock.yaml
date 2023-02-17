@@ -260,6 +260,7 @@ importers:
       '@singlestone/tailwind-helpers-sugar': workspace:^0.5.2
       '@singlestone/tsup-config': workspace:*
       '@size-limit/preset-small-lib': 8.2.4
+      '@types/node': 18.13.0
       delete-publishconfig-directory: 1.0.0
       postcss: 8.4.21
       size-limit: 8.2.4
@@ -275,6 +276,7 @@ importers:
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config': link:../../tools/tsup-config
       '@size-limit/preset-small-lib': 8.2.4_size-limit@8.2.4
+      '@types/node': 18.13.0
       delete-publishconfig-directory: 1.0.0
       postcss: 8.4.21
       size-limit: 8.2.4

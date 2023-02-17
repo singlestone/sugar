@@ -2,6 +2,7 @@ import { getShadeValue } from "@singlestone/tailwind-helpers-sugar";
 import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
 import { inputBase } from "./inputs.styles";
+import { SelectConfig } from "@singlestone/tailwind-helpers-sugar/config/select";
 
 const selectInputBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ...inputBase(theme),
@@ -17,8 +18,31 @@ const selectInputBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   textOverflow: "ellipsis",
 });
 
-export const selectInputColorBase = (theme: PluginAPI["theme"], color: string, hoverColor: string): CSSRuleObject => {
+export const selectInputColorBase = (
+  theme: PluginAPI["theme"],
+  color: string,
+  hoverColor: string
+): CSSRuleObject => {
+  // inline SVGs need to be HTML escaped, so we use %23 instead of #
+  const strokeColor = color.replace("#", "%23");
+  return {
+    ...selectInputBase(theme),
+    color,
+    border: `solid ${color} ${theme("borderWidth.2")}`,
+    backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='${strokeColor}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e")`,
+    "&:hover:not([disabled])": {
+      backgroundColor: hoverColor,
+    },
+  };
+};
 
+export const matchSelect = (
+  theme: PluginAPI["theme"],
+  config: SelectConfig
+): CSSRuleObject => {
+  const color = getShadeValue(theme, config.color, config.base);
+  const hoverColor = getShadeValue(theme, config.color, config.hover);
+  return selectInputColorBase(theme, color, hoverColor);
 };
 
 export const selectInputStyles = (theme: PluginAPI["theme"]): CSSRuleObject => {
