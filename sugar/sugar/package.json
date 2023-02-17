@@ -51,7 +51,7 @@
     "@types/node": "18.13.0",
     "delete-publishconfig-directory": "1.0.0",
     "size-limit": "8.2.4",
-    "tsup": "6.6.2",
+    "tsup": "6.6.3",
     "vitest": "0.28.5"
   },
   "publishConfig": {
