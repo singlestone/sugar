@@ -13,8 +13,9 @@ import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 interface Props {
   selectColor: SugarColor;
+  vapor?: boolean;
 }
-const SelectPanelSection = ({ selectColor }: Props) => {
+const SelectPanelSection = ({ selectColor, vapor }: Props) => {
   const [color, setColor] = useState<SugarColor | undefined>();
   const [variant, setVariant] = useState<SugarVariant | undefined>();
 
@@ -30,7 +31,12 @@ const SelectPanelSection = ({ selectColor }: Props) => {
 
   return (
     <div className="flex flex-1 flex-col gap-1">
-      <Select color={selectColor} defaultValue="" onChange={handleChange}>
+      <Select
+        color={selectColor}
+        defaultValue=""
+        onChange={handleChange}
+        vapor={vapor ?? false}
+      >
         <option disabled value="">
           Select an Option
         </option>
@@ -49,13 +55,23 @@ const SelectPanelSection = ({ selectColor }: Props) => {
 
 export const SelectPanel = () => {
   return (
-    <PanelRoot>
-      <PanelHeading>Select</PanelHeading>
-      <PanelBody direction="col">
-        <SelectPanelSection selectColor="accent" />
-        <SelectPanelSection selectColor="destructive" />
-        <SelectPanelSection selectColor="neutral" />
-      </PanelBody>
-    </PanelRoot>
+    <>
+      <PanelRoot>
+        <PanelHeading>Select</PanelHeading>
+        <PanelBody direction="col">
+          <SelectPanelSection selectColor="accent" />
+          <SelectPanelSection selectColor="destructive" />
+          <SelectPanelSection selectColor="neutral" />
+        </PanelBody>
+      </PanelRoot>
+      <PanelRoot>
+        <PanelHeading>Select (Vapor)</PanelHeading>
+        <PanelBody direction="col">
+          <SelectPanelSection selectColor="accent" vapor />
+          <SelectPanelSection selectColor="destructive" vapor />
+          <SelectPanelSection selectColor="neutral" vapor />
+        </PanelBody>
+      </PanelRoot>
+    </>
   );
 };

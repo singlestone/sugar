@@ -5,21 +5,36 @@ interface HasChildren {
   children: ReactNode;
 }
 
-export const PanelRoot = ({ children }: HasChildren) => (
-  <div className="flex flex-col flex-1">{children}</div>
+interface PanelRootProps extends HasChildren {
+  className?: string;
+}
+export const PanelRoot = ({ children, className }: PanelRootProps) => (
+  <section className={clsx("flex flex-col flex-1 gap-1", className)}>
+    {children}
+  </section>
 );
 
-export const PanelHeading = ({ children }: HasChildren) => (
-  <h1 className="flex-initial inline-block text-left text-base text-black text-lg tracking-wider leading-tight">
+interface PanelHeadingProps extends HasChildren {
+  className?: string;
+}
+export const PanelHeading = ({ children, className }: PanelHeadingProps) => (
+  <h1
+    className={clsx(
+      "flex-initial inline-block text-left text-base text-black text-lg tracking-wider leading-tight",
+      className
+    )}
+  >
     {children}
   </h1>
 );
 
 interface PanelBodyProps extends HasChildren {
+  className?: string;
   direction?: "col" | "row";
   itemAlignment?: "start" | "end" | "center" | "baseline" | "stretch";
 }
 export const PanelBody = ({
+  className,
   children,
   direction = "col",
   itemAlignment = "center",
@@ -37,7 +52,8 @@ export const PanelBody = ({
         "items-center": itemAlignment === "center",
         "items-baseline": itemAlignment === "baseline",
         "items-stretch": itemAlignment === "stretch",
-      }
+      },
+      className
     )}
   >
     {children}

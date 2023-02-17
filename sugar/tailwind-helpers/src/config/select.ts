@@ -6,20 +6,35 @@ export interface SelectConfig {
   hover: string;
 }
 
-export const defaultSelectConfig: Record<SugarColor, SelectConfig> = {
+export const defaultSelectConfig: Record<string, SelectConfig> = {
   accent: {
     color: "accent",
     base: "600",
     hover: "100",
+  },
+  "accent-vapor": {
+    color: "accent",
+    base: "600",
+    hover: "50",
   },
   neutral: {
     color: "neutral",
     base: "600",
     hover: "100",
   },
+  "neutral-vapor": {
+    color: "neutral",
+    base: "600",
+    hover: "50",
+  },
   destructive: {
     color: "destructive",
     base: "600",
     hover: "100",
+  },
+  "destructive-vapor": {
+    color: "destructive",
+    base: "600",
+    hover: "50",
   },
 };
