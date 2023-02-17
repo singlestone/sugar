@@ -1,6 +1,4 @@
-import {
-  ButtonWithIcon,
-} from "@singlestone/sugar-react";
+import { ButtonWithIcon } from "@singlestone/sugar-react";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
   COLORS,

@@ -1,5 +1,5 @@
-import { SugarVariant, VARIANTS } from "./variants";
 import { COLORS, SugarColor } from "./colors";
+import { SugarVariant, VARIANTS } from "./variants";
 
 export interface SugarColorVariant {
   color?: SugarColor;

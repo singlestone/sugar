@@ -9,15 +9,11 @@ type SelectProps = Omit<
   "defaultChecked" | "color"
 > & {
   color?: SugarColor;
-  vapor?: boolean;
 };
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(
-  ({ className, color, vapor, ...props }, ref) => (
+  ({ className, color, ...props }, ref) => (
     <select
-      className={clsx(
-        getClassNames(getSugarColor(color), vapor ?? false),
-        className
-      )}
+      className={clsx(getClassNames(getSugarColor(color)), className)}
       ref={ref}
       {...props}
     />
