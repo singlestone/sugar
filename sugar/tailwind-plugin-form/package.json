@@ -44,16 +44,11 @@
     "@singlestone/tailwind-helpers-sugar": "workspace:^0.5.2"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
-    "@mdx-js/react": "1.6.22",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@storybook/react": "7.0.0-beta.45",
-    "autoprefixer": "10.4.13",
-    "babel-loader": "9.1.2",
     "delete-publishconfig-directory": "1.0.0",
     "postcss": "8.4.21",
     "size-limit": "8.2.4",

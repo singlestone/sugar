@@ -1,13 +1,12 @@
 import { Select as SugarSelect } from "@singlestone/sugar-react";
-import { getButtonDisplayValue } from "@singlestone/sugar-react/example/utils";
+import { Button } from "@singlestone/sugar-react/src";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
-  Button,
   getSugarColor,
   getSugarVariant,
   SugarColor,
   SugarVariant,
-} from "@singlestone/sugar-react/src";
+} from "@singlestone/sugar-tokens";
 import { Meta, StoryObj } from "@storybook/react";
 import { ChangeEventHandler, useState } from "react";
 
@@ -18,6 +17,20 @@ const meta = {
 export default meta;
 
 type Story = StoryObj<typeof meta>;
+
+const getButtonDisplayValue = (
+  color: SugarColor | undefined,
+  variant: SugarVariant | undefined
+) => {
+  const parts: string[] = [];
+  if (color) {
+    parts.push(color);
+  }
+  if (variant) {
+    parts.push(variant);
+  }
+  return [...parts, "button"].join(" ");
+};
 
 export const Select: Story = {
   render: (args) => (

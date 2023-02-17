@@ -1,9 +1,9 @@
+import { IconOnlyButton } from "@singlestone/sugar-react";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
   COLORS,
-  IconOnlyButton,
   VARIANTS,
-} from "@singlestone/sugar-react";
+} from "@singlestone/sugar-tokens";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

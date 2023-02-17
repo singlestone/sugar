@@ -40,6 +40,9 @@
   "peerDependencies": {
     "tailwindcss": "^3.1.0"
   },
+  "dependencies": {
+    "@singlestone/sugar-tokens": "workspace:^"
+  },
   "devDependencies": {
     "@babel/core": "7.20.12",
     "@singlestone/eslint-config-sugar": "workspace:*",

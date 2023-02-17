@@ -3,6 +3,24 @@ import type { CSSRuleObject, PluginAPI } from "tailwindcss/types/config";
 
 import { inputBase } from "./inputs.styles";
 
+const selectInputBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
+  ...inputBase(theme),
+  paddingRight: theme("spacing.9"),
+  paddingLeft: theme("spacing.3"),
+  fontWeight: theme("fontWeight.bold"),
+  backgroundRepeat: "no-repeat",
+  backgroundColor: theme("colors.white"),
+  backgroundPosition: `right 12px center`,
+  backgroundSize: `20px 15px`,
+  whiteSpace: "nowrap",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+});
+
+export const selectInputColorBase = (theme: PluginAPI["theme"], color: string, hoverColor: string): CSSRuleObject => {
+
+};
+
 export const selectInputStyles = (theme: PluginAPI["theme"]): CSSRuleObject => {
   const selectColor = getShadeValue(
     theme,

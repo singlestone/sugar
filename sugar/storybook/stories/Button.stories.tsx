@@ -1,14 +1,17 @@
 import {
-  ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
   Button,
   Checkbox,
-  COLORS,
   Label,
   PasswordInput as SugarPasswordInput,
   TextInput as SugarTextInput,
-  VARIANTS,
 } from "@singlestone/sugar-react";
-import { SugarColor, SugarVariant } from "@singlestone/sugar-react/src";
+import {
+  ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
+  COLORS,
+  SugarColor,
+  SugarVariant,
+  VARIANTS,
+} from "@singlestone/sugar-tokens";
 import { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
