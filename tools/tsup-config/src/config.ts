@@ -29,7 +29,7 @@ export const nodeConfig = (
 ): Options => ({
   ...baseConfig(options),
   platform: "node",
-  target: "node14" as const,
+  target: "node14",
   shims: true,
   esbuildOptions: (buildOptions) => {
     // this enables importing prettier plugins/configs or eslint plugins appropriately
