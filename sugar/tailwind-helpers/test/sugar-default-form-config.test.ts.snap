@@ -7,7 +7,22 @@ exports[`sugarDefaultFormConfig 1`] = `
   "checkBoxRadioCheckedColorShade": "600",
   "checkBoxRadioDimensions": "spacing.7",
   "checkBoxRadioHoverColorShade": "200",
-  "selectColorFamily": "accent",
-  "selectColorShade": "600",
+  "select": {
+    "accent": {
+      "base": "600",
+      "color": "accent",
+      "hover": "50",
+    },
+    "destructive": {
+      "base": "600",
+      "color": "destructive",
+      "hover": "50",
+    },
+    "neutral": {
+      "base": "600",
+      "color": "neutral",
+      "hover": "50",
+    },
+  },
 }
 `;
