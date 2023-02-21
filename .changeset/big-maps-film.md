@@ -15,3 +15,7 @@
 ---
 
 add @singlestone/sugar-tokens package
+
+add `sugar-select-accent`, `sugar-select-destructive`, `sugar-select-neutral` classes
+
+BREAKING CHANGE: remove `sugar-select-input` class
