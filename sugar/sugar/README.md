@@ -73,7 +73,7 @@ You can customize the colors that Sugar uses by default by providing colors obje
 
 ```js
 // tailwind.config.js
-const colors = require('tailwindcss/colors');
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
@@ -92,20 +92,20 @@ module.exports = {
         // At the very least, provide the below entries:
         // 50, 200, 400, and 600
         destructive: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          200: '#fecaca',
-          300: '#fca5a5',
-          400: '#f87171',
-          500: '#ef4444',
-          600: '#dc2626',
-          700: '#b91c1c',
-          800: '#991b1b',
-          900: '#7f1d1d',
+          50: "#fef2f2",
+          100: "#fee2e2",
+          200: "#fecaca",
+          300: "#fca5a5",
+          400: "#f87171",
+          500: "#ef4444",
+          600: "#dc2626",
+          700: "#b91c1c",
+          800: "#991b1b",
+          900: "#7f1d1d",
         },
         neutral: colors.slate,
-      }
-    }
+      },
+    },
   },
   plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };
