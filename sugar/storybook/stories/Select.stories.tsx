@@ -1,13 +1,12 @@
 import { Select as SugarSelect } from "@singlestone/sugar-react";
-import { getButtonDisplayValue } from "@singlestone/sugar-react/example/utils";
+import { Button } from "@singlestone/sugar-react/src";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
-  Button,
   getSugarColor,
   getSugarVariant,
   SugarColor,
   SugarVariant,
-} from "@singlestone/sugar-react/src";
+} from "@singlestone/sugar-tokens";
 import { Meta, StoryObj } from "@storybook/react";
 import { ChangeEventHandler, useState } from "react";
 
@@ -19,10 +18,48 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Select: Story = {
+const getButtonDisplayValue = (
+  color: SugarColor | undefined,
+  variant: SugarVariant | undefined
+) => {
+  const parts: string[] = [];
+  if (color) {
+    parts.push(color);
+  }
+  if (variant) {
+    parts.push(variant);
+  }
+  return [...parts, "button"].join(" ");
+};
+
+export const Accent: Story = {
   render: (args) => (
     <div className="flex w-1/2">
-      <SugarSelect {...args}>
+      <SugarSelect color="accent" {...args}>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </SugarSelect>
+    </div>
+  ),
+};
+
+export const Destructive: Story = {
+  render: (args) => (
+    <div className="flex w-1/2">
+      <SugarSelect color="destructive" {...args}>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </SugarSelect>
+    </div>
+  ),
+};
+
+export const Neutral: Story = {
+  render: (args) => (
+    <div className="flex w-1/2">
+      <SugarSelect color="neutral" {...args}>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>

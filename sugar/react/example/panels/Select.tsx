@@ -1,18 +1,20 @@
-import { ChangeEventHandler, useState } from "react";
-
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
-  Button,
   getSugarColor,
   getSugarVariant,
-  Select,
   SugarColor,
   SugarVariant,
-} from "../../src";
+} from "@singlestone/sugar-tokens";
+import { ChangeEventHandler, useState } from "react";
+
+import { Button, Select } from "../../src";
 import { getButtonDisplayValue } from "../utils";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
-export const SelectPanel = () => {
+interface Props {
+  selectColor: SugarColor;
+}
+const SelectPanelSection = ({ selectColor }: Props) => {
   const [color, setColor] = useState<SugarColor | undefined>();
   const [variant, setVariant] = useState<SugarVariant | undefined>();
 
@@ -27,24 +29,32 @@ export const SelectPanel = () => {
   };
 
   return (
+    <div className="flex flex-1 flex-col gap-1">
+      <Select color={selectColor} defaultValue="" onChange={handleChange}>
+        <option disabled value="">
+          Select an Option
+        </option>
+        {ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS.map(({ color, variant }) => (
+          <option key={`${color}-${variant}`} value={`${color}-${variant}`}>
+            {getButtonDisplayValue(color, variant)}
+          </option>
+        ))}
+      </Select>
+      <Button color={color} variant={variant}>
+        {getButtonDisplayValue(color, variant)}
+      </Button>
+    </div>
+  );
+};
+
+export const SelectPanel = () => {
+  return (
     <PanelRoot>
       <PanelHeading>Select</PanelHeading>
-      <PanelBody>
-        <Select defaultValue="" onChange={handleChange}>
-          <option disabled value="">
-            Select an Option
-          </option>
-          {ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS.map(
-            ({ color, variant }) => (
-              <option key={`${color}-${variant}`} value={`${color}-${variant}`}>
-                {getButtonDisplayValue(color, variant)}
-              </option>
-            )
-          )}
-        </Select>
-        <Button color={color} variant={variant}>
-          {getButtonDisplayValue(color, variant)}
-        </Button>
+      <PanelBody direction="col">
+        <SelectPanelSection selectColor="accent" />
+        <SelectPanelSection selectColor="destructive" />
+        <SelectPanelSection selectColor="neutral" />
       </PanelBody>
     </PanelRoot>
   );

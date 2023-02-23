@@ -1,10 +1,11 @@
+import { ButtonWithIcon } from "@singlestone/sugar-react";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
-  ButtonWithIcon,
   COLORS,
+  SugarColor,
+  SugarVariant,
   VARIANTS,
-} from "@singlestone/sugar-react";
-import { SugarColor, SugarVariant } from "@singlestone/sugar-react/src";
+} from "@singlestone/sugar-tokens";
 import { Meta, StoryObj } from "@storybook/react";
 
 const SampleIcon = () => (

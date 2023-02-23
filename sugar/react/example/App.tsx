@@ -7,6 +7,7 @@ import { CheckboxPanel } from "./panels/Checkbox";
 import { InputPanel } from "./panels/Input";
 import { RadioGroupPanel } from "./panels/RadioGroup";
 import { SelectPanel } from "./panels/Select";
+import { SideBySidePanel } from "./panels/SideBySide";
 
 export const App = () => (
   <div className="flex flex-col min-h-screen">
@@ -26,6 +27,7 @@ export const App = () => (
         <InputPanel />
         <CheckboxPanel />
         <RadioGroupPanel />
+        <SideBySidePanel />
       </div>
     </main>
   </div>
