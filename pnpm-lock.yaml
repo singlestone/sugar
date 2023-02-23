@@ -45,7 +45,7 @@ importers:
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
       '@singlestone/sugar': workspace:*
-      '@singlestone/sugar-tokens': workspace:^
+      '@singlestone/sugar-tokens': workspace:^0.6.0
       '@singlestone/tsup-config': workspace:*
       '@size-limit/preset-small-lib': 8.2.4
       '@testing-library/jest-dom': 5.16.5
@@ -189,7 +189,7 @@ importers:
       '@babel/core': 7.20.12
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
-      '@singlestone/sugar-tokens': workspace:^
+      '@singlestone/sugar-tokens': workspace:^0.6.0
       '@singlestone/tsup-config': workspace:*
       '@size-limit/preset-small-lib': 8.2.4
       '@types/node': 18.13.0
