@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-react",
-  "version": "0.5.6",
+  "version": "0.6.0",
   "description": "React bindings for Sugar",
   "repository": {
     "type": "git",
