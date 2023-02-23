@@ -16,6 +16,7 @@ const selectInputBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   whiteSpace: "nowrap",
   overflow: "hidden",
   textOverflow: "ellipsis",
+  cursor: "pointer",
 });
 
 export const selectInputColorBase = (
