@@ -1,5 +1,11 @@
 # @singlestone/sugar-react
 
+## 0.6.1
+
+### Patch Changes
+
+- [#305](https://github.com/singlestone/sugar/pull/305) [`a755de6`](https://github.com/singlestone/sugar/commit/a755de6c369ac717a91cfc65a15377870f4084f8) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - update dependency on @singlestone/sugar-tokens
+
 ## 0.6.0
 
 ### Minor Changes
