@@ -1,7 +1,7 @@
 import { ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS } from "@singlestone/sugar-tokens";
 
 import { Button, ButtonWithIcon, IconOnlyButton } from "../../src";
-import { Checkmark } from "../Checkmark";
+import { Checkmark } from "../icons/Checkmark";
 import { getButtonDisplayValue } from "../utils";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 

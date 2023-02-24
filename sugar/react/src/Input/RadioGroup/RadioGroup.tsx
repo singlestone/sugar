@@ -42,6 +42,7 @@ export const RadioGroupFieldset = forwardRef<
     </RadioGroupContext.Provider>
   );
 });
+RadioGroupFieldset.displayName = "RadioGroupFieldset";
 
 type RadioGroupInputProps = Omit<
   ComponentPropsWithoutRef<"input">,
@@ -65,6 +66,7 @@ export const RadioGroupInput = forwardRef<
     />
   );
 });
+RadioGroupInput.displayName = "RadioGroupInput";
 
 type RadioGroupItemProps = Omit<
   ComponentPropsWithRef<typeof RadioGroupInput>,

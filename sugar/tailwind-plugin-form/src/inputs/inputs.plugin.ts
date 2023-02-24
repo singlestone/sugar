@@ -1,6 +1,6 @@
 import { SugarPluginComponent } from "@singlestone/tailwind-helpers-sugar";
 
-import { textInput } from "./inputs.styles";
+import { textArea, textInput } from "./inputs.styles";
 import { matchSelect } from "./select-input.styles";
 
 export const sugarInputs: SugarPluginComponent = (
@@ -16,5 +16,6 @@ export const sugarInputs: SugarPluginComponent = (
 
   addComponents({
     [`.${prefix}-text-input`]: textInput(theme),
+    [`.${prefix}-textarea`]: textArea(theme),
   });
 };
