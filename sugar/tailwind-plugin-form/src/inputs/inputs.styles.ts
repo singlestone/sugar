@@ -34,6 +34,15 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
   };
 };
 
+export const textArea = (theme: PluginAPI["theme"]): CSSRuleObject => {
+  const base = { ...textInput(theme) };
+  // set the minimum height to the base height of an input
+  base["min-height"] = base["height"];
+  // textarea height is provided by the `rows` attribute
+  delete base["height"];
+  return base;
+};
+
 export const textInput = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   ...inputBase(theme),
   color: theme("colors.black"),

@@ -62,7 +62,6 @@ importers:
       prettier: 2.8.4
       react: 18.2.0
       react-dom: 18.2.0
-      react-element-to-jsx-string: 15.0.0
       size-limit: 8.2.4
       tailwindcss: 3.2.7
       tsup: 6.6.3
@@ -92,7 +91,6 @@ importers:
       prettier: 2.8.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-element-to-jsx-string: 15.0.0_biqbaboplfbrettd7655fr4n2y
       size-limit: 8.2.4
       tailwindcss: 3.2.7_postcss@8.4.21
       tsup: 6.6.3_postcss@8.4.21
