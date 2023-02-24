@@ -21,7 +21,7 @@
     "build": "pnpm run build:tailwindcss && pnpm run build:storybook",
     "build:storybook": "storybook build",
     "build:tailwindcss": "tailwind -i ./src/tailwind.css -o ./public/tailwind.css",
-    "clean": "rimraf .turbo node_modules dist",
+    "clean": "rimraf .turbo dist",
     "dev": "concurrently \"pnpm:dev:*\"",
     "dev:storybook": "storybook dev -p 6006",
     "dev:tailwindcss": "nodemon --watch src -e css --exec \"tailwind -i ./src/tailwind.css -o ./public/tailwind.css && nodetouch ./.storybook/preview-head.html\"",
