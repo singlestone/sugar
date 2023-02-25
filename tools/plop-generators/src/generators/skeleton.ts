@@ -1,4 +1,4 @@
-import { PlopGeneratorConfig } from "node-plop";
+import { CustomActionConfig, PlopGeneratorConfig } from "node-plop";
 import { join } from "path";
 
 const resolveTemplateFile = (...fileNameParts: string[]) =>
@@ -93,7 +93,17 @@ export const skeleton: PlopGeneratorConfig = {
       templateFile: resolveTemplateFile("src", "sum.test.ts.hbs"),
     },
     {
-      type: "installDependencies",
-    },
+      type: "pnpmInstall",
+      dev: true,
+      exact: true,
+      dependencies: [
+        "@size-limit/preset-small-lib",
+        "@types/node",
+        "delete-publishconfig-directory",
+        "size-limit",
+        "tsup",
+        "vitest",
+      ],
+    } as CustomActionConfig<"pnpmInstall">,
   ],
 };

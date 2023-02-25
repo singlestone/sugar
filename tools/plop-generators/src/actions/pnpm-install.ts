@@ -23,15 +23,29 @@ const spawn = (cmd: string, args: readonly string[], options: SpawnOptions) =>
     });
   });
 
-export const installDependencies: CustomActionFunction = (
-  answers
+export const pnpmInstall: CustomActionFunction = (
+  answers,
+  config
 ): Promise<string> => {
   const cwd = join(process.cwd(), answers.packageType, answers.packageName);
-  return spawn(
-    /^win/.test(process.platform) ? "pnpm.cmd" : "pnpm",
-    ["install"],
-    { cwd, stdio: "inherit" }
-  )
+  const args = ["install"];
+  if (config.dev) {
+    args.push("-D");
+  }
+  if (config.exact) {
+    args.push("-E");
+  }
+  if (config.dependencies) {
+    if (Array.isArray(config.dependencies)) {
+      args.push(...config.dependencies);
+    } else {
+      return Promise.reject('"dependencies" must be an array');
+    }
+  }
+  return spawn(/^win/.test(process.platform) ? "pnpm.cmd" : "pnpm", args, {
+    cwd,
+    stdio: "inherit",
+  })
     .then(() => "successfully installed dependencies")
     .catch((err) => `error installing dependencies: ${err}`);
 };
