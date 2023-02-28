@@ -38,7 +38,7 @@
   },
   "peerDependencies": {},
   "devDependencies": {
-    "@babel/core": "7.20.5",
+    "@babel/core": "7.21.0",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
