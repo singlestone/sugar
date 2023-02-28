@@ -45,7 +45,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "@types/node": "18.14.1",
     "delete-publishconfig-directory": "1.0.0",
-    "size-limit": "8.1.0",
+    "size-limit": "8.2.4",
     "tsup": "6.6.3",
     "vitest": "0.29.1"
   },

@@ -295,7 +295,7 @@ importers:
       '@size-limit/preset-small-lib': 8.2.4
       '@types/node': 18.14.1
       delete-publishconfig-directory: 1.0.0
-      size-limit: 8.1.0
+      size-limit: 8.2.4
       tsup: 6.6.3
       vitest: 0.29.1
     devDependencies:
@@ -303,10 +303,10 @@ importers:
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
       '@singlestone/tsup-config': link:../../tools/tsup-config
-      '@size-limit/preset-small-lib': 8.2.4_size-limit@8.1.0
+      '@size-limit/preset-small-lib': 8.2.4_size-limit@8.2.4
       '@types/node': 18.14.1
       delete-publishconfig-directory: 1.0.0
-      size-limit: 8.1.0
+      size-limit: 8.2.4
       tsup: 6.6.3
       vitest: 0.29.1
     publishDirectory: package
@@ -2675,17 +2675,6 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /@size-limit/esbuild/8.2.4_size-limit@8.1.0:
-    resolution: {integrity: sha512-kPgNfpwUvBD98s5axlf1UciFg4Ki4AYSl/cOmSyyYBuzksHiwW7Myeu0w4mTxtV9nwBFbkrrNXqszE7b+OhFLA==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
-    peerDependencies:
-      size-limit: 8.2.4
-    dependencies:
-      esbuild: 0.17.8
-      nanoid: 3.3.4
-      size-limit: 8.1.0
-    dev: true
-
   /@size-limit/esbuild/8.2.4_size-limit@8.2.4:
     resolution: {integrity: sha512-kPgNfpwUvBD98s5axlf1UciFg4Ki4AYSl/cOmSyyYBuzksHiwW7Myeu0w4mTxtV9nwBFbkrrNXqszE7b+OhFLA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
@@ -2697,16 +2686,6 @@ packages:
       size-limit: 8.2.4
     dev: true
 
-  /@size-limit/file/8.2.4_size-limit@8.1.0:
-    resolution: {integrity: sha512-xLuF97W7m7lxrRJvqXRlxO/4t7cpXtfxOnjml/t4aRVUCMXLdyvebRr9OM4jjoK8Fmiz8jomCbETUCI3jVhLzA==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
-    peerDependencies:
-      size-limit: 8.2.4
-    dependencies:
-      semver: 7.3.8
-      size-limit: 8.1.0
-    dev: true
-
   /@size-limit/file/8.2.4_size-limit@8.2.4:
     resolution: {integrity: sha512-xLuF97W7m7lxrRJvqXRlxO/4t7cpXtfxOnjml/t4aRVUCMXLdyvebRr9OM4jjoK8Fmiz8jomCbETUCI3jVhLzA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
@@ -2715,16 +2694,6 @@ packages:
     dependencies:
       semver: 7.3.8
       size-limit: 8.2.4
-    dev: true
-
-  /@size-limit/preset-small-lib/8.2.4_size-limit@8.1.0:
-    resolution: {integrity: sha512-AL4384oBgMcDPlNblgWHreqFSSOui0J9NbgyHhegB1h8AgRyHbdVGC3yWLpEESYQXHYnKdbNrYeRE/TclsViog==}
-    peerDependencies:
-      size-limit: 8.2.4
-    dependencies:
-      '@size-limit/esbuild': 8.2.4_size-limit@8.1.0
-      '@size-limit/file': 8.2.4_size-limit@8.1.0
-      size-limit: 8.1.0
     dev: true
 
   /@size-limit/preset-small-lib/8.2.4_size-limit@8.2.4:
@@ -5149,10 +5118,6 @@ packages:
   /ci-info/3.7.1:
     resolution: {integrity: sha512-4jYS4MOAaCIStSRwiuxc4B8MYhIe676yO1sYGzARnjXkWpmzZMMYxY6zu8WYWDhSuth5zhrQ1rhNSibyyvv4/w==}
     engines: {node: '>=8'}
-
-  /ci-job-number/1.2.2:
-    resolution: {integrity: sha512-CLOGsVDrVamzv8sXJGaILUVI6dsuAkouJP/n6t+OxLPeeA4DDby7zn9SB6EUpa1H7oIKoE+rMmkW80zYsFfUjA==}
-    dev: true
 
   /clean-publish/4.1.1:
     resolution: {integrity: sha512-111O3MNk6x/dAbHZwG+iRZ4AYwpKqc7Qp1MarFhE1KtQIp9m9TkDuI+hedn7qgeFnLgSw3ItgEnHNwvhc7SmGg==}
@@ -10755,24 +10720,10 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/8.1.0:
-    resolution: {integrity: sha512-bUL+Uyyt/G+a1XzKlI2WKHVDepmXtqMDhF65pdtjccheiQTNjExWW4nFefgbRL2QgNTzRfK6ayFKjO3o4ER4gg==}
-    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
-    hasBin: true
-    dependencies:
-      bytes-iec: 3.1.1
-      chokidar: 3.5.3
-      ci-job-number: 1.2.2
-      globby: 11.1.0
-      lilconfig: 2.0.6
-      mkdirp: 1.0.4
-      nanospinner: 1.1.0
-      picocolors: 1.0.0
-    dev: true
-
   /size-limit/8.2.4:
     resolution: {integrity: sha512-Un16nSreD1v2CYwSorattiJcHuAWqXvg4TsGgzpjnoByqQwsSfCIEQHuaD14HNStzredR8cdsO9oGH91ibypTA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    hasBin: true
     dependencies:
       bytes-iec: 3.1.1
       chokidar: 3.5.3
