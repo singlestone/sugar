@@ -47,7 +47,7 @@
     "delete-publishconfig-directory": "1.0.0",
     "size-limit": "8.1.0",
     "tsup": "6.6.3",
-    "vitest": "0.28.5"
+    "vitest": "0.29.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
