@@ -50,7 +50,7 @@
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@types/node": "18.14.1",
+    "@types/node": "18.14.2",
     "delete-publishconfig-directory": "1.0.0",
     "postcss": "8.4.21",
     "size-limit": "8.2.4",
