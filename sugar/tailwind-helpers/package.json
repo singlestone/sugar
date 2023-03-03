@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-helpers-sugar",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Helper functions for use in Sugar, SingleStone's sweet design system",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     "tailwindcss": "^3.1.0"
   },
   "dependencies": {
-    "@singlestone/sugar-tokens": "workspace:^0.6.0"
+    "@singlestone/sugar-tokens": "workspace:^0.6.2"
   },
   "devDependencies": {
     "@babel/core": "7.21.0",

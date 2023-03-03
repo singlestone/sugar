@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-tokens",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Common design tokens used throughout Sugar",
   "repository": {
     "type": "git",
