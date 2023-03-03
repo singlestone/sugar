@@ -48,7 +48,7 @@
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@types/node": "18.14.1",
+    "@types/node": "18.14.2",
     "@types/prettier": "2.7.2",
     "eslint": "8.34.0",
     "prettier": "2.8.4",
