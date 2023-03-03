@@ -19,15 +19,25 @@ jobs:
   lint:
     name: ⬣ ESLint
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
+      - name: 📥 Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: 📥 Use Node.js from .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          cache: "pnpm"
+          node-version-file: ".nvmrc"
+
+      - name: 📥 Install via pnpm
+        run: pnpm install
+        shell: bash
 
       - name: 🔬 Lint
         run: pnpm run lint
@@ -35,15 +45,25 @@ jobs:
   test:
     name: ⚡ Test
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
+      - name: 📥 Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: 📥 Use Node.js from .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          cache: "pnpm"
+          node-version-file: ".nvmrc"
+
+      - name: 📥 Install via pnpm
+        run: pnpm install
+        shell: bash
 
       - name: ⚡ Run tests
         run: pnpm run test:ci
@@ -51,15 +71,25 @@ jobs:
   build:
     name: 🔨 Build
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
+      - name: 📥 Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: 📥 Use Node.js from .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          cache: "pnpm"
+          node-version-file: ".nvmrc"
+
+      - name: 📥 Install via pnpm
+        run: pnpm install
+        shell: bash
 
       - name: 🏠 Run build
         run: pnpm run build
@@ -67,15 +97,25 @@ jobs:
   prettier:
     name: 🔎 Prettier
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
 
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
+      - name: 📥 Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: 📥 Use Node.js from .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          cache: "pnpm"
+          node-version-file: ".nvmrc"
+
+      - name: 📥 Install via pnpm
+        run: pnpm install
+        shell: bash
 
       - name: ❤️ Run format:check
         run: pnpm run format:check
@@ -83,12 +123,12 @@ jobs:
   release:
     name: 🚀 Release
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     needs: [lint, prettier, test, build]
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     steps:
-      - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
         with:
@@ -97,8 +137,18 @@ jobs:
           # Disable saving GitHub auth token in git config
           persist-credentials: false
 
-      - name: 📥 Install Dependencies via pnpm
-        uses: ToppleTheNun/action-pnpm-install@v1
+      - name: 📥 Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+
+      - name: 📥 Use Node.js from .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          cache: "pnpm"
+          node-version-file: ".nvmrc"
+
+      - name: 📥 Install via pnpm
+        run: pnpm install
+        shell: bash
 
       - name: 🚀 Release via Changesets
         id: changesets
