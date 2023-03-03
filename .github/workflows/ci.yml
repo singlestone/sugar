@@ -14,14 +14,15 @@ env:
   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
   TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 # Define jobs within the workflow
 jobs:
   lint:
     name: ⬣ ESLint
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -45,9 +46,6 @@ jobs:
   test:
     name: ⚡ Test
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -71,9 +69,6 @@ jobs:
   build:
     name: 🔨 Build
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -97,9 +92,6 @@ jobs:
   prettier:
     name: 🔎 Prettier
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v3
@@ -123,9 +115,6 @@ jobs:
   release:
     name: 🚀 Release
     runs-on: ubuntu-latest
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-      cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
     needs: [lint, prettier, test, build]
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     steps:
