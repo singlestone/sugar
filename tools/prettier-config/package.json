@@ -50,7 +50,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "@types/node": "18.14.2",
     "@types/prettier": "2.7.2",
-    "eslint": "8.34.0",
+    "eslint": "8.35.0",
     "prettier": "2.8.4",
     "size-limit": "8.2.4",
     "tsup": "6.6.3",
