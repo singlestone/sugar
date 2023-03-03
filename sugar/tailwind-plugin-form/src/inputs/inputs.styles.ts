@@ -35,12 +35,21 @@ export const inputBase = (theme: PluginAPI["theme"]): CSSRuleObject => {
 };
 
 export const textArea = (theme: PluginAPI["theme"]): CSSRuleObject => {
-  const base = { ...textInput(theme) };
+  const base = textInput(theme);
   // set the minimum height to the base height of an input
-  base["min-height"] = base["height"];
+  base.minHeight = base.height;
   // textarea height is provided by the `rows` attribute
   delete base["height"];
-  return base;
+
+  // we overwrite the padding shortly anyway
+  delete base["paddingLeft"];
+  delete base["padding"];
+
+  return {
+    ...base,
+    padding: `${theme("spacing")?.[1.5]} ${theme("spacing.3")} 0`,
+    resize: "none",
+  };
 };
 
 export const textInput = (theme: PluginAPI["theme"]): CSSRuleObject => ({

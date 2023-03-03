@@ -7,11 +7,7 @@ export const TextareaPanel = () => {
       <PanelHeading>Textarea</PanelHeading>
       <PanelBody itemAlignment="start">
         <Label htmlFor="example-textarea">Textarea</Label>
-        <TextArea
-          className="resize-none"
-          id="example-textarea"
-          placeholder="Placeholder value"
-        />
+        <TextArea id="example-textarea" placeholder="Placeholder value" rows={10} />
       </PanelBody>
     </PanelRoot>
   );
