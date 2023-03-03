@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-buttons-sugar",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Tailwind plugin for sugar design system buttons",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
     "tailwindcss": "^3.1.0"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.6.0"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.6.2"
   },
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:*",

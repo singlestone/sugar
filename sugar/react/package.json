@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/sugar-react",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "React bindings for Sugar",
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
     "react": ">=16.0.0"
   },
   "dependencies": {
-    "@singlestone/sugar-tokens": "workspace:^0.6.0",
+    "@singlestone/sugar-tokens": "workspace:^0.6.2",
     "clsx": "^1.2.1"
   },
   "devDependencies": {
