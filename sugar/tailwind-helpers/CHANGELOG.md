@@ -1,5 +1,14 @@
 # @singlestone/tailwind-helpers-sugar
 
+## 0.6.2
+
+### Patch Changes
+
+- [#312](https://github.com/singlestone/sugar/pull/312) [`539e9cb`](https://github.com/singlestone/sugar/commit/539e9cbc39665c297d1ce71d3af363e8cc9dd6d5) Thanks [@ToppleTheNun](https://github.com/ToppleTheNun)! - add .sugar-textarea class and supporting TextArea React component
+
+- Updated dependencies [[`539e9cb`](https://github.com/singlestone/sugar/commit/539e9cbc39665c297d1ce71d3af363e8cc9dd6d5)]:
+  - @singlestone/sugar-tokens@0.6.2
+
 ## 0.6.1
 
 ### Patch Changes
