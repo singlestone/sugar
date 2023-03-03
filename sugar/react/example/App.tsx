@@ -8,7 +8,7 @@ import { InputPanel } from "./panels/Input";
 import { RadioGroupPanel } from "./panels/RadioGroup";
 import { SelectPanel } from "./panels/Select";
 import { SideBySidePanel } from "./panels/SideBySide";
-import { TextareaPanel } from "./panels/Textarea";
+import { TextareaPanel } from "./panels/TextArea";
 
 export const App = () => (
   <div className="flex flex-col min-h-screen">
