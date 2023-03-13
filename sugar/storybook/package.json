@@ -43,7 +43,7 @@
     "@storybook/react": "7.0.0-beta.60",
     "@storybook/react-vite": "7.0.0-beta.60",
     "@storybook/testing-library": "0.0.13",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.14",
     "concurrently": "7.6.0",
     "nodemon": "2.0.20",
     "postcss": "8.4.21",
