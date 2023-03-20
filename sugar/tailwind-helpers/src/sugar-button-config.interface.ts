@@ -14,5 +14,5 @@ export interface SugarButtonConfig {
     ghost: SugarButtonGhostConfig;
     outline: SugarButtonColorConfig;
     solid: SugarButtonColorConfig;
-  }
+  };
 }

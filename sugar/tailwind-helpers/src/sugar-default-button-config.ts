@@ -7,7 +7,7 @@ export const sugarDefaultButtonConfig: { [key: string]: SugarButtonConfig } = {
       ghost: {
         base: "600",
       },
-     outline: {
+      outline: {
         base: "600",
         active: "200",
         hover: "50",
@@ -16,8 +16,8 @@ export const sugarDefaultButtonConfig: { [key: string]: SugarButtonConfig } = {
         base: "600",
         active: "800",
         hover: "700",
-      }
-    }
+      },
+    },
   },
   destructive: {
     color: "destructive",
@@ -34,8 +34,8 @@ export const sugarDefaultButtonConfig: { [key: string]: SugarButtonConfig } = {
         base: "600",
         active: "800",
         hover: "700",
-      }
-    }
+      },
+    },
   },
   neutral: {
     color: "neutral",
@@ -52,7 +52,7 @@ export const sugarDefaultButtonConfig: { [key: string]: SugarButtonConfig } = {
         base: "600",
         active: "800",
         hover: "700",
-      }
-    }
-  }
+      },
+    },
+  },
 };

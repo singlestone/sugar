@@ -33,7 +33,6 @@ const buttonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   },
 });
 
-
 const buttonSolid = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   borderWidth: theme("borderWidth.0"),
 });
@@ -60,15 +59,18 @@ const buttonGhost = (_theme: PluginAPI["theme"]): CSSRuleObject => ({
   },
 });
 
-const buttonColorMatch = (theme: PluginAPI["theme"], value: SugarButtonConfig): CSSRuleObject => {
+const buttonColorMatch = (
+  theme: PluginAPI["theme"],
+  value: SugarButtonConfig
+): CSSRuleObject => {
   console.log(value);
   if (value) {
-    const {color, variants} = value
-    const {ghost, outline, solid} = variants
+    const { color, variants } = value;
+    const { ghost, outline, solid } = variants;
     const outlineBaseColor = getShadeValue(theme, color, outline.base);
     return {
       "&.sugar-ghost": {
-        color: getShadeValue(theme, color, ghost.base)
+        color: getShadeValue(theme, color, ghost.base),
       },
       "&.sugar-outline": {
         color: outlineBaseColor,
@@ -79,7 +81,7 @@ const buttonColorMatch = (theme: PluginAPI["theme"], value: SugarButtonConfig): 
         },
         "&:active, &:focus:active": {
           backgroundColor: getShadeValue(theme, color, outline.active),
-        }
+        },
       },
       "&.sugar-solid": {
         color: theme("colors.white"),
@@ -91,13 +93,11 @@ const buttonColorMatch = (theme: PluginAPI["theme"], value: SugarButtonConfig): 
         "&:active, &:focus:active": {
           backgroundColor: getShadeValue(theme, color, solid.active),
         },
-      }
+      },
     };
   }
-  return {}
-
-}
-
+  return {};
+};
 
 const iconButtonBase = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   svg: {
@@ -129,5 +129,5 @@ export {
   buttonIconOnly,
   buttonOutline,
   buttonSolid,
-  buttonWithIcon
+  buttonWithIcon,
 };

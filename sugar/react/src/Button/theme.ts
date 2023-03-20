@@ -24,8 +24,5 @@ export function getClassNames(
   variant: SugarVariant
 ): string {
   // return colorVariantMapping[color][variant];
-  return clsx(
-    "sugar-button",
-    colorVariantMapping[color][variant]
-  )
+  return clsx("sugar-button", colorVariantMapping[color][variant]);
 }
