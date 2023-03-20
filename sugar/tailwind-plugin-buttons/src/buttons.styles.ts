@@ -41,7 +41,7 @@ const buttonOutline = (theme: PluginAPI["theme"]): CSSRuleObject => ({
   borderWidth: theme("borderWidth.2"),
 });
 
-const buttonGhost = (_theme: PluginAPI["theme"]): CSSRuleObject => ({
+const buttonGhost = (): CSSRuleObject => ({
   border: "none",
 
   "&:not(.sugar-button-icon-only)": {

@@ -12,7 +12,7 @@ const sugarPillButtons: SugarPluginComponent = (
 ) => {
   addComponents({
     [`.${prefix}-button`]: Styles.buttonBase(theme),
-    [`.${prefix}-ghost`]: Styles.buttonGhost(theme),
+    [`.${prefix}-ghost`]: Styles.buttonGhost(),
     [`.${prefix}-outline`]: Styles.buttonOutline(theme),
     [`.${prefix}-solid`]: Styles.buttonSolid(theme),
     [`.${prefix}-button-with-icon`]: Styles.buttonWithIcon(theme),
