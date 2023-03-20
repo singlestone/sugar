@@ -10,16 +10,20 @@ const sugarPillButtons: SugarPluginComponent = (
   { addComponents, matchComponents, theme },
   { prefix }
 ) => {
-  matchComponents(
-    {
-      [`${prefix}-button`]: (value) => Styles.buttonMatch(theme, value),
-    },
-    { values: theme("sugarButtons") }
-  );
   addComponents({
+    [`.${prefix}-button`]: Styles.buttonBase(theme),
+    [`.${prefix}-ghost`]: Styles.buttonGhost(theme),
+    [`.${prefix}-outline`]: Styles.buttonOutline(theme),
+    [`.${prefix}-solid`]: Styles.buttonSolid(theme),
     [`.${prefix}-button-with-icon`]: Styles.buttonWithIcon(theme),
     [`.${prefix}-button-icon-only`]: Styles.buttonIconOnly(theme),
   });
+  matchComponents(
+    {
+      [`${prefix}`]: (value) => Styles.buttonColorMatch(theme, value),
+    },
+    { values: theme("sugarButtons") }
+  );
 };
 
 export const sugarButtonsComponents = [sugarPillButtons];

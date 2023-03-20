@@ -51,17 +51,19 @@ describe("sugarButtonsPlugin", () => {
       prefix: testPrefix,
     };
     test("set plugin prefix", () => {
-      getClassCreationTest(`${testPrefix}-button-primary`, options);
+      getClassCreationTest(`${testPrefix}-button`, options);
     });
   });
 
   describe("Static Components", () => {
     const expectedClasses = [
-      ["sugar-button-primary"],
-      ["sugar-button-secondary"],
-      ["sugar-button-destructive"],
-      ["sugar-button-secondary-destructive"],
-      ["sugar-button-neutral"],
+      ["sugar-button"],
+      ["sugar-ghost"],
+      ["sugar-outline"],
+      ["sugar-solid"],
+      ["sugar-accent"],
+      ["sugar-destructive"],
+      ["sugar-neutral"],
       ["sugar-button-with-icon"],
     ];
     test.each(expectedClasses)("create %s class", (className: string) => {
