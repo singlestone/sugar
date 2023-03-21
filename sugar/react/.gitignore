@@ -3,3 +3,9 @@
 node_modules
 dist
 example-dist
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/

@@ -38,7 +38,8 @@
     "size": "size-limit",
     "start": "vite",
     "test": "vitest",
-    "test:ci": "vitest"
+    "test:ci": "vitest",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
@@ -48,6 +49,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
+    "@playwright/experimental-ct-react": "^1.31.2",
+    "@playwright/test": "^1.31.2",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",

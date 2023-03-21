@@ -41,6 +41,8 @@ importers:
   sugar/react:
     specifiers:
       '@babel/core': 7.20.12
+      '@playwright/experimental-ct-react': ^1.31.2
+      '@playwright/test': ^1.31.2
       '@singlestone/eslint-config-sugar': workspace:*
       '@singlestone/postcss-preset-sugar': workspace:*
       '@singlestone/prettier-config-sugar': workspace:*
@@ -67,6 +69,8 @@ importers:
       clsx: 1.2.1
     devDependencies:
       '@babel/core': 7.20.12
+      '@playwright/experimental-ct-react': 1.31.2
+      '@playwright/test': 1.31.2
       '@singlestone/eslint-config-sugar': link:../../tools/eslint-config
       '@singlestone/postcss-preset-sugar': link:../../tools/postcss-config
       '@singlestone/prettier-config-sugar': link:../../tools/prettier-config
@@ -2691,6 +2695,35 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+
+  /@playwright/experimental-ct-react/1.31.2:
+    resolution: {integrity: sha512-0gt/ViSm427JyAmp7kGMeuZhwDAndugvPgx9R6ZryzRHwKx4kHvVXXJ/ngU0izfuKL+pMa8fIPykjvThT1yr0w==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@playwright/test': 1.31.2
+      '@vitejs/plugin-react': 3.1.0_vite@4.1.1
+      vite: 4.1.1
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: true
+
+  /@playwright/test/1.31.2:
+    resolution: {integrity: sha512-BYVutxDI4JeZKV1+ups6dt5WiqKhjBtIYowyZIJ3kBDmJgsuPKsqqKNIMFbUePLSCmp2cZu+BDL427RcNKTRYw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.11.19
+      playwright-core: 1.31.2
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
 
   /@sinclair/typebox/0.24.51:
     resolution: {integrity: sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==}
@@ -9722,6 +9755,12 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.1.0
       pathe: 1.1.0
+    dev: true
+
+  /playwright-core/1.31.2:
+    resolution: {integrity: sha512-a1dFgCNQw4vCsG7bnojZjDnPewZcw7tZUNFN0ZkcLYKj+mPmXvg4MpaaKZ5SgqPsOmqIf2YsVRkgqiRDxD+fDQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /plop/3.1.1:
