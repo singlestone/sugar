@@ -39,7 +39,8 @@
     "start": "vite",
     "test": "vitest",
     "test:ci": "vitest",
-    "test-ct": "playwright test -c playwright-ct.config.ts"
+    "test:ct": "playwright test -c playwright-ct.config.ts",
+    "test:ct:report": "playwright show-report"
   },
   "peerDependencies": {
     "react": ">=16.0.0"
