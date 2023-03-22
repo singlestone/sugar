@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to @singlestone/sugar 👋</h1>
 <p>
-  <a href="https://github.com/singlestone/sugar#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  <a href="https://npmjs.com/package/@singlestone/sugar" target="_blank">
+    <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@singlestone/sugar">
   </a>
   <a href="https://github.com/singlestone/sugar/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/singlestone/sugar" />
@@ -18,20 +18,19 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Install](#install)
-- [Run tests](#run-tests)
-- [Run example project for testing](#run-example-project-for-testing)
+- [Packages](#packages)
 - [Author](#author)
 - [🤝 Contributing](#-contributing)
 - [📝 License](#-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Install
+## Packages
 
-```shell
-pnpm install
-```
+We have two packages of note, click their links below to go to their respective READMEs:
+
+- [`@singlestone/sugar`](./sugar/sugar) - TailwindCSS plugin that makes implementing our design system a breeze.
+- [`@singlestone/sugar-react`](./sugar/react) - React bindings for the Tailwind plugin.
 
 ## Author
 
@@ -46,12 +45,12 @@ pnpm install
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check
 [issues page](https://github.com/singlestone/sugar/issues). You can also take a look at the
-[contributing guide](https://github.com/singlestone/sugar/blob/master/CONTRIBUTING.md).
+[contributing guide](https://github.com/singlestone/sugar/blob/main/CONTRIBUTING.md).
 
 ## 📝 License
 
 Copyright © 2022 [SingleStone Consulting](https://github.com/singlestone).<br />
-This project is [MIT](https://github.com/singlestone/sugar/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/singlestone/sugar/blob/main/LICENSE) licensed.
 
 ---
 

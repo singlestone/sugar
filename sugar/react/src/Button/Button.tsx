@@ -1,3 +1,9 @@
+import {
+  getSugarColor,
+  getSugarVariant,
+  SugarColor,
+  SugarVariant,
+} from "@singlestone/sugar-tokens";
 import clsx from "clsx";
 import {
   ComponentPropsWithoutRef,
@@ -5,12 +11,6 @@ import {
   forwardRef,
 } from "react";
 
-import {
-  getSugarColor,
-  getSugarVariant,
-  SugarColor,
-  SugarVariant,
-} from "../utils";
 import { getClassNames } from "./theme";
 
 interface ButtonProps

@@ -387,3 +387,5 @@ tools/plop-generators/public
 pnpm-lock.yaml
 
 sugar/storybook/public/tailwind.css
+
+example-dist

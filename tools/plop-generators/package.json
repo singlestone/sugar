@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/plop-generators-sugar",
-  "version": "0.5.2",
+  "version": "0.6.2",
   "description": "Plop generators config for Sugar",
   "repository": {
     "type": "git",
@@ -27,12 +27,12 @@
   "scripts": {
     "analyze": "size-limit --why",
     "build": "tsup --publicDir",
-    "clean": "rimraf .turbo node_modules dist",
+    "clean": "rimraf .turbo dist",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup --publicDir",
-    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -42,20 +42,20 @@
     "plop": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
+    "@babel/core": "7.21.0",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/sugar-cli": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.2",
+    "@singlestone/tsup-config": "workspace:*",
+    "@size-limit/preset-small-lib": "8.2.4",
     "cpy-cli": "4.2.0",
-    "eslint": "8.33.0",
-    "node-plop": "0.31.0",
-    "plop": "3.1.1",
-    "size-limit": "8.1.2",
-    "tsup": "6.5.0",
+    "delete-publishconfig-directory": "1.0.0",
+    "eslint": "8.35.0",
+    "node-plop": "0.31.1",
+    "plop": "3.1.2",
+    "size-limit": "8.2.4",
+    "tsup": "6.6.3",
     "typescript": "4.9.5",
-    "vitest": "0.28.4"
+    "vitest": "0.29.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -65,11 +65,11 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/plop-generators-sugar.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/plop-generators-sugar.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
   ],

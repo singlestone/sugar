@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/postcss-preset-sugar",
-  "version": "0.5.2",
+  "version": "0.6.2",
   "description": "PostCSS config for Sugar",
   "repository": {
     "type": "git",
@@ -27,7 +27,7 @@
   "scripts": {
     "analyze": "size-limit --why",
     "build": "tsup",
-    "clean": "rimraf .turbo node_modules dist",
+    "clean": "rimraf .turbo dist",
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
@@ -44,23 +44,23 @@
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "postcss-import": "^15.1.0",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.6"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
+    "@babel/core": "7.21.0",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.2",
-    "@types/node": "18.11.18",
+    "@singlestone/tsup-config": "workspace:*",
+    "@size-limit/preset-small-lib": "8.2.4",
+    "@types/node": "18.14.2",
     "@types/postcss-import": "14.0.0",
-    "eslint": "8.33.0",
+    "eslint": "8.35.0",
     "postcss": "8.4.21",
     "postcss-load-config": "4.0.1",
-    "size-limit": "8.1.2",
-    "tsup": "6.5.0",
+    "size-limit": "8.2.4",
+    "tsup": "6.6.3",
     "typescript": "4.9.5",
-    "vitest": "0.28.4"
+    "vitest": "0.29.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -70,11 +70,11 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/postcss-preset-sugar.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/postcss-preset-sugar.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
   ],

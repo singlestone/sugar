@@ -1,3 +1,6 @@
-import { defineSugarTsupConfig } from "@singlestone/tsup-config-node";
+import { nodeConfig } from "@singlestone/tsup-config";
+import { defineConfig } from "tsup";
 
-export default defineSugarTsupConfig();
+export default defineConfig((options) => ({
+  ...nodeConfig(options),
+}));

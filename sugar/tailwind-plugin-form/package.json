@@ -1,6 +1,6 @@
 {
   "name": "@singlestone/tailwind-plugin-form-sugar",
-  "version": "0.5.2",
+  "version": "0.6.2",
   "description": "Tailwind plugin for sugar design system buttons",
   "repository": {
     "type": "git",
@@ -26,41 +26,38 @@
   "scripts": {
     "analyze": "size-limit --why",
     "build": "tsup",
-    "clean": "rimraf .turbo node_modules dist",
+    "clean": "rimraf .turbo dist",
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
     "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish && sugar prepublish",
+    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "size": "size-limit",
     "test": "vitest",
-    "test:ci": "vitest"
+    "test:ci": "vitest",
+    "ugh": "tsup && tailwind -i ../storybook/src/tailwind.css -o dist/tailwind.css"
   },
   "peerDependencies": {
     "tailwindcss": "^3.1.0"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.5.2"
+    "@singlestone/tailwind-helpers-sugar": "workspace:^0.6.2"
   },
   "devDependencies": {
-    "@babel/core": "7.20.12",
-    "@mdx-js/react": "1.6.22",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
-    "@singlestone/sugar-cli": "workspace:*",
-    "@singlestone/tsup-config-node": "workspace:*",
-    "@size-limit/preset-small-lib": "8.1.2",
-    "@storybook/html": "7.0.0-beta.41",
-    "autoprefixer": "10.4.13",
-    "babel-loader": "9.1.2",
+    "@singlestone/tsup-config": "workspace:*",
+    "@size-limit/preset-small-lib": "8.2.4",
+    "@types/node": "18.14.2",
+    "delete-publishconfig-directory": "1.0.0",
     "postcss": "8.4.21",
-    "size-limit": "8.1.2",
-    "tailwindcss": "3.2.4",
-    "tsup": "6.5.0",
+    "size-limit": "8.2.4",
+    "tailwindcss": "3.2.7",
+    "tsup": "6.6.3",
     "typescript": "4.9.5",
-    "vitest": "0.28.4"
+    "vitest": "0.29.2"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
@@ -70,11 +67,11 @@
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
     {
-      "path": "./dist/tailwind-plugin-form-sugar.cjs.production.min.js",
+      "path": "./dist/index.js",
       "limit": "10 KB"
     },
     {
-      "path": "./dist/tailwind-plugin-form-sugar.esm.js",
+      "path": "./dist/index.mjs",
       "limit": "10 KB"
     }
   ],

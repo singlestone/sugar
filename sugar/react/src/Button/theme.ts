@@ -1,4 +1,4 @@
-import { SugarColor, SugarVariant } from "../utils";
+import { SugarColor, SugarVariant } from "@singlestone/sugar-tokens";
 
 const colorVariantMapping: Record<SugarColor, Record<SugarVariant, string>> = {
   accent: {

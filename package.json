@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "SingleStone's sweet design system.",
   "private": true,
-  "packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@7.28.0",
   "scripts": {
     "build": "turbo run build",
     "build:changed": "turbo run build --since=origin/main",
@@ -13,7 +13,7 @@
     "dev": "turbo run dev --no-cache --parallel --continue",
     "dev:changed": "turbo run dev --no-cache --parallel --continue --since=origin/main",
     "dev:presets": "turbo run dev --no-cache --parallel --continue --no-deps --include-dependencies --scope=*preset*",
-    "doctoc": "doctoc .",
+    "doctoc": "doctoc -u .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "generate": "plop",
@@ -27,7 +27,7 @@
     "test:ci:changed": "turbo run test:ci --since=origin/main"
   },
   "dependencies": {
-    "@antfu/ni": "0.19.0",
+    "@antfu/ni": "0.20.0",
     "@changesets/changelog-github": "0.4.8",
     "@changesets/cli": "2.26.0",
     "@singlestone/plop-generators-sugar": "workspace:*",
@@ -36,17 +36,17 @@
     "@tsconfig/vite-react": "1.0.1",
     "clean-publish": "4.1.1",
     "doctoc": "2.2.1",
-    "plop": "3.1.1",
-    "prettier": "2.8.3",
+    "plop": "3.1.2",
+    "prettier": "2.8.4",
     "prettier-plugin-pkg": "0.17.1",
     "rimraf": "4.1.2",
-    "tsx": "3.12.2",
-    "turbo": "1.7.3",
+    "tsx": "3.12.3",
+    "turbo": "1.8.3",
     "typescript": "4.9.5"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "volta": {
-    "node": "18.13.0",
-    "npm": "9.4.1"
+    "node": "18.14.2",
+    "npm": "9.5.1"
   }
 }
