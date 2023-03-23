@@ -17,7 +17,7 @@ importers:
       prettier: 2.8.4
       prettier-plugin-pkg: 0.17.1
       rimraf: 4.1.2
-      tsx: 3.12.3
+      tsx: 3.12.6
       turbo: 1.8.3
       typescript: 4.9.5
     dependencies:
@@ -34,7 +34,7 @@ importers:
       prettier: 2.8.4
       prettier-plugin-pkg: 0.17.1_prettier@2.8.4
       rimraf: 4.1.2
-      tsx: 3.12.3
+      tsx: 3.12.6
       turbo: 1.8.3
       typescript: 4.9.5
 
@@ -2817,7 +2817,7 @@ packages:
       '@storybook/csf-plugin': 7.0.0-beta.60
       '@storybook/csf-tools': 7.0.0-beta.60
       '@storybook/global': 5.0.0
-      '@storybook/mdx2-csf': 1.0.0-next.5
+      '@storybook/mdx2-csf': 1.0.0-next.6
       '@storybook/node-logger': 7.0.0-beta.60
       '@storybook/postinstall': 7.0.0-beta.60
       '@storybook/preview-api': 7.0.0-beta.60
@@ -3142,7 +3142,7 @@ packages:
       '@storybook/client-logger': 7.0.0-beta.60
       '@storybook/core-common': 7.0.0-beta.60
       '@storybook/csf-plugin': 7.0.0-beta.60
-      '@storybook/mdx2-csf': 1.0.0-next.5
+      '@storybook/mdx2-csf': 1.0.0-next.6
       '@storybook/node-logger': 7.0.0-beta.60
       '@storybook/preview': 7.0.0-beta.60
       '@storybook/preview-api': 7.0.0-beta.60
@@ -3502,8 +3502,8 @@ packages:
     resolution: {integrity: sha512-XcAAYnd9oHvkG4ieSiCbNJvqAYNh7zO1LYQ2cx2GdDL+Wr40SaUk6VG1/E8s/ETF4QgI6CvQbbg74VaaO2MbBA==}
     dev: true
 
-  /@storybook/mdx2-csf/1.0.0-next.5:
-    resolution: {integrity: sha512-02w0sgGZaK1agT050yCVhJ+o4rLHANWvLKWjQjeAsYbjneLC5ITt+3GDB4jRiWwJboZ8dHW1fGSK1Vg5fA34aQ==}
+  /@storybook/mdx2-csf/1.0.0-next.6:
+    resolution: {integrity: sha512-m6plojocU/rmrqWd26yvm8D+oHZPZ6PtSSFmZIgpNDEPVmc8s4fBD6LXOAB5MiPI5f8KLUr2HVhOMZ97o5pDTw==}
     dev: true
 
   /@storybook/node-logger/7.0.0-beta.60:
@@ -11267,8 +11267,9 @@ packages:
       tslib: 1.14.1
       typescript: 4.9.5
 
-  /tsx/3.12.3:
-    resolution: {integrity: sha512-Wc5BFH1xccYTXaQob+lEcimkcb/Pq+0en2s+ruiX0VEIC80nV7/0s7XRahx8NnsoCnpCVUPz8wrqVSPi760LkA==}
+  /tsx/3.12.6:
+    resolution: {integrity: sha512-q93WgS3lBdHlPgS0h1i+87Pt6n9K/qULIMNYZo07nSeu2z5QE2CellcAZfofVXBo2tQg9av2ZcRMQ2S2i5oadQ==}
+    hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.2
       '@esbuild-kit/core-utils': 3.0.0
