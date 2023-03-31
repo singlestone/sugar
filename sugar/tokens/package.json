@@ -36,18 +36,17 @@
     "test": "vitest",
     "test:ci": "vitest"
   },
-  "peerDependencies": {},
   "devDependencies": {
-    "@babel/core": "7.21.0",
+    "@babel/core": "7.21.4",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@types/node": "18.14.2",
+    "@types/node": "18.15.11",
     "delete-publishconfig-directory": "1.0.0",
     "size-limit": "8.2.4",
-    "tsup": "6.6.3",
-    "vitest": "0.29.2"
+    "tsup": "6.7.0",
+    "vitest": "0.29.8"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

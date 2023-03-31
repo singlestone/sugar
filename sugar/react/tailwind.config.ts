@@ -1,5 +1,7 @@
-module.exports = {
-  mode: "jit",
+import { sugarCorePlugin } from "@singlestone/sugar";
+import type { Config } from "tailwindcss";
+
+export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}", "./example/**/*.{ts,tsx}"],
   theme: {
     container: {
@@ -10,5 +12,5 @@ module.exports = {
       colors: {},
     },
   },
-  plugins: [require("@singlestone/sugar").sugarCorePlugin()],
-};
+  plugins: [sugarCorePlugin()],
+} satisfies Config;

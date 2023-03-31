@@ -40,6 +40,7 @@ const getClassCreationTest = (
   };
   return run(config, options).then((result) => {
     expect(result.css).toContain(`.${className}`);
+    expect(result.css).toMatchSnapshot();
   });
 };
 
@@ -50,9 +51,7 @@ describe("sugarButtonsPlugin", () => {
       prefix: testPrefix,
     };
     test("set plugin prefix", () => {
-      expect(
-        getClassCreationTest(`${testPrefix}-button-primary`, options)
-      ).toMatchSnapshot();
+      getClassCreationTest(`${testPrefix}-button-primary`, options);
     });
   });
 
@@ -66,7 +65,7 @@ describe("sugarButtonsPlugin", () => {
       ["sugar-button-with-icon"],
     ];
     test.each(expectedClasses)("create %s class", (className: string) => {
-      expect(getClassCreationTest(className)).toMatchSnapshot();
+      getClassCreationTest(className);
     });
   });
 });
