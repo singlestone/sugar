@@ -40,6 +40,7 @@ const getClassCreationTest = (
   };
   return run(config, options).then((result) => {
     expect(result.css).toContain(`.${className}`);
+    expect(result.css).toMatchSnapshot();
   });
 };
 
@@ -50,9 +51,7 @@ describe("sugarFormsPlugin", () => {
       prefix: testPrefix,
     };
     test("set plugin prefix", () => {
-      expect(
-        getClassCreationTest(`${testPrefix}-text-input`, options)
-      ).toMatchSnapshot();
+      getClassCreationTest(`${testPrefix}-text-input`, options);
     });
   });
 
@@ -61,7 +60,7 @@ describe("sugarFormsPlugin", () => {
       ["sugar-text-input", "sugar-select-input", "sugar-radio"],
     ];
     test.each(expectedClasses)("create %s class", (className: string) => {
-      expect(getClassCreationTest(className)).toMatchSnapshot();
+      getClassCreationTest(className);
     });
   });
 });
