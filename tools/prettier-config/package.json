@@ -44,7 +44,7 @@
     "prettier-plugin-tailwindcss": "^0.2.2"
   },
   "devDependencies": {
-    "@babel/core": "7.21.0",
+    "@babel/core": "7.21.3",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
