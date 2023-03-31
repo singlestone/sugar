@@ -63,7 +63,6 @@ const buttonColorMatch = (
   theme: PluginAPI["theme"],
   value: SugarButtonConfig
 ): CSSRuleObject => {
-  console.log(value);
   if (value) {
     const { color, variants } = value;
     const { ghost, outline, solid } = variants;
