@@ -42,7 +42,7 @@
     "@storybook/blocks": "7.0.0-beta.60",
     "@storybook/react": "7.0.0-beta.60",
     "@storybook/react-vite": "7.0.0-beta.60",
-    "@storybook/testing-library": "0.0.13",
+    "@storybook/testing-library": "0.1.0",
     "autoprefixer": "10.4.14",
     "concurrently": "8.0.1",
     "nodemon": "2.0.22",
