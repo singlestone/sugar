@@ -13,17 +13,24 @@
 
 > SingleStone's sweet design system.
 
-### 🏠 [Homepage](https://github.com/singlestone/sugar#readme)
+## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [What is Sugar?](#what-is-sugar)
 - [Packages](#packages)
 - [Author](#author)
 - [🤝 Contributing](#-contributing)
 - [📝 License](#-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## What is Sugar?
+
+Click the image below for a video explanation.
+
+[![Sugar: SingleStone's Open Source Design System](./readme/sugar_youtube_thumbnail.png)](https://www.youtube.com/watch?v=6yS04fm3ue0)
 
 ## Packages
 
