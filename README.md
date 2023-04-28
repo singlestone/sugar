@@ -56,7 +56,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check
 
 ## 📝 License
 
-Copyright © 2022 [SingleStone Consulting](https://github.com/singlestone).<br />
+Copyright © 2023 [SingleStone Consulting](https://github.com/singlestone).<br />
 This project is [MIT](https://github.com/singlestone/sugar/blob/main/LICENSE) licensed.
 
 ---
