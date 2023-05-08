@@ -15,6 +15,9 @@ exports[`sugarButtonsPlugin > Plugin options > set plugin prefix 1`] = `
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -61,6 +64,9 @@ exports[`sugarButtonsPlugin > Plugin options > set plugin prefix 1`] = `
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -150,6 +156,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-accent class 1`] 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -196,6 +205,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-accent class 1`] 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -270,6 +282,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-button class 1`] 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -316,6 +331,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-button class 1`] 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -405,6 +423,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-button-with-icon 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -451,6 +472,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-button-with-icon 
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -512,6 +536,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-destructive class
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -558,6 +585,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-destructive class
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -632,6 +662,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-ghost class 1`] =
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -678,6 +711,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-ghost class 1`] =
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -743,6 +779,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-neutral class 1`]
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -789,6 +828,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-neutral class 1`]
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -863,6 +905,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-outline class 1`]
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -909,6 +954,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-outline class 1`]
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -961,6 +1009,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-solid class 1`] =
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;
@@ -1007,6 +1058,9 @@ exports[`sugarButtonsPlugin > Static Components > create sugar-solid class 1`] =
     --tw-pan-y:  ;
     --tw-pinch-zoom:  ;
     --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
     --tw-ordinal:  ;
     --tw-slashed-zero:  ;
     --tw-numeric-figure:  ;

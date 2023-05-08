@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "^14 || ^16 || >= 18"
+    "node": "^14 || ^16 || ^18 || >= 20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -39,14 +39,14 @@
     "vitest": "^0.26.0 || ^0.28.0 || ^0.29.0"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
+    "@babel/core": "7.21.8",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
-    "vitest": "0.29.8"
+    "vitest": "0.31.0"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [

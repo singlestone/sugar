@@ -14,7 +14,7 @@
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
   "engines": {
-    "node": "^14 || ^16 || >= 18"
+    "node": "^14 || ^16 || ^18 || >= 20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -32,9 +32,7 @@
     "prepare": "tsup",
     "size": "size-limit",
     "test": "vitest",
-    "test:ci": "vitest",
-    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
-    "postpublish": "rm -rf ./package"
+    "test:ci": "vitest"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -45,7 +43,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public",
-    "directory": "package"
+    "directory": "package",
+    "linkDirectory": false
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [

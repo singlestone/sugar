@@ -14,7 +14,7 @@
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
   "engines": {
-    "node": "^14 || ^16 || >= 18"
+    "node": "^14 || ^16 || ^18 || >= 20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -30,34 +30,30 @@
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
-    "postpublish": "rm -rf ./package",
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:^0.6.2",
-    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:^0.6.2",
-    "@singlestone/tailwind-plugin-form-sugar": "workspace:^0.6.2"
+    "@singlestone/tailwind-helpers-sugar": "workspace:*",
+    "@singlestone/tailwind-plugin-buttons-sugar": "workspace:*",
+    "@singlestone/tailwind-plugin-form-sugar": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
+    "@babel/core": "7.21.8",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@types/node": "18.15.11",
-    "delete-publishconfig-directory": "1.0.0",
+    "@types/node": "20.1.0",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
-    "vitest": "0.29.8"
+    "vitest": "0.31.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "directory": "package"
+    "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
