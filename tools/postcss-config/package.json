@@ -15,7 +15,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": "^14 || ^16 || >= 18"
+    "node": "^14 || ^16 || ^18 || >= 20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -64,8 +64,7 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "directory": "package"
+    "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [

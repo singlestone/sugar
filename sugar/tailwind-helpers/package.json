@@ -14,7 +14,7 @@
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
   "engines": {
-    "node": "^14 || ^16 || >= 18"
+    "node": "^14 || ^16 || ^18 || >= 20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -30,9 +30,9 @@
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
-    "postpublish": "rm -rf ./package",
+
     "prepare": "tsup",
-    "prepublishOnly": "rm -rf ./package && clean-publish && delete-publishconfig-directory",
+
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -50,7 +50,7 @@
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
     "@types/node": "18.15.11",
-    "delete-publishconfig-directory": "1.0.0",
+
     "eslint": "8.37.0",
     "size-limit": "8.2.4",
     "tailwindcss": "3.3.1",
@@ -60,8 +60,7 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "directory": "package"
+    "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
