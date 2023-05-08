@@ -30,9 +30,7 @@
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache .",
     "lint:fix": "nr lint --fix",
-
     "prepare": "tsup",
-
     "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
@@ -43,16 +41,15 @@
     "@singlestone/tailwind-plugin-form-sugar": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
+    "@babel/core": "7.21.8",
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
-    "@types/node": "18.15.11",
-
+    "@types/node": "20.1.0",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
-    "vitest": "0.29.8"
+    "vitest": "0.31.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
