@@ -23,8 +23,8 @@ importers:
         specifier: 1.0.3
         version: 1.0.3
       '@tsconfig/vite-react':
-        specifier: 1.0.1
-        version: 1.0.1
+        specifier: 2.0.0
+        version: 2.0.0
       doctoc:
         specifier: 2.2.1
         version: 2.2.1
@@ -3891,8 +3891,8 @@ packages:
     resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
     dev: false
 
-  /@tsconfig/vite-react@1.0.1:
-    resolution: {integrity: sha512-6Tv0UI88QPSkNobzoI8tMXjHX1j723yPBhrQ+z+gphvTIj7KcH0KF1MjUlPrIgh5TEpRMH8jF5ezZ5qQ0iHGvw==}
+  /@tsconfig/vite-react@2.0.0:
+    resolution: {integrity: sha512-erT+k9yzjRYnqRn6Fmvz+Y8+AtE+/YE954frGGwwit2ifsoWzRzYaOTlGj9/z0xJyYiaKNnNiFhid312QdC4rw==}
     dev: false
 
   /@types/aria-query@5.0.1:
