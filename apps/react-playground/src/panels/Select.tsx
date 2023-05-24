@@ -1,3 +1,4 @@
+import { Button, Select } from "@singlestone/sugar-react";
 import {
   ALL_POSSIBLE_COLOR_VARIANTS_COMBINATIONS,
   getSugarColor,
@@ -7,7 +8,6 @@ import {
 } from "@singlestone/sugar-tokens";
 import { ChangeEventHandler, useState } from "react";
 
-import { Button, Select } from "../../src";
 import { getButtonDisplayValue } from "../utils";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 

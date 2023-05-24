@@ -1,4 +1,5 @@
-import { Label, Select, TextInput } from "../../src";
+import { Label, Select, TextInput } from "@singlestone/sugar-react";
+
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const SideBySidePanel = () => (

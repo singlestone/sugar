@@ -1,6 +1,10 @@
+import {
+  Legend,
+  RadioGroupFieldset,
+  RadioGroupItem,
+} from "@singlestone/sugar-react";
 import { ChangeEventHandler, useState } from "react";
 
-import { Legend, RadioGroupFieldset, RadioGroupItem } from "../../src";
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const RadioGroupPanel = () => {

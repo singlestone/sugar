@@ -24,8 +24,8 @@
   ],
   "scripts": {
     "clean": "rimraf .turbo node_modules",
-    "lint": "eslint --format stylish --max-warnings 0 --cache .",
-    "lint:fix": "nr lint --fix"
+    "lint": "eslint --format stylish --max-warnings 0 --cache . && prettier -c .",
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix . && prettier --write ."
   },
   "peerDependencies": {
     "eslint": "^8.21.0",

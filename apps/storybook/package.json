@@ -1,13 +1,13 @@
 {
-  "name": "@singlestone/storybook-sugar",
+  "name": "@singlestone/sugar-storybook",
   "version": "0.6.2",
   "description": "Storybook for Sugar",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/storybook"
+    "directory": "apps/storybook"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/storybook#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/apps/storybook#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
@@ -25,8 +25,8 @@
     "dev": "concurrently \"pnpm:dev:*\"",
     "dev:storybook": "storybook dev -p 6006",
     "dev:tailwindcss": "nodemon --watch src -e css --exec \"tailwind -i ./src/tailwind.css -o ./public/tailwind.css && nodetouch ./.storybook/preview-head.html\"",
-    "lint": "eslint --format stylish --max-warnings 0 --cache .",
-    "lint:fix": "nr lint --fix"
+    "lint": "eslint --format stylish --max-warnings 0 --cache stories && prettier -c stories",
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix stories && prettier --write stories"
   },
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:*",

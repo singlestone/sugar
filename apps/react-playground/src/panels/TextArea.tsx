@@ -1,4 +1,5 @@
-import { Label, TextArea } from "../../src";
+import { Label, TextArea } from "@singlestone/sugar-react";
+
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const TextareaPanel = () => {

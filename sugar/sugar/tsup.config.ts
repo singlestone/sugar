@@ -13,9 +13,9 @@ export default defineConfig((options) => ({
   // touch files to trigger hot reloads
   onSuccess: all([
     touchFile(join(__dirname, "../react/src/index.ts")),
-    touchFile(join(__dirname, "../storybook/src/tailwind.css")),
+    touchFile(join(__dirname, "../../apps/storybook/src/tailwind.css")),
     delayedTouchFile(
-      join(__dirname, "../storybook/.storybook/preview-head.html"),
+      join(__dirname, "../../apps/storybook/.storybook/preview-head.html"),
       3000
     ),
   ]),

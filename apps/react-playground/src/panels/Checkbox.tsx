@@ -1,4 +1,5 @@
-import { Checkbox, Label } from "../../src";
+import { Checkbox, Label } from "@singlestone/sugar-react";
+
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const CheckboxPanel = () => {

@@ -1,4 +1,4 @@
 packages:
   - sugar/*
   - tools/*
-  - playground
+  - apps/*
