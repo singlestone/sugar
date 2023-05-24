@@ -46,7 +46,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
-    "vitest": "0.31.0"
+    "vitest": "0.31.1"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [
