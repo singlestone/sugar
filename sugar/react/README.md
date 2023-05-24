@@ -60,7 +60,7 @@ module.exports = {
     // change this to fit your project as necessary
     "./src/**/*.{ts,tsx}",
     // add this
-    "./node_modules/@singlestone/sugar-react/**/*.js",
+    "./node_modules/@singlestone/sugar-react/dist/*.{js,mjs}",,
   ],
   plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };

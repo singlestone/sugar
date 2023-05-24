@@ -96,11 +96,7 @@ export const skeleton: PlopGeneratorConfig = {
       type: "pnpmInstall",
       dev: true,
       exact: true,
-      dependencies: [
-        "@types/node",
-        "tsup",
-        "vitest",
-      ],
+      dependencies: ["@types/node", "tsup", "vitest"],
     } as CustomActionConfig<"pnpmInstall">,
   ],
 };
