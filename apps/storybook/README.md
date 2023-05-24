@@ -24,7 +24,7 @@
 ## Prerequisites
 
 - NodeJS 14+
-- A functioning [Tailwind and Sugar setup](../sugar/README.md#setup)
+- A functioning [Tailwind and Sugar setup](../../sugar/sugar/README.md#setup)
 
 ## Installation
 
@@ -60,7 +60,7 @@ module.exports = {
     // change this to fit your project as necessary
     "./src/**/*.{ts,tsx}",
     // add this
-    "./node_modules/@singlestone/sugar-react/dist/*.{js,mjs}",,
+    "./node_modules/@singlestone/sugar-react/**/*.js",
   ],
   plugins: [require("@singlestone/sugar").sugarCorePlugin()],
 };

@@ -28,8 +28,8 @@
     "analyze": "size-limit --why",
     "build": "tsup --publicDir",
     "clean": "rimraf .turbo dist",
-    "lint": "eslint --format stylish --max-warnings 0 --cache .",
-    "lint:fix": "nr lint --fix",
+    "lint": "eslint --format stylish --max-warnings 0 --cache src && prettier -c src",
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src",
     "prepare": "tsup --publicDir",
     "size": "size-limit",
     "test": "vitest",
@@ -46,29 +46,19 @@
     "@singlestone/tsup-config": "workspace:*",
     "@size-limit/preset-small-lib": "8.2.4",
     "cpy-cli": "4.2.0",
-    "eslint": "8.40.0",
+    "eslint": "8.41.0",
     "node-plop": "0.31.1",
     "plop": "3.1.2",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
     "typescript": "5.0.4",
-    "vitest": "0.31.0"
+    "vitest": "0.31.1"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
-  "size-limit": [
-    {
-      "path": "./dist/index.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "./dist/index.mjs",
-      "limit": "10 KB"
-    }
-  ],
   "volta": {
     "extends": "../../package.json"
   }

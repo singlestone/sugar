@@ -28,8 +28,8 @@
     "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo dist",
-    "lint": "eslint --format stylish --max-warnings 0 --cache .",
-    "lint:fix": "nr lint --fix",
+    "lint": "eslint --format stylish --max-warnings 0 --cache src && prettier -c src",
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src",
     "prepare": "tsup",
     "size": "size-limit",
     "test": "vitest",
@@ -46,7 +46,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
-    "vitest": "0.31.0"
+    "vitest": "0.31.1"
   },
   "prettier": "@singlestone/prettier-config-sugar",
   "size-limit": [

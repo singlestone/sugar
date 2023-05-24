@@ -6,7 +6,7 @@ import { defineConfig } from "tsup";
 export default defineConfig((options) => ({
   ...browserConfig(options),
   onSuccess: delayedTouchFile(
-    join(__dirname, "../storybook/.storybook/preview-head.html"),
+    join(__dirname, "../../apps/storybook/.storybook/preview-head.html"),
     3000
   ),
 }));

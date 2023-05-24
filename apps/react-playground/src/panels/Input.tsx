@@ -1,4 +1,5 @@
-import { Label, TextInput } from "../../src";
+import { Label, TextInput } from "@singlestone/sugar-react";
+
 import { PanelBody, PanelHeading, PanelRoot } from "./Panel";
 
 export const InputPanel = () => {

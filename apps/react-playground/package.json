@@ -1,55 +1,52 @@
 {
-  "name": "@singlestone/tailwind-plugin-form-sugar",
+  "name": "@singlestone/sugar-react-playground",
   "version": "0.6.2",
-  "description": "Tailwind plugin for sugar design system buttons",
+  "description": "React Playground for Sugar",
   "repository": {
     "type": "git",
     "url": "https://github.com/singlestone/sugar.git",
-    "directory": "sugar/tailwind-plugin-form-sugar"
+    "directory": "apps/react-playground"
   },
-  "homepage": "https://github.com/singlestone/sugar/tree/main/sugar/tailwind-plugin-form-sugar#readme",
+  "homepage": "https://github.com/singlestone/sugar/tree/main/apps/react-playground#readme",
   "bugs": {
     "url": "https://github.com/singlestone/sugar/issues"
   },
   "author": "SingleStone Consulting (https://www.singlestoneconsulting.com/)",
   "license": "MIT",
+  "private": true,
   "engines": {
     "node": "^14 || ^16 || ^18 || >= 20"
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "typings": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
   "scripts": {
-    "build": "tsup",
+    "build": "vite build",
     "clean": "rimraf .turbo dist",
-    "dev": "tsup --watch",
+    "dev": "vite",
     "lint": "eslint --format stylish --max-warnings 0 --cache src && prettier -c src",
-    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src",
-    "prepare": "tsup",
-    "test": "vitest",
-    "test:ci": "vitest"
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src"
   },
   "peerDependencies": {
-    "tailwindcss": "^3.1.0"
+    "react": ">=16.0.0"
   },
   "dependencies": {
-    "@singlestone/tailwind-helpers-sugar": "workspace:*"
+    "@singlestone/sugar-react": "workspace:*",
+    "@singlestone/sugar-tokens": "workspace:*",
+    "clsx": "^1.2.1"
   },
   "devDependencies": {
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/postcss-preset-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
+    "@singlestone/sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
     "@types/node": "20.2.3",
-    "postcss": "8.4.23",
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "@vitejs/plugin-react": "4.0.0",
+    "prettier": "2.8.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
-    "tsup": "6.7.0",
-    "typescript": "5.0.4",
-    "vitest": "0.31.1"
+    "vite": "4.3.8"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

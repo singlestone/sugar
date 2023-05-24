@@ -27,8 +27,8 @@
     "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo dist",
-    "lint": "eslint --format stylish --max-warnings 0 --cache .",
-    "lint:fix": "nr lint --fix",
+    "lint": "eslint --format stylish --max-warnings 0 --cache src && prettier -c src",
+    "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src",
     "prepare": "tsup",
     "size": "size-limit",
     "test": "vitest",
@@ -42,21 +42,9 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
-    "access": "public",
-    "directory": "package",
-    "linkDirectory": false
+    "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
-  "size-limit": [
-    {
-      "path": "./dist/index.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "./dist/index.mjs",
-      "limit": "10 KB"
-    }
-  ],
   "volta": {
     "extends": "../../package.json"
   }
