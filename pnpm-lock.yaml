@@ -207,9 +207,6 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@testing-library/jest-dom':
         specifier: 5.16.5
         version: 5.16.5
@@ -246,9 +243,6 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tsup:
         specifier: 6.7.0
         version: 6.7.0(postcss@8.4.23)(typescript@5.0.4)
@@ -283,15 +277,9 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@types/node':
         specifier: 20.2.3
         version: 20.2.3
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tsup:
         specifier: 6.7.0
         version: 6.7.0(postcss@8.4.23)(typescript@5.0.4)
@@ -317,18 +305,12 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@types/node':
         specifier: 20.2.3
         version: 20.2.3
       eslint:
         specifier: 8.41.0
         version: 8.41.0
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tailwindcss:
         specifier: 3.3.2
         version: 3.3.2
@@ -360,9 +342,6 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@types/node':
         specifier: 20.2.3
         version: 20.2.3
@@ -372,9 +351,6 @@ importers:
       postcss:
         specifier: 8.4.23
         version: 8.4.23
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tailwindcss:
         specifier: 3.3.2
         version: 3.3.2
@@ -406,18 +382,12 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@types/node':
         specifier: 20.2.3
         version: 20.2.3
       postcss:
         specifier: 8.4.23
         version: 8.4.23
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tailwindcss:
         specifier: 3.3.2
         version: 3.3.2
@@ -445,15 +415,9 @@ importers:
       '@singlestone/tsup-config':
         specifier: workspace:*
         version: link:../../tools/tsup-config
-      '@size-limit/preset-small-lib':
-        specifier: 8.2.4
-        version: 8.2.4(size-limit@8.2.4)
       '@types/node':
         specifier: 20.2.3
         version: 20.2.3
-      size-limit:
-        specifier: 8.2.4
-        version: 8.2.4
       tsup:
         specifier: 6.7.0
         version: 6.7.0(postcss@8.4.23)(typescript@5.0.4)

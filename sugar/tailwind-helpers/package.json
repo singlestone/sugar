@@ -24,14 +24,12 @@
     "src"
   ],
   "scripts": {
-    "analyze": "size-limit --why",
     "build": "tsup",
     "clean": "rimraf .turbo dist",
     "dev": "tsup --watch",
     "lint": "eslint --format stylish --max-warnings 0 --cache src && prettier -c src",
     "lint:fix": "eslint --format stylish --max-warnings 0 --cache --fix src && prettier --write src",
     "prepare": "tsup",
-    "size": "size-limit",
     "test": "vitest",
     "test:ci": "vitest"
   },
@@ -46,10 +44,8 @@
     "@singlestone/eslint-config-sugar": "workspace:*",
     "@singlestone/prettier-config-sugar": "workspace:*",
     "@singlestone/tsup-config": "workspace:*",
-    "@size-limit/preset-small-lib": "8.2.4",
     "@types/node": "20.2.3",
     "eslint": "8.41.0",
-    "size-limit": "8.2.4",
     "tailwindcss": "3.3.2",
     "tsup": "6.7.0",
     "typescript": "5.0.4",
@@ -60,16 +56,6 @@
     "access": "public"
   },
   "prettier": "@singlestone/prettier-config-sugar",
-  "size-limit": [
-    {
-      "path": "./dist/index.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "./dist/index.mjs",
-      "limit": "10 KB"
-    }
-  ],
   "volta": {
     "extends": "../../package.json"
   }

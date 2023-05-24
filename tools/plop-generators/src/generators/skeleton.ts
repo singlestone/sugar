@@ -11,7 +11,7 @@ export const skeleton: PlopGeneratorConfig = {
       type: "list",
       name: "packageType",
       message: "Which type of skeleton package would you like to create?",
-      choices: ["sugar", "tools"],
+      choices: ["apps", "sugar", "tools"],
     },
     {
       type: "input",
@@ -97,10 +97,7 @@ export const skeleton: PlopGeneratorConfig = {
       dev: true,
       exact: true,
       dependencies: [
-        "@size-limit/preset-small-lib",
         "@types/node",
-        "delete-publishconfig-directory",
-        "size-limit",
         "tsup",
         "vitest",
       ],
