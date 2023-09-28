@@ -39,7 +39,7 @@
     "@singlestone/tsup-config": "workspace:*",
     "@types/node": "20.2.3",
     "tsup": "6.7.0",
-    "vitest": "0.31.1"
+    "vitest": "0.34.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
