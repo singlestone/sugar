@@ -54,7 +54,7 @@
     "@size-limit/preset-small-lib": "8.2.4",
     "@types/node": "20.2.3",
     "@types/postcss-import": "14.0.0",
-    "eslint": "8.41.0",
+    "eslint": "8.50.0",
     "postcss": "8.4.23",
     "postcss-load-config": "4.0.1",
     "size-limit": "8.2.4",
