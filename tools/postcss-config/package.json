@@ -60,7 +60,7 @@
     "size-limit": "8.2.4",
     "tsup": "6.7.0",
     "typescript": "5.0.4",
-    "vitest": "0.31.1"
+    "vitest": "0.34.5"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
